@@ -2,6 +2,9 @@
 // BASE RESET & FOUNDATION
 // =============================================================================
 
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
 // Box Sizing Reset
 // =============================================================================
 *,
@@ -15,17 +18,17 @@
 // For browsers that support clamp
 @supports (font-size: clamp(1rem, 1vi, 1rem)) {
   :root {
-    @include typography-scale(true);
+    @include mixins.typography-scale(true);
   }
 }
 
 // For browsers that don't support clamp
 @supports not (font-size: clamp(1rem, 1vi, 1rem)) {
   :root {
-    @include typography-scale(false);
+    @include mixins.typography-scale(false);
     
-    @include large-screen {
-      @include typography-scale-large;
+    @include mixins.large-screen {
+      @include mixins.typography-scale-large;
     }
   }
 }
@@ -34,24 +37,24 @@
 // =============================================================================
 :root {
   // Brand colors as CSS custom properties
-  --primary: #{$primary};
-  --primary-2: #{$primary-2};
-  --primary-44: #{$primary-44};
-  --primary-08: #{$primary-08};
-  --secondary: #{$secondary};
-  --secondary-02: #{$secondary-02};
-  --secondary-44: #{$secondary-44};
-  --secondary-08: #{$secondary-08};
+  --primary: #{vars.$primary};
+  --primary-2: #{vars.$primary-2};
+  --primary-44: #{vars.$primary-44};
+  --primary-08: #{vars.$primary-08};
+  --secondary: #{vars.$secondary};
+  --secondary-02: #{vars.$secondary-02};
+  --secondary-44: #{vars.$secondary-44};
+  --secondary-08: #{vars.$secondary-08};
   
   // Animation
-  --animation-duration: #{$animation-duration};
+  --animation-duration: #{vars.$animation-duration};
   
   // Light theme colors (default)
-  @include light-theme-colors;
+  @include mixins.light-theme-colors;
   
   // Dark theme colors
-  @include dark-theme {
-    @include dark-theme-colors;
+  @include mixins.dark-theme {
+    @include mixins.dark-theme-colors;
   }
 }
 
@@ -59,15 +62,15 @@
 // =============================================================================
 html {
   font-size: 100%;
-  @include scrollbar-styling;
+  @include mixins.scrollbar-styling;
 }
 
 // Body Element
 // =============================================================================
 body {
-  font-family: $font-family-base;
-  line-height: $line-height-base;
-  @include container;
+  font-family: vars.$font-family-base;
+  line-height: vars.$line-height-base;
+  @include mixins.container;
   word-wrap: break-word;
   color: var(--text-main);
   background: var(--background-body);
@@ -77,9 +80,9 @@ body {
 // Selection Styles
 // =============================================================================
 ::-moz-selection {
-  @include selection-styles;
+  @include mixins.selection-styles;
 }
 
 ::selection {
-  @include selection-styles;
+  @include mixins.selection-styles;
 }

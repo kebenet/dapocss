@@ -2,6 +2,9 @@
 // FORMS & INTERACTIVE ELEMENTS
 // =============================================================================
 
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
 // Form Element Base Behavior
 // =============================================================================
 button,
@@ -28,19 +31,19 @@ select {
 // Input Elements
 // =============================================================================
 input {
-  @include input-base;
+  @include mixins.input-base;
   
   &:focus {
-    @include focus-ring;
+    @include mixins.focus-ring;
   }
   
-  @include disabled-state;
+  @include mixins.disabled-state;
 }
 
 // Textarea
 // =============================================================================
 textarea {
-  @include input-base;
+  @include mixins.input-base;
   display: block;
   margin-right: 0;
   box-sizing: border-box;
@@ -56,16 +59,16 @@ textarea {
   }
   
   &:focus {
-    @include focus-ring;
+    @include mixins.focus-ring;
   }
   
-  @include disabled-state;
+  @include mixins.disabled-state;
 }
 
 // Button Elements
 // =============================================================================
 button {
-  @include button-base;
+  @include mixins.button-base;
   padding-right: 16px;
   padding-left: 16px;
   
@@ -73,7 +76,51 @@ button {
     border: 1px var(--primary) solid;
   }
   
-  @include disabled-state;
+  @include mixins.disabled-state;
+}
+
+// Secondary Button Styles
+// =============================================================================
+.btn-secondary {
+  @include mixins.button-base;
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: var(--secondary);
+  color: var(--text-bright);
+  
+  &:hover {
+    background-color: var(--secondary-hover);
+    border: 1px var(--secondary) solid;
+  }
+  
+  &:focus {
+    box-shadow: 0 0 0 2px var(--secondary-focus);
+  }
+  
+  @include mixins.disabled-state;
+}
+
+// Secondary Button Outline Style
+// =============================================================================
+.btn-secondary-outline {
+  @include mixins.button-base;
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: transparent;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+  
+  &:hover {
+    background-color: var(--secondary);
+    color: var(--text-bright);
+    border-color: var(--secondary);
+  }
+  
+  &:focus {
+    box-shadow: 0 0 0 2px var(--secondary-focus);
+  }
+  
+  @include mixins.disabled-state;
 }
 
 // Input Button Types
@@ -81,13 +128,13 @@ button {
 input[type='submit'],
 input[type='reset'],
 input[type='button'] {
-  @include button-input;
+  @include mixins.button-input;
   
   &:focus {
-    @include focus-ring;
+    @include mixins.focus-ring;
   }
   
-  @include disabled-state;
+  @include mixins.disabled-state;
 }
 
 // Special Input Types
@@ -133,7 +180,7 @@ textarea {
 // Select Element
 // =============================================================================
 select {
-  @include input-base;
+  @include mixins.input-base;
   background: var(--background) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
   padding-right: 35px;
   
@@ -148,10 +195,10 @@ select {
   }
   
   &:focus {
-    @include focus-ring;
+    @include mixins.focus-ring;
   }
   
-  @include disabled-state;
+  @include mixins.disabled-state;
 }
 
 // Active States
@@ -187,8 +234,8 @@ button:active {
 // Fieldset & Legend
 // =============================================================================
 fieldset {
-  @include border-accent;
-  border-radius: $border-radius-base;
+  @include mixins.border-accent;
+  border-radius: vars.$border-radius-base;
   margin: 0;
   margin-bottom: 12px;
   padding: 10px;
@@ -217,7 +264,7 @@ input[type='range'] {
     -webkit-transition: 0.2s;
     transition: 0.2s;
     background: var(--background);
-    border-radius: $border-radius-large;
+    border-radius: vars.$border-radius-large;
   }
   
   &::-webkit-slider-thumb {
@@ -241,7 +288,7 @@ input[type='range'] {
     -moz-transition: 0.2s;
     transition: 0.2s;
     background: var(--background);
-    border-radius: $border-radius-large;
+    border-radius: vars.$border-radius-large;
   }
   
   &::-moz-range-thumb {
@@ -265,14 +312,14 @@ input[type='range'] {
   &::-ms-fill-lower {
     background: var(--background);
     border: 0.2px solid #010101;
-    border-radius: $border-radius-large;
+    border-radius: vars.$border-radius-large;
     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
   }
   
   &::-ms-fill-upper {
     background: var(--background);
     border: 0.2px solid #010101;
-    border-radius: $border-radius-large;
+    border-radius: vars.$border-radius-large;
     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
   }
   

@@ -2,6 +2,9 @@
 // CONTENT COMPONENTS
 // =============================================================================
 
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
 // Media Elements
 // =============================================================================
 img, video {
@@ -26,7 +29,7 @@ details {
   background-color: var(--background-alt);
   padding: 10px 10px 0;
   margin: 1em 0;
-  border-radius: $border-radius-base;
+  border-radius: vars.$border-radius-base;
   overflow: hidden;
   
   &[open] {
@@ -70,13 +73,13 @@ dialog {
   background-color: var(--background-alt);
   color: var(--text-main);
   border: none;
-  border-radius: $border-radius-base;
+  border-radius: vars.$border-radius-base;
   border-color: var(--border);
   padding: 10px 30px;
   
   > header:first-child {
     background-color: var(--background);
-    border-radius: $border-radius-base $border-radius-base 0 0;
+    border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
     margin: -10px -30px 10px;
     padding: 10px;
     text-align: center;

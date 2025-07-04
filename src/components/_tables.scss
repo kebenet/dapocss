@@ -2,11 +2,14 @@
 // TABLES
 // =============================================================================
 
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
 // Table Base
 // =============================================================================
 table {
   border-collapse: collapse;
-  margin-bottom: $margin-base;
+  margin-bottom: vars.$margin-base;
   width: 100%;
   table-layout: fixed;
   
@@ -27,12 +30,12 @@ td, th {
 // Table Sections
 // =============================================================================
 thead {
-  @include border-accent;
+  @include mixins.border-accent;
   border-bottom: 1px solid var(--border);
 }
 
 tfoot {
-  @include border-accent;
+  @include mixins.border-accent;
   border-top: 1px solid var(--border);
 }
 

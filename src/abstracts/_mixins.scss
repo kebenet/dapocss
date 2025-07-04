@@ -2,10 +2,12 @@
 // DAPOCSS MIXINS
 // =============================================================================
 
+@use 'variables' as vars;
+
 // Media Query Mixins
 // =============================================================================
 @mixin large-screen {
-  @media screen and (min-width: $breakpoint-large) {
+  @media screen and (min-width: vars.$breakpoint-large) {
     @content;
   }
 }
@@ -26,95 +28,101 @@
 // =============================================================================
 @mixin typography-scale($supports-clamp: true) {
   @if $supports-clamp {
-    --text-s: #{$text-s};
-    --text-base: #{$text-base};
-    --text-m: #{$text-m};
-    --text-l: #{$text-l};
-    --text-xl: #{$text-xl};
-    --text-xxl: #{$text-xxl};
-    --text-xxxl: #{$text-xxxl};
+    --text-s: #{vars.$text-s};
+    --text-base: #{vars.$text-base};
+    --text-m: #{vars.$text-m};
+    --text-l: #{vars.$text-l};
+    --text-xl: #{vars.$text-xl};
+    --text-xxl: #{vars.$text-xxl};
+    --text-xxxl: #{vars.$text-xxxl};
   } @else {
-    --text-s: #{$text-s-fallback};
-    --text-base: #{$text-base-fallback};
-    --text-m: #{$text-m-fallback};
-    --text-l: #{$text-l-fallback};
-    --text-xl: #{$text-xl-fallback};
-    --text-xxl: #{$text-xxl-fallback};
-    --text-xxxl: #{$text-xxxl-fallback};
+    --text-s: #{vars.$text-s-fallback};
+    --text-base: #{vars.$text-base-fallback};
+    --text-m: #{vars.$text-m-fallback};
+    --text-l: #{vars.$text-l-fallback};
+    --text-xl: #{vars.$text-xl-fallback};
+    --text-xxl: #{vars.$text-xxl-fallback};
+    --text-xxxl: #{vars.$text-xxxl-fallback};
   }
 }
 
 @mixin typography-scale-large {
-  --text-s: #{$text-s-large};
-  --text-base: #{$text-base-large};
-  --text-m: #{$text-m-large};
-  --text-l: #{$text-l-large};
-  --text-xl: #{$text-xl-large};
-  --text-xxl: #{$text-xxl-large};
-  --text-xxxl: #{$text-xxxl-large};
+  --text-s: #{vars.$text-s-large};
+  --text-base: #{vars.$text-base-large};
+  --text-m: #{vars.$text-m-large};
+  --text-l: #{vars.$text-l-large};
+  --text-xl: #{vars.$text-xl-large};
+  --text-xxl: #{vars.$text-xxl-large};
+  --text-xxxl: #{vars.$text-xxxl-large};
 }
 
 // Theme Mixins
 // =============================================================================
 @mixin light-theme-colors {
-  --background-body: #{$background-body-light};
-  --background: #{$background-light};
-  --background-alt: #{$background-alt-light};
-  --text-main: #{$text-main-light};
-  --text-bright: #{$text-bright-light};
-  --text-muted: #{$text-muted-light};
-  --links: #{$links-light};
-  --border: #{$border-light};
-  --code: #{$code-light};
-  --focus: #{$focus-color};
-  --selection: #{$selection-color};
-  --highlight: #{$highlight-color};
-  --variable: #{$variable-color};
-  --form-text: #{$form-text-light};
-  --form-placeholder: #{$form-placeholder-light};
-  --button-base: #{$button-base-light};
-  --button-hover: #{$button-hover-light};
-  --scrollbar-thumb: #{$scrollbar-thumb-light};
-  --scrollbar-thumb-hover: #{$scrollbar-thumb-hover-light};
-  --select-arrow: #{$select-arrow-light};
+  --background-body: #{vars.$background-body-light};
+  --background: #{vars.$background-light};
+  --background-alt: #{vars.$background-alt-light};
+  --text-main: #{vars.$text-main-light};
+  --text-bright: #{vars.$text-bright-light};
+  --text-muted: #{vars.$text-muted-light};
+  --links: #{vars.$links-light};
+  --border: #{vars.$border-light};
+  --code: #{vars.$code-light};
+  --focus: #{vars.$focus-color};
+  --selection: #{vars.$selection-color};
+  --highlight: #{vars.$highlight-color};
+  --variable: #{vars.$variable-color};
+  --form-text: #{vars.$form-text-light};
+  --form-placeholder: #{vars.$form-placeholder-light};
+  --button-base: #{vars.$button-base-light};
+  --button-hover: #{vars.$button-hover-light};
+  --secondary: #{vars.$secondary};
+  --secondary-hover: #{vars.$secondary-hover-light};
+  --secondary-focus: #{vars.$secondary-focus-light};
+  --scrollbar-thumb: #{vars.$scrollbar-thumb-light};
+  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-light};
+  --select-arrow: #{vars.$select-arrow-light};
 }
 
 @mixin dark-theme-colors {
-  --background-body: #{$background-body-dark};
-  --background: #{$background-dark};
-  --background-alt: #{$background-alt-dark};
-  --text-main: #{$text-main-dark};
-  --text-bright: #{$text-bright-dark};
-  --text-muted: #{$text-muted-dark};
-  --links: #{$links-dark};
-  --border: #{$border-dark};
-  --code: #{$code-dark};
-  --focus: #{$focus-color-dark};
-  --selection: #{$selection-color-dark};
-  --highlight: #{$highlight-color-dark};
-  --variable: #{$variable-color-dark};
-  --form-text: #{$form-text-dark};
-  --form-placeholder: #{$form-placeholder-dark};
-  --button-base: #{$button-base-dark};
-  --button-hover: #{$button-hover-dark};
-  --scrollbar-thumb: #{$scrollbar-thumb-dark};
-  --scrollbar-thumb-hover: #{$scrollbar-thumb-hover-dark};
-  --select-arrow: #{$select-arrow-dark};
+  --background-body: #{vars.$background-body-dark};
+  --background: #{vars.$background-dark};
+  --background-alt: #{vars.$background-alt-dark};
+  --text-main: #{vars.$text-main-dark};
+  --text-bright: #{vars.$text-bright-dark};
+  --text-muted: #{vars.$text-muted-dark};
+  --links: #{vars.$links-dark};
+  --border: #{vars.$border-dark};
+  --code: #{vars.$code-dark};
+  --focus: #{vars.$focus-color-dark};
+  --selection: #{vars.$selection-color-dark};
+  --highlight: #{vars.$highlight-color-dark};
+  --variable: #{vars.$variable-color-dark};
+  --form-text: #{vars.$form-text-dark};
+  --form-placeholder: #{vars.$form-placeholder-dark};
+  --button-base: #{vars.$button-base-dark};
+  --button-hover: #{vars.$button-hover-dark};
+  --secondary: #{vars.$secondary};
+  --secondary-hover: #{vars.$secondary-hover-dark};
+  --secondary-focus: #{vars.$secondary-focus-dark};
+  --scrollbar-thumb: #{vars.$scrollbar-thumb-dark};
+  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-dark};
+  --select-arrow: #{vars.$select-arrow-dark};
 }
 
 // Transition Mixins
 // =============================================================================
 @mixin smooth-transition($properties: all) {
-  transition: #{$properties} $animation-duration $transition-timing;
+  transition: #{$properties} vars.$animation-duration vars.$transition-timing;
 }
 
 @mixin form-transition {
   transition:
-    background-color $animation-duration $transition-timing,
-    border-color $animation-duration $transition-timing,
-    color $animation-duration $transition-timing,
-    box-shadow $animation-duration $transition-timing,
-    transform $animation-duration $transition-timing-ease;
+    background-color vars.$animation-duration vars.$transition-timing,
+    border-color vars.$animation-duration vars.$transition-timing,
+    color vars.$animation-duration vars.$transition-timing,
+    box-shadow vars.$animation-duration vars.$transition-timing,
+    transform vars.$animation-duration vars.$transition-timing-ease;
 }
 
 // Form Element Mixins
@@ -123,7 +131,7 @@
   font-family: inherit;
   font-size: inherit;
   border: none;
-  border-radius: $border-radius-base;
+  border-radius: vars.$border-radius-base;
   outline: none;
   color: var(--form-text);
   background-color: var(--background);
@@ -141,7 +149,7 @@
   @include form-element-base;
   padding: 8px;
   cursor: pointer;
-  background-color: var(--button-base);
+  background-color: var(--primary);
   
   &:hover {
     background: var(--button-hover);
@@ -180,9 +188,9 @@
 // Layout Mixins
 // =============================================================================
 @mixin container {
-  max-width: $max-width;
+  max-width: vars.$max-width;
   margin: 0 auto;
-  padding: 0 $padding-base;
+  padding: 0 vars.$padding-base;
 }
 
 @mixin clearfix {
@@ -206,12 +214,12 @@
 
   &::-webkit-scrollbar-track {
     background: var(--background);
-    border-radius: $border-radius-base;
+    border-radius: vars.$border-radius-base;
   }
 
   &::-webkit-scrollbar-thumb {
     background: var(--scrollbar-thumb);
-    border-radius: $border-radius-base;
+    border-radius: vars.$border-radius-base;
 
     &:hover {
       background: var(--scrollbar-thumb-hover);
@@ -225,13 +233,13 @@
   margin-bottom: 0;
   margin-top: 0;
   color: var(--text-bright);
-  font-weight: $font-weight-bold;
+  font-weight: vars.$font-weight-normal;
 }
 
 @mixin code-styles {
   background: var(--background);
   color: var(--code);
-  border-radius: $border-radius-base;
+  border-radius: vars.$border-radius-base;
   font-size: var(--text-sm);
 }
 

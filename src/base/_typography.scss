@@ -2,6 +2,9 @@
 // TYPOGRAPHY
 // =============================================================================
 
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
 // Headings
 // =============================================================================
 h1 { font-size: var(--text-xxl); }
@@ -12,11 +15,11 @@ h5 { font-size: var(--text-base); }
 h6 { font-size: var(--text-s); }
 
 h1, h2, h3, h4, h5, h6, p {
-  @include heading-styles;
+  @include mixins.heading-styles;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, th {
-  font-weight: $font-weight-bold;
+  font-weight: vars.$font-weight-bold;
 }
 
 // Text Elements
@@ -33,7 +36,7 @@ q::after {
 }
 
 blockquote, q {
-  @include focus-border;
+  @include mixins.focus-border;
   margin: 1.5em 0;
   padding: 0.5em 1em;
   font-style: italic;
@@ -57,24 +60,24 @@ address {
 // Contact Links with Icons
 // =============================================================================
 a[href^='mailto:'] {
-  @include contact-icon('📧 ');
+  @include mixins.contact-icon('📧 ');
 }
 
 a[href^='tel:'] {
-  @include contact-icon('📞 ');
+  @include mixins.contact-icon('📞 ');
 }
 
 a[href^='sms:'] {
-  @include contact-icon('💬 ');
+  @include mixins.contact-icon('💬 ');
 }
 
 // Mark & Highlight
 // =============================================================================
 mark {
   background-color: var(--highlight);
-  border-radius: $border-radius-small;
+  border-radius: vars.$border-radius-small;
   padding: 0 2px 0 2px;
-  color: $code-light;
+  color: vars.$code-light;
 }
 
 // Links
@@ -96,7 +99,7 @@ a {
 // Code Elements
 // =============================================================================
 code, samp, time {
-  @include code-styles;
+  @include mixins.code-styles;
   padding: 2.5px 5px;
 }
 
@@ -119,15 +122,15 @@ pre > code {
 var {
   color: var(--variable);
   font-style: normal;
-  font-family: $font-family-mono;
+  font-family: vars.$font-family-mono;
 }
 
 // Keyboard Input
 // =============================================================================
 kbd {
-  @include code-styles;
-  @include border-accent;
-  border-radius: $border-radius-small;
+  @include mixins.code-styles;
+  @include mixins.border-accent;
+  border-radius: vars.$border-radius-small;
   color: var(--text-main);
   padding: 2px 4px 2px 4px;
 }

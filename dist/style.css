@@ -73,6 +73,9 @@
   --form-placeholder: #949494;
   --button-base: #d0cfcf;
   --button-hover: #9b9b9b;
+  --secondary: hsl(23, 84%, 73%);
+  --secondary-hover: hsl(23, 84%, 65%);
+  --secondary-focus: hsla(23, 84%, 73%, 0.4);
   --scrollbar-thumb: rgb(170, 170, 170);
   --scrollbar-thumb-hover: #9b9b9b;
   --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
@@ -96,6 +99,9 @@
     --form-placeholder: #a9a9a9;
     --button-base: #0c151c;
     --button-hover: #040a0f;
+    --secondary: hsl(23, 84%, 73%);
+    --secondary-hover: hsl(23, 84%, 80%);
+    --secondary-focus: hsla(23, 84%, 73%, 0.6);
     --scrollbar-thumb: #040a0f;
     --scrollbar-thumb-hover: rgb(0, 0, 0);
     --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
@@ -173,7 +179,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0;
   margin-top: 0;
   color: var(--text-bright);
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, th {
@@ -364,7 +370,7 @@ button {
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
-  background-color: var(--button-base);
+  background-color: var(--primary);
   padding-right: 16px;
   padding-left: 16px;
 }
@@ -385,6 +391,84 @@ button:disabled {
   opacity: 0.5;
 }
 
+.btn-secondary {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  color: var(--form-text);
+  background-color: var(--background);
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
+  padding: 8px;
+  cursor: pointer;
+  background-color: var(--primary);
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: var(--secondary);
+  color: var(--text-bright);
+}
+.btn-secondary:hover {
+  background: var(--button-hover);
+}
+.btn-secondary:focus {
+  box-shadow: 0 0 0 2px var(--focus);
+}
+.btn-secondary:active {
+  transform: translateY(2px);
+}
+.btn-secondary:hover {
+  background-color: var(--secondary-hover);
+  border: 1px var(--secondary) solid;
+}
+.btn-secondary:focus {
+  box-shadow: 0 0 0 2px var(--secondary-focus);
+}
+.btn-secondary:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-secondary-outline {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: 6px;
+  outline: none;
+  color: var(--form-text);
+  background-color: var(--background);
+  transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
+  padding: 8px;
+  cursor: pointer;
+  background-color: var(--primary);
+  padding-right: 16px;
+  padding-left: 16px;
+  background-color: transparent;
+  color: var(--secondary);
+  border: 2px solid var(--secondary);
+}
+.btn-secondary-outline:hover {
+  background: var(--button-hover);
+}
+.btn-secondary-outline:focus {
+  box-shadow: 0 0 0 2px var(--focus);
+}
+.btn-secondary-outline:active {
+  transform: translateY(2px);
+}
+.btn-secondary-outline:hover {
+  background-color: var(--secondary);
+  color: var(--text-bright);
+  border-color: var(--secondary);
+}
+.btn-secondary-outline:focus {
+  box-shadow: 0 0 0 2px var(--secondary-focus);
+}
+.btn-secondary-outline:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
 input[type=submit],
 input[type=reset],
 input[type=button] {
@@ -398,7 +482,7 @@ input[type=button] {
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
-  background-color: var(--button-base);
+  background-color: var(--primary);
   padding-right: 30px;
   padding-left: 30px;
 }

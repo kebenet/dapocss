@@ -2,6 +2,9 @@
 // LAYOUT COMPONENTS
 // =============================================================================
 
+@use '../abstracts/variables' as vars;
+@use '../abstracts/mixins' as mixins;
+
 // Footer
 // =============================================================================
 footer {
@@ -16,7 +19,7 @@ body > footer {
 
 // Print Styles
 // =============================================================================
-@include print-styles {
+@include mixins.print-styles {
   body,
   pre,
   code,
@@ -25,7 +28,7 @@ body > footer {
   button,
   input,
   textarea {
-    @include print-reset;
+    @include mixins.print-reset;
   }
 
   button,
