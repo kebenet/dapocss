@@ -1,0 +1,138 @@
+// =============================================================================
+// DAPOCSS VARIABLES
+// =============================================================================
+
+// Brand Colors
+// =============================================================================
+$primary: hsla(163, 53%, 38%, 1);
+$primary-2: hsla(163, 53%, 38%, 0.2);
+$primary-44: hsla(163, 53%, 38%, 0.44);
+$primary-08: hsla(163, 53%, 38%, 0.08);
+
+$secondary: hsla(23, 84%, 73%, 1);
+$secondary-02: hsla(23, 84%, 73%, 0.2);
+$secondary-44: hsla(23, 84%, 73%, 0.44);
+$secondary-08: hsla(23, 84%, 73%, 0.08);
+
+// Typography Scale
+// =============================================================================
+$text-s: clamp(0.8rem, 0.25vi + 0.74rem, 0.94rem);
+$text-base: clamp(1rem, 0.45vi + 0.89rem, 1.25rem);
+$text-m: clamp(1.25rem, 0.76vi + 1.06rem, 1.67rem);
+$text-l: clamp(1.56rem, 1.2vi + 1.26rem, 2.22rem);
+$text-xl: clamp(1.95rem, 1.83vi + 1.5rem, 2.96rem);
+$text-xxl: clamp(2.44rem, 2.74vi + 1.76rem, 3.95rem);
+$text-xxxl: clamp(3.05rem, 4.02vi + 2.05rem, 5.26rem);
+
+// Fallback Typography (for browsers without clamp support)
+$text-s-fallback: 0.8rem;
+$text-base-fallback: 1rem;
+$text-m-fallback: 1.25rem;
+$text-l-fallback: 1.56rem;
+$text-xl-fallback: 1.95rem;
+$text-xxl-fallback: 2.44rem;
+$text-xxxl-fallback: 3.05rem;
+
+// Large screen typography
+$text-s-large: 0.94rem;
+$text-base-large: 1.25rem;
+$text-m-large: 1.67rem;
+$text-l-large: 2.22rem;
+$text-xl-large: 2.96rem;
+$text-xxl-large: 3.95rem;
+$text-xxxl-large: 5.26rem;
+
+// Font Configuration
+// =============================================================================
+$font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+$font-family-mono: monospace;
+$line-height-base: 1.4;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+// Colors (Light Theme)
+// =============================================================================
+$background-body-light: $primary-08;
+$background-light: $primary-08;
+$background-alt-light: #f7f7f7;
+$text-main-light: #363636;
+$text-bright-light: #212121;
+$text-muted-light: #70777f;
+$links-light: $primary;
+$border-light: $primary;
+$code-light: #000;
+
+// Colors (Dark Theme)
+// =============================================================================
+$background-body-dark: #202b38;
+$background-dark: #161f27;
+$background-alt-dark: #1a242f;
+$text-main-dark: #dbdbdb;
+$text-bright-dark: #fff;
+$text-muted-dark: #a9b1ba;
+$links-dark: #41adff;
+$border-dark: #526980;
+$code-dark: #ffbe85;
+
+// UI Colors
+// =============================================================================
+$focus-color: $primary-44;
+$focus-color-dark: #0096bfab;
+$selection-color: $primary-44;
+$selection-color-dark: #1c76c5;
+$highlight-color: $primary;
+$highlight-color-dark: #efdb43;
+$variable-color: #39a33c;
+$variable-color-dark: #d941e2;
+
+// Form Colors
+// =============================================================================
+$form-text-light: #1d1d1d;
+$form-text-dark: #fff;
+$form-placeholder-light: #949494;
+$form-placeholder-dark: #a9a9a9;
+
+// Button Colors
+// =============================================================================
+$button-base-light: #d0cfcf;
+$button-base-dark: #0c151c;
+$button-hover-light: #9b9b9b;
+$button-hover-dark: #040a0f;
+
+// Scrollbar Colors
+// =============================================================================
+$scrollbar-thumb-light: rgb(170, 170, 170);
+$scrollbar-thumb-dark: #040a0f;
+$scrollbar-thumb-hover-light: #9b9b9b;
+$scrollbar-thumb-hover-dark: rgb(0, 0, 0);
+
+// Spacing & Layout
+// =============================================================================
+$max-width: 1100px;
+$padding-base: 8px;
+$margin-base: 10px;
+$border-radius-base: 6px;
+$border-radius-small: 2px;
+$border-radius-large: 3px;
+
+// Animation
+// =============================================================================
+$animation-duration: 0.1s;
+$transition-timing: linear;
+$transition-timing-ease: ease;
+
+// Breakpoints
+// =============================================================================
+$breakpoint-large: 1280px;
+
+// Z-index
+// =============================================================================
+$z-index-modal: 1000;
+$z-index-dropdown: 100;
+$z-index-header: 50;
+
+// SVG Icons
+// =============================================================================
+$select-arrow-light: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+
+$select-arrow-dark: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");

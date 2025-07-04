@@ -1,0 +1,268 @@
+// =============================================================================
+// DAPOCSS MIXINS
+// =============================================================================
+
+// Media Query Mixins
+// =============================================================================
+@mixin large-screen {
+  @media screen and (min-width: $breakpoint-large) {
+    @content;
+  }
+}
+
+@mixin dark-theme {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+@mixin print-styles {
+  @media print {
+    @content;
+  }
+}
+
+// Typography Mixins
+// =============================================================================
+@mixin typography-scale($supports-clamp: true) {
+  @if $supports-clamp {
+    --text-s: #{$text-s};
+    --text-base: #{$text-base};
+    --text-m: #{$text-m};
+    --text-l: #{$text-l};
+    --text-xl: #{$text-xl};
+    --text-xxl: #{$text-xxl};
+    --text-xxxl: #{$text-xxxl};
+  } @else {
+    --text-s: #{$text-s-fallback};
+    --text-base: #{$text-base-fallback};
+    --text-m: #{$text-m-fallback};
+    --text-l: #{$text-l-fallback};
+    --text-xl: #{$text-xl-fallback};
+    --text-xxl: #{$text-xxl-fallback};
+    --text-xxxl: #{$text-xxxl-fallback};
+  }
+}
+
+@mixin typography-scale-large {
+  --text-s: #{$text-s-large};
+  --text-base: #{$text-base-large};
+  --text-m: #{$text-m-large};
+  --text-l: #{$text-l-large};
+  --text-xl: #{$text-xl-large};
+  --text-xxl: #{$text-xxl-large};
+  --text-xxxl: #{$text-xxxl-large};
+}
+
+// Theme Mixins
+// =============================================================================
+@mixin light-theme-colors {
+  --background-body: #{$background-body-light};
+  --background: #{$background-light};
+  --background-alt: #{$background-alt-light};
+  --text-main: #{$text-main-light};
+  --text-bright: #{$text-bright-light};
+  --text-muted: #{$text-muted-light};
+  --links: #{$links-light};
+  --border: #{$border-light};
+  --code: #{$code-light};
+  --focus: #{$focus-color};
+  --selection: #{$selection-color};
+  --highlight: #{$highlight-color};
+  --variable: #{$variable-color};
+  --form-text: #{$form-text-light};
+  --form-placeholder: #{$form-placeholder-light};
+  --button-base: #{$button-base-light};
+  --button-hover: #{$button-hover-light};
+  --scrollbar-thumb: #{$scrollbar-thumb-light};
+  --scrollbar-thumb-hover: #{$scrollbar-thumb-hover-light};
+  --select-arrow: #{$select-arrow-light};
+}
+
+@mixin dark-theme-colors {
+  --background-body: #{$background-body-dark};
+  --background: #{$background-dark};
+  --background-alt: #{$background-alt-dark};
+  --text-main: #{$text-main-dark};
+  --text-bright: #{$text-bright-dark};
+  --text-muted: #{$text-muted-dark};
+  --links: #{$links-dark};
+  --border: #{$border-dark};
+  --code: #{$code-dark};
+  --focus: #{$focus-color-dark};
+  --selection: #{$selection-color-dark};
+  --highlight: #{$highlight-color-dark};
+  --variable: #{$variable-color-dark};
+  --form-text: #{$form-text-dark};
+  --form-placeholder: #{$form-placeholder-dark};
+  --button-base: #{$button-base-dark};
+  --button-hover: #{$button-hover-dark};
+  --scrollbar-thumb: #{$scrollbar-thumb-dark};
+  --scrollbar-thumb-hover: #{$scrollbar-thumb-hover-dark};
+  --select-arrow: #{$select-arrow-dark};
+}
+
+// Transition Mixins
+// =============================================================================
+@mixin smooth-transition($properties: all) {
+  transition: #{$properties} $animation-duration $transition-timing;
+}
+
+@mixin form-transition {
+  transition:
+    background-color $animation-duration $transition-timing,
+    border-color $animation-duration $transition-timing,
+    color $animation-duration $transition-timing,
+    box-shadow $animation-duration $transition-timing,
+    transform $animation-duration $transition-timing-ease;
+}
+
+// Form Element Mixins
+// =============================================================================
+@mixin form-element-base {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  border-radius: $border-radius-base;
+  outline: none;
+  color: var(--form-text);
+  background-color: var(--background);
+  @include form-transition;
+}
+
+@mixin input-base {
+  @include form-element-base;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  padding: 10px;
+}
+
+@mixin button-base {
+  @include form-element-base;
+  padding: 8px;
+  cursor: pointer;
+  background-color: var(--button-base);
+  
+  &:hover {
+    background: var(--button-hover);
+  }
+  
+  &:focus {
+    box-shadow: 0 0 0 2px var(--focus);
+  }
+  
+  &:active {
+    transform: translateY(2px);
+  }
+}
+
+@mixin button-input {
+  @include button-base;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+// Focus States
+// =============================================================================
+@mixin focus-ring {
+  box-shadow: 0 0 0 2px var(--focus);
+}
+
+// Disabled States
+// =============================================================================
+@mixin disabled-state {
+  &:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+}
+
+// Layout Mixins
+// =============================================================================
+@mixin container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $padding-base;
+}
+
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// Scrollbar Mixins
+// =============================================================================
+@mixin scrollbar-styling {
+  scrollbar-color: var(--scrollbar-thumb) var(--background-body);
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    height: 10px;
+    width: 10px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: var(--background);
+    border-radius: $border-radius-base;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: $border-radius-base;
+
+    &:hover {
+      background: var(--scrollbar-thumb-hover);
+    }
+  }
+}
+
+// Content Mixins
+// =============================================================================
+@mixin heading-styles {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: var(--text-bright);
+  font-weight: $font-weight-bold;
+}
+
+@mixin code-styles {
+  background: var(--background);
+  color: var(--code);
+  border-radius: $border-radius-base;
+  font-size: var(--text-sm);
+}
+
+// Border Styles
+// =============================================================================
+@mixin border-accent {
+  border: 1px solid var(--border);
+}
+
+@mixin focus-border {
+  border-left: 4px solid var(--focus);
+}
+
+// Icon Mixins
+// =============================================================================
+@mixin contact-icon($icon) {
+  &::before {
+    content: $icon;
+  }
+}
+
+// Selection Styles
+// =============================================================================
+@mixin selection-styles {
+  background-color: var(--selection);
+  color: var(--text-bright);
+}
+
+// Print Mixins
+// =============================================================================
+@mixin print-reset {
+  background-color: #fff !important;
+  color: #000 !important;
+}

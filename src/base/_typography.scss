@@ -1,0 +1,133 @@
+// =============================================================================
+// TYPOGRAPHY
+// =============================================================================
+
+// Headings
+// =============================================================================
+h1 { font-size: var(--text-xxl); }
+h2 { font-size: var(--text-xl); }
+h3 { font-size: var(--text-l); }
+h4 { font-size: var(--text-m); }
+h5 { font-size: var(--text-base); }
+h6 { font-size: var(--text-s); }
+
+h1, h2, h3, h4, h5, h6, p {
+  @include heading-styles;
+}
+
+h1, h2, h3, h4, h5, h6, b, strong, th {
+  font-weight: $font-weight-bold;
+}
+
+// Text Elements
+// =============================================================================
+strong {
+  color: var(--text-bright);
+}
+
+// Quote Elements
+// =============================================================================
+q::before,
+q::after {
+  content: none;
+}
+
+blockquote, q {
+  @include focus-border;
+  margin: 1.5em 0;
+  padding: 0.5em 1em;
+  font-style: italic;
+}
+
+blockquote > footer {
+  font-style: normal;
+  border: 0;
+}
+
+blockquote cite {
+  font-style: normal;
+}
+
+// Address
+// =============================================================================
+address {
+  font-style: normal;
+}
+
+// Contact Links with Icons
+// =============================================================================
+a[href^='mailto:'] {
+  @include contact-icon('📧 ');
+}
+
+a[href^='tel:'] {
+  @include contact-icon('📞 ');
+}
+
+a[href^='sms:'] {
+  @include contact-icon('💬 ');
+}
+
+// Mark & Highlight
+// =============================================================================
+mark {
+  background-color: var(--highlight);
+  border-radius: $border-radius-small;
+  padding: 0 2px 0 2px;
+  color: $code-light;
+}
+
+// Links
+// =============================================================================
+a {
+  text-decoration: none;
+  color: var(--links);
+  
+  &:hover {
+    text-decoration: underline;
+  }
+  
+  > code,
+  > strong {
+    color: inherit;
+  }
+}
+
+// Code Elements
+// =============================================================================
+code, samp, time {
+  @include code-styles;
+  padding: 2.5px 5px;
+}
+
+code {
+  font-size: var(--text-sm);
+}
+
+samp, time {
+  font-size: var(--text-base);
+}
+
+pre > code {
+  padding: 10px;
+  display: block;
+  overflow-x: auto;
+}
+
+// Variables
+// =============================================================================
+var {
+  color: var(--variable);
+  font-style: normal;
+  font-family: $font-family-mono;
+}
+
+// Keyboard Input
+// =============================================================================
+kbd {
+  @include code-styles;
+  @include border-accent;
+  border-radius: $border-radius-small;
+  color: var(--text-main);
+  padding: 2px 4px 2px 4px;
+}

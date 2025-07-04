@@ -1,0 +1,51 @@
+// =============================================================================
+// TABLES
+// =============================================================================
+
+// Table Base
+// =============================================================================
+table {
+  border-collapse: collapse;
+  margin-bottom: $margin-base;
+  width: 100%;
+  table-layout: fixed;
+  
+  caption {
+    text-align: left;
+  }
+}
+
+// Table Cells
+// =============================================================================
+td, th {
+  padding: 6px;
+  text-align: left;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+// Table Sections
+// =============================================================================
+thead {
+  @include border-accent;
+  border-bottom: 1px solid var(--border);
+}
+
+tfoot {
+  @include border-accent;
+  border-top: 1px solid var(--border);
+}
+
+// Table Row Styling
+// =============================================================================
+tbody tr:nth-child(even) {
+  background-color: var(--background);
+  
+  button {
+    background-color: var(--background-alt);
+    
+    &:hover {
+      background-color: var(--background-body);
+    }
+  }
+}

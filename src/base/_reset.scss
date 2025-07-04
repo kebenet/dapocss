@@ -1,0 +1,85 @@
+// =============================================================================
+// BASE RESET & FOUNDATION
+// =============================================================================
+
+// Box Sizing Reset
+// =============================================================================
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Root Variables & Typography Scale
+// =============================================================================
+// For browsers that support clamp
+@supports (font-size: clamp(1rem, 1vi, 1rem)) {
+  :root {
+    @include typography-scale(true);
+  }
+}
+
+// For browsers that don't support clamp
+@supports not (font-size: clamp(1rem, 1vi, 1rem)) {
+  :root {
+    @include typography-scale(false);
+    
+    @include large-screen {
+      @include typography-scale-large;
+    }
+  }
+}
+
+// Root Theme Variables
+// =============================================================================
+:root {
+  // Brand colors as CSS custom properties
+  --primary: #{$primary};
+  --primary-2: #{$primary-2};
+  --primary-44: #{$primary-44};
+  --primary-08: #{$primary-08};
+  --secondary: #{$secondary};
+  --secondary-02: #{$secondary-02};
+  --secondary-44: #{$secondary-44};
+  --secondary-08: #{$secondary-08};
+  
+  // Animation
+  --animation-duration: #{$animation-duration};
+  
+  // Light theme colors (default)
+  @include light-theme-colors;
+  
+  // Dark theme colors
+  @include dark-theme {
+    @include dark-theme-colors;
+  }
+}
+
+// Base HTML Element
+// =============================================================================
+html {
+  font-size: 100%;
+  @include scrollbar-styling;
+}
+
+// Body Element
+// =============================================================================
+body {
+  font-family: $font-family-base;
+  line-height: $line-height-base;
+  @include container;
+  word-wrap: break-word;
+  color: var(--text-main);
+  background: var(--background-body);
+  text-rendering: optimizeLegibility;
+}
+
+// Selection Styles
+// =============================================================================
+::-moz-selection {
+  @include selection-styles;
+}
+
+::selection {
+  @include selection-styles;
+}

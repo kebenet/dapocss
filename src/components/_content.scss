@@ -1,0 +1,96 @@
+// =============================================================================
+// CONTENT COMPONENTS
+// =============================================================================
+
+// Media Elements
+// =============================================================================
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+// Horizontal Rule
+// =============================================================================
+hr {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+// Details & Summary
+// =============================================================================
+details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: var(--background-alt);
+  padding: 10px 10px 0;
+  margin: 1em 0;
+  border-radius: $border-radius-base;
+  overflow: hidden;
+  
+  &[open] {
+    padding: 10px;
+    
+    summary {
+      margin-bottom: 10px;
+    }
+  }
+  
+  > :last-child {
+    margin-bottom: 0;
+  }
+  
+  > :not(summary) {
+    margin-top: 0;
+  }
+}
+
+summary {
+  display: list-item;
+  background-color: var(--background);
+  padding: 10px;
+  margin: -10px -10px 0;
+  cursor: pointer;
+  outline: none;
+  
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+  
+  &::-webkit-details-marker {
+    color: var(--text-main);
+  }
+}
+
+// Dialog Element
+// =============================================================================
+dialog {
+  background-color: var(--background-alt);
+  color: var(--text-main);
+  border: none;
+  border-radius: $border-radius-base;
+  border-color: var(--border);
+  padding: 10px 30px;
+  
+  > header:first-child {
+    background-color: var(--background);
+    border-radius: $border-radius-base $border-radius-base 0 0;
+    margin: -10px -30px 10px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  &::-webkit-backdrop {
+    background: #0000009c;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+  
+  &::backdrop {
+    background: #0000009c;
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+  }
+}
