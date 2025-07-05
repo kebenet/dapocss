@@ -5,7 +5,7 @@
 // Brand Colors
 // =============================================================================
 $primary: hsla(163, 53%, 38%, 1);
-$primary-2: hsla(163, 53%, 38%, 0.2);
+$primary-20: hsla(163, 53%, 38%, 0.2);
 $primary-44: hsla(163, 53%, 38%, 0.44);
 $primary-08: hsla(163, 53%, 38%, 0.08);
 
@@ -13,7 +13,7 @@ $secondary: hsla(23, 84%, 73%, 1);
 $secondary-02: hsla(23, 84%, 73%, 0.2);
 $secondary-44: hsla(23, 84%, 73%, 0.44);
 $secondary-08: hsla(23, 84%, 73%, 0.08);
-
+$text-muted: #70777f;
 // Typography Scale
 // =============================================================================
 $text-s: clamp(0.8rem, 0.25vi + 0.74rem, 0.94rem);
@@ -53,8 +53,8 @@ $font-weight-bold: 700;
 // Colors (Light Theme)
 // =============================================================================
 $background-body-light: $primary-08;
-$background-light: $primary-08;
-$background-alt-light: #f7f7f7;
+$background-light: $primary-20;
+$background-alt-light: $primary-44;
 $text-main-light: #363636;
 $text-bright-light: #212121;
 $text-muted-light: #70777f;
@@ -118,7 +118,8 @@ $scrollbar-thumb-hover-dark: rgb(0, 0, 0);
 $max-width: 1100px;
 $padding-base: 8px;
 $margin-base: 10px;
-$border-radius-base: 6px;
+$margin-VA: 78px;
+$border-radius-base: 7px;
 $border-radius-small: 2px;
 $border-radius-large: 3px;
 

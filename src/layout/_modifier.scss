@@ -1,0 +1,47 @@
+
+
+@use '../abstracts/variables' as vars;
+
+// =============================================================================
+// 2. CREATE COLOR MAPS
+// These maps link the class name suffix to the color variable.
+// =============================================================================
+$background-colors: (
+  "light": vars.$background-body-light,
+  "light-light": vars.$background-alt-light,
+  "dark": vars.$background-body-dark,
+  "dark-dark": vars.$background-dark,
+  "primary": vars.$primary,
+  "primary-light": vars.$primary-20,
+  "primary-light-light": vars.$primary-08,
+  "secondary": vars.$secondary,
+  "secondary-light": vars.$secondary-02,
+  "secondary-light-light": vars.$secondary-08
+);
+
+$text-colors: (
+  "primary": vars.$primary,
+  "secondary": vars.$secondary,
+  "dark": vars.$text-main-dark,
+  "light": vars.$text-bright-light
+);
+
+
+// =============================================================================
+// 3. GENERATE ATTRIBUTE-BASED UTILITIES WITH @EACH LOOPS
+// These loops automatically create all the CSS attribute selectors for you.
+// =============================================================================
+
+// Loop for background colors
+@each $name, $color in $background-colors {
+  [bg="#{$name}"] {
+    background-color: $color ; // Use !important to ensure utility styles override others
+  }
+}
+
+// Loop for text colors
+@each $name, $color in $text-colors {
+  [color="#{$name}"] {
+    color: $color ;
+  }
+}

@@ -20,6 +20,13 @@ hr {
   margin: 0;
 }
 
+hr[secondary] {
+    border-top-color: var(--secondary);
+}
+hr[primary] {
+    border-top-color: var(--primary);
+}
+
 // Details & Summary
 // =============================================================================
 details {
