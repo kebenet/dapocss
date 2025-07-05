@@ -1,29 +1,29 @@
 
 
 
-    --va-text-dark: #212121;
-    --va-text-medium: #616161;
-    --va-text-light: #9e9e9e;
-    --va-text-info: #00b0f4;
-    --va-text-success: #11b76b;
-    --va-text-warning: #ffa100;
-    --va-text-danger: #800000;
-    
-    --va-bg-info: #e5f3ff;
-    --va-bg-success: #e6f6ed;
-    --va-bg-warning: #fff2d7;
-    --va-bg-danger: #ffe6ec;
-    --va-bg-dark: #263238;
-    --va-bg-light: #f5f6f7;
-    --va-tooltip-bg: #23282d;
-    --va-tooltip-text: #eaecef;
-    --renova: #132129;
+--color-dark: #212121;
+--color-medium: #616161;
+--color-light: #9e9e9e;
+--color-info: #00b0f4;
+--color-success: #11b76b;
+--color-warning: #ffa100;
+--color-danger: #800000;
+--color-tooltip: #eaecef;
 
-    --dark: #212121;
-    --light: hsla(192, 33%, 97%, 1);
-    --muted: #70777f;
-    --site-bg: hsla(158, 32%, 88%, 1);
-    --error: hsla(4, 100%, 64%, 1);
+--bg-info: #e5f3ff;
+--bg-success: #e6f6ed;
+--bg-warning: #fff2d7;
+--bg-danger: #ffe6ec;
+--bg-dark: #263238;
+--bg-light: #f5f6f7;
+--bg-tooltip: #23282d;
+--renova: #132129;
+
+--dark: #212121;
+--light: hsla(192, 33%, 97%, 1);
+--muted: #70777f;
+--site-bg: hsla(158, 32%, 88%, 1);
+--error: hsla(4, 100%, 64%, 1);
     // =============================================================================
 // LAYOUT MODIFIERS
 // =============================================================================
@@ -70,7 +70,7 @@ $background-colors: (
 $text-colors: (
   "primary": $primary,
   "secondary": $secondary,
-  
+
   "dark": $text-main-dark,
   "light": $text-bright-light,
   "muted": $text-muted

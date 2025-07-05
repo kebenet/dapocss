@@ -1,5 +1,4 @@
-
-@use '../abstracts/variables' as vars;
+@use '../abstracts/variables'as vars;
 
 
 // =============================================================================
@@ -8,15 +7,34 @@
 
 // Section Layout Bricks style
 
-section{width: var(--max-width); }
-container, .container{ width: 100%; }
-section, container, .container, card, grid{max-width: 100%; }
+section {
+    width: var(--max-width);
+}
+
+container,
+.container {
+    width: 100%;
+}
+
+section,
+container,
+.container,
+card,
+grid {
+    max-width: 100%;
+}
 
 
-section{ margin-top: vars.$margin-VA; }
-section:last-child {margin-bottom: vars.$margin-VA; }
+section {
+    margin-top: vars.$margin-VA;
+}
 
-container, .container{
+section:last-child {
+    margin-bottom: vars.$margin-VA;
+}
+
+container,
+.container {
     display: grid;
     align-items: center;
     margin-left: auto;
@@ -24,18 +42,19 @@ container, .container{
 }
 
 
-section[gap] > .row{
-  grid-gap: clamp(0.5em, 2vw + 0.1em, 3em);
-  padding: clamp(0.5em, 2vw + 0.1em, 3em);
+section[gap]>.row {
+    grid-gap: clamp(0.5em, 2vw + 0.1em, 3em);
+    padding: clamp(0.5em, 2vw + 0.1em, 3em);
 }
 
-section[pad] > .row{
-  padding: clamp(0.5em, 2vw + 0.1em, 3em);
+section[pad]>.row {
+    padding: clamp(0.5em, 2vw + 0.1em, 3em);
 }
 
-.pad, [pad] {
-  padding-left: clamp(0.1em, 2vw + 0.1em, 3em);
-  padding-right: clamp(0.1em, 2vw + 0.1em, 3em);
+.pad,
+[pad] {
+    padding-left: clamp(0.1em, 2vw + 0.1em, 3em);
+    padding-right: clamp(0.1em, 2vw + 0.1em, 3em);
 }
 
 
@@ -44,59 +63,91 @@ section[pad] > .row{
 // =============================================================================
 
 
-card,
-card > content,
-card > footer {
-  display: grid;
-  // gap: vars.$padding-base;
+card, block,
+card>content,
+card>footer {
+    display: grid;
+    // gap: vars.$padding-base;
 }
 
 card {
 
-  // Adding overflow: hidden; to the parent card clips the child's border radius.
+    // Adding overflow: hidden; to the parent card clips the child's border radius.
 
-  background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 100%;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
 
 }
 
 card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-card > img {
-  /* border-top-left-radius: 12px;
-  border-top-right-radius: 12px; */
-  width: 100%; /* Ensure image fills its container */
-  aspect-ratio: 16/9;
-  object-fit: cover; /* Cover the area without distorting aspect ratio */
+card>img {
+    width: 100%;
+    /* Ensure image fills its container */
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* Cover the area without distorting aspect ratio */
 }
 
-card > content {padding: vars.$padding-base; }
+div[ratio-1]>card>img   {aspect-ratio: 1/1; }
+div[ratio-169]>card>img {aspect-ratio: 1/1; }
 
-// card > header {
-//   // background-color: white;
-// }
+card>content {
+    padding: vars.$padding-base;
+}
 
 // card modifier
 // Automatic add top Radius on card
 [radius] {
-  overflow: hidden;
-  border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
+    overflow: hidden;
+    border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
 }
 
 // Card automatic Color | border
 
-card[border] {border: 4px solid vars.$primary-20; }
+card[border] {
+    border: medium solid vars.$primary-20;
+}
 
-card[primary] > header {background-color: vars.$primary; }
-card[primary] { border-color: vars.$primary; }
+card[primary]>header {
+    background-color: vars.$primary;
+}
 
-card[secondary] > header {background-color: vars.$secondary; }
-card[secondary] { border-color: vars.$secondary; }
+card[primary] {
+    border-color: vars.$primary;
+}
 
-card > footer {padding: vars.$padding-base; justify-items: start; }
+card[secondary]>header {
+    background-color: vars.$secondary;
+}
 
+card[secondary] {
+    border-color: vars.$secondary;
+}
+
+card>footer {
+    padding: vars.$padding-base;
+    justify-items: start;
+}
+
+// card>* {
+//     padding: vars.$padding-base;
+// }
+
+
+// =============================================================================
+// LAYOUT Block - grid inline
+// =============================================================================
+
+block{
+  align-content: center;
+  justify-items: center;
+  // height: 500px;
+}

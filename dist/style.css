@@ -179,6 +179,7 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0;
   margin-top: 0;
   color: var(--text-bright);
+  padding-top: 8px;
   padding-left: 8px;
   padding-right: 8px;
 }
@@ -821,12 +822,14 @@ dialog::backdrop {
 
 footer {
   border-top: 1px solid var(--border);
-  padding-top: 10px;
+}
+
+footer, footer > p {
   color: var(--text-muted);
 }
 
 body > footer {
-  margin-top: 40px;
+  margin-top: 78px;
 }
 
 @media print {
@@ -871,34 +874,66 @@ body > footer {
     text-decoration: underline !important;
   }
 }
-[align=start] {
+[align-v=start] {
   align-items: start;
 }
 
-[align=center] {
+[align-v=center] {
   align-items: center;
 }
 
-[align=end] {
+[align-v=end] {
   align-items: end;
 }
 
-[justify=start] {
+[align=start] {
   justify-items: start;
 }
 
-[justify=center] {
+[align=center] {
   justify-items: center;
 }
 
-[justify=end] {
+[align=end] {
   justify-items: end;
+}
+
+[space=around] {
+  justify-content: space-around;
+}
+
+[space=between] {
+  justify-content: space-between;
+}
+
+[space=evently] {
+  justify-content: space-evenly;
+}
+
+[space-v=around] {
+  align-content: space-around;
+}
+
+[space-v=between] {
+  align-content: space-between;
+}
+
+[space-v=evently] {
+  align-content: space-evenly;
+}
+
+grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(48em, 1fr));
+}
+
+grid[two] {
+  grid-template-columns: 1fr 1fr;
 }
 
 .row {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  /* grid-gap: var(--space) var(--space); */
 }
 
 /* Base (xs) columns */
@@ -1123,15 +1158,41 @@ body > footer {
   color: #212121;
 }
 
+.pad-gap {
+  --padding: 0.5rem;
+  padding: var(--padding);
+}
+
+/* 3. Update the variable's value at each breakpoint */
+@media (min-width: 48em) {
+  .pad-gap {
+    --padding: 1rem;
+  }
+}
+@media (min-width: 64em) {
+  .pad-gap {
+    --padding: 1.5rem;
+  }
+}
+@media (min-width: 75em) {
+  .pad-gap {
+    --padding: 2rem;
+  }
+}
 section {
   width: var(--max-width);
 }
 
-container, .container {
+container,
+.container {
   width: 100%;
 }
 
-section, container, .container, card, grid {
+section,
+container,
+.container,
+card,
+grid {
   max-width: 100%;
 }
 
@@ -1143,7 +1204,8 @@ section:last-child {
   margin-bottom: 78px;
 }
 
-container, .container {
+container,
+.container {
   display: grid;
   align-items: center;
   margin-left: auto;
@@ -1159,12 +1221,13 @@ section[pad] > .row {
   padding: clamp(0.5em, 2vw + 0.1em, 3em);
 }
 
-.pad, [pad] {
+.pad,
+[pad] {
   padding-left: clamp(0.1em, 2vw + 0.1em, 3em);
   padding-right: clamp(0.1em, 2vw + 0.1em, 3em);
 }
 
-card,
+card, block,
 card > content,
 card > footer {
   display: grid;
@@ -1172,22 +1235,32 @@ card > footer {
 
 card {
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* Subtle shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   height: 100%;
 }
 
 card:hover {
-  transform: translateY(-5px); /* Lift effect on hover */
+  transform: translateY(-5px);
+  /* Lift effect on hover */
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 card > img {
-  /* border-top-left-radius: 12px;
-  border-top-right-radius: 12px; */
-  width: 100%; /* Ensure image fills its container */
+  width: 100%;
+  /* Ensure image fills its container */
   aspect-ratio: 16/9;
-  object-fit: cover; /* Cover the area without distorting aspect ratio */
+  object-fit: cover;
+  /* Cover the area without distorting aspect ratio */
+}
+
+div[ratio-1] > card > img {
+  aspect-ratio: 1/1;
+}
+
+div[ratio-169] > card > img {
+  aspect-ratio: 1/1;
 }
 
 card > content {
@@ -1200,7 +1273,7 @@ card > content {
 }
 
 card[border] {
-  border: 4px solid hsla(163, 53%, 38%, 0.2);
+  border: medium solid hsla(163, 53%, 38%, 0.2);
 }
 
 card[primary] > header {
@@ -1222,6 +1295,11 @@ card[secondary] {
 card > footer {
   padding: 8px;
   justify-items: start;
+}
+
+block {
+  align-content: center;
+  justify-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

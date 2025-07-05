@@ -17,6 +17,7 @@ h6 { font-size: var(--text-s); }
 h1, h2, h3, h4, h5, h6, p {
   @include mixins.heading-styles;
   // add default padding
+  padding-top: vars.$padding-base;
   padding-left: vars.$padding-base;
   padding-right: vars.$padding-base;
 }

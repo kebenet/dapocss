@@ -9,12 +9,12 @@
 // =============================================================================
 footer {
   border-top: 1px solid var(--border);
-  padding-top: 10px;
-  color: var(--text-muted);
+
 }
+footer, footer>p{color: var(--text-muted);}
 
 body > footer {
-  margin-top: 40px;
+  margin-top: vars.$margin-VA;
 }
 
 // Print Styles

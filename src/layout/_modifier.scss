@@ -45,3 +45,17 @@ $text-colors: (
     color: $color ;
   }
 }
+
+
+// =============================================================================
+// 2. Padding Dynamic Automatic
+// =============================================================================
+.pad-gap {
+  --padding: 0.5rem; 
+  padding: var(--padding);
+}
+
+/* 3. Update the variable's value at each breakpoint */
+@media (min-width: 48em) {.pad-gap {--padding: 1rem; } }
+@media (min-width: 64em) {.pad-gap {--padding: 1.5rem; } }
+@media (min-width: 75em) {.pad-gap {--padding: 2rem; } }
