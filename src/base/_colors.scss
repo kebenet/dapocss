@@ -56,22 +56,24 @@
 // =============================================================================
 $background-colors: (
   "light": $background-body-light,
-  "light-light": $background-alt-light,
+  "lighter": $background-alt-light,
   "dark": $background-body-dark,
-  "dark-dark": $background-dark,
+  "darker": $background-dark,
   "primary": $primary,
   "primary-light": $primary-20,
-  "primary-light-light": $primary-08,
+  "primary-lighter": $primary-08,
   "secondary": $secondary,
   "secondary-light": $secondary-2,
-  "secondary-light-light": $secondary-08
+  "secondary-lighter": $secondary-08
 );
 
 $text-colors: (
   "primary": $primary,
   "secondary": $secondary,
+  
   "dark": $text-main-dark,
-  "light": $text-bright-light
+  "light": $text-bright-light,
+  "muted": $text-muted
 );
 
 

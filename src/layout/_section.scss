@@ -6,12 +6,11 @@
 // LAYOUT Section
 // =============================================================================
 
-// Section Element
-
+// Section Layout Bricks style
 
 section{width: var(--max-width); }
 container, .container{ width: 100%; }
-section, container, .container, card, grid, row, .row{max-width: 100%; }
+section, container, .container, card, grid{max-width: 100%; }
 
 
 section{ margin-top: vars.$margin-VA; }
@@ -25,14 +24,16 @@ container, .container{
 }
 
 
-
 section[gap] > .row{
-  /* Fluid spacing */
-  gap: clamp(0.5em, 2vw + 0.1em, 3em);
+  grid-gap: clamp(0.5em, 2vw + 0.1em, 3em);
   padding: clamp(0.5em, 2vw + 0.1em, 3em);
 }
 
-.gap{
+section[pad] > .row{
+  padding: clamp(0.5em, 2vw + 0.1em, 3em);
+}
+
+.pad, [pad] {
   padding-left: clamp(0.1em, 2vw + 0.1em, 3em);
   padding-right: clamp(0.1em, 2vw + 0.1em, 3em);
 }
@@ -47,7 +48,7 @@ card,
 card > content,
 card > footer {
   display: grid;
-  gap: vars.$padding-base;
+  // gap: vars.$padding-base;
 }
 
 card {
@@ -76,10 +77,9 @@ card > img {
 
 card > content {padding: vars.$padding-base; }
 
-card > header {
-  // background-color: white;
-  padding: vars.$padding-base;
-}
+// card > header {
+//   // background-color: white;
+// }
 
 // card modifier
 // Automatic add top Radius on card
@@ -98,5 +98,5 @@ card[primary] { border-color: vars.$primary; }
 card[secondary] > header {background-color: vars.$secondary; }
 card[secondary] { border-color: vars.$secondary; }
 
-card > footer {padding: vars.$padding-base; }
+card > footer {padding: vars.$padding-base; justify-items: start; }
 

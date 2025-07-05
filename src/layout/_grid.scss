@@ -5,17 +5,18 @@
 // Grid Alignism part
 
 [align="start"] {align-items: start; }
-
 [align="center"] {align-items: center; }
-
 [align="end"] {align-items: end; }
 
+[justify="start"]   {justify-items: start; }
+[justify="center"]  {justify-items: center; }
+[justify="end"]     {justify-items: end; }
 
- // Row styles 
+ // Row styles
 
 .row {
   display: grid;
-  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  grid-template-columns: repeat(12, 1fr);
   /* grid-gap: var(--space) var(--space); */
 }
 

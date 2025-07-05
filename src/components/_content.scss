@@ -16,16 +16,12 @@ img, video {
 // =============================================================================
 hr {
   border: none;
-  border-top: 1px solid var(--border);
-  margin: 0;
+  border-top: medium solid var(--primary);
+  width: 13%;
 }
 
-hr[secondary] {
-    border-top-color: var(--secondary);
-}
-hr[primary] {
-    border-top-color: var(--primary);
-}
+hr[secondary] {border-top-color: var(--secondary); }
+hr[primary]   {border-top-color: var(--primary); }
 
 // Details & Summary
 // =============================================================================

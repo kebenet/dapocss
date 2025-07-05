@@ -5,8 +5,7 @@
   "main": "dist/style.css",
   "scripts": {
     "build": "sass src/main.scss dist/style.css --style=expanded",
-    "build:min": "sass src/main.scss dist/style.min.css --style=compressed",
-    "build:all": "npm run build && npm run build:min",
+    "build:all": "npm run build",
     "watch": "sass --watch src/main.scss:dist/style.css --style=expanded",
     "dev": "npm run watch"
   },

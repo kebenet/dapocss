@@ -179,11 +179,16 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0;
   margin-top: 0;
   color: var(--text-bright);
-  font-weight: 400;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, th {
   font-weight: 700;
+}
+
+p {
+  margin-bottom: 8px;
 }
 
 strong {
@@ -738,8 +743,8 @@ img, video {
 
 hr {
   border: none;
-  border-top: 1px solid var(--border);
-  margin: 0;
+  border-top: medium solid var(--primary);
+  width: 13%;
 }
 
 hr[secondary] {
@@ -878,9 +883,21 @@ body > footer {
   align-items: end;
 }
 
+[justify=start] {
+  justify-items: start;
+}
+
+[justify=center] {
+  justify-items: center;
+}
+
+[justify=end] {
+  justify-items: end;
+}
+
 .row {
   display: grid;
-  grid-template-columns: repeat(var(--grid-columns), 1fr);
+  grid-template-columns: repeat(12, 1fr);
   /* grid-gap: var(--space) var(--space); */
 }
 
@@ -1114,7 +1131,7 @@ container, .container {
   width: 100%;
 }
 
-section, container, .container, card, grid, row, .row {
+section, container, .container, card, grid {
   max-width: 100%;
 }
 
@@ -1134,12 +1151,15 @@ container, .container {
 }
 
 section[gap] > .row {
-  /* Fluid spacing */
-  gap: clamp(0.5em, 2vw + 0.1em, 3em);
+  grid-gap: clamp(0.5em, 2vw + 0.1em, 3em);
   padding: clamp(0.5em, 2vw + 0.1em, 3em);
 }
 
-.gap {
+section[pad] > .row {
+  padding: clamp(0.5em, 2vw + 0.1em, 3em);
+}
+
+.pad, [pad] {
   padding-left: clamp(0.1em, 2vw + 0.1em, 3em);
   padding-right: clamp(0.1em, 2vw + 0.1em, 3em);
 }
@@ -1148,7 +1168,6 @@ card,
 card > content,
 card > footer {
   display: grid;
-  gap: 8px;
 }
 
 card {
@@ -1172,10 +1191,6 @@ card > img {
 }
 
 card > content {
-  padding: 8px;
-}
-
-card > header {
   padding: 8px;
 }
 
@@ -1206,6 +1221,7 @@ card[secondary] {
 
 card > footer {
   padding: 8px;
+  justify-items: start;
 }
 
 /*# sourceMappingURL=style.css.map */

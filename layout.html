@@ -1,26 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layout Preview</title>
     <link rel="stylesheet" href="dist/style.css">
+    <style>
+        [muted]{color: var(--text-muted)}
+        [dark]{color: var(--text-muted)}
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Layout Preview with DapoCSS</h1>
-        <p>Showcasing the card, rows, columns, container, and sections.</p>
-    </header>
 
+<body>
+    <container>
+        <section>
+            <h1>Layout Preview with DapoCSS</h1>
+            <p muted>Showcasing the card, rows, columns, container, and sections.</p>
+        </section>
+    </container>
     <main class="container">
-        <section class="gap">
+        <section>
             <h2>Example Layout</h2>
             <div class="row">
-                <div class="col-6">
-                    <card primary border>
-                        <header>
-                            Card Header
-                        </header>
+                <div class="col-sm-6">
+                    <card border>
+                        <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
+                        <content>
+                            This is the content of the card. It's concise, informative, and to the point.
+                        </content>
+                        <footer>
+                            Card Footer
+                        </footer>
+                    </card>
+                </div>
+
+                <div class="col-sm-6">
+                    <card border>
+                        <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
                         <content>
                             This is the content of the card. It's concise, informative, and to the point.
                         </content>
@@ -32,15 +49,58 @@
             </div>
         </section>
 
-        <section class="gap">
+        <section bg="primary-light" gap>
+            <header>
+                <h3>Multiple Columns</h3>
+            </header>
+            <div class="row">
+                <div class="col-sm-6 col-12">
+                    <card secondary border radius>
+                        <header>
+                            <p>Card Header</p>
+                        </header>
+                        <content>
+                            This is the content of the card. It's concise, informative, and to the point.
+                        </content>
+                        <footer>
+                            Call now!
+                            <button>submit</button>
+                        </footer>
+                    </card>
+                </div>
+                <div class="col-sm-6 col-12">
+                    <card primary border radius>
+
+                        <header>
+                            <p>Card Header</p>
+                        </header>
+
+                        <content>
+                            This is the content of the card. It's concise, informative, and to the point.
+                        </content>
+
+                        <footer justify="center">
+                            Call now!
+                            <button>submit</button>
+                        </footer>
+
+                    </card>
+                </div>
+            </div>
+        </section>
+
+        <section>
             <div class="col-6">
-                <card secondary border>
-                    <header>
+                <card secondary border radius>
+                    <header justify="center">
                         <h3>Secondary Cards</h3>
-                        <h5>Headers of all the time</h5>
+                        <hr primary>
+                        <p>Headers of all the time</p>
                     </header>
                     <content>
-                        Another content section of the card. Provides additional insights and details.
+                        <blockquote class="text-xl italic font-semibold text-center text-gray-900 dark:text-white">
+                            <p>"Flowbite is just awesome. It contains tons of predesigned components and pages starting from login screen to complex dashboard. Perfect choice for your next SaaS application."</p>
+                        </blockquote>
                     </content>
                     <footer>
                         Another Footer
@@ -49,10 +109,10 @@
             </div>
         </section>
 
-        <section class="gap">
+        <section>
             <div class="col-6">
                 <card radius secondary>
-                    <header >
+                    <header>
                         <h3>New Secondary Cards</h3>
                     </header>
                     <content>
@@ -65,13 +125,13 @@
             </div>
         </section>
 
-        <section class="gap">
+        <section>
             <h2>Example Layout</h2>
             <div class="row">
                 <div class="col-6">
                     <card border>
                         <header>
-                           <h3>Empty empty color Border</h3>
+                            <h3>Empty empty color Border</h3>
                         </header>
                         <content>
                             This is the content of the card. It's concise, informative, and to the point.
@@ -81,13 +141,13 @@
                         </footer>
                     </card>
                 </div>
-
             </div>
         </section>
     </main>
-
     <footer>
         <p>&copy; 2025 KEBENET. Built with DapoCSS.</p>
     </footer>
 </body>
+
 </html>
+

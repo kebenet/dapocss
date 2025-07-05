@@ -64,7 +64,7 @@
   --background-alt: #{vars.$background-alt-light};
   --text-main: #{vars.$text-main-light};
   --text-bright: #{vars.$text-bright-light};
-  --text-muted: #{vars.$text-muted-light};
+  --text-muted: #{vars.$text-muted};
   --links: #{vars.$links-light};
   --border: #{vars.$border-light};
   --code: #{vars.$code-light};
@@ -233,7 +233,7 @@
   margin-bottom: 0;
   margin-top: 0;
   color: var(--text-bright);
-  font-weight: vars.$font-weight-normal;
+  // font-weight: vars.$font-weight-normal;
 }
 
 @mixin code-styles {

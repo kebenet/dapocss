@@ -16,11 +16,15 @@ h6 { font-size: var(--text-s); }
 
 h1, h2, h3, h4, h5, h6, p {
   @include mixins.heading-styles;
+  // add default padding
+  padding-left: vars.$padding-base;
+  padding-right: vars.$padding-base;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, th {
   font-weight: vars.$font-weight-bold;
 }
+p{margin-bottom: vars.$padding-base;}
 
 // Text Elements
 // =============================================================================
