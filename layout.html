@@ -7,23 +7,20 @@
     <title>Layout Preview</title>
     <link rel="stylesheet" href="dist/style.css">
     <style>
-    header[ingrid] {
-        display: grid;
-        grid-template-columns: auto auto;
 
-        justify-content: space-between;
-
-        align-items: center;
-
-    }
-
+        [padder]{ padding-top:8px; padding-bottom:8px; padding-right: 8px; }
+        .row[gap]{
+            grid-gap: 0.5em;
+            /*padding: 8px;*/
+        }
     </style>
+
 </head>
 
 <body>
     <container>
         <section>
-            <h1>Layout Preview with DapoCSS</h1>
+            <h1>Layout Preview with DapoCS</h1>
             <p muted>Showcasing the card, rows, columns, container, and sections.</p>
         </section>
     </container>
@@ -34,10 +31,13 @@
             </header>
             <div class="row">
                 <card secondary border radius class="col-sm-6 col-12">
-                    <header ingrid>
+                    <header inline padder>
                         <p>Card Header</p>
                         
-                        <button bg="primary">Tick</button>
+                        <div>
+                            <button bg="primary">X</button>
+                            <button bg="primary">copy</button>
+                        </div>
                     </header>
                     <content>
                         This is the content of the card. It's concise, informative, and to the point.
@@ -48,7 +48,7 @@
                     </footer>
                 </card>
                 <card primary border radius class="col-sm-6 col-12">
-                    <header>
+                    <header padder>
                         <p>Card Header</p>
                     </header>
                     <content>
@@ -61,9 +61,9 @@
                 </card>
             </div>
         </section>
-        <section gap>
+        <section>
             <h2>Example Layout</h2>
-            <div class="row">
+            <div class="row" gap>
                 <card border class="col-sm-4">
                     <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
                     <content>
@@ -120,7 +120,7 @@
                         <content>
                             This is the content of the card. It's concise, informative, and to the point.
                         </content>
-                        <footer justify="center">
+                        <footer align="center">
                             Call now!
                             <button>submit</button>
                         </footer>
@@ -131,7 +131,7 @@
         <section>
             <div class="col-6">
                 <card border radius>
-                    <header justify="center">
+                    <header align="center">
                         <h3>Secondary Cards</h3>
                         <hr primary>
                         <p>Headers of all the time</p>
@@ -183,9 +183,13 @@
     </main>
     <container>
         <footer>
-            <p>&copy; 2025 KEBENET. Built with DapoCSS.</p>
+            <p>&copy; 2025 KEBENET Built with DapoCSS.</p>
         </footer>
     </container>
 </body>
+
+<script>
+
+</script>
 
 </html>

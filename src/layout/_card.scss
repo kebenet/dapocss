@@ -1,0 +1,61 @@
+@use '../abstracts/variables'as vars;
+// =============================================================================
+// LAYOUT Card
+// =============================================================================
+
+
+card, block,
+card>content,
+card>footer {display: grid; }
+
+card {
+
+    // Adding overflow: hidden; to the parent card clips the child's border radius.
+
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+
+}
+
+card:hover {
+    transform: translateY(-5px);
+    /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+card>img {
+    width: 100%;
+    /* Ensure image fills its container */
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* Cover the area without distorting aspect ratio */
+}
+
+div[ratio-1]>card>img   {aspect-ratio: 1/1; }
+div[ratio-169]>card>img {aspect-ratio: 1/1; }
+
+card>content { padding: vars.$padding-base; }
+
+// card modifier
+// Automatic add top Radius on card
+[radius] {
+    overflow: hidden;
+    border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
+}
+
+// Card automatic Color | border
+
+card[border] {border: medium solid vars.$primary-20; }
+
+card[primary]>header {background-color: vars.$primary;!important }
+
+card[primary] {border-color: vars.$primary; }
+
+card[secondary]>header {background-color: vars.$secondary; }
+
+card[secondary] {border-color: vars.$secondary; }
+
+card>footer {padding: vars.$padding-base; justify-items: start; }

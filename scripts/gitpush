@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Check if any arguments (a message) were provided
+if [ $# -eq 0 ]; then
+  echo "🛑 Error: No commit message provided."
+  echo "Usage: ./gpush.sh your commit message here"
+  exit 1
+fi
+
+
+# Git add all files
+echo "🚀 Staging all changes..."
+git add .
+
+# Git commit with all arguments as the message. The quotes around "$@" are important!
+echo "📦 Committing with message: '$@'"
+git commit -m "$@"
+
+# Git push to the main branch
+echo "⬆️ Pushing to the main branch..."
+git push origin main
+
+echo "✅ Success! All changes have been pushed to main."
+

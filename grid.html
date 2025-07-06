@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DapoCSS Example</title>
+    <link rel="stylesheet" href="dist/style.css">
+    <style>
+        grid[line] > card{border: medium solid var(--primary); }
+    </style>
+</head>
+
+<body>
+    <container>
+        <section>
+            <h1>DapoCSS Layout Grids</h1>
+            <p muted>Showcasing the card, rows, columns, container, and sections.</p>
+        </section>
+
+        <section gap>
+            <header>
+                <h3>Grid Columns</h3>
+            </header>
+            <grid border primary round >
+
+                <card>
+                    <header inline pad-tbr>
+                        <p>Card Header</p>
+                        <div>
+                            <button>X</button>
+                            <button>copy</button>
+                        </div>
+                    </header>
+                    <content>
+                        This is the content of the card. It's concise, informative, and to the point.
+                    </content>
+                    <footer>
+                        <p>Call now!</p>
+                        <button>submit</button>
+                    </footer>
+                </card>
+                <card secondary>
+                    <header inline pad-tbr>
+                        <p>Card Column 2</p>
+                        <div>
+                            <button>X</button>
+                            <button>copy</button>
+                        </div>
+                    </header>
+                    <content>
+                        This is the content of the card. It's concise, informative, and to the point.
+                    </content>
+                    <footer>
+                        <p>Call now!</p>
+                        <button>submit</button>
+                    </footer>
+                </card>
+                <card secondary>
+                    <header inline pad-tbr>
+                        <p>Card Column 3</p>
+                    </header>
+                    <content>
+                        This is the content of the card. It's concise, informative, and to the point.
+                    </content>
+                    <footer>
+                        <p>Call now!</p>
+                        <button>submit</button>
+                    </footer>
+                </card>
+            </grid>
+        </section>
+
+        <section gap>
+            <header>
+                <h3>Grid Default Column</h3>
+            </header>
+            <grid two>
+                <card border>
+                    <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
+                    <content>
+                        This is the content of the card. It's concise, informative, and to the point.
+                    </content>
+                    <footer>
+                        Card Footer
+                    </footer>
+                </card>
+                <card border>
+                    <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
+                    <content>
+                        This is the content of the card. It's concise, informative, and to the point.
+                    </content>
+                    <footer>
+                        Card Footer
+                    </footer>
+                </card>
+                <card border>
+                    <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
+                    <content>
+                        This is the content of the card. It's concise, informative, and to the point.
+                    </content>
+                    <footer>
+                        Card Footer
+                    </footer>
+                </card>
+            </grid>
+        </section>
+    </container>
+</body>

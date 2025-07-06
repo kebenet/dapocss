@@ -1,3 +1,10 @@
+@use '../abstracts/variables'as vars;
+
+
+@mixin set-border-radius{
+    overflow: hidden;
+    border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
+}
 // =============================================================================
 // LAYOUT Grid
 // =============================================================================
@@ -20,11 +27,34 @@
 [space-v="between"] {align-content: space-between; }
 [space-v="evently"] {align-content: space-evenly; }
 
+// heading and icon box on right
+[inline] {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+    align-items: center;
+}
 
 // New Grid row
 
-grid{display: grid; grid-template-columns: repeat(auto-fit, minmax(48em, 1fr)); }
+grid{display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+grid[one]{ grid-template-columns: 1fr; }
 grid[two]{ grid-template-columns: 1fr 1fr; }
+grid[three]{ grid-template-columns: 1fr 1fr 1fr; }
+
+grid[auto]{ grid-template-columns: auto; }
+grid[auto-two]{ grid-template-columns: auto auto; }
+grid[auto-three]{ grid-template-columns: auto auto auto; }
+
+
+// Grid auto cards style
+grid[border] > card{border: medium solid vars.$primary-20; }
+grid[round] > card{ @include set-border-radius; }
+
+grid[primary] > card  {border-color: vars.$primary; }
+
+grid[primary]> card > header {background-color: vars.$primary; }
+grid[secondary] > card > header {background-color: vars.$secondary; }
 
 
  // Row styles
@@ -35,6 +65,7 @@ grid[two]{ grid-template-columns: 1fr 1fr; }
 }
 
 /* Base (xs) columns */
+
 .col-1 { grid-column: span 1; }
 .col-2 { grid-column: span 2; }
 .col-3 { grid-column: span 3; }
@@ -48,8 +79,8 @@ grid[two]{ grid-template-columns: 1fr 1fr; }
 .col-11 { grid-column: span 11; }
 .col-12 { grid-column: span 12; }
 
-
 /* Small devices (sm) and up (>= 576px) */
+
 @media (min-width: 48em) {
   .col-sm-1 { grid-column: span 1; }
   .col-sm-2 { grid-column: span 2; }
@@ -67,6 +98,7 @@ grid[two]{ grid-template-columns: 1fr 1fr; }
 }
 
 /* Medium devices (md) and up (>= 768px) */
+
 @media (min-width: 64em) {
 
   .col-md-1 { grid-column: span 1; }
