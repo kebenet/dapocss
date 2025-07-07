@@ -1,18 +1,42 @@
-# dapocss
+# DapoCSS - The KEBENET Design System
 
-dapocss is a lightweight and modern CSS styling framework designed specifically for KEBENET and KEBENET Dapo projects. It provides a clean and consistent design system to streamline the development of beautiful and responsive user interfaces.
+DapoCSS is the core CSS framework and design system for all **KEBENET** and **KEBENET Dapo** projects. It is built with a "design-first" philosophy, starting with a robust, standalone CSS/Sass foundation that will evolve into a complete Lit component library.
 
-The framework is built with **Sass** for better maintainability and scalability, focusing on essential components and utility classes that are relevant to the KEBENET ecosystem.
+This repository currently represents **Phase 1** of our component strategy: a lightweight, modern, and maintainable styling framework. It provides a consistent design language, a responsive grid, and a rich set of pre-configured KEBENET brand styles to streamline the development of beautiful user interfaces.
 
 ## ✨ Features
 
-- **Lightweight**: A minimal footprint to ensure fast loading times
-- **Sass-powered**: Built with Sass for better maintainability and scalability
-- **Branded**: Styles are pre-configured with KEBENET's brand colors
-- **Responsive**: Mobile-first design with fluid typography using CSS clamp()
-- **Dark Mode**: Automatic dark/light theme support using `prefers-color-scheme`
-- **Modern**: Uses CSS custom properties and modern CSS features
-- **Modular**: Well-organized Sass architecture for easy customization
+-   **Design-First Architecture**: Establishes a solid foundation of styles, naming conventions, and design tokens before component logic.
+-   **Sass-powered**: Built with Sass for modularity, maintainability, and scalability.
+-   **KEBENET Branded**: All styles are pre-configured with KEBENET's primary and secondary brand colors.
+-   **Responsive First**: Mobile-first design with a flexible grid and fluid typography using CSS `clamp()`.
+-   **Automatic Dark Mode**: Seamlessly supports light and dark themes using the `prefers-color-scheme` media query.
+-   **Modern CSS**: Leverages CSS custom properties for dynamic and themeable components.
+-   **Future-Proof**: Designed as the source of truth for an upcoming Lit component library.
+
+## 🗺️ Component Strategy Roadmap
+
+Our goal is to create a robust and scalable component ecosystem. We are approaching this in three distinct phases:
+
+### **Phase 1: The Design Foundation (Current)**
+-   **Focus**: Define and perfect the visual language of KEBENET components using custom tags and CSS/Sass.
+-   **Outcome**: A stable, standalone CSS framework (`dapocss`) that establishes our brand's look, feel, and style architecture. This includes design tokens, class names, and responsive behaviors.
+
+### **Phase 2: The Transformation Engine (Future)**
+-   **Focus**: Develop an automated toolchain.
+-   **Outcome**: A build process that can parse the styles and structure defined in Phase 1 to programmatically generate the boilerplate for Lit components. This will ensure perfect consistency between our CSS framework and our future web components.
+
+### **Phase 3: The Lit Component Library (Future)**
+-   **Focus**: Release a full suite of interactive components.
+-   **Outcome**: A library of highly optimized, reusable, and encapsulated Lit components (e.g., `<kebenet-card>`, `<kebenet-button>`). These components will be ready for use in any modern web application, providing both the KEBENET style and functionality out of the box.
+
+## 🚀 Quick Start
+
+### CDN Usage
+
+#### Full Version (Development)
+```html
+<link rel="stylesheet" href="[https://cdn.jsdelivr.net/gh/kebenet/dapocss@main/dist/style.css](https://cdn.jsdelivr.net/gh/kebenet/dapocss@main/dist/style.css)">
 
 ## 🚀 Quick Start
 
