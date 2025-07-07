@@ -1,10 +1,13 @@
 @use '../abstracts/variables'as vars;
 
+// Column calc for Grid template-column minmax px
+// ----------------------------------------------
+$column-2: calc(var(--max-width)/2);
+$column-3: calc(var(--max-width)/3);
 
-@mixin set-border-radius{
-    overflow: hidden;
-    border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
-}
+@mixin set-border-radius{overflow: hidden; border-radius: vars.$border-radius-base vars.$border-radius-base 0 0; }
+@mixin set-inline {display: grid; grid-template-columns: auto auto; justify-content: space-between; align-items: center; }
+
 // =============================================================================
 // LAYOUT Grid
 // =============================================================================
@@ -28,12 +31,7 @@
 [space-v="evently"] {align-content: space-evenly; }
 
 // heading and icon box on right
-[inline] {
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-content: space-between;
-    align-items: center;
-}
+[inline] { @include set-inline; }
 
 // New Grid row
 
@@ -48,6 +46,8 @@ grid[auto-three]{ grid-template-columns: auto auto auto; }
 
 
 // Grid auto cards style
+// ---------------------
+
 grid[border] > card{border: medium solid vars.$primary-20; }
 grid[round] > card{ @include set-border-radius; }
 
@@ -59,10 +59,7 @@ grid[secondary] > card > header {background-color: vars.$secondary; }
 
  // Row styles
 
-.row {
-  display: grid;
-  grid-template-columns: repeat(12, 1fr);
-}
+.row {display: grid; grid-template-columns: repeat(12, 1fr); }
 
 /* Base (xs) columns */
 

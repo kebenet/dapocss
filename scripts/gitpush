@@ -22,3 +22,5 @@ git push origin main
 
 echo "✅ Success! All changes have been pushed to main."
 
+git status
+

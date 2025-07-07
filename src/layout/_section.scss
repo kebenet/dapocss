@@ -1,6 +1,8 @@
 @use '../abstracts/variables'as vars;
 
 
+
+
 // =============================================================================
 // LAYOUT Section
 // =============================================================================
@@ -11,22 +13,14 @@ section { max-width: var(--max-width); }
 
 container, .container {width: 100%; }
 
-section,
-container,
-.container,
-card, grid {max-width: 100%; }
+section, container, .container, card, grid {max-width: 100%; }
 
 
 section {margin-top: vars.$margin-VA; }
 section:last-child {margin-bottom: vars.$margin-VA; }
 
 container,
-.container {
-    display: grid;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
+.container {display: grid; align-items: center; margin-left: auto; margin-right: auto; }
 
 
 
@@ -35,8 +29,4 @@ container,
 // LAYOUT Block - grid inline
 // =============================================================================
 
-block{
-  align-content: center;
-  justify-items: center;
-  // height: 500px;
-}
+block{align-content: center; justify-items: center; }
