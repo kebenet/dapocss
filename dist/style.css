@@ -1197,23 +1197,23 @@ card > content {
 }
 
 card[border] {
-  border: medium solid hsla(163, 53%, 38%, 0.2);
+  border: medium solid hsla(163, 53%, 38%, 0.2) !important;
 }
 
 card[primary] > header {
-  background-color: hsl(163, 53%, 38%);
+  background-color: hsl(163, 53%, 38%) !important;
 }
 
 card[primary] {
-  border-color: hsl(163, 53%, 38%);
+  border-color: hsl(163, 53%, 38%) !important;
 }
 
 card[secondary] > header {
-  background-color: hsl(23, 84%, 73%);
+  background-color: hsl(23, 84%, 73%) !important;
 }
 
 card[secondary] {
-  border-color: hsl(23, 84%, 73%);
+  border-color: hsl(23, 84%, 73%) !important;
 }
 
 card > footer {
@@ -1306,10 +1306,7 @@ container, .container {
   width: 100%;
 }
 
-section,
-container,
-.container,
-card, grid {
+section, container, .container, card, grid {
   max-width: 100%;
 }
 
