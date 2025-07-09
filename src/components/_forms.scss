@@ -71,7 +71,7 @@ button {
   @include mixins.button-base;
   padding-right: 16px;
   padding-left: 16px;
-  
+  justify-self: start;
   &:hover {
     border: 1px var(--primary) solid;
     // background-color: var(--secondary);

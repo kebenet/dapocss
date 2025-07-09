@@ -7,10 +7,8 @@
 
 // Media Elements
 // =============================================================================
-img, video {
-  max-width: 100%;
-  height: auto;
-}
+// img, video {max-width: 100%; height: auto; }
+img, video {@include mixins.set-img-16-9; }
 
 // Horizontal Rule
 // =============================================================================

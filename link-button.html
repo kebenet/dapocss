@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button-Style Link Showcase</title>
+    <link rel="stylesheet" href="dist/style.css">
+
+    <style>
+        /* CSS Variables (mimicking your SCSS variables) */
+
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .demo-item {
+            text-align: center;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .demo-item h3 {
+            margin-top: 0;
+            font-size: 1rem;
+            color: #6c757d;
+        }
+
+        .group-demo {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        clr[primary]{color:var(--primary);}
+    </style>
+</head>
+<body>
+    <container>
+
+        <section>
+            <header>
+                <h1>Dapocss - <clr primary>Button & Link</clr> Showcase</h1>
+            </header>
+        </section>
+
+        <section gap>
+            <h2>Basic Button Links</h2>
+            <grid two>
+                <div class="demo-item">
+                    <h3>Default Button</h3>
+                    <a href="#" button>Click Me</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Small Button</h3>
+                    <a href="#" button small>Small Button</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Outline Button</h3>
+                    <a href="#" button outline>Outline</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Disabled Button</h3>
+                    <a href="#" button disabled>Disabled</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Color Variants</h2>
+            <grid two>
+                <div class="demo-item">
+                    <h3>Secondary</h3>
+                    <a href="#" button secondary>Secondary</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Success</h3>
+                    <a href="#" button success>Success</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Warning</h3>
+                    <a href="#" button warning>Warning</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Danger</h3>
+                    <a href="#" button danger>Danger</a>
+                </div>
+            </div>
+        </section>
+
+        <section gap>
+            <h2>Icon Buttons</h2>
+            <grid two>
+                <div class="demo-item">
+                    <h3>With Icon</h3>
+                    <a href="#" button button-icon data-icon="→">Next Page</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Download</h3>
+                    <a href="#" button success button-icon data-icon="↓">Download</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Delete</h3>
+                    <a href="#" button danger button-icon data-icon="×">Delete</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Settings</h3>
+                    <a href="#" button secondary button-icon data-icon="⚙">Settings</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Special States</h2>
+            <grid two>
+                <div class="demo-item">
+                    <h3>Loading Button</h3>
+                    <a href="#" button class="button-loading">Loading...</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Full Width</h3>
+                    <a href="#" button class="button--full">Full Width Button</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Button Groups</h2>
+            <div class="group-demo">
+                <div>
+                    <h3>Horizontal Group</h3>
+                    <div class="button-group">
+                        <a href="#" button class="button">First</a>
+                        <a href="#" button class="button">Second</a>
+                        <a href="#" button class="button">Third</a>
+                    </div>
+                </div>
+                <div>
+                    <h3>Vertical Group</h3>
+                    <div class="button-group button-group-v">
+                        <a href="#" button class="button">Top</a>
+                        <a href="#" button class="button">Middle</a>
+                        <a href="#" button class="button">Bottom</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Combined Examples</h2>
+            <grid two>
+                <div class="demo-item">
+                    <h3>Small Success</h3>
+                    <a href="#" button success small>✓ Save</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Outline Warning</h3>
+                    <a href="#" button warning outline>⚠ Warning</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Small Danger</h3>
+                    <a href="#" button danger small>× Cancel</a>
+                </div>
+                <div class="demo-item">
+                    <h3>Secondary Icon</h3>
+                    <a href="#" button secondary button-icon data-icon="←">Go Back</a>
+                </div>
+            </div>
+        </section>
+    </container>
+
+    <script>
+        // Add some interactivity to demonstrate the hover effects
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('a[button]');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Show which button was clicked
+                    const originalText = this.textContent;
+                    this.textContent = 'Clicked!';
+                    
+                    setTimeout(() => {
+                        this.textContent = originalText;
+                    }, 1000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+css_categories:
+  by_selector_type:
+    description: "Selectors are patterns to select elements for styling."
+    types:
+      - name: Simple Selectors
+        description: "Target elements by tag name, ID, or class."
+        examples:
+          - syntax: "p {}"
+            description: "Selects all <p> elements (Type Selector)."
+          - syntax: ".my-class {}"
+            description: "Selects all elements with class='my-class' (Class Selector)."
+          - syntax: "#my-id {}"
+            description: "Selects the single element with id='my-id' (ID Selector)."
+      - name: Attribute Selectors
+        description: "Target elements based on their attributes."
+        examples:
+          - syntax: "[target] {}"
+            description: "Selects elements with a 'target' attribute."
+          - syntax: "[target='_blank'] {}"
+            description: "Selects elements where target is '_blank'."
+      - name: Pseudo-class Selectors
+        description: "Target elements based on their state or position."
+        examples:
+          - syntax: ":hover {}"
+            description: "Selects an element on mouse over."
+          - syntax: ":nth-child(2n) {}"
+            description: "Selects every second child element."
+          - syntax: ":focus {}"
+            description: "Selects an element when it has focus."
+      - name: Pseudo-element Selectors
+        description: "Style a specific part of a selected element."
+        examples:
+          - syntax: "::before {}"
+            description: "Creates a pseudo-element before the content."
+          - syntax: "::after {}"
+            description: "Creates a pseudo-element after the content."
+          - syntax: "::first-line {}"
+            description: "Styles the first line of a block-level element."
+      - name: Combinator Selectors
+        description: "Combine selectors for more specific targets."
+        examples:
+          - syntax: "div p {}"
+            description: "Descendant: <p> inside a <div>."
+          - syntax: "div > p {}"
+            description: "Child: <p> that is a direct child of <div>."
+          - syntax: "h2 + p {}"
+            description: "Adjacent Sibling: first <p> after an <h2>."
+          - syntax: "h2 ~ p {}"
+            description: "General Sibling: all <p> siblings after an <h2>."
+  by_purpose:
+    description: "Categorizes styles based on what they achieve."
+    rules:
+      - name: Layout
+        description: "Control structure and positioning."
+        properties: ["display", "position", "grid", "flexbox"]
+      - name: Typography
+        description: "Control the appearance of text."
+        properties: ["font-family", "font-size", "color", "line-height"]
+      - name: Color & Background
+        description: "Define colors, gradients, and background images."
+        properties: ["color", "background-color", "background-image"]
+      - name: Box Model
+        description: "Control dimensions and spacing."
+        properties: ["width", "height", "margin", "padding", "border"]
+      - name: Transition & Animation
+        description: "Create dynamic effects."
+        properties: ["transition", "animation", "@keyframes"]
+      - name: Responsive
+        description: "Adapt layout for different screen sizes."
+        properties: ["@media queries"]
+

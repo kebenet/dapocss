@@ -4,25 +4,14 @@
 
 @use 'variables' as vars;
 
+
 // Media Query Mixins
 // =============================================================================
-@mixin large-screen {
-  @media screen and (min-width: vars.$breakpoint-large) {
-    @content;
-  }
-}
+@mixin large-screen {@media screen and (min-width: vars.$breakpoint-large) {@content; } }
 
-@mixin dark-theme {
-  @media (prefers-color-scheme: dark) {
-    @content;
-  }
-}
+@mixin dark-theme {@media (prefers-color-scheme: dark) {@content; } }
 
-@mixin print-styles {
-  @media print {
-    @content;
-  }
-}
+@mixin print-styles {@media print {@content; } }
 
 // Typography Mixins
 // =============================================================================
@@ -84,32 +73,6 @@
   --select-arrow: #{vars.$select-arrow-light};
 }
 
-@mixin dark-theme-colors {
-  --background-body: #{vars.$background-body-dark};
-  --background: #{vars.$background-dark};
-  --background-alt: #{vars.$background-alt-dark};
-  --text-main: #{vars.$text-main-dark};
-  --text-bright: #{vars.$text-bright-dark};
-  --text-muted: #{vars.$text-muted-dark};
-  --links: #{vars.$links-dark};
-  --border: #{vars.$border-dark};
-  --code: #{vars.$code-dark};
-  --focus: #{vars.$focus-color-dark};
-  --selection: #{vars.$selection-color-dark};
-  --highlight: #{vars.$highlight-color-dark};
-  --variable: #{vars.$variable-color-dark};
-  --form-text: #{vars.$form-text-dark};
-  --form-placeholder: #{vars.$form-placeholder-dark};
-  --button-base: #{vars.$button-base-dark};
-  --button-hover: #{vars.$button-hover-dark};
-  --secondary: #{vars.$secondary};
-  --secondary-hover: #{vars.$secondary-hover-dark};
-  --secondary-focus: #{vars.$secondary-focus-dark};
-  --scrollbar-thumb: #{vars.$scrollbar-thumb-dark};
-  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-dark};
-  --select-arrow: #{vars.$select-arrow-dark};
-}
-
 // Transition Mixins
 // =============================================================================
 @mixin smooth-transition($properties: all) {
@@ -138,12 +101,7 @@
   @include form-transition;
 }
 
-@mixin input-base {
-  @include form-element-base;
-  margin-right: 6px;
-  margin-bottom: 6px;
-  padding: 10px;
-}
+@mixin input-base {@include form-element-base; margin-right: 6px; margin-bottom: 6px; padding: 10px; }
 
 @mixin button-base {
   @include form-element-base;
@@ -151,55 +109,28 @@
   cursor: pointer;
   background-color: var(--primary);
   
-  &:hover {
-    background: var(--button-hover);
-  }
+  &:hover {background: var(--button-hover); }
   
-  &:focus {
-    box-shadow: 0 0 0 2px var(--focus);
-  }
+  &:focus {box-shadow: 0 0 0 2px var(--focus); }
   
-  &:active {
-    transform: translateY(2px);
-  }
+  &:active {transform: translateY(2px); }
 }
 
-@mixin button-input {
-  @include button-base;
-  padding-right: 30px;
-  padding-left: 30px;
-}
+@mixin button-input {@include button-base; padding-right: 30px; padding-left: 30px; }
 
 // Focus States
 // =============================================================================
-@mixin focus-ring {
-  box-shadow: 0 0 0 2px var(--focus);
-}
+@mixin focus-ring {box-shadow: 0 0 0 2px var(--focus); }
 
 // Disabled States
 // =============================================================================
-@mixin disabled-state {
-  &:disabled {
-    cursor: not-allowed;
-    opacity: 0.5;
-  }
-}
+@mixin disabled-state {&:disabled {cursor: not-allowed; opacity: 0.5; } }
 
 // Layout Mixins
 // =============================================================================
-@mixin container {
-  max-width: vars.$max-width;
-  margin: 0 auto;
-  padding: 0 vars.$padding-base;
-}
+@mixin container {max-width: vars.$max-width; margin: 0 auto; padding: 0 vars.$padding-base; }
 
-@mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
+@mixin clearfix {&::after {content: ""; display: table; clear: both; } }
 
 // Scrollbar Mixins
 // =============================================================================
@@ -245,32 +176,23 @@
 
 // Border Styles
 // =============================================================================
-@mixin border-accent {
-  border: 1px solid var(--border);
-}
+@mixin border-accent {border: 1px solid var(--border); }
 
-@mixin focus-border {
-  border-left: 4px solid var(--focus);
-}
+@mixin focus-border {border-left: 4px solid var(--focus); }
 
 // Icon Mixins
 // =============================================================================
-@mixin contact-icon($icon) {
-  &::before {
-    content: $icon;
-  }
+@mixin contact-icon($icon) {&::before {content: $icon; }
 }
 
 // Selection Styles
 // =============================================================================
-@mixin selection-styles {
-  background-color: var(--selection);
-  color: var(--text-bright);
-}
+@mixin selection-styles {background-color: var(--selection); color: var(--text-bright); }
 
 // Print Mixins
 // =============================================================================
-@mixin print-reset {
-  background-color: #fff !important;
-  color: #000 !important;
-}
+@mixin print-reset {background-color: #fff !important; color: #000 !important; }
+
+@mixin set-img-16-9{width: 100%; aspect-ratio: 16/9; object-fit: cover; }
+@mixin set-border-radius{overflow: hidden; border-radius: vars.$border-radius-base vars.$border-radius-base 0 0; }
+@mixin set-hover {transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }

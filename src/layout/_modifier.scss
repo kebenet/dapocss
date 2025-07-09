@@ -2,21 +2,35 @@
 
 @use '../abstracts/variables' as vars;
 
+@use '../abstracts/mixins' as mixins;
+
+
+
+grid[hover] > card,
+grid[hover] > stack-grid {transition: transform 0.3s ease, box-shadow 0.3s ease; }
+
+grid[hover] > card:hover,
+grid[hover] > stack-grid:hover {@include mixins.set-hover; }
+
+
+// justify-items: start;
+
 // =============================================================================
 // 2. CREATE COLOR MAPS
 // These maps link the class name suffix to the color variable.
 // =============================================================================
+
 $background-colors: (
   "light": vars.$background-body-light,
-  "light-light": vars.$background-alt-light,
+  "lighter": vars.$background-alt-light,
   "dark": vars.$background-body-dark,
-  "dark-dark": vars.$background-dark,
+  "darker": vars.$background-dark,
   "primary": vars.$primary,
   "primary-light": vars.$primary-20,
-  "primary-light-light": vars.$primary-08,
+  "primary-lighter": vars.$primary-08,
   "secondary": vars.$secondary,
   "secondary-light": vars.$secondary-02,
-  "secondary-light-light": vars.$secondary-08
+  "secondary-lighter": vars.$secondary-08
 );
 
 $text-colors: (
@@ -34,9 +48,7 @@ $text-colors: (
 
 // Loop for background colors
 @each $name, $color in $background-colors {
-  [bg="#{$name}"] {
-    background-color: $color ; // Use !important to ensure utility styles override others
-  }
+  [bg="#{$name}"] {background-color: $color ; }
 }
 
 // Loop for text colors
@@ -50,12 +62,12 @@ $text-colors: (
 // =============================================================================
 // 2. Padding Dynamic Automatic
 // =============================================================================
-.pad-gap {
-  --padding: 0.5rem; 
-  padding: var(--padding);
-}
+// .pad-gap {
+//   --padding: 0.5rem; 
+//   padding: var(--padding);
+// }
 
-/* 3. Update the variable's value at each breakpoint */
-@media (min-width: 48em) {.pad-gap {--padding: 1rem; } }
-@media (min-width: 64em) {.pad-gap {--padding: 1.5rem; } }
-@media (min-width: 75em) {.pad-gap {--padding: 2rem; } }
+// /* 3. Update the variable's value at each breakpoint */
+// @media (min-width: 48em) {.pad-gap {--padding: 1rem; } }
+// @media (min-width: 64em) {.pad-gap {--padding: 1.5rem; } }
+// @media (min-width: 75em) {.pad-gap {--padding: 2rem; } }

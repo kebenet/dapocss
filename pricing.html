@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pricing Table</title>
+    <link rel="stylesheet" href="dist/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+
+:root{
+    --border-grey: rgba(128, 128, 128, 0.25)
+}
+
+
+
+.pricing-price-wrapper {
+    align-self: stretch;
+    color: var(--text-main);
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.pricing-original-price {align-self: center; text-decoration: line-through; }
+
+
+
+
+.pricing-feature {
+    align-items: center;
+    border-bottom: 1px solid var(--border-grey);
+    display: flex;
+    /*justify-content: unset;*/
+    line-height: 2;
+    padding: 10px 30px;
+}
+
+.pricing-pricing { text-align:center; }
+
+ol, ul {list-style-type: none; margin: 0; padding: 0; }
+
+.pricing-pricing {padding: 30px; }
+
+.pricing-price-prefix, 
+.pricing-price-suffix {display: flex; font-size: 20px !important; font-weight: 700; }
+
+.pricing-feature:first-child {border-top: 1px solid var(--border-grey); }
+.pricing-price {font-size: 60px; line-height: 1; margin: 0 2px; }
+.pricing-price-meta,.pricing-original-price {color: var(--text-muted); display: block; width: 100%; }
+
+li i {margin-right: 10px; color: var(--primary); font-size: 1.78rem; }
+
+
+
+[pad-m] {padding:16px;}
+header > p{ color:var(--text-main); }
+
+p[prefixer]{font-size: 4em;padding:0;margin:0; }
+p[prefixer]>sup{font-size: medium; vertical-align: inherit; }
+
+
+    </style>
+</head>
+<body>
+    <container>
+        <section>
+            <header >
+            <h1>DapoCSS Pricing Tables - Grids</h1>
+            <p muted>Showcasing the card, rows, columns, container, and sections.</p>
+            <p>
+                Repository <a href="https://github.com/kebenet/dapocss">Dapocss GitHub Repository</a>
+            </p>
+            </header>
+        </section>
+        <section  gap>
+            <grid two border >
+                <card primary>
+
+
+                    <header pad-l>
+                        <h3>Pakej KEBENET Lengkap 1 Rumah!</h3>
+                        <p class="pricing-subtitle">Gabungan reka bentuk premium, fungsi terancang, dan bahan berkualiti tinggi untuk setiap ruang utama di rumah anda.</p>
+                    </header>
+
+                    <content >
+
+
+                        <div class="pricing-pricing">
+                            <p class="pricing-original-price">24,300</p>
+                            <p prefixer><sup><b>RM</b></sup>12,000<sup> 00</sup></p>
+                            <p class="pricing-price-meta">Pakej Lengkap</p>
+                        </div>
+
+                        <ul class="pricing-features">
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">KEBENET Dapo Utama</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">KEBENET Bilik Tidur (3 set)</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">KEBENET TV</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">KEBENET Kasut</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <i class="fas fa-gift"></i>
+                                <span class="pricing-feature-title">Free Item</span>
+                            </li>
+                        </ul>
+                    </content>
+
+                        <footer>
+                                <a href="https://api.whatsapp.com/send/?phone=60173609475&amp;text=Saya+berminat+https://kebenet.com/pakej-kabinet-dapur-pahang/promosi-pakej-kabinet-lengkap-1-rumah-pahang/" button>GET STARTED</a>
+                        </footer>
+
+                    
+                </card>
+
+                <card primary>
+
+
+                    <header pad-l>
+                        <h3>KEBENET Dapo Utama!</h3>
+                        <p class="pricing-subtitle">Quartz Stone dan kemasan Block Board + Formica</p>
+                    </header>
+
+                    <content >
+
+                        <div class="pricing-pricing">
+                            <p class="pricing-original-price">14,300</p>
+                            <p prefixer><sup><b>RM</b></sup>9,550<sup>00</sup></p>
+                            <p class="pricing-price-meta">Harga Biasa</p>
+                        </div>
+
+                        <ul class="pricing-features">
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">Base Unit 10+ ft</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">Wall Unit 10+ ft</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">Ruang Peti Sejuk 3 ft
+</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">Tall Unit (Oven) 2 ft
+</span>
+                            </li>
+                            <li class="pricing-feature">
+                                <i class="fas fa-check-circle"></i>
+                                <span class="pricing-feature-title">Quartz Stone 10 ft (Hitam | Putih)
+</span>
+                            </li>
+                        </ul>
+                    </content>
+
+                    <footer>
+                                <a href="https://api.whatsapp.com/send/?phone=60173609475&amp;text=Saya+berminat+https://kebenet.com/pakej-kabinet-dapur-pahang/promosi-pakej-kabinet-lengkap-1-rumah-pahang/" button>GET STARTED</a>
+                    </footer>
+
+                </card>
+            </grid>
+
+        </section>
+    </container>
+</body>
+</html>

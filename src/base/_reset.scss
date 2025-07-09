@@ -53,9 +53,6 @@
   @include mixins.light-theme-colors;
   
   // Dark theme colors
-  @include mixins.dark-theme {
-    @include mixins.dark-theme-colors;
-  }
 }
 
 // Base HTML Element

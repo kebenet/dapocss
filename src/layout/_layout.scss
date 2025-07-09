@@ -7,15 +7,11 @@
 
 // Footer
 // =============================================================================
-footer {
-  border-top: 1px solid var(--border);
+footer {border-top: 1px solid var(--border); }
 
-}
-footer, footer>p{color: var(--text-muted);}
+footer, footer>p, footer>h5, footer>h4{color: var(--text-muted);}
 
-body > footer {
-  margin-top: vars.$margin-VA;
-}
+body > footer {margin-top: vars.$margin-VA; }
 
 // Print Styles
 // =============================================================================
@@ -27,15 +23,11 @@ body > footer {
   details,
   button,
   input,
-  textarea {
-    @include mixins.print-reset;
-  }
+  textarea {@include mixins.print-reset; }
 
   button,
   input,
-  textarea {
-    border: 1px solid #000 !important;
-  }
+  textarea {border: 1px solid #000 !important; }
 
   body,
   h1, h2, h3, h4, h5, h6,
@@ -46,23 +38,13 @@ body > footer {
   textarea,
   footer,
   summary,
-  strong {
-    color: #000 !important;
-  }
+  strong {color: #000 !important; }
 
-  summary::marker {
-    color: #000 !important;
-  }
+  summary::marker {color: #000 !important; }
 
-  summary::-webkit-details-marker {
-    color: #000 !important;
-  }
+  summary::-webkit-details-marker {color: #000 !important; }
 
-  tbody tr:nth-child(even) {
-    background-color: #f2f2f2 !important;
-  }
+  tbody tr:nth-child(even) {background-color: #f2f2f2 !important; }
 
-  a {
-    text-decoration: underline !important;
-  }
+  a {text-decoration: underline !important; }
 }

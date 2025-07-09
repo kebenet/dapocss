@@ -1,11 +1,11 @@
 @use '../abstracts/variables'as vars;
+@use '../abstracts/mixins' as mixins;
 
 // Column calc for Grid template-column minmax px
 // ----------------------------------------------
 $column-2: calc(var(--max-width)/2);
 $column-3: calc(var(--max-width)/3);
 
-@mixin set-border-radius{overflow: hidden; border-radius: vars.$border-radius-base vars.$border-radius-base 0 0; }
 @mixin set-inline {display: grid; grid-template-columns: auto auto; justify-content: space-between; align-items: center; }
 
 // =============================================================================
@@ -36,10 +36,11 @@ $column-3: calc(var(--max-width)/3);
 // New Grid row
 
 grid{display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
-grid[one]{ grid-template-columns: 1fr; }
-grid[two]{ grid-template-columns: 1fr 1fr; }
-grid[three]{ grid-template-columns: 1fr 1fr 1fr; }
 
+grid[one],grid[two],grid[three]{ grid-template-columns: 1fr; }
+
+
+// inline GRID Only for [toolbox]
 grid[auto]{ grid-template-columns: auto; }
 grid[auto-two]{ grid-template-columns: auto auto; }
 grid[auto-three]{ grid-template-columns: auto auto auto; }
@@ -49,7 +50,7 @@ grid[auto-three]{ grid-template-columns: auto auto auto; }
 // ---------------------
 
 grid[border] > card{border: medium solid vars.$primary-20; }
-grid[round] > card{ @include set-border-radius; }
+grid[round] > card{ @include mixins.set-border-radius; }
 
 grid[primary] > card  {border-color: vars.$primary; }
 
@@ -57,76 +58,23 @@ grid[primary]> card > header {background-color: vars.$primary; }
 grid[secondary] > card > header {background-color: vars.$secondary; }
 
 
- // Row styles
-
-.row {display: grid; grid-template-columns: repeat(12, 1fr); }
-
 /* Base (xs) columns */
-
-.col-1 { grid-column: span 1; }
-.col-2 { grid-column: span 2; }
-.col-3 { grid-column: span 3; }
-.col-4 { grid-column: span 4; }
-.col-5 { grid-column: span 5; }
-.col-6 { grid-column: span 6; }
-.col-7 { grid-column: span 7; }
-.col-8 { grid-column: span 8; }
-.col-9 { grid-column: span 9; }
-.col-10 { grid-column: span 10; }
-.col-11 { grid-column: span 11; }
-.col-12 { grid-column: span 12; }
-
 /* Small devices (sm) and up (>= 576px) */
 
 @media (min-width: 48em) {
-  .col-sm-1 { grid-column: span 1; }
-  .col-sm-2 { grid-column: span 2; }
-  .col-sm-3 { grid-column: span 3; }
-  .col-sm-4 { grid-column: span 4; }
-  .col-sm-5 { grid-column: span 5; }
-  .col-sm-6 { grid-column: span 6; }
-  .col-sm-7 { grid-column: span 7; }
-  .col-sm-8 { grid-column: span 8; }
-  .col-sm-9 { grid-column: span 9; }
-  .col-sm-10 { grid-column: span 10; }
-  .col-sm-11 { grid-column: span 11; }
-  .col-sm-12 { grid-column: span 12; }
-
+  grid[two]{ grid-template-columns: 1fr 1fr; }
+  grid[three]{ grid-template-columns: 1fr 1fr 1fr; }
 }
 
 /* Medium devices (md) and up (>= 768px) */
 
 @media (min-width: 64em) {
 
-  .col-md-1 { grid-column: span 1; }
-  .col-md-2 { grid-column: span 2; }
-  .col-md-3 { grid-column: span 3; }
-  .col-md-4 { grid-column: span 4; }
-  .col-md-5 { grid-column: span 5; }
-  .col-md-6 { grid-column: span 6; }
-  .col-md-7 { grid-column: span 7; }
-  .col-md-8 { grid-column: span 8; }
-  .col-md-9 { grid-column: span 9; }
-  .col-md-10 { grid-column: span 10; }
-  .col-md-11 { grid-column: span 11; }
-  .col-md-12 { grid-column: span 12; }
 
 }
 
 /* Large devices (lg) and up (>= 992px) */
 @media (min-width: 75em) {
-  .col-lg-1 { grid-column: span 1; }
-  .col-lg-2 { grid-column: span 2; }
-  .col-lg-3 { grid-column: span 3; }
-  .col-lg-4 { grid-column: span 4; }
-  .col-lg-5 { grid-column: span 5; }
-  .col-lg-6 { grid-column: span 6; }
-  .col-lg-7 { grid-column: span 7; }
-  .col-lg-8 { grid-column: span 8; }
-  .col-lg-9 { grid-column: span 9; }
-  .col-lg-10 { grid-column: span 10; }
-  .col-lg-11 { grid-column: span 11; }
-  .col-lg-12 { grid-column: span 12; }
 
 }
 

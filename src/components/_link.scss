@@ -1,0 +1,117 @@
+@use '../abstracts/variables'as vars;
+@use '../abstracts/mixins' as mixins;
+
+// =============================================================================
+// BUTTON-STYLE LINKS
+// =============================================================================
+
+// Base button link styles
+a[button] {
+  display: inline-block;
+  padding: vars.$padding-base vars.$padding-base;
+  background-color: var(--links);
+  color: var(--text-bright);
+  text-decoration: none;
+  border-radius: vars.$border-radius-small;
+  font-weight: vars.$font-weight-bold;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: var(--secondary);
+    text-decoration: none;
+    transform: translateY(-1px);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  }
+  
+  &:active {transform: translateY(0); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }
+  
+  &:focus {@include mixins.focus-border; outline: none; }
+}
+
+// Button link size modifiers
+a[small] {padding: vars.$padding-base * 0.5 vars.$padding-base; font-size: var(--text-s); }
+
+
+// Button link style modifiers
+a[outline]{background-color: transparent; border-color: var(--primary); color: var(--text-main);
+  
+  &:hover {background-color: var(--secondary); color: var(--text-bright); }
+}
+
+a[secondary] {background-color: var(--secondary); color: var(--text-bright);
+  
+  &:hover {background-color: var(--secondary-20); }
+}
+
+a[success] {background-color: var(--success, #28a745);
+  
+  &:hover {background-color: var(--bg-success, #218838); }
+}
+
+a[warning] {background-color: var(--warning, #ffc107); color: var(--text-dark, #212529);
+  &:hover {background-color: var(--warning-hover, #e0a800); }
+}
+
+a[danger] {background-color: var(--danger, #dc3545);
+  &:hover {background-color: var(--danger-hover, #c82333); }
+}
+
+
+// Button link disabled state
+a[disabled] {opacity: 0.6; cursor: not-allowed; pointer-events: none;
+  
+  &:hover {transform: none; box-shadow: none; }
+}
+
+// Button link with icons
+a[button-icon] {display: inline-flex; align-items: center; gap: vars.$padding-base * 0.5;
+
+  &::before {content: attr(data-icon); display: inline-block; }
+}
+
+
+
+
+// Button link group
+.button-group {
+  display: inline-flex;
+  gap: vars.$padding-base * 0.5;
+  
+  .button {flex: 1; }
+  
+  &-v {flex-direction: column; }
+}
+
+// Loading state for button links
+.button-loading {
+  position: relative; color: transparent;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 16px;
+    height: 16px;
+    border: 2px solid transparent;
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    color: var(--text-bright);
+  }
+}
+
+@keyframes spin {
+  0% { transform: translate(-50%, -50%) rotate(0deg); }
+  100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+
+// Button link width modifiers
+.button--full {width: 100%; display: block; }
+
+.button--auto {width: auto; display: inline-block; }

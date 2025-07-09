@@ -5,24 +5,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DapoCSS Example</title>
-    <link rel="stylesheet" href="dist/style.css">
+    <link rel="stylesheet" href="dist/style.min.css">
+
     <style>
-        grid[line] > card{border: medium solid var(--primary); }
+        
     </style>
 </head>
 
 <body>
     <container>
         <section>
-            <h1>DapoCSS Layout Grids</h1>
-            <p muted>Showcasing the card, rows, columns, container, and sections.</p>
+            <header>
+            <h1>DapoCSS Layout - Grids</h1>
+            <p muted>Showcasing the card, stack-grid, columns, container, and sections.</p>
+            <p>
+                Repository <a button href="https://github.com/kebenet/dapocss">Dapocss GitHub Repository</a>
+            </p>
+            </header>
+        </section>
+
+        <section gap>
+
+            <grid two primary>
+                <stack-grid>
+
+                    <stack-side><b>Tuesday 15</b></stack-side>
+                    <card>
+                        <header>
+                            <h4>Card Head</h4>
+                        </header>
+                        <content>
+                            <p>Standard item</p>
+                            <button>Yes</button>
+                        </content>
+                        <footer>
+                            <p>Tell us More</p>
+                        </footer>
+                    </card>
+
+                </stack-grid>
+
+                <stack-grid side-right>
+
+                    <stack-side>Monday 15</stack-side>
+                    <card>
+                        <header>
+                            <h4>Design of concept</h4>
+                        </header>
+                        <content>
+                            <p>Standard item</p>
+                            <button>Yes</button>
+                        </content>
+                        <footer>
+                            <p>Tell us More</p>
+                        </footer>
+                    </card>
+
+                </stack-grid>
+
+                <stack-grid side-right >
+                    <stack-side>Monday 15</stack-side>
+                    <card>
+                        <header>
+                            <h4>Design of concept</h4>
+                        </header>
+                        <content>
+                            <p>Standard item</p>
+                            <button>Yes</button>
+                        </content>
+                        <footer>
+                            <p>footer example</p>
+                        </footer>
+                    </card>
+
+                </stack-grid>
+            </grid>
         </section>
 
         <section gap>
             <header>
                 <h3>Grid Columns</h3>
             </header>
-            <grid border  round >
+
+
+            <grid round border >
 
                 <card>
                     <header inline pad-tbr>
@@ -40,7 +106,6 @@
                         <button>submit</button>
                     </footer>
                 </card>
-
                 <card secondary>
                     <header inline pad-tbr>
                         <p>Card Column 2</p>
@@ -57,8 +122,7 @@
                         <button>submit</button>
                     </footer>
                 </card>
-
-                <card secondary>
+                <card>
                     <header inline pad-tbr>
                         <p>Card Column 3</p>
                     </header>
@@ -70,15 +134,40 @@
                         <button>submit</button>
                     </footer>
                 </card>
-                
             </grid>
         </section>
 
         <section gap>
             <header>
+                <h3>Grid Default 2 Column</h3>
+            </header>
+            <grid two  round>
+                <card border>
+                    <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
+                    <content>
+                        This is the content of the card. It's concise, informative, and to the point.
+                    </content>
+                    <footer>
+                        Card Footer
+                    </footer>
+                </card>
+                <card border>
+                    <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
+                    <content>
+                        This is the content of the card. It's concise, informative, and to the point.
+                    </content>
+                    <footer>
+                        Card Footer
+                    </footer>
+                </card>
+            </grid>
+        </section>
+
+        <section>
+            <header>
                 <h3>Grid Default Column</h3>
             </header>
-            <grid two>
+            <grid three  round>
                 <card border>
                     <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
                     <content>
@@ -108,5 +197,7 @@
                 </card>
             </grid>
         </section>
+
+
     </container>
 </body>

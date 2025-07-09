@@ -21,9 +21,13 @@
 
 --dark: #212121;
 --light: hsla(192, 33%, 97%, 1);
---muted: #70777f;
+--muted: #363636; // Best for our primary
 --site-bg: hsla(158, 32%, 88%, 1);
 --error: hsla(4, 100%, 64%, 1);
+
+clr[primary]{color:var(--primary);}
+clr[secondary]{color:var(--secondary);}
+
     // =============================================================================
 // LAYOUT MODIFIERS
 // =============================================================================
