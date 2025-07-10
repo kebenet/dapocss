@@ -1,0 +1,79 @@
+in line 84 @ 'Left Column: Selectors': this element is list of item using ul li, how to change this element to be css grouping.
+example : 
+layout
+- container
+- section
+- column
+form
+- button
+- input
+- select
+
+# css in page   
+
+    <!-- Vue 3 -->
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+    <!-- Custom KEBENET Brand Styles -->
+    <style>
+        /* Define KEBENET brand colors as CSS variables for easy use */
+        :root {
+            --kbn-primary: #2e9578;
+            --kbn-secondary: #f4ae81;
+            --kbn-bg: #d7eae3;
+            --kbn-text: #2c3e50;
+        }
+
+        /* Applying a custom font and base styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1f2937; /* A dark background for the overall page */
+        }
+        
+        /* Custom scrollbar for a more integrated look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #2d3748;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: var(--kbn-primary);
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #257a62;
+        }
+
+        /* Vue Transition Styles */
+        .list-enter-active,
+        .list-leave-active {
+            transition: all 0.5s ease;
+        }
+        .list-enter-from,
+        .list-leave-to {
+            opacity: 0;
+            transform: translateX(30px);
+        }
+    </style>
+
+# Html element
+    <header class="flex-shrink-0 bg-gray-800 shadow-lg z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-cubes text-3xl" style="color: var(--kbn-primary);"></i>
+                <h1 class="text-2xl font-bold tracking-wider">
+                    <span style="color: var(--kbn-primary);">KEBENET</span> DapoCSS <span class="font-light text-lg">Pseudo-Manager</span>
+                </h1>
+            </div>
+            <a href="https://github.com/kebenet/dapocss" target="_blank" class="text-gray-400 hover:text-white transition-colors">
+                <i class="fab fa-github text-2xl"></i>
+            </a>
+        </div>
+    </header>

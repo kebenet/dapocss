@@ -236,7 +236,7 @@
 					"paste",
 					null,
 					"AQAAAAAAAAAAAAAAyTMAAAAAAAAAAAAA",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+					"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					159,
@@ -244,7 +244,7 @@
 					"left_delete",
 					null,
 					"AgAAAIgxAAAAAAAAiDEAAAAAAABmAQAALSAqKlVuaXZlcnNhbC9CYXNpYyBTZWxlY3RvcnMqKjogOAotICoqSFRNTCBFbGVtZW50IFNlbGVjdG9ycyoqOiA4NwotICoqRm9ybSBFbGVtZW50IFNlbGVjdG9ycyoqOiA0NQotICoqQnV0dG9uIENsYXNzIFNlbGVjdG9ycyoqOiAxMgotICoqVGFibGUgU2VsZWN0b3JzKio6IDcKLSAqKk1lZGlhIEVsZW1lbnQgU2VsZWN0b3JzKio6IDIKLSAqKkludGVyYWN0aXZlIEVsZW1lbnQgU2VsZWN0b3JzKio6IDEyCi0gKipDdXN0b20gQ29tcG9uZW50IFNlbGVjdG9ycyoqOiA4OQotICoqTGF5b3V0L1V0aWxpdHkgU2VsZWN0b3JzKio6IDUxCi0gKipBbmltYXRpb24gU2VsZWN0b3JzKio6IDMKLSAqKlByaW50IFNlbGVjdG9ycyoqOiAxMIcxAAAAAAAAhzEAAAAAAAABAAAACg",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO4yAAAAAAAAiDEAAAAAAAAAAAAAAADwvw"
+					"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAA7jIAAAAAAACIMQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					164,
@@ -252,7 +252,7 @@
 					"left_delete",
 					null,
 					"AQAAAIcxAAAAAAAAhzEAAAAAAAABAAAACg",
-					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIgxAAAAAAAAiDEAAAAAAAAAAAAAAADwvw"
+					"BwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAiDEAAAAAAACIMQAAAAAAAAAAAAAAAPC/"
 				],
 				[
 					19,
@@ -262,7 +262,7 @@
 						"characters": "\n"
 					},
 					"AQAAAGEyAAAAAAAAYjIAAAAAAAAAAAAA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABhMgAAAAAAAGEyAAAAAAAAAAAAAAAA8L8"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAGEyAAAAAAAAYTIAAAAAAAAAAAAAAADwvw"
 				]
 			]
 		},
@@ -282,7 +282,7 @@
 					"left_delete",
 					null,
 					"AwAAALoZAAAAAAAAuhkAAAAAAAABAAAAZLkZAAAAAAAAuRkAAAAAAAABAAAAZLgZAAAAAAAAuBkAAAAAAAABAAAAQQ",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC7GQAAAAAAALsZAAAAAAAAAAAAAAAA8L8"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALsZAAAAAAAAuxkAAAAAAAAAAAAAAADwvw"
 				],
 				[
 					147,
@@ -290,7 +290,35 @@
 					"left_delete",
 					null,
 					"AQAAALcZAAAAAAAAtxkAAAAAAAABAAAAIA",
-					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC4GQAAAAAAALgZAAAAAAAAAAAAAAAA8L8"
+					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALgZAAAAAAAAuBkAAAAAAAAAAAAAAADwvw"
+				]
+			]
+		},
+		{
+			"contents": "Here's a concise summary of the Git commands and features we've discussed, presented in Markdown format for easy reference.\n\nGit Commands & Features (Compact List)\n\nCommand\n\nPurpose\n\nKey Options/Notes\n\ngit branch\n\nManage Branches (list, create, delete)\n\n-d <branch-name>: Delete local branch (safe, only if merged) <br> -D <branch-name>: Force delete local branch (dangerous!)\n\ngit checkout\n\nSwitch Branches/Restore Files\n\n-b <new-branch-name>: Create new branch AND switch to it (common for new features) <br> <branch-name>: Switch to existing branch <br> -- <file-name>: Discard un-staged changes in file (older Git)\n\ngit push\n\nUpload Local Commits to Remote\n\norigin <branch-name>: Push specific branch to remote <br> origin --delete <branch-name> or origin :<branch-name>: Delete remote branch\n\ngit pull\n\nDownload & Integrate Remote Changes\n\norigin <branch-name>: Fetch and merge changes from remote branch into current local branch.\n\ngit add\n\nStage Changes (add changes from working directory to staging area)\n\n. (dot): Stage all changes in current directory <br> <file-name>: Stage specific file\n\ngit commit\n\nSave Staged Changes to Repository History\n\n-m \"message\": Include a commit message directly\n\ngit restore\n\nUndo Changes (flexible command for undoing changes)\n\n<file-name>: Discard un-staged changes in file <br> --staged <file-name>: Unstage file (move from staging to working directory, keeping changes)\n\ngit reset\n\nMove HEAD/Undo Local Commits (rewrites history)\n\nHEAD~1: Refers to the commit before HEAD <br> --soft: Un-commits, keeps changes staged <br> --mixed (default): Un-commits, keeps changes un-staged <br> --hard (DANGEROUS!): Un-commits, discards all changes permanently. Avoid on pushed commits.\n\ngit revert\n\nUndo Commits Safely (creates a new commit that undoes changes)\n\n<commit-hash>: Revert changes introduced by a specific commit. Safe for pushed commits.\n\ngit log\n\nView Commit History\n\n--oneline: Compact output <br> --graph: ASCII art commit graph <br> --decorate: Show branch/tag pointers\n\ngit fetch\n\nDownload Remote Changes (without merging)\n\norigin: Fetch from default remote <br> --prune or -p: Remove remote-tracking branches that no longer exist on the remote (tidies up git branch -a output)\n\nThis table should serve as a quick reference for the Git commands we've discussed. It covers the essential commands for managing your repository, branches, and undoing changes.",
+			"settings":
+			{
+				"buffer_size": 2409,
+				"line_ending": "Windows",
+				"name": "Here's a concise summary of the Git commands and f"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAHQkAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAaQkAAAAAAAAdCQAASGVyZSdzIGEgY29uY2lzZSBzdW1tYXJ5IG9mIHRoZSBHaXQgY29tbWFuZHMgYW5kIGZlYXR1cmVzIHdlJ3ZlIGRpc2N1c3NlZCwgcHJlc2VudGVkIGluIE1hcmtkb3duIGZvcm1hdCBmb3IgZWFzeSByZWZlcmVuY2UuR2l0IENvbW1hbmRzICYgRmVhdHVyZXMgKENvbXBhY3QgTGlzdClDb21tYW5kUHVycG9zZUtleSBPcHRpb25zL05vdGVzZ2l0IGJyYW5jaE1hbmFnZSBCcmFuY2hlcyAobGlzdCwgY3JlYXRlLCBkZWxldGUpLWQgPGJyYW5jaC1uYW1lPjogRGVsZXRlIGxvY2FsIGJyYW5jaCAoc2FmZSwgb25seSBpZiBtZXJnZWQpIDxicj4gLUQgPGJyYW5jaC1uYW1lPjogRm9yY2UgZGVsZXRlIGxvY2FsIGJyYW5jaCAoZGFuZ2Vyb3VzISlnaXQgY2hlY2tvdXRTd2l0Y2ggQnJhbmNoZXMvUmVzdG9yZSBGaWxlcy1iIDxuZXctYnJhbmNoLW5hbWU+OiBDcmVhdGUgbmV3IGJyYW5jaCBBTkQgc3dpdGNoIHRvIGl0IChjb21tb24gZm9yIG5ldyBmZWF0dXJlcykgPGJyPiA8YnJhbmNoLW5hbWU+OiBTd2l0Y2ggdG8gZXhpc3RpbmcgYnJhbmNoIDxicj4gLS0gPGZpbGUtbmFtZT46IERpc2NhcmQgdW4tc3RhZ2VkIGNoYW5nZXMgaW4gZmlsZSAob2xkZXIgR2l0KWdpdCBwdXNoVXBsb2FkIExvY2FsIENvbW1pdHMgdG8gUmVtb3Rlb3JpZ2luIDxicmFuY2gtbmFtZT46IFB1c2ggc3BlY2lmaWMgYnJhbmNoIHRvIHJlbW90ZSA8YnI+IG9yaWdpbiAtLWRlbGV0ZSA8YnJhbmNoLW5hbWU+IG9yIG9yaWdpbiA6PGJyYW5jaC1uYW1lPjogRGVsZXRlIHJlbW90ZSBicmFuY2hnaXQgcHVsbERvd25sb2FkICYgSW50ZWdyYXRlIFJlbW90ZSBDaGFuZ2Vzb3JpZ2luIDxicmFuY2gtbmFtZT46IEZldGNoIGFuZCBtZXJnZSBjaGFuZ2VzIGZyb20gcmVtb3RlIGJyYW5jaCBpbnRvIGN1cnJlbnQgbG9jYWwgYnJhbmNoLmdpdCBhZGRTdGFnZSBDaGFuZ2VzIChhZGQgY2hhbmdlcyBmcm9tIHdvcmtpbmcgZGlyZWN0b3J5IHRvIHN0YWdpbmcgYXJlYSkuIChkb3QpOiBTdGFnZSBhbGwgY2hhbmdlcyBpbiBjdXJyZW50IGRpcmVjdG9yeSA8YnI+IDxmaWxlLW5hbWU+OiBTdGFnZSBzcGVjaWZpYyBmaWxlZ2l0IGNvbW1pdFNhdmUgU3RhZ2VkIENoYW5nZXMgdG8gUmVwb3NpdG9yeSBIaXN0b3J5LW0gIm1lc3NhZ2UiOiBJbmNsdWRlIGEgY29tbWl0IG1lc3NhZ2UgZGlyZWN0bHlnaXQgcmVzdG9yZVVuZG8gQ2hhbmdlcyAoZmxleGlibGUgY29tbWFuZCBmb3IgdW5kb2luZyBjaGFuZ2VzKTxmaWxlLW5hbWU+OiBEaXNjYXJkIHVuLXN0YWdlZCBjaGFuZ2VzIGluIGZpbGUgPGJyPiAtLXN0YWdlZCA8ZmlsZS1uYW1lPjogVW5zdGFnZSBmaWxlIChtb3ZlIGZyb20gc3RhZ2luZyB0byB3b3JraW5nIGRpcmVjdG9yeSwga2VlcGluZyBjaGFuZ2VzKWdpdCByZXNldE1vdmUgSEVBRC9VbmRvIExvY2FsIENvbW1pdHMgKHJld3JpdGVzIGhpc3RvcnkpSEVBRH4xOiBSZWZlcnMgdG8gdGhlIGNvbW1pdCBiZWZvcmUgSEVBRCA8YnI+IC0tc29mdDogVW4tY29tbWl0cywga2VlcHMgY2hhbmdlcyBzdGFnZWQgPGJyPiAtLW1peGVkIChkZWZhdWx0KTogVW4tY29tbWl0cywga2VlcHMgY2hhbmdlcyB1bi1zdGFnZWQgPGJyPiAtLWhhcmQgKERBTkdFUk9VUyEpOiBVbi1jb21taXRzLCBkaXNjYXJkcyBhbGwgY2hhbmdlcyBwZXJtYW5lbnRseS4gQXZvaWQgb24gcHVzaGVkIGNvbW1pdHMuZ2l0IHJldmVydFVuZG8gQ29tbWl0cyBTYWZlbHkgKGNyZWF0ZXMgYSBuZXcgY29tbWl0IHRoYXQgdW5kb2VzIGNoYW5nZXMpPGNvbW1pdC1oYXNoPjogUmV2ZXJ0IGNoYW5nZXMgaW50cm9kdWNlZCBieSBhIHNwZWNpZmljIGNvbW1pdC4gU2FmZSBmb3IgcHVzaGVkIGNvbW1pdHMuZ2l0IGxvZ1ZpZXcgQ29tbWl0IEhpc3RvcnktLW9uZWxpbmU6IENvbXBhY3Qgb3V0cHV0IDxicj4gLS1ncmFwaDogQVNDSUkgYXJ0IGNvbW1pdCBncmFwaCA8YnI+IC0tZGVjb3JhdGU6IFNob3cgYnJhbmNoL3RhZyBwb2ludGVyc2dpdCBmZXRjaERvd25sb2FkIFJlbW90ZSBDaGFuZ2VzICh3aXRob3V0IG1lcmdpbmcpb3JpZ2luOiBGZXRjaCBmcm9tIGRlZmF1bHQgcmVtb3RlIDxicj4gLS1wcnVuZSBvciAtcDogUmVtb3ZlIHJlbW90ZS10cmFja2luZyBicmFuY2hlcyB0aGF0IG5vIGxvbmdlciBleGlzdCBvbiB0aGUgcmVtb3RlICh0aWRpZXMgdXAgZ2l0IGJyYW5jaCAtYSBvdXRwdXQpVGhpcyB0YWJsZSBzaG91bGQgc2VydmUgYXMgYSBxdWljayByZWZlcmVuY2UgZm9yIHRoZSBHaXQgY29tbWFuZHMgd2UndmUgZGlzY3Vzc2VkLiBJdCBjb3ZlcnMgdGhlIGVzc2VudGlhbCBjb21tYW5kcyBmb3IgbWFuYWdpbmcgeW91ciByZXBvc2l0b3J5LCBicmFuY2hlcywgYW5kIHVuZG9pbmcgY2hhbmdlcy4",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAdCQAAAAAAAAAAAAAAAPC/"
 				]
 			]
 		}
@@ -573,8 +601,8 @@
 						"selection":
 						[
 							[
-								316,
-								316
+								710,
+								710
 							]
 						],
 						"settings":
@@ -606,8 +634,8 @@
 						"selection":
 						[
 							[
-								6583,
-								6583
+								2007,
+								2007
 							]
 						],
 						"settings":
@@ -617,10 +645,39 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2176.0,
+						"translation.y": 768.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2409,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2409,
+								2409
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Here's a concise summary of the Git commands and f",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 384.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"stack_multiselect": false,
 					"type": "text"
 				}

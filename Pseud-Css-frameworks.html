@@ -45,15 +45,13 @@
             background: #257a62;
         }
 
-        /* Vue Transition Styles */
-        .list-enter-active,
-        .list-leave-active {
-            transition: all 0.5s ease;
-        }
-        .list-enter-from,
-        .list-leave-to {
-            opacity: 0;
-            transform: translateX(30px);
+
+        /* Make contenteditable placeholders visible */
+        [contenteditable]:empty:before {
+            content: attr(placeholder);
+            color: #6b7280; /* gray-500 */
+            pointer-events: none;
+            display: block; /* For line-breaking */
         }
     </style>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -83,29 +81,52 @@
 
         <!-- Left Column: Selectors -->
         <div class="md:col-span-3 bg-gray-800 rounded-lg shadow-md flex flex-col overflow-hidden">
-            <div class="p-4 border-b border-gray-700">
+            <div class="p-4 border-b border-gray-700 flex justify-between items-center">
                 <h2 class="text-lg font-semibold flex items-center"><i class="fas fa-tags mr-2"></i>CSS Selectors</h2>
-                <div class="flex mt-3">
-                    <input type="text" v-model="newSelectorName" @keyup.enter="addSelector" placeholder="e.g., .btn or #main-nav" class="bg-gray-700 text-white w-full px-3 py-2 rounded-l-md focus:outline-none focus:ring-2 focus:ring-[var(--kbn-primary)]">
-                    <button @click="addSelector" class="px-4 py-2 rounded-r-md text-white font-semibold transition-colors" :style="{backgroundColor: 'var(--kbn-primary)'}" hover-style="{backgroundColor: '#257a62'}">
-                        <i class="fas fa-plus"></i>
-                    </button>
-                </div>
+                <button @click="addGroup" class="px-3 py-1 rounded-md text-sm font-semibold transition-colors" :style="{backgroundColor: 'var(--kbn-primary)'}" title="Add New Group">
+                    <i class="fas fa-plus"></i> Group
+                </button>
             </div>
-            <ul class="flex-grow overflow-y-auto p-2">
-                <li v-if="!selectors.length" class="text-center text-gray-500 py-4">Add a selector to begin.</li>
+            <div class="flex-grow overflow-y-auto p-2">
+                 <p v-if="!selectorGroups.length" class="text-center text-gray-500 py-4">Add a group to begin.</p>
                 <transition-group name="list" tag="div">
-                    <li v-for="selector in selectors" :key="selector.id" 
-                        @click="selectSelector(selector.id)"
-                        class="flex justify-between items-center p-3 my-1 rounded-md cursor-pointer transition-all duration-200"
-                        :class="{'bg-gray-700 scale-105': activeSelectorId === selector.id, 'hover:bg-gray-700/50': activeSelectorId !== selector.id}">
-                        <span class="font-mono">{{ selector.name }}</span>
-                        <button @click.stop="removeSelector(selector.id)" class="text-gray-500 hover:text-red-500 transition-colors">
-                            <i class="fas fa-trash-alt"></i>
-                        </button>
-                    </li>
+                    <div v-for="group in selectorGroups" :key="group.id" class="bg-gray-900/50 rounded-lg mb-3 p-2">
+                        <div class="flex justify-between items-center mb-2">
+                            <h3 
+                                contenteditable="true" 
+                                @blur="updateGroupName($event, group)"
+                                class="font-bold text-md flex-grow p-1 rounded-md focus:outline-none focus:bg-gray-700"
+                                :style="{color: 'var(--kbn-secondary)'}">{{ group.name }}</h3>
+                            <div class="flex items-center">
+                                <button @click="addSelectorToGroup(group)" class="text-gray-400 hover:text-green-400 transition-colors px-2" title="Add Selector to Group">
+                                    <i class="fas fa-plus-circle"></i>
+                                </button>
+                                <button @click="removeGroup(group.id)" class="text-gray-400 hover:text-red-500 transition-colors px-2" title="Delete Group">
+                                    <i class="fas fa-trash"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <ul class="px-1">
+                            <li v-if="!group.selectors.length" class="text-xs text-center text-gray-500 py-2">No selectors in this group.</li>
+                            <div>
+                                <li v-for="selector in group.selectors" :key="selector.id" 
+                                    @click="selectSelector(selector.id)"
+                                    class="flex justify-between items-center p-2 my-1 rounded-md cursor-pointer transition-all duration-200"
+                                    :class="{'bg-gray-700 scale-105': activeSelectorId === selector.id, 'hover:bg-gray-700/50': activeSelectorId !== selector.id}">
+                                    <span 
+                                        contenteditable="true"
+                                        @blur="updateSelectorName($event, selector)"
+                                        class="font-mono text-md flex-grow focus:outline-none focus:bg-gray-600 rounded px-1"
+                                        placeholder=".selector">{{ selector.name }}</span>
+                                    <button @click.stop="removeSelector(selector.id)" class="text-gray-500 hover:text-red-500 transition-colors ml-2">
+                                        <i class="fas fa-trash-alt fa-xs"></i>
+                                    </button>
+                                </li>
+                            </div>
+                        </ul>
+                    </div>
                 </transition-group>
-            </ul>
+            </div>
         </div>
 
         <!-- Center Column: Pseudo-Class Manager -->
@@ -133,8 +154,9 @@
                     <p v-if="pseudoError" class="text-red-400 text-sm mt-2">{{ pseudoError }}</p>
                 </div>
 
-                <h3 class="text-md font-semibold mb-2 text-gray-200">Applied to <span class="font-mono p-1 rounded" :style="{backgroundColor: 'var(--kbn-primary)'}">{{ activeSelector.name }}</span>:</h3>
-                <transition-group name="list" tag="div">
+                <h3 class="text-md font-semibold mb-2 text-gray-200">Applied to <span class="font-mono p-1 rounded" :style="{backgroundColor: 'var(--kbn-primary)'}">{{ activeSelector.name }}</span></h3>
+
+                <div>
                     <div v-for="(pseudo, pIndex) in activeSelector.pseudos" :key="pseudo.name" class="bg-gray-900/50 p-4 rounded-lg mb-4">
                         <div class="flex justify-between items-center mb-3">
                             <h4 class="font-mono text-lg" :style="{color: 'var(--kbn-secondary)'}">{{ pseudo.name }}</h4>
@@ -143,8 +165,8 @@
                             </button>
                         </div>
                         <div v-for="(prop, propIndex) in pseudo.properties" :key="propIndex" class="flex items-center space-x-2 mb-2">
-                            <input type="text" v-model="prop.prop" placeholder="property" class="font-mono text-sm bg-gray-700 w-2/5 p-2 rounded focus:outline-none focus:ring-1 focus:ring-[var(--kbn-secondary)]">
-                            <input type="text" v-model="prop.value" placeholder="value" class="font-mono text-sm bg-gray-700 w-2/5 p-2 rounded focus:outline-none focus:ring-1 focus:ring-[var(--kbn-secondary)]">
+                            <input type="text" v-model="prop.prop" placeholder="property" class="font-mono text-sm bg-gray-700 w-4/5 p-2 rounded focus:outline-none focus:ring-1 focus:ring-[var(--kbn-secondary)]">
+                            <input type="text" v-model="prop.value" placeholder="value" class="font-mono text-sm bg-gray-700 w-4/5 p-2 rounded focus:outline-none focus:ring-1 focus:ring-[var(--kbn-secondary)]">
                             <button @click="removeProperty(pIndex, propIndex)" class="text-gray-500 hover:text-red-500 transition-colors p-2">
                                 <i class="fas fa-minus-circle"></i>
                             </button>
@@ -153,7 +175,8 @@
                             <i class="fas fa-plus mr-1"></i> Add Property
                         </button>
                     </div>
-                </transition-group>
+                </div>
+
                  <p v-if="!activeSelector.pseudos.length" class="text-center text-gray-500 py-4">No pseudo-classes applied yet.</p>
             </div>
             <div v-else class="flex-grow flex items-center justify-center text-gray-500">
@@ -184,23 +207,63 @@
         setup() {
             // --- STATE ---
             
-            // The main data structure for our selectors and their pseudos
-            const selectors = ref([
-                { id: 1, name: '.btn', pseudos: [
-                    { name: ':hover', properties: [{ prop: 'background-color', value: '#257a62' }, { prop: 'transform', value: 'translateY(-2px)' }] },
-                    { name: ':focus', properties: [{ prop: 'outline', value: '2px solid #f4ae81' }] }
-                ]},
-                { id: 2, name: 'a', pseudos: [
-                    { name: '::after', properties: [{ prop: 'content', value: '">>"' }, { prop: 'margin-left', value: '4px' }] }
-                ]}
-            ]);
+            // The main data structure for our selector groups
+
+            // Define a key for localStorage
+            const storageKey = 'kebenet-dapocss-groups';
+
+            // Define the default structure that loads if nothing is saved
+            const defaultSelectorGroups = [
+                { 
+                    id: 1, 
+                    name: 'Buttons', 
+                    selectors: [
+                        { id: 101, name: '.btn', pseudos: [
+                            { name: ':hover', properties: [{ prop: 'background-color', value: '#257a62' }, { prop: 'transform', value: 'translateY(-2px)' }] },
+                            { name: ':focus', properties: [{ prop: 'outline', value: '2px solid #f4ae81' }] }
+                        ]},
+                    ]
+                },
+                { 
+                    id: 2, 
+                    name: 'Links', 
+                    selectors: [
+                            { id: 201, name: 'a', pseudos: [
+                            { name: '::after', properties: [{ prop: 'content', value: '">>"' }, { prop: 'margin-left', value: '4px' }] }
+                        ]}
+                    ]
+                }
+            ];
+
+            // Initialize selectorGroups as a Vue ref
+            const selectorGroups = ref([]); 
+
+            // Safely load from localStorage or use the default groups
+            const storedData = localStorage.getItem(storageKey);
+            if (storedData) {
+                try {
+                    const parsedData = JSON.parse(storedData);
+                    // CRUCIAL CHECK: Make sure the parsed data is an array
+                    if (Array.isArray(parsedData)) {
+                        selectorGroups.value = parsedData;
+                    } else {
+                        // Data is invalid (not an array), fall back to default
+                        console.warn("Stored data is not an array, falling back to default groups.");
+                        selectorGroups.value = defaultSelectorGroups;
+                    }
+                } catch (e) {
+                    // JSON parsing failed, fall back to default
+                    console.error("Failed to parse stored data, falling back to default groups:", e);
+                    selectorGroups.value = defaultSelectorGroups;
+                }
+            } else {
+                // No data stored, use the default
+                selectorGroups.value = defaultSelectorGroups;
+            }
             
             // Tracks the currently selected selector from the left panel
-            const activeSelectorId = ref(1);
+            const activeSelectorId = ref(selectorGroups.value[0]?.selectors[0]?.id || null);
             
-            // Holds the value from the new selector input field
-            const newSelectorName = ref('');
-
             // Holds the value from the pseudo-class dropdown
             const selectedPseudo = ref('');
             
@@ -214,46 +277,99 @@
 
             // A computed property to easily get the full object of the active selector
             const activeSelector = computed(() => {
-                return selectors.value.find(s => s.id === activeSelectorId.value);
+                if (!activeSelectorId.value) return null;
+                for (const group of selectorGroups.value) {
+                    const found = group.selectors.find(s => s.id === activeSelectorId.value);
+                    if (found) return found;
+                }
+                return null;
             });
 
-            // The core logic: generates the CSS string from the `selectors` data
+            // The core logic: generates the CSS string from the `selectorGroups` data
             const generatedCss = computed(() => {
                 let css = '';
-                selectors.value.forEach(selector => {
-                    selector.pseudos.forEach(pseudo => {
-                        // Filter out properties that are empty
-                        const validProperties = pseudo.properties.filter(p => p.prop.trim() && p.value.trim());
-                        if (validProperties.length > 0) {
-                            css += `${selector.name}${pseudo.name} {\n`;
-                            validProperties.forEach(prop => {
-                                css += `    ${prop.prop}: ${prop.value};\n`;
+                selectorGroups.value.forEach(group => {
+                    // Check if any selector in the group has valid CSS to generate
+                    const groupHasContent = group.selectors.some(selector => 
+                        selector.pseudos.some(pseudo => 
+                            pseudo.properties.some(p => p.prop.trim() && p.value.trim())
+                        )
+                    );
+
+                    if (groupHasContent) {
+                        css += `/* ===== ${group.name.toUpperCase()} ===== */\n\n`;
+                        group.selectors.forEach(selector => {
+                            selector.pseudos.forEach(pseudo => {
+                                // Filter out properties that are empty
+                                const validProperties = pseudo.properties.filter(p => p.prop.trim() && p.value.trim());
+                                if (validProperties.length > 0) {
+                                    css += `${selector.name}${pseudo.name} {\n`;
+                                    validProperties.forEach(prop => {
+                                        css += `    ${prop.prop}: ${prop.value};\n`;
+                                    });
+                                    css += `}\n\n`;
+                                }
                             });
-                            css += `}\n\n`;
-                        }
-                    });
+                        });
+                    }
                 });
                 return css.trim();
             });
 
             // --- METHODS ---
 
-            const addSelector = () => {
-                if (newSelectorName.value.trim() === '') return;
-                const newId = selectors.value.length > 0 ? Math.max(...selectors.value.map(s => s.id)) + 1 : 1;
-                selectors.value.push({
+            const addGroup = () => {
+                const newId = Date.now();
+                selectorGroups.value.push({
                     id: newId,
-                    name: newSelectorName.value.trim(),
+                    name: 'New Group',
+                    selectors: []
+                });
+            };
+            
+            const removeGroup = (groupId) => {
+                // If the active selector is in the group being deleted, deselect it
+                const group = selectorGroups.value.find(g => g.id === groupId);
+                if (group && group.selectors.some(s => s.id === activeSelectorId.value)) {
+                    activeSelectorId.value = null;
+                }
+                selectorGroups.value = selectorGroups.value.filter(g => g.id !== groupId);
+            };
+
+            const addSelectorToGroup = (group) => {
+                const newId = Date.now();
+                group.selectors.push({
+                    id: newId,
+                    name: '.new-selector',
                     pseudos: []
                 });
-                newSelectorName.value = '';
                 activeSelectorId.value = newId; // Auto-select the new one
             };
 
-            const removeSelector = (id) => {
-                selectors.value = selectors.value.filter(s => s.id !== id);
-                if (activeSelectorId.value === id) {
-                    activeSelectorId.value = selectors.value.length > 0 ? selectors.value[0].id : null;
+            const removeSelector = (selectorId) => {
+                 selectorGroups.value.forEach(group => {
+                    group.selectors = group.selectors.filter(s => s.id !== selectorId);
+                });
+                if (activeSelectorId.value === selectorId) {
+                    activeSelectorId.value = null;
+                }
+            };
+
+            const updateGroupName = (event, group) => {
+                const newName = event.target.innerText.trim();
+                if (newName) {
+                    group.name = newName;
+                } else {
+                    event.target.innerText = group.name; // Revert if empty
+                }
+            };
+            
+            const updateSelectorName = (event, selector) => {
+                const newName = event.target.innerText.trim();
+                 if (newName) {
+                    selector.name = newName;
+                } else {
+                    event.target.innerText = selector.name; // Revert if empty
                 }
             };
             
@@ -264,20 +380,17 @@
             const addPseudoToSelector = () => {
                 if (!selectedPseudo.value || !activeSelector.value) return;
 
-                // Rule: Prevent duplicates
                 const exists = activeSelector.value.pseudos.some(p => p.name === selectedPseudo.value);
                 if (exists) {
                     pseudoError.value = `"${selectedPseudo.value}" already exists on this selector.`;
                     return;
                 }
                 
-                // Add the new pseudo with a default empty property
                 activeSelector.value.pseudos.push({
                     name: selectedPseudo.value,
                     properties: [{ prop: '', value: '' }]
                 });
                 
-                // Reset for next use
                 pseudoError.value = '';
                 selectedPseudo.value = '';
             };
@@ -316,7 +429,6 @@
 
             // --- WATCHERS ---
             
-            // Clear the error message when the user changes the active selector
             watch(activeSelectorId, () => {
                 pseudoError.value = '';
             });
@@ -328,16 +440,19 @@
             };
 
             return {
-                selectors,
+                selectorGroups,
                 activeSelectorId,
-                newSelectorName,
                 selectedPseudo,
                 pseudoError,
                 copyButtonText,
                 activeSelector,
                 generatedCss,
-                addSelector,
+                addGroup,
+                removeGroup,
+                addSelectorToGroup,
                 removeSelector,
+                updateGroupName,
+                updateSelectorName,
                 selectSelector,
                 addPseudoToSelector,
                 removePseudoFromSelector,

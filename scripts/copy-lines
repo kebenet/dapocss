@@ -1,0 +1,106 @@
+#!/bin/bash
+
+# A script to extract multiple line ranges from a file.
+#
+# Usage:
+# ./copy_lines.sh <input_file> <start1> <end1> [<start2> <end2> ...] [-o <output_file>]
+#
+# Example:
+# ./copy_lines.sh my_log.txt 10 20 55 60 101 105 -o extracted_lines.txt
+
+# --- Function to display help message ---
+usage() {
+    echo "Usage: $0 <input_file> <start1> <end1> [<start2> <end2> ...] [-o <output_file>]"
+    echo "  <input_file>    : The file to read from."
+    echo "  <startN> <endN> : Pairs of start and end line numbers for each range."
+    echo "  -o <output_file>: (Optional) The file to write the output to. If omitted, prints to the console."
+    exit 1
+}
+
+# --- Initial Argument Validation ---
+if [ "$#" -lt 3 ]; then
+    echo "Error: Not enough arguments."
+    usage
+fi
+
+# --- Argument Parsing ---
+input_file="$1"
+shift # Remove the input file from the argument list
+
+# Check if the input file exists and is readable
+if [ ! -f "$input_file" ]; then
+    echo "Error: Input file '$input_file' not found."
+    exit 1
+fi
+
+# --- Process remaining arguments for line ranges and output file ---
+args=("$@") # Store all remaining arguments in an array
+line_numbers=()
+output_file=""
+i=0
+
+# Loop through all arguments to find the output file first
+while [ $i -lt ${#args[@]} ]; do
+    if [ "${args[$i]}" == "-o" ]; then
+        # Check if a filename is provided after -o
+        if [ -n "${args[$i+1]}" ]; then
+            output_file="${args[$i+1]}"
+            # Remove -o and its filename from the array so they aren't treated as line numbers
+            unset 'args[i]'
+            unset 'args[i+1]'
+        else
+            echo "Error: The -o option requires an output file name."
+            usage
+        fi
+        break # Assume -o and its value are the last arguments
+    fi
+    ((i++))
+done
+
+# The remaining arguments are the line numbers
+line_numbers=("${args[@]}")
+
+# Check for an even number of line range arguments
+if [ $((${#line_numbers[@]} % 2)) -ne 0 ]; then
+    echo "Error: Line ranges must be provided in pairs of 'start end'."
+    usage
+fi
+
+# --- Build the sed command ---
+sed_command_parts=""
+index=0
+while [ $index -lt ${#line_numbers[@]} ]; do
+    start_line=${line_numbers[index]}
+    end_line=${line_numbers[index+1]}
+
+    # Validate that the arguments are actually numbers
+    if ! [[ "$start_line" =~ ^[0-9]+$ && "$end_line" =~ ^[0-9]+$ ]]; then
+        echo "Error: Line numbers must be positive integers. Found '$start_line' and '$end_line'."
+        usage
+    fi
+
+    # Append the print expression for the current range to our sed command
+    # e.g., -e '11,22p'
+    sed_command_parts+=" -e '${start_line},${end_line}p'"
+    index=$((index + 2))
+done
+
+# --- Execute the command ---
+if [ -z "$sed_command_parts" ]; then
+    echo "Error: No valid line ranges were provided."
+    usage
+fi
+
+# We use `sed -n` to suppress the default behavior of printing every line.
+# The `p` command in our expressions then prints only the lines in the specified ranges.
+full_command="sed -n ${sed_command_parts} \"${input_file}\""
+
+if [ -n "$output_file" ]; then
+    # If an output file was specified, redirect the command's output to it
+    eval "$full_command" > "$output_file"
+    echo "Success: Selected lines have been saved to '$output_file'."
+    subl '$output_file'
+else
+    # Otherwise, execute the command and print to the standard output (your terminal)
+    eval "$full_command"
+fi
