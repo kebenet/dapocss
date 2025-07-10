@@ -11,27 +11,15 @@ card {
 
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Subtle shadow for depth */
-    // transition: transform 0.3s ease, box-shadow 0.3s ease;
     height: 100%;
 
 }
 
 
-// card>img {
-//     width: 100%;
-//     /* Ensure image fills its container */
-//     aspect-ratio: 16/9;
-//     object-fit: cover;
-//     /* Cover the area without distorting aspect ratio */
-// }
-
 div[ratio-1]>card>img   {aspect-ratio: 1/1; }
 
 card>content { padding: vars.$padding-base; }
 
-// card modifier
-// Automatic add top Radius on card
 [radius] {
     overflow: hidden;
     border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;

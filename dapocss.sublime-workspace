@@ -1,0 +1,727 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"cont",
+				"container"
+			],
+			[
+				"mix",
+				"mixins"
+			],
+			[
+				"sta",
+				"stack-grid"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"sec",
+				"secondary"
+			],
+			[
+				"--primary-",
+				"--primary-44"
+			],
+			[
+				"--textm",
+				"--text-muted"
+			],
+			[
+				"va",
+				"var()"
+			],
+			[
+				"con",
+				"container"
+			],
+			[
+				"--te",
+				"--text-main"
+			],
+			[
+				"in",
+				"inherit"
+			],
+			[
+				"bold",
+				"bolder"
+			],
+			[
+				"me",
+				"medium"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"pri",
+				"pricing-original-price"
+			],
+			[
+				"--tex",
+				"--text-main"
+			],
+			[
+				"--bor",
+				"--border-grey"
+			],
+			[
+				"set",
+				"set-stack-grid"
+			],
+			[
+				"var",
+				"var()"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"side",
+				"side-right"
+			],
+			[
+				"th",
+				"third"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"pr",
+				"primary-20"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"padding-top",
+				"padding-topbottomleft"
+			],
+			[
+				"padd",
+				"padding-tbr"
+			],
+			[
+				"pad-",
+				"pad-tbr"
+			],
+			[
+				"cla",
+				"clamp-gap"
+			],
+			[
+				"colu",
+				"column-1"
+			],
+			[
+				"gri",
+				"grid"
+			],
+			[
+				"blo",
+				"block"
+			],
+			[
+				"darksla",
+				"darkslategray"
+			],
+			[
+				"justi",
+				"justify-items"
+			],
+			[
+				"repe",
+				"repeat()"
+			],
+			[
+				"gr",
+				"grid"
+			],
+			[
+				"grid-te",
+				"grid-template-columns"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"spa",
+				"space-evenly"
+			],
+			[
+				"space",
+				"space-between"
+			],
+			[
+				"ra",
+				"ratio-1"
+			],
+			[
+				"rati",
+				"ratio-1"
+			],
+			[
+				"jus",
+				"justify"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"v",
+				"vars"
+			],
+			[
+				"thi",
+				"thick"
+			],
+			[
+				"dis",
+				"display"
+			],
+			[
+				"just",
+				"justify"
+			],
+			[
+				"align",
+				"align|start"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"margb",
+				"margin-bottom"
+			],
+			[
+				"ma",
+				"margin-top"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "Complete Ruleset and Selector L.md",
+			"settings":
+			{
+				"buffer_size": 12898,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "# DAPOCSS v1.1.0 - Complete Ruleset and Selector L"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAAAAAAAAAAAAyTMAAAAAAAAAAAAA",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					159,
+					2,
+					"left_delete",
+					null,
+					"AgAAAIgxAAAAAAAAiDEAAAAAAABmAQAALSAqKlVuaXZlcnNhbC9CYXNpYyBTZWxlY3RvcnMqKjogOAotICoqSFRNTCBFbGVtZW50IFNlbGVjdG9ycyoqOiA4NwotICoqRm9ybSBFbGVtZW50IFNlbGVjdG9ycyoqOiA0NQotICoqQnV0dG9uIENsYXNzIFNlbGVjdG9ycyoqOiAxMgotICoqVGFibGUgU2VsZWN0b3JzKio6IDcKLSAqKk1lZGlhIEVsZW1lbnQgU2VsZWN0b3JzKio6IDIKLSAqKkludGVyYWN0aXZlIEVsZW1lbnQgU2VsZWN0b3JzKio6IDEyCi0gKipDdXN0b20gQ29tcG9uZW50IFNlbGVjdG9ycyoqOiA4OQotICoqTGF5b3V0L1V0aWxpdHkgU2VsZWN0b3JzKio6IDUxCi0gKipBbmltYXRpb24gU2VsZWN0b3JzKio6IDMKLSAqKlByaW50IFNlbGVjdG9ycyoqOiAxMIcxAAAAAAAAhzEAAAAAAAABAAAACg",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAO4yAAAAAAAAiDEAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					164,
+					1,
+					"left_delete",
+					null,
+					"AQAAAIcxAAAAAAAAhzEAAAAAAAABAAAACg",
+					"BgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADwvwAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIgxAAAAAAAAiDEAAAAAAAAAAAAAAADwvw"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAGEyAAAAAAAAYjIAAAAAAAAAAAAA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABhMgAAAAAAAGEyAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		},
+		{
+			"file": "Pseud-Css-frameworks.html",
+			"settings":
+			{
+				"buffer_size": 16997,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					146,
+					3,
+					"left_delete",
+					null,
+					"AwAAALoZAAAAAAAAuhkAAAAAAAABAAAAZLkZAAAAAAAAuRkAAAAAAAABAAAAZLgZAAAAAAAAuBkAAAAAAAABAAAAQQ",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC7GQAAAAAAALsZAAAAAAAAAAAAAAAA8L8"
+				],
+				[
+					147,
+					1,
+					"left_delete",
+					null,
+					"AQAAALcZAAAAAAAAtxkAAAAAAAABAAAAIA",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC4GQAAAAAAALgZAAAAAAAAAAAAAAAA8L8"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"wr",
+				"Emmet: Wrap with Abbreviation"
+			],
+			[
+				"wa",
+				"Emmet: Wrap with Abbreviation"
+			],
+			[
+				"prett",
+				"HTMLPrettify"
+			],
+			[
+				"pret",
+				"HTMLPrettify"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"for",
+				"Preferences: Formatter Quick Options"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 118.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/user/Documents/dapocss",
+		"/C/Users/user/Documents/dapocss/html",
+		"/C/Users/user/Documents/dapocss/scripts",
+		"/C/Users/user/Documents/dapocss/src",
+		"/C/Users/user/Documents/dapocss/src/abstracts",
+		"/C/Users/user/Documents/dapocss/src/base",
+		"/C/Users/user/Documents/dapocss/src/components",
+		"/C/Users/user/Documents/dapocss/src/layout"
+	],
+	"file_history":
+	[
+		"/C/Users/user/Documents/dapocss/html/Time-Banner-Grid.html",
+		"/C/Users/user/Documents/dapocss/html/Time Banner with CSS Grid.html",
+		"/C/Users/user/Documents/dapocss/grid.html",
+		"/C/Users/user/Documents/dapocss/pricing.html",
+		"/C/Users/user/.bashrc",
+		"/C/Users/user/Documents/dapocss/src/layout/_card.scss",
+		"/C/Users/user/Documents/dapocss/html/Event-Promo-Banner.html",
+		"/C/Users/user/Documents/dapocss/link-button.html",
+		"/C/Users/user/Documents/dapocss/README.md",
+		"/C/Users/user/Documents/dapocss/css_categories.yaml",
+		"/C/Users/user/Downloads/Collections-Export-2025-July-09-0455.xml",
+		"/C/Users/user/Documents/dapocss/Pseud-Css-frameworks.html",
+		"/C/Users/user/Downloads/Collections-Export-2025-July-09-0435-1.csv",
+		"/C/Users/user/Downloads/acpt_export_2025-07-09T04_27_59.json",
+		"/C/Users/user/Documents/dapocss/src/layout/_modifier.scss",
+		"/C/Users/user/Documents/dapocss/package.json",
+		"/C/Users/user/Documents/dapocss/dist/style.min.css",
+		"/C/Users/user/Documents/dapocss/src/layout/_layout.scss",
+		"/C/Users/user/Documents/dapocss/src/components/_forms.scss",
+		"/C/Users/user/Documents/dapocss/src/components/_content.scss",
+		"/C/Users/user/Documents/dapocss/src/layout/_stack-grid.scss",
+		"/C/Users/user/Documents/dapocss/src/abstracts/_mixins.scss",
+		"/C/Users/user/Documents/dapocss/src/main.scss",
+		"/C/Users/user/Documents/dapocss/src/layout/_grid.scss",
+		"/C/Users/user/Documents/dapocss/src/abstracts/_variables.scss",
+		"/C/Users/user/Documents/dapocss/src/layout/_spacing.scss",
+		"/C/Users/user/Documents/dapocss/stack-grid.html",
+		"/C/Users/user/Documents/dapocss/src/base/_reset.scss",
+		"/C/Users/user/Documents/dapocss/src/base/_colors.scss",
+		"/C/Users/user/Documents/dapocss/dist/style.css",
+		"/C/Users/user/Documents/dapocss/src/components/_link.scss",
+		"/C/Users/user/Documents/dapocss/src/layout/_section.scss",
+		"/C/Users/user/Documents/dapocss/scripts/create_file",
+		"/C/Users/user/Documents/dapocss/assets/icons.json",
+		"/C/Users/user/Documents/dapocss/scripts/gitpush",
+		"/C/Users/user/Documents/dapocss/layout.html",
+		"/C/Users/user/.bash_profile",
+		"/C/Users/user/Documents/dapocss/example.html",
+		"/C/Users/user/Documents/dapocss/src/components/_date.scss",
+		"/C/Users/user/Documents/dapocss/src/base/_typography.scss",
+		"/C/Users/user/Documents/dapocss/legacy/style.min.css",
+		"/C/Users/user/Documents/dapocss/legacy/style.css",
+		"/C/Users/user/Documents/dapocss/src/layout/_modifiers.scss",
+		"/C/Users/user/Desktop/Wordpress Api/style.css",
+		"/C/Users/user/Documents/WindowsPowerShell",
+		"/C/Users/user/Desktop/catalogs/KEBENET Theme.md",
+		"/C/Users/user/Desktop/catalogs/readme.yaml",
+		"/C/Users/user/Desktop/catalogs/flexboxgrid.css",
+		"/C/Users/user/Desktop/catalogs/bulma-column.css",
+		"/C/Users/user/Desktop/catalogs/bulma.css",
+		"/C/Users/user/Desktop/catalogs/rogerjer Document.yaml",
+		"/C/Users/user/Downloads/bricks-theme-style-kebenet.json",
+		"/C/Users/user/Desktop/catalogs/get_name_from_title.py",
+		"/C/Users/user/Desktop/catalogs/PROMPT.md",
+		"/C/Users/user/Downloads/export_at_theme_settings.json",
+		"/C/Users/user/Downloads/bricks-css-classes.json",
+		"/C/Users/user/Downloads/bricks-theme-style-at_framework.json",
+		"/C/Users/user/Downloads/bricks1.10.x-theme-style-acss.json",
+		"/C/Users/user/Downloads/core-framework.css",
+		"/C/Users/user/Downloads/bricks-css-variables.json",
+		"/C/Users/user/Downloads/kebenet©.core",
+		"/C/Users/user/Downloads/brick hero.json",
+		"/C/Users/user/Downloads/template-projects-single-2025-06-25.json",
+		"/C/Users/user/Downloads/psycology-of-colors.xml",
+		"/C/Users/user/Desktop/catalogs/readme.txt",
+		"/C/Users/user/Desktop/catalogs/post_wordpress.yaml",
+		"/C/Users/user/Desktop/merge_product.json",
+		"/C/Users/user/Desktop/catalogs/WordPressCrud.py",
+		"/C/Users/user/Desktop/catalogs/post_wordpress.json",
+		"/C/Users/user/Desktop/catalogs/worpress_post.py",
+		"/C/Users/user/Desktop/full-product.json",
+		"/C/Users/user/Downloads/template-package-lengkap-2025-06-20.json",
+		"/C/Users/user/Desktop/list topmix.txt",
+		"/C/Users/user/Desktop/catalogs/init_and_reset.py",
+		"/C/Users/user/Desktop/catalogs/get_all_img.py",
+		"/C/Users/user/Downloads/config.json",
+		"/C/Users/user/Desktop/solid topmix.txt",
+		"/C/Users/user/Downloads/renamed_products.json",
+		"/C/Users/user/Downloads/details-from-topmixhpl.com-2025-06-19 (1).json",
+		"/C/Users/user/Desktop/data-product.txt",
+		"/C/Users/user/Downloads/details-from-topmixhpl.com-2025-06-19.json"
+	],
+	"find":
+	{
+		"height": 25.0
+	},
+	"find_in_files":
+	{
+		"height": 101.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"primary-color",
+			"chrome extension",
+			"h3",
+			"primary",
+			"Link",
+			"div class=\"demo-grid\"",
+			"\n        </div>",
+			"        </div>",
+			"div class=\"section\"",
+			"a ",
+			".link-",
+			"section",
+			"table",
+			"pricing-table",
+			"p",
+			"custom",
+			".brxe-pricing-tables ",
+			"card",
+			"side-right",
+			"stack-top",
+			"top",
+			"stack-top",
+			"main-bottom",
+			"main-top",
+			"sidebar",
+			"grid-item",
+			"sidebar-right",
+			"grid-item",
+			"grid",
+			"grid-container",
+			"setup-main-template",
+			"setup-template",
+			"border-radius",
+			"sidebar",
+			"grid-container",
+			"(\\$padding\\-base)",
+			"section",
+			"div",
+			"content-container",
+			"rem",
+			"--section-padding",
+			"kbd",
+			"p",
+			"button",
+			"content",
+			"justify",
+			"\\$text\\-muted\\-light",
+			"header",
+			"div",
+			"header",
+			"align",
+			"align-items",
+			"footer",
+			"--primary-2",
+			"\\$primary\\-2",
+			"(\\$\\w+)",
+			"\\$\\w+"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"vars.\\1",
+			"--primary-20",
+			"$primary-20",
+			"vars.${1}",
+			"vars.$1",
+			"vars.{1}",
+			"vars./1",
+			"vars.\\\\1",
+			"vars.\\1"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "Complete Ruleset and Selector L.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 12898,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								316,
+								316
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# DAPOCSS v1.1.0 - Complete Ruleset and Selector L",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Pseud-Css-frameworks.html",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 16997,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6583,
+								6583
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2176.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 25.0
+	},
+	"input":
+	{
+		"height": 41.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 130.0,
+		"history":
+		[
+		]
+	},
+	"pinned_build_system": "",
+	"project": "dapocss.sublime-project",
+	"replace":
+	{
+		"height": 46.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"ca",
+				"src\\layout\\_card.scss"
+			],
+			[
+				"link",
+				"link-button.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\Users\\user\\Documents\\project\\chrome\\kebenet-fuzzy-search-extension\\js\\chrome-prompt.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 212.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

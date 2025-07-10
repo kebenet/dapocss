@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Promo Banner</title>
+    <!-- Google Fonts - Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Define your custom CSS variables from your saved information */
+        :root {
+            --primary-color: #2e9578;
+            --secondary-color: #f4ae81; /* Not used in this specific design, but available */
+            --background-color: #d7eae3;
+            --text-color: white;
+            --font-family: 'Montserrat', sans-serif; /* Using 'Montserrat' as a modern font */
+        }
+
+        body {
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: var(--background-color);
+            font-family: var(--font-family);
+            color: var(--text-color);
+            overflow-x: hidden; /* Prevent horizontal scrolling */
+        }
+
+        .promo-banner {
+            background-color: var(--primary-color);
+            padding: 30px 40px; /* Adjust padding to match the visual spacing in the image */
+            border-radius: 8px; /* Subtle rounded corners for the banner */
+            max-width: 600px; /* Set a maximum width for the banner */
+            width: 90%; /* Make it fluid for responsiveness */
+            margin: 20px auto; /* Center the banner horizontally on the page */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+            text-transform: uppercase; /* All text in the image appears in uppercase */
+
+            display: grid;
+            grid-template-rows: auto auto; /* Defines two main rows: one for the date, one for the location */
+            gap: 15px; /* Vertical spacing between the date section and location section */
+        }
+
+        .date-area {
+            display: grid;
+            /* Defines two columns that take up only the width needed by their content (auto).
+               This is crucial for `justify-content: center` to work effectively on the grid tracks. */
+            grid-template-columns: auto auto; 
+            align-items: center; /* Vertically aligns content within this grid row */
+            justify-content: center; /* Centers the grid tracks (the two columns) horizontally within the date-area */
+            border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Creates the thin white line below the date */
+            padding-bottom: 15px; /* Adds space between the date content and the line */
+        }
+
+        .day-range {
+            font-size: 5em; /* Large font size for "15-18" */
+            font-weight: 900; /* Extra bold to match the image */
+            line-height: 1; /* Adjust line height to prevent excess vertical space around the numbers */
+            text-align: right; /* Aligns "15-18" to the right within its grid cell, creating visual alignment with "JULAI 2025" */
+            padding-right: 15px; /* Adds space between the number "18" and "JULAI" */
+        }
+
+        .month-year-block {
+            display: flex; /* Uses flexbox to stack "JULAI" and "2025" vertically */
+            flex-direction: column;
+            align-items: flex-start; /* Aligns text to the left within this flex container */
+            font-size: 1.8em; /* Font size for month and year */
+            line-height: 1.1; /* Adjust line height for stacked text */
+            font-weight: bold;
+            /* Removed flex-grow, width, text-align, text-align-last as they were not achieving the desired text stretch */
+        }
+
+        /* Apply letter-spacing to the month and year spans to make them visually stretch */
+        .month-year-block .month,
+        .month-year-block .year {
+            letter-spacing: 0.1em; /* Adjust this value to control how much the letters spread out */
+        }
+        .month-year-block .year {
+            letter-spacing: 0.33em; /* Adjust this value to control how much the letters spread out */
+        }
+        .location-info {
+            font-size: 1.5em; /* Font size for "LOKASI: ZOOM" */
+            font-weight: bold;
+            text-align: center; /* Centers the location text horizontally */
+            margin-top: 5px; /* Small space above the location text, from the line */
+        }
+
+        /* Basic responsiveness for smaller screens */
+        @media (max-width: 600px) {
+            .promo-banner {
+                padding: 20px;
+                margin: 10px;
+            }
+            .day-range {
+                font-size: 3.5em; /* Reduce font size on smaller screens */
+            }
+            .month-year-block {
+                font-size: 1.2em; /* Reduce font size on smaller screens */
+            }
+            .location-info {
+                font-size: 1.1em; /* Reduce font size on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="promo-banner">
+        <div class="date-area">
+            <span class="day-range">15-18</span>
+            <div class="month-year-block">
+                <span class="month">JULAI</span>
+                <span class="year">2025</span>
+            </div>
+        </div>
+        <div class="location-info">LOKASI : ZOOM</div>
+    </div>
+</body>
+</html>
