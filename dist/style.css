@@ -611,7 +611,7 @@ input[type=range]::-webkit-slider-runnable-track {
   -webkit-transition: 0.2s;
   transition: 0.2s;
   background: var(--background);
-  border-radius: 3px;
+  border-radius: 13px;
 }
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 0 1px 1px #000, 0 0 1px #0d0d0d;
@@ -631,7 +631,7 @@ input[type=range]::-moz-range-track {
   -moz-transition: 0.2s;
   transition: 0.2s;
   background: var(--background);
-  border-radius: 3px;
+  border-radius: 13px;
 }
 input[type=range]::-moz-range-thumb {
   box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
@@ -651,13 +651,13 @@ input[type=range]::-ms-track {
 input[type=range]::-ms-fill-lower {
   background: var(--background);
   border: 0.2px solid #010101;
-  border-radius: 3px;
+  border-radius: 13px;
   box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
 }
 input[type=range]::-ms-fill-upper {
   background: var(--background);
   border: 0.2px solid #010101;
-  border-radius: 3px;
+  border-radius: 13px;
   box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
 }
 input[type=range]::-ms-thumb {
@@ -1170,14 +1170,6 @@ grid[hover] > stack-grid:hover {
   background-color: hsla(163, 53%, 38%, 0.44);
 }
 
-[bg=dark] {
-  background-color: #202b38;
-}
-
-[bg=darker] {
-  background-color: #161f27;
-}
-
 [bg=primary] {
   background-color: hsl(163, 53%, 38%);
 }
@@ -1211,7 +1203,7 @@ grid[hover] > stack-grid:hover {
 }
 
 [color=dark] {
-  color: #dbdbdb;
+  color: #363636;
 }
 
 [color=light] {

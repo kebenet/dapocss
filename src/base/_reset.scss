@@ -49,10 +49,10 @@
   // Animation
   --animation-duration: #{vars.$animation-duration};
   
-  // Light theme colors (default)
-  @include mixins.light-theme-colors;
+  // Default theme colors
+  @include mixins.default-theme-colors;
   
-  // Dark theme colors
+  // DARK THEME COLORS - COMMENTED OUT FOR FUTURE USE
 }
 
 // Base HTML Element

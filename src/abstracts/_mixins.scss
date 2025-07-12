@@ -45,33 +45,60 @@
   --text-xxxl: #{vars.$text-xxxl-large};
 }
 
-// Theme Mixins
+// Theme Mixins (Using Generic Variables)
 // =============================================================================
-@mixin light-theme-colors {
-  --background-body: #{vars.$background-body-light};
-  --background: #{vars.$background-light};
-  --background-alt: #{vars.$background-alt-light};
-  --text-main: #{vars.$text-main-light};
-  --text-bright: #{vars.$text-bright-light};
-  --text-muted: #{vars.$text-muted-light};
-  --links: #{vars.$links-light};
-  --border: #{vars.$border-light};
-  --code: #{vars.$code-light};
-  --focus: #{vars.$focus-color-light};
-  --selection: #{vars.$selection-color-light};
-  --highlight: #{vars.$highlight-color-light};
-  --variable: #{vars.$variable-color-light};
-  --form-text: #{vars.$form-text-light};
-  --form-placeholder: #{vars.$form-placeholder-light};
-  --button-base: #{vars.$button-base-light};
-  --button-hover: #{vars.$button-hover-light};
+@mixin default-theme-colors {
+  --background-body: #{vars.$background-body};
+  --background: #{vars.$background};
+  --background-alt: #{vars.$background-alt};
+  --text-main: #{vars.$text-main};
+  --text-bright: #{vars.$text-bright};
+  --text-muted: #{vars.$text-muted};
+  --links: #{vars.$links};
+  --border: #{vars.$border};
+  --code: #{vars.$code};
+  --focus: #{vars.$focus-color};
+  --selection: #{vars.$selection-color};
+  --highlight: #{vars.$highlight-color};
+  --variable: #{vars.$variable-color};
+  --form-text: #{vars.$form-text};
+  --form-placeholder: #{vars.$form-placeholder};
+  --button-base: #{vars.$button-base};
+  --button-hover: #{vars.$button-hover};
   --secondary: #{vars.$secondary};
-  --secondary-hover: #{vars.$secondary-hover-light};
-  --secondary-focus: #{vars.$secondary-focus-light};
-  --scrollbar-thumb: #{vars.$scrollbar-thumb-light};
-  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-light};
-  --select-arrow: #{vars.$select-arrow-light};
+  --secondary-hover: #{vars.$secondary-hover};
+  --secondary-focus: #{vars.$secondary-focus};
+  --scrollbar-thumb: #{vars.$scrollbar-thumb};
+  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover};
+  --select-arrow: #{vars.$select-arrow};
 }
+
+// DARK THEME MIXIN - COMMENTED OUT FOR FUTURE USE
+// =============================================================================
+// @mixin dark-theme-colors {
+//   --background-body: #{vars.$background-body-dark};
+//   --background: #{vars.$background-dark};
+//   --background-alt: #{vars.$background-alt-dark};
+//   --text-main: #{vars.$text-main-dark};
+//   --text-bright: #{vars.$text-bright-dark};
+//   --text-muted: #{vars.$text-muted-dark};
+//   --links: #{vars.$links-dark};
+//   --border: #{vars.$border-dark};
+//   --code: #{vars.$code-dark};
+//   --focus: #{vars.$focus-color-dark};
+//   --selection: #{vars.$selection-color-dark};
+//   --highlight: #{vars.$highlight-color-dark};
+//   --variable: #{vars.$variable-color-dark};
+//   --form-text: #{vars.$form-text-dark};
+//   --form-placeholder: #{vars.$form-placeholder-dark};
+//   --button-base: #{vars.$button-base-dark};
+//   --button-hover: #{vars.$button-hover-dark};
+//   --secondary-hover: #{vars.$secondary-hover-dark};
+//   --secondary-focus: #{vars.$secondary-focus-dark};
+//   --scrollbar-thumb: #{vars.$scrollbar-thumb-dark};
+//   --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-dark};
+//   --select-arrow: #{vars.$select-arrow-dark};
+// }
 
 // Transition Mixins
 // =============================================================================

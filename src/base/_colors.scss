@@ -4,7 +4,7 @@
 // CSS CUSTOM PROPERTIES (CSS Variables)
 // =============================================================================
 
-// Light Theme (Default)
+// Default Theme
 // =============================================================================
 :root {
   // Brand Colors
@@ -17,36 +17,36 @@
   --secondary-44: #{vars.$secondary-44};
   --secondary-08: #{vars.$secondary-08};
   
-  // Theme Colors (Light)
-  --background-body: #{vars.$background-body-light};
-  --background: #{vars.$background-light};
-  --background-alt: #{vars.$background-alt-light};
-  --text-main: #{vars.$text-main-light};
-  --text-bright: #{vars.$text-bright-light};
-  --text-muted: #{vars.$text-muted-light};
-  --links: #{vars.$links-light};
-  --border: #{vars.$border-light};
-  --code: #{vars.$code-light};
+  // Theme Colors
+  --background-body: #{vars.$background-body};
+  --background: #{vars.$background};
+  --background-alt: #{vars.$background-alt};
+  --text-main: #{vars.$text-main};
+  --text-bright: #{vars.$text-bright};
+  --text-muted: #{vars.$text-muted};
+  --links: #{vars.$links};
+  --border: #{vars.$border};
+  --code: #{vars.$code};
   
-  // UI Colors (Light)
-  --focus: #{vars.$focus-color-light};
-  --selection: #{vars.$selection-color-light};
-  --highlight: #{vars.$highlight-color-light};
-  --variable: #{vars.$variable-color-light};
+  // UI Colors
+  --focus: #{vars.$focus-color};
+  --selection: #{vars.$selection-color};
+  --highlight: #{vars.$highlight-color};
+  --variable: #{vars.$variable-color};
   
-  // Form Colors (Light)
-  --form-text: #{vars.$form-text-light};
-  --form-placeholder: #{vars.$form-placeholder-light};
+  // Form Colors
+  --form-text: #{vars.$form-text};
+  --form-placeholder: #{vars.$form-placeholder};
   
-  // Button Colors (Light)
-  --button-base: #{vars.$button-base-light};
-  --button-hover: #{vars.$button-hover-light};
-  --secondary-hover: #{vars.$secondary-hover-light};
-  --secondary-focus: #{vars.$secondary-focus-light};
+  // Button Colors
+  --button-base: #{vars.$button-base};
+  --button-hover: #{vars.$button-hover};
+  --secondary-hover: #{vars.$secondary-hover};
+  --secondary-focus: #{vars.$secondary-focus};
   
-  // Scrollbar Colors (Light)
-  --scrollbar-thumb: #{vars.$scrollbar-thumb-light};
-  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-light};
+  // Scrollbar Colors
+  --scrollbar-thumb: #{vars.$scrollbar-thumb};
+  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover};
   
   // Spacing
   --padding-base: #{vars.$padding-base};
@@ -75,7 +75,7 @@
   --breakpoint-large: #{vars.$breakpoint-large};
   
   // SVG Icons
-  --select-arrow: #{vars.$select-arrow-light};
+  --select-arrow: #{vars.$select-arrow};
   
   // Utility Colors
   --color-dark: #212121;
@@ -110,37 +110,37 @@
   --danger-hover: #c82333;
 }
 
-// Dark Theme
+// DARK THEME IMPLEMENTATION - COMMENTED OUT FOR FUTURE USE
 // =============================================================================
-[data-theme="dark"] {
-  --background-body: #{vars.$background-body-dark};
-  --background: #{vars.$background-dark};
-  --background-alt: #{vars.$background-alt-dark};
-  --text-main: #{vars.$text-main-dark};
-  --text-bright: #{vars.$text-bright-dark};
-  --text-muted: #{vars.$text-muted-dark};
-  --links: #{vars.$links-dark};
-  --border: #{vars.$border-dark};
-  --code: #{vars.$code-dark};
-  
-  --focus: #{vars.$focus-color-dark};
-  --selection: #{vars.$selection-color-dark};
-  --highlight: #{vars.$highlight-color-dark};
-  --variable: #{vars.$variable-color-dark};
-  
-  --form-text: #{vars.$form-text-dark};
-  --form-placeholder: #{vars.$form-placeholder-dark};
-  
-  --button-base: #{vars.$button-base-dark};
-  --button-hover: #{vars.$button-hover-dark};
-  --secondary-hover: #{vars.$secondary-hover-dark};
-  --secondary-focus: #{vars.$secondary-focus-dark};
-  
-  --scrollbar-thumb: #{vars.$scrollbar-thumb-dark};
-  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-dark};
-  
-  --select-arrow: #{vars.$select-arrow-dark};
-}
+// [data-theme="dark"] {
+//   --background-body: #{vars.$background-body-dark};
+//   --background: #{vars.$background-dark};
+//   --background-alt: #{vars.$background-alt-dark};
+//   --text-main: #{vars.$text-main-dark};
+//   --text-bright: #{vars.$text-bright-dark};
+//   --text-muted: #{vars.$text-muted-dark};
+//   --links: #{vars.$links-dark};
+//   --border: #{vars.$border-dark};
+//   --code: #{vars.$code-dark};
+//   
+//   --focus: #{vars.$focus-color-dark};
+//   --selection: #{vars.$selection-color-dark};
+//   --highlight: #{vars.$highlight-color-dark};
+//   --variable: #{vars.$variable-color-dark};
+//   
+//   --form-text: #{vars.$form-text-dark};
+//   --form-placeholder: #{vars.$form-placeholder-dark};
+//   
+//   --button-base: #{vars.$button-base-dark};
+//   --button-hover: #{vars.$button-hover-dark};
+//   --secondary-hover: #{vars.$secondary-hover-dark};
+//   --secondary-focus: #{vars.$secondary-focus-dark};
+//   
+//   --scrollbar-thumb: #{vars.$scrollbar-thumb-dark};
+//   --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-dark};
+//   
+//   --select-arrow: #{vars.$select-arrow-dark};
+// }
 
 // =============================================================================
 // COLOR UTILITY CLASSES
@@ -153,8 +153,8 @@ clr[secondary] { color: var(--secondary); }
 // Background utility classes
 [bg="light"] { background-color: var(--background-body) !important; }
 [bg="lighter"] { background-color: var(--background-alt) !important; }
-[bg="dark"] { background-color: var(--background-body-dark) !important; }
-[bg="darker"] { background-color: var(--background-dark) !important; }
+// [bg="dark"] { background-color: var(--background-body-dark) !important; } // COMMENTED: Dark theme utility
+// [bg="darker"] { background-color: var(--background-dark) !important; } // COMMENTED: Dark theme utility
 [bg="primary"] { background-color: var(--primary) !important; }
 [bg="primary-light"] { background-color: var(--primary-20) !important; }
 [bg="primary-lighter"] { background-color: var(--primary-08) !important; }
@@ -165,6 +165,6 @@ clr[secondary] { color: var(--secondary); }
 // Text color utility classes
 [color="primary"] { color: var(--primary) !important; }
 [color="secondary"] { color: var(--secondary) !important; }
-[color="dark"] { color: var(--text-main-dark) !important; }
-[color="light"] { color: var(--text-bright-light) !important; }
+[color="dark"] { color: var(--text-main) !important; } // NOTE: Using natural dark color for titles/descriptions
+[color="light"] { color: var(--text-bright) !important; } // NOTE: Using natural light color for titles/descriptions
 [color="muted"] { color: var(--text-muted) !important; }
