@@ -1,101 +1,170 @@
-
-
-
---color-dark: #212121;
---color-medium: #616161;
---color-light: #9e9e9e;
---color-info: #00b0f4;
---color-success: #11b76b;
---color-warning: #ffa100;
---color-danger: #800000;
---color-tooltip: #eaecef;
-
---bg-info: #e5f3ff;
---bg-success: #e6f6ed;
---bg-warning: #fff2d7;
---bg-danger: #ffe6ec;
---bg-dark: #263238;
---bg-light: #f5f6f7;
---bg-tooltip: #23282d;
---renova: #132129;
-
---dark: #212121;
---light: hsla(192, 33%, 97%, 1);
---muted: #363636; // Best for our primary
---site-bg: hsla(158, 32%, 88%, 1);
---error: hsla(4, 100%, 64%, 1);
-
-clr[primary]{color:var(--primary);}
-clr[secondary]{color:var(--secondary);}
-
-    // =============================================================================
-// LAYOUT MODIFIERS
-// =============================================================================
-
-// // Background Colors
-// .bg-light { background-color: $background-body-light; }
-// .bg-light-light { background-color: $background-alt-light; }
-// .bg-dark { background-color: $background-body-dark; }
-// .bg-dark-dark { background-color: $background-dark; }
-
-// .bg-primary { background-color: $primary; }
-// .bg-primary-light { background-color: $primary-20; }
-// .bg-primary-light-light { background-color: $primary-08; }
-
-// .bg-secondary { background-color: $secondary; }
-// .bg-secondary-light { background-color: $secondary-2; }
-// .bg-secondary-light-light { background-color: $secondary-08; }
-
-// // Text Colors
-// .color-primary { color: $primary; }
-// .color-secondary { color: $secondary; }
-// .color-dark { color: $text-main-dark; }
-// .color-light { color: $text-bright-light; }
-
-
+@use '../abstracts/variables' as vars;
 
 // =============================================================================
-// 2. CREATE COLOR MAPS
-// These maps link the class name suffix to the color variable.
-// =============================================================================
-$background-colors: (
-  "light": $background-body-light,
-  "lighter": $background-alt-light,
-  "dark": $background-body-dark,
-  "darker": $background-dark,
-  "primary": $primary,
-  "primary-light": $primary-20,
-  "primary-lighter": $primary-08,
-  "secondary": $secondary,
-  "secondary-light": $secondary-2,
-  "secondary-lighter": $secondary-08
-);
-
-$text-colors: (
-  "primary": $primary,
-  "secondary": $secondary,
-
-  "dark": $text-main-dark,
-  "light": $text-bright-light,
-  "muted": $text-muted
-);
-
-
-// =============================================================================
-// 3. GENERATE ATTRIBUTE-BASED UTILITIES WITH @EACH LOOPS
-// These loops automatically create all the CSS attribute selectors for you.
+// CSS CUSTOM PROPERTIES (CSS Variables)
 // =============================================================================
 
-// Loop for background colors
-@each $name, $color in $background-colors {
-  [bg="#{$name}"] {
-    background-color: $color !important; // Use !important to ensure utility styles override others
-  }
+// Light Theme (Default)
+// =============================================================================
+:root {
+  // Brand Colors
+  --primary: #{vars.$primary};
+  --primary-20: #{vars.$primary-20};
+  --primary-44: #{vars.$primary-44};
+  --primary-08: #{vars.$primary-08};
+  --secondary: #{vars.$secondary};
+  --secondary-02: #{vars.$secondary-02};
+  --secondary-44: #{vars.$secondary-44};
+  --secondary-08: #{vars.$secondary-08};
+  
+  // Theme Colors (Light)
+  --background-body: #{vars.$background-body-light};
+  --background: #{vars.$background-light};
+  --background-alt: #{vars.$background-alt-light};
+  --text-main: #{vars.$text-main-light};
+  --text-bright: #{vars.$text-bright-light};
+  --text-muted: #{vars.$text-muted-light};
+  --links: #{vars.$links-light};
+  --border: #{vars.$border-light};
+  --code: #{vars.$code-light};
+  
+  // UI Colors (Light)
+  --focus: #{vars.$focus-color-light};
+  --selection: #{vars.$selection-color-light};
+  --highlight: #{vars.$highlight-color-light};
+  --variable: #{vars.$variable-color-light};
+  
+  // Form Colors (Light)
+  --form-text: #{vars.$form-text-light};
+  --form-placeholder: #{vars.$form-placeholder-light};
+  
+  // Button Colors (Light)
+  --button-base: #{vars.$button-base-light};
+  --button-hover: #{vars.$button-hover-light};
+  --secondary-hover: #{vars.$secondary-hover-light};
+  --secondary-focus: #{vars.$secondary-focus-light};
+  
+  // Scrollbar Colors (Light)
+  --scrollbar-thumb: #{vars.$scrollbar-thumb-light};
+  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-light};
+  
+  // Spacing
+  --padding-base: #{vars.$padding-base};
+  --padding-m: #{vars.$padding-m};
+  --padding-l: #{vars.$padding-l};
+  --margin-base: #{vars.$margin-base};
+  --margin-VA: #{vars.$margin-VA};
+  --border-radius-base: #{vars.$border-radius-base};
+  --border-radius-small: #{vars.$border-radius-small};
+  --border-radius-large: #{vars.$border-radius-large};
+  
+  // Typography
+  --font-family-base: #{vars.$font-family-base};
+  --font-family-mono: #{vars.$font-family-mono};
+  --font-weight-normal: #{vars.$font-weight-normal};
+  --font-weight-bold: #{vars.$font-weight-bold};
+  --line-height-base: #{vars.$line-height-base};
+  
+  // Animation
+  --animation-duration: #{vars.$animation-duration};
+  --transition-timing: #{vars.$transition-timing};
+  --transition-timing-ease: #{vars.$transition-timing-ease};
+  
+  // Layout
+  --max-width: #{vars.$max-width};
+  --breakpoint-large: #{vars.$breakpoint-large};
+  
+  // SVG Icons
+  --select-arrow: #{vars.$select-arrow-light};
+  
+  // Utility Colors
+  --color-dark: #212121;
+  --color-medium: #616161;
+  --color-light: #9e9e9e;
+  --color-info: #00b0f4;
+  --color-success: #11b76b;
+  --color-warning: #ffa100;
+  --color-danger: #800000;
+  --color-tooltip: #eaecef;
+  
+  --bg-info: #e5f3ff;
+  --bg-success: #e6f6ed;
+  --bg-warning: #fff2d7;
+  --bg-danger: #ffe6ec;
+  --bg-dark: #263238;
+  --bg-light: #f5f6f7;
+  --bg-tooltip: #23282d;
+  --renova: #132129;
+  
+  --dark: #212121;
+  --light: hsla(192, 33%, 97%, 1);
+  --muted: #363636;
+  --site-bg: hsla(158, 32%, 88%, 1);
+  --error: hsla(4, 100%, 64%, 1);
+  
+  // Action Colors with fallbacks
+  --success: var(--color-success);
+  --warning: var(--color-warning);
+  --danger: var(--color-danger);
+  --warning-hover: #e0a800;
+  --danger-hover: #c82333;
 }
 
-// Loop for text colors
-@each $name, $color in $text-colors {
-  [color="#{$name}"] {
-    color: $color !important;
-  }
+// Dark Theme
+// =============================================================================
+[data-theme="dark"] {
+  --background-body: #{vars.$background-body-dark};
+  --background: #{vars.$background-dark};
+  --background-alt: #{vars.$background-alt-dark};
+  --text-main: #{vars.$text-main-dark};
+  --text-bright: #{vars.$text-bright-dark};
+  --text-muted: #{vars.$text-muted-dark};
+  --links: #{vars.$links-dark};
+  --border: #{vars.$border-dark};
+  --code: #{vars.$code-dark};
+  
+  --focus: #{vars.$focus-color-dark};
+  --selection: #{vars.$selection-color-dark};
+  --highlight: #{vars.$highlight-color-dark};
+  --variable: #{vars.$variable-color-dark};
+  
+  --form-text: #{vars.$form-text-dark};
+  --form-placeholder: #{vars.$form-placeholder-dark};
+  
+  --button-base: #{vars.$button-base-dark};
+  --button-hover: #{vars.$button-hover-dark};
+  --secondary-hover: #{vars.$secondary-hover-dark};
+  --secondary-focus: #{vars.$secondary-focus-dark};
+  
+  --scrollbar-thumb: #{vars.$scrollbar-thumb-dark};
+  --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover-dark};
+  
+  --select-arrow: #{vars.$select-arrow-dark};
 }
+
+// =============================================================================
+// COLOR UTILITY CLASSES
+// =============================================================================
+
+// Color utility classes using CSS variables
+clr[primary] { color: var(--primary); }
+clr[secondary] { color: var(--secondary); }
+
+// Background utility classes
+[bg="light"] { background-color: var(--background-body) !important; }
+[bg="lighter"] { background-color: var(--background-alt) !important; }
+[bg="dark"] { background-color: var(--background-body-dark) !important; }
+[bg="darker"] { background-color: var(--background-dark) !important; }
+[bg="primary"] { background-color: var(--primary) !important; }
+[bg="primary-light"] { background-color: var(--primary-20) !important; }
+[bg="primary-lighter"] { background-color: var(--primary-08) !important; }
+[bg="secondary"] { background-color: var(--secondary) !important; }
+[bg="secondary-light"] { background-color: var(--secondary-02) !important; }
+[bg="secondary-lighter"] { background-color: var(--secondary-08) !important; }
+
+// Text color utility classes
+[color="primary"] { color: var(--primary) !important; }
+[color="secondary"] { color: var(--secondary) !important; }
+[color="dark"] { color: var(--text-main-dark) !important; }
+[color="light"] { color: var(--text-bright-light) !important; }
+[color="muted"] { color: var(--text-muted) !important; }

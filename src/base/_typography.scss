@@ -17,15 +17,15 @@ h6 { font-size: var(--text-s); }
 h1, h2, h3, h4, h5, h6, p {
   @include mixins.heading-styles;
   // add default padding
-  padding-top: vars.$padding-base;
-  padding-left: vars.$padding-base;
-  padding-right: vars.$padding-base;
+  padding-top: var(--padding-base);
+  padding-left: var(--padding-base);
+  padding-right: var(--padding-base);
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, th {
-  font-weight: vars.$font-weight-bold;
+  font-weight: var(--font-weight-bold);
 }
-p{margin-bottom: vars.$padding-base;}
+p{margin-bottom: var(--padding-base);}
 
 // Text Elements
 // =============================================================================
@@ -80,9 +80,9 @@ a[href^='sms:'] {
 // =============================================================================
 mark {
   background-color: var(--highlight);
-  border-radius: vars.$border-radius-small;
+  border-radius: var(--border-radius-small);
   padding: 0 2px 0 2px;
-  color: vars.$code-light;
+  color: var(--code);
 }
 
 // Links
@@ -109,7 +109,7 @@ code, samp, time {
 }
 
 code {
-  font-size: var(--text-sm);
+  font-size: var(--text-s);
 }
 
 samp, time {
@@ -127,7 +127,7 @@ pre > code {
 var {
   color: var(--variable);
   font-style: normal;
-  font-family: vars.$font-family-mono;
+  font-family: var(--font-family-mono);
 }
 
 // Keyboard Input
@@ -135,7 +135,7 @@ var {
 kbd {
   @include mixins.code-styles;
   @include mixins.border-accent;
-  border-radius: vars.$border-radius-small;
+  border-radius: var(--border-radius-small);
   color: var(--text-main);
   padding: 2px 4px 2px 4px;
 }

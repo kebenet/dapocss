@@ -152,17 +152,17 @@ h1, h2, h3, h4, h5, h6, p {
   margin-bottom: 0;
   margin-top: 0;
   color: var(--text-bright);
-  padding-top: 8px;
-  padding-left: 8px;
-  padding-right: 8px;
+  padding-top: var(--padding-base);
+  padding-left: var(--padding-base);
+  padding-right: var(--padding-base);
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, th {
-  font-weight: 700;
+  font-weight: var(--font-weight-bold);
 }
 
 p {
-  margin-bottom: 8px;
+  margin-bottom: var(--padding-base);
 }
 
 strong {
@@ -208,9 +208,9 @@ a[href^="sms:"]::before {
 
 mark {
   background-color: var(--highlight);
-  border-radius: 2px;
+  border-radius: var(--border-radius-small);
   padding: 0 2px 0 2px;
-  color: #000;
+  color: var(--code);
 }
 
 a {
@@ -234,7 +234,7 @@ code, samp, time {
 }
 
 code {
-  font-size: var(--text-sm);
+  font-size: var(--text-s);
 }
 
 samp, time {
@@ -250,7 +250,7 @@ pre > code {
 var {
   color: var(--variable);
   font-style: normal;
-  font-family: monospace;
+  font-family: var(--font-family-mono);
 }
 
 kbd {
@@ -259,7 +259,7 @@ kbd {
   border-radius: 7px;
   font-size: var(--text-sm);
   border: 1px solid var(--border);
-  border-radius: 2px;
+  border-radius: var(--border-radius-small);
   color: var(--text-main);
   padding: 2px 4px 2px 4px;
 }
@@ -798,12 +798,12 @@ dialog::backdrop {
 
 a[button] {
   display: inline-block;
-  padding: 8px 8px;
+  padding: var(--padding-base) var(--padding-base);
   background-color: var(--links);
   color: var(--text-bright);
   text-decoration: none;
-  border-radius: 2px;
-  font-weight: 700;
+  border-radius: var(--border-radius-small);
+  font-weight: var(--font-weight-bold);
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -825,7 +825,7 @@ a[button]:focus {
 }
 
 a[small] {
-  padding: 4px 8px;
+  padding: calc(var(--padding-base) * 0.5) var(--padding-base);
   font-size: var(--text-s);
 }
 
@@ -844,7 +844,7 @@ a[secondary] {
   color: var(--text-bright);
 }
 a[secondary]:hover {
-  background-color: var(--secondary-20);
+  background-color: var(--secondary-hover);
 }
 
 a[success] {
@@ -856,7 +856,7 @@ a[success]:hover {
 
 a[warning] {
   background-color: var(--warning, #ffc107);
-  color: var(--text-dark, #212529);
+  color: var(--text-main);
 }
 a[warning]:hover {
   background-color: var(--warning-hover, #e0a800);
@@ -882,7 +882,7 @@ a[disabled]:hover {
 a[button-icon] {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: calc(var(--padding-base) * 0.5);
 }
 a[button-icon]::before {
   content: attr(data-icon);
@@ -891,7 +891,7 @@ a[button-icon]::before {
 
 .button-group {
   display: inline-flex;
-  gap: 4px;
+  gap: calc(var(--padding-base) * 0.5);
 }
 .button-group .button {
   flex: 1;
@@ -946,7 +946,7 @@ footer, footer > p, footer > h5, footer > h4 {
 }
 
 body > footer {
-  margin-top: 78px;
+  margin-top: var(--margin-VA);
 }
 
 @media print {
@@ -1117,36 +1117,36 @@ div[ratio-1] > card > img {
 }
 
 card > content {
-  padding: 8px;
+  padding: var(--padding-base);
 }
 
 [radius] {
   overflow: hidden;
-  border-radius: 7px 7px 0 0;
+  border-radius: var(--border-radius-base) var(--border-radius-base) 0 0;
 }
 
 card[border] {
-  border: medium solid hsla(163, 53%, 38%, 0.2) !important;
+  border: medium solid var(--primary-20) !important;
 }
 
 card[primary] > header {
-  background-color: hsl(163, 53%, 38%) !important;
+  background-color: var(--primary) !important;
 }
 
 card[primary] {
-  border-color: hsl(163, 53%, 38%) !important;
+  border-color: var(--primary) !important;
 }
 
 card[secondary] > header {
-  background-color: hsl(23, 84%, 73%) !important;
+  background-color: var(--secondary) !important;
 }
 
 card[secondary] {
-  border-color: hsl(23, 84%, 73%) !important;
+  border-color: var(--secondary) !important;
 }
 
 card > footer {
-  padding: 8px;
+  padding: var(--padding-base);
   justify-items: start;
   align-items: end;
 }

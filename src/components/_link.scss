@@ -8,12 +8,12 @@
 // Base button link styles
 a[button] {
   display: inline-block;
-  padding: vars.$padding-base vars.$padding-base;
+  padding: var(--padding-base) var(--padding-base);
   background-color: var(--links);
   color: var(--text-bright);
   text-decoration: none;
-  border-radius: vars.$border-radius-small;
-  font-weight: vars.$font-weight-bold;
+  border-radius: var(--border-radius-small);
+  font-weight: var(--font-weight-bold);
   text-align: center;
   transition: all 0.3s ease;
   border: 2px solid transparent;
@@ -32,7 +32,7 @@ a[button] {
 }
 
 // Button link size modifiers
-a[small] {padding: vars.$padding-base * 0.5 vars.$padding-base; font-size: var(--text-s); }
+a[small] {padding: calc(var(--padding-base) * 0.5) var(--padding-base); font-size: var(--text-s); }
 
 
 // Button link style modifiers
@@ -43,7 +43,7 @@ a[outline]{background-color: transparent; border-color: var(--primary); color: v
 
 a[secondary] {background-color: var(--secondary); color: var(--text-bright);
   
-  &:hover {background-color: var(--secondary-20); }
+  &:hover {background-color: var(--secondary-hover); }
 }
 
 a[success] {background-color: var(--success, #28a745);
@@ -51,7 +51,7 @@ a[success] {background-color: var(--success, #28a745);
   &:hover {background-color: var(--bg-success, #218838); }
 }
 
-a[warning] {background-color: var(--warning, #ffc107); color: var(--text-dark, #212529);
+a[warning] {background-color: var(--warning, #ffc107); color: var(--text-main);
   &:hover {background-color: var(--warning-hover, #e0a800); }
 }
 
@@ -67,7 +67,7 @@ a[disabled] {opacity: 0.6; cursor: not-allowed; pointer-events: none;
 }
 
 // Button link with icons
-a[button-icon] {display: inline-flex; align-items: center; gap: vars.$padding-base * 0.5;
+a[button-icon] {display: inline-flex; align-items: center; gap: calc(var(--padding-base) * 0.5);
 
   &::before {content: attr(data-icon); display: inline-block; }
 }
@@ -78,7 +78,7 @@ a[button-icon] {display: inline-flex; align-items: center; gap: vars.$padding-ba
 // Button link group
 .button-group {
   display: inline-flex;
-  gap: vars.$padding-base * 0.5;
+  gap: calc(var(--padding-base) * 0.5);
   
   .button {flex: 1; }
   

@@ -2,8 +2,17 @@
 // DAPOCSS VARIABLES
 // =============================================================================
 
+// Build-time variables (keep as SASS variables)
+// =============================================================================
+$font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+$font-family-mono: monospace;
+$line-height-base: 1.4;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+$max-width: 1100px;
+$breakpoint-large: 1280px;
 
-// Typography Scale
+// Typography Scale Values (for CSS variables)
 // =============================================================================
 $text-s: clamp(0.8rem, 0.25vi + 0.74rem, 0.94rem);
 $text-base: clamp(1rem, 0.45vi + 0.89rem, 1.25rem);
@@ -31,15 +40,7 @@ $text-xl-large: 2.96rem;
 $text-xxl-large: 3.95rem;
 $text-xxxl-large: 5.26rem;
 
-// Font Configuration
-// =============================================================================
-$font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
-$font-family-mono: monospace;
-$line-height-base: 1.4;
-$font-weight-normal: 400;
-$font-weight-bold: 700;
-
-// Brand Colors
+// Brand Colors (base values)
 // =============================================================================
 $primary: hsla(163, 53%, 38%, 1);
 $primary-20: hsla(163, 53%, 38%, 0.2);
@@ -58,7 +59,7 @@ $background-light: $primary-20;
 $background-alt-light: $primary-44;
 $text-main-light: #363636;
 $text-bright-light: #212121;
-$text-muted: #70777f;
+$text-muted-light: #70777f;
 $links-light: $primary;
 $border-light: $primary;
 $code-light: #000;
@@ -77,13 +78,13 @@ $code-dark: #ffbe85;
 
 // UI Colors
 // =============================================================================
-$focus-color: $primary-44;
+$focus-color-light: $primary-44;
 $focus-color-dark: #0096bfab;
-$selection-color: $primary-44;
+$selection-color-light: $primary-44;
 $selection-color-dark: #1c76c5;
-$highlight-color: $primary;
+$highlight-color-light: $primary;
 $highlight-color-dark: #efdb43;
-$variable-color: #39a33c;
+$variable-color-light: #39a33c;
 $variable-color-dark: #d941e2;
 
 // Form Colors
@@ -114,9 +115,8 @@ $scrollbar-thumb-dark: #040a0f;
 $scrollbar-thumb-hover-light: $secondary;
 $scrollbar-thumb-hover-dark: rgb(0, 0, 0);
 
-// Spacing variables
+// Spacing variables (CSS variables)
 // =============================================================================
-$max-width: 1100px;
 $padding-base: 8px;
 $padding-m: 16px;
 $padding-l: 24px;
@@ -124,17 +124,13 @@ $margin-base: 8px;
 $margin-VA: 78px;
 $border-radius-base: 7px;
 $border-radius-small: 2px;
-$border-radius-large: 3px;
+$border-radius-large: 13px;
 
 // Animation
 // =============================================================================
 $animation-duration: 0.1s;
 $transition-timing: linear;
 $transition-timing-ease: ease;
-
-// Breakpoints
-// =============================================================================
-$breakpoint-large: 1280px;
 
 // Z-index
 // =============================================================================
