@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KEBENET Component Theming</title>
+    <style>
+        /*
+         * ==========================================
+         * KEBENET Component Theming Strategy
+         * ==========================================
+         * 1. Define a global palette of available colors.
+         * 2. Define semantic variables for the component.
+         * 3. Create theme classes that map palette colors
+         * to the component's semantic variables.
+         * ==========================================
+        */
+
+        :root {
+            /* --- Step 1: Define a Global Palette --- */
+            /* These are all the raw colors available for our themes. */
+            --color-kbn-green: #2e9578;
+            --color-kbn-peach: #f4ae81;
+            --color-kbn-light-bg: #d7eae3;
+
+            --color-dark-bg: #2d2d2d;
+            --color-dark-widget-bg: #3a3a3a;
+            --color-dark-divider: #4a4a4a;
+            --color-dark-text: #ffffff;
+            --color-dark-subtitle: #a0a0a0;
+            --color-dark-accent: #6cacec;
+            
+            --color-sunset-bg: #2c3e50;
+            --color-sunset-widget-bg: #34495e;
+            --color-sunset-divider: #4a627a;
+            --color-sunset-text: #ecf0f1;
+            --color-sunset-subtitle: #bdc3c7;
+            --color-sunset-accent: #e67e22;
+
+            /* Sizing and Fonts (remain consistent) */
+            --comp-max-width: 400px;
+            --comp-border-radius: 8px;
+            --comp-font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        /* --- Base & Body Layout --- */
+        body {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column for mobile */
+            gap: 2rem;
+            place-content: center;
+            place-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+            background-color: var(--color-dark-bg);
+            font-family: var(--comp-font-family);
+        }
+
+        /* Responsive layout for larger screens */
+        @media (min-width: 1300px) {
+            body {
+                grid-template-columns: repeat(3, 1fr); /* Three columns on desktop */
+            }
+        }
+        @media (min-width: 860px) and (max-width: 1299px) {
+            body {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on tablet */
+            }
+        }
+
+
+        /*
+         * --- Step 2: Define Semantic Variables for the Component ---
+         * The .events-widget now uses generic variable names like --accent, --text-color.
+         * It doesn't know about specific colors like "blue" or "peach".
+         * We set a default theme here (the original dark theme).
+        */
+        .events-widget {
+            /* Default Theme Mapping */
+            --widget-bg: var(--color-dark-widget-bg);
+            --text-color: var(--color-dark-text);
+            --accent-color: var(--color-dark-accent);
+            --divider-color: var(--color-dark-divider);
+            --subtitle-color: var(--color-dark-subtitle);
+
+            /* Structural Styles */
+            width: 100%;
+            max-width: var(--comp-max-width);
+            background-color: var(--widget-bg); /* Use the semantic variable */
+            color: var(--text-color); /* Use the semantic variable */
+            border-radius: var(--comp-border-radius);
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        }
+
+        /*
+         * --- Step 3: Create Theme Classes (Your "Setting Tags") ---
+         * This is where the magic happens. These classes act like your <setting-widget> tag.
+         * They override the default semantic variables defined above.
+        */
+
+        /* KEBENET Brand Theme */
+        .events-widget.theme-kbn-brand {
+            --widget-bg: var(--color-kbn-light-bg);
+            --text-color: #1a5343;
+            --accent-color: var(--color-kbn-green);
+            --divider-color: #b8d4c9;
+            --subtitle-color: #5a8a7c;
+        }
+
+        /* Sunset Theme */
+        .events-widget.theme-sunset {
+            --widget-bg: var(--color-sunset-widget-bg);
+            --text-color: var(--color-sunset-text);
+            --accent-color: var(--color-sunset-accent);
+            --divider-color: var(--color-sunset-divider);
+            --subtitle-color: var(--color-sunset-subtitle);
+        }
+
+        /* --- Component's Inner Styles (Unchanged) --- */
+        /* These styles just work. They only reference the semantic variables. */
+        
+        .widget-header-image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .widget-content { padding: 1.5rem; }
+
+        .events-widget-title {
+            font-size: 1.75rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin: 0 0 1rem 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+
+        .events-list { list-style: none; padding: 0; margin: 0; }
+
+        .event-item {
+            display: grid;
+            grid-template-columns: auto 1fr auto;
+            align-items: center;
+            gap: 0 1rem;
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--divider-color); /* Use semantic variable */
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+        }
+        .event-item:hover { background-color: rgba(0, 0, 0, 0.05); }
+        .event-item:last-child { border-bottom: none; }
+
+        .event-date {
+            text-align: center;
+            line-height: 1.2;
+            color: var(--accent-color); /* Use semantic variable */
+        }
+        .event-date .day { display: block; font-size: 1.5rem; font-weight: bold; }
+        .event-date .month { display: block; font-size: 0.8rem; text-transform: uppercase; }
+
+        .event-details {
+            line-height: 1.4;
+            padding-left: 1rem;
+            border-left: 1px solid var(--divider-color); /* Use semantic variable */
+        }
+        .event-details .title {
+            display: block;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--text-color); /* Use semantic variable */
+        }
+        .event-details .location {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--subtitle-color); /* Use semantic variable */
+        }
+
+        .event-icon {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--text-color); /* Use semantic variable */
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Widget 1: Default Dark Theme -->
+    <div class="events-widget">
+        <img src="https://placehold.co/400x200/6cacec/ffffff?text=Default" alt="Header" class="widget-header-image">
+        <div class="widget-content">
+            <h2 class="events-widget-title">EVENTS</h2>
+            <ul class="events-list">
+                <li class="event-item">
+                    <div class="event-date"><span class="day">11</span><span class="month">sep</span></div>
+                    <div class="event-details"><span class="title">Open Coffee</span><span class="location">Lungo, Rotterdam</span></div>
+                    <div class="event-icon">&gt;</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Widget 2: KEBENET Brand Theme -->
+    <!-- By adding `theme-kbn-brand`, we trigger the CSS override -->
+    <div class="events-widget theme-kbn-brand">
+        <img src="https://placehold.co/400x200/2e9578/ffffff?text=KEBENET" alt="Header" class="widget-header-image">
+        <div class="widget-content">
+            <h2 class="events-widget-title">EVENTS</h2>
+            <ul class="events-list">
+                <li class="event-item">
+                    <div class="event-date"><span class="day">7</span><span class="month">nov</span></div>
+                    <div class="event-details"><span class="title">Brand Meetup</span><span class="location">HQ, Kuala Lumpur</span></div>
+                    <div class="event-icon">&gt;</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Widget 3: Sunset Theme -->
+    <!-- By adding `theme-sunset`, we trigger another CSS override -->
+    <div class="events-widget theme-sunset">
+        <img src="https://placehold.co/400x200/e67e22/ffffff?text=Sunset" alt="Header" class="widget-header-image">
+        <div class="widget-content">
+            <h2 class="events-widget-title">EVENTS</h2>
+            <ul class="events-list">
+                <li class="event-item">
+                    <div class="event-date"><span class="day">26</span><span class="month">dec</span></div>
+                    <div class="event-details"><span class="title">Evening Seminar</span><span class="location">The Rooftop, George Town</span></div>
+                    <div class="event-icon">&gt;</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

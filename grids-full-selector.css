@@ -1,0 +1,284 @@
+/* * ==========================================
+ * CSS Grid Utility Classes
+ * ==========================================
+ * A collection of utility classes for CSS Grid,
+ * inspired by Tailwind CSS.
+ *
+ * Project: dapocss
+ * Version: 1.2
+ * ==========================================
+ */
+
+
+/* * ------------------------------------------
+ * 1. Grid Container & Structure
+ * ------------------------------------------
+ * - .grid, .inline-grid
+ * - .grid-cols-{n}
+ * - .grid-rows-{n}
+ * - Responsive & Fluid Columns (minmax)
+ * - .grid-flow-{value}
+ * ------------------------------------------
+ */\
+
+.grid {display: grid; }
+
+.inline-grid {display: inline-grid; }
+
+/* Grid Template Columns (up to 12) */
+.grid-cols-1 { grid-template-columns: repeat(1, minmax(0, 1fr)); }
+.grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+.grid-cols-5 { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.grid-cols-6 { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+.grid-cols-7 { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.grid-cols-8 { grid-template-columns: repeat(8, minmax(0, 1fr)); }
+.grid-cols-9 { grid-template-columns: repeat(9, minmax(0, 1fr)); }
+.grid-cols-10 { grid-template-columns: repeat(10, minmax(0, 1fr)); }
+.grid-cols-11 { grid-template-columns: repeat(11, minmax(0, 1fr)); }
+.grid-cols-12 { grid-template-columns: repeat(12, minmax(0, 1fr)); }
+.grid-cols-none { grid-template-columns: none; }
+
+/* Grid Template Rows (up to 6) */
+.grid-rows-1 { grid-template-rows: repeat(1, minmax(0, 1fr)); }
+.grid-rows-2 { grid-template-rows: repeat(2, minmax(0, 1fr)); }
+.grid-rows-3 { grid-template-rows: repeat(3, minmax(0, 1fr)); }
+.grid-rows-4 { grid-template-rows: repeat(4, minmax(0, 1fr)); }
+.grid-rows-5 { grid-template-rows: repeat(5, minmax(0, 1fr)); }
+.grid-rows-6 { grid-template-rows: repeat(6, minmax(0, 1fr)); }
+.grid-rows-none { grid-template-rows: none; }
+
+/* Responsive & Fluid Columns (using minmax) */
+/* Uses auto-fit: fills the row, and columns may grow to fill remaining space. */
+.cols-auto-fit-xs { grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); } /* min 192px */
+.cols-auto-fit-sm { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); } /* min 256px */
+.cols-auto-fit-md { grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); } /* min 320px */
+.cols-auto-fit-lg { grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr)); } /* min 384px */
+.cols-auto-fit-xl { grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); } /* min 448px */
+
+/* Uses auto-fill: creates as many columns as will fit, even if they are empty. */
+.cols-auto-fill-xs { grid-template-columns: repeat(auto-fill, minmax(12rem, 1fr)); } /* min 192px */
+.cols-auto-fill-sm { grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); } /* min 256px */
+.cols-auto-fill-md { grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); } /* min 320px */
+.cols-auto-fill-lg { grid-template-columns: repeat(auto-fill, minmax(24rem, 1fr)); } /* min 384px */
+.cols-auto-fill-xl { grid-template-columns: repeat(auto-fill, minmax(28rem, 1fr)); } /* min 448px */
+
+/* Grid Auto Flow */
+.grid-flow-row { grid-auto-flow: row; }
+.grid-flow-col { grid-auto-flow: column; }
+.grid-flow-dense { grid-auto-flow: dense; }
+.grid-flow-row-dense { grid-auto-flow: row dense; }
+.grid-flow-col-dense { grid-auto-flow: column dense; }
+
+
+/* * ------------------------------------------
+ * 2. Gaps (Spacing)
+ * ------------------------------------------
+ * - .gap-{size}
+ * - .gap-x-{size}
+ * - .gap-y-{size}
+ * ------------------------------------------
+ */
+
+.gap-0 { gap: 0; }
+.gap-x-0 { column-gap: 0; }
+.gap-y-0 { row-gap: 0; }
+.gap-px { gap: 1px; }
+.gap-x-px { column-gap: 1px; }
+.gap-y-px { row-gap: 1px; }
+.gap-1 { gap: 0.25rem; } /* 4px */
+.gap-x-1 { column-gap: 0.25rem; }
+.gap-y-1 { row-gap: 0.25rem; }
+.gap-2 { gap: 0.5rem; } /* 8px */
+.gap-x-2 { column-gap: 0.5rem; }
+.gap-y-2 { row-gap: 0.5rem; }
+.gap-3 { gap: 0.75rem; } /* 12px */
+.gap-x-3 { column-gap: 0.75rem; }
+.gap-y-3 { row-gap: 0.75rem; }
+.gap-4 { gap: 1rem; } /* 16px */
+.gap-x-4 { column-gap: 1rem; }
+.gap-y-4 { row-gap: 1rem; }
+.gap-5 { gap: 1.25rem; } /* 20px */
+.gap-x-5 { column-gap: 1.25rem; }
+.gap-y-5 { row-gap: 1.25rem; }
+.gap-6 { gap: 1.5rem; } /* 24px */
+.gap-x-6 { column-gap: 1.5rem; }
+.gap-y-6 { row-gap: 1.5rem; }
+.gap-8 { gap: 2rem; } /* 32px */
+.gap-x-8 { column-gap: 2rem; }
+.gap-y-8 { row-gap: 2rem; }
+.gap-10 { gap: 2.5rem; } /* 40px */
+.gap-x-10 { column-gap: 2.5rem; }
+.gap-y-10 { row-gap: 2.5rem; }
+.gap-12 { gap: 3rem; } /* 48px */
+.gap-x-12 { column-gap: 3rem; }
+.gap-y-12 { row-gap: 3rem; }
+
+
+/* * ------------------------------------------
+ * 3. Item Placement & Spanning
+ * ------------------------------------------
+ * - .col-span-{n}, .row-span-{n}
+ * - .col-start-{n}, .col-end-{n}
+ * - .row-start-{n}, .row-end-{n}
+ * ------------------------------------------
+ */
+
+/* Column Spanning */
+.col-span-1 { grid-column: span 1 / span 1; }
+.col-span-2 { grid-column: span 2 / span 2; }
+.col-span-3 { grid-column: span 3 / span 3; }
+.col-span-4 { grid-column: span 4 / span 4; }
+.col-span-5 { grid-column: span 5 / span 5; }
+.col-span-6 { grid-column: span 6 / span 6; }
+.col-span-7 { grid-column: span 7 / span 7; }
+.col-span-8 { grid-column: span 8 / span 8; }
+.col-span-9 { grid-column: span 9 / span 9; }
+.col-span-10 { grid-column: span 10 / span 10; }
+.col-span-11 { grid-column: span 11 / span 11; }
+.col-span-12 { grid-column: span 12 / span 12; }
+.col-span-full { grid-column: 1 / -1; }
+
+/* Row Spanning */
+.row-span-1 { grid-row: span 1 / span 1; }
+.row-span-2 { grid-row: span 2 / span 2; }
+.row-span-3 { grid-row: span 3 / span 3; }
+.row-span-4 { grid-row: span 4 / span 4; }
+.row-span-5 { grid-row: span 5 / span 5; }
+.row-span-6 { grid-row: span 6 / span 6; }
+.row-span-full { grid-row: 1 / -1; }
+
+/* Column Start */
+.col-start-1 { grid-column-start: 1; }
+.col-start-2 { grid-column-start: 2; }
+.col-start-3 { grid-column-start: 3; }
+.col-start-4 { grid-column-start: 4; }
+.col-start-5 { grid-column-start: 5; }
+.col-start-6 { grid-column-start: 6; }
+.col-start-7 { grid-column-start: 7; }
+.col-start-8 { grid-column-start: 8; }
+.col-start-9 { grid-column-start: 9; }
+.col-start-10 { grid-column-start: 10; }
+.col-start-11 { grid-column-start: 11; }
+.col-start-12 { grid-column-start: 12; }
+.col-start-13 { grid-column-start: 13; }
+
+/* Column End */
+.col-end-1 { grid-column-end: 1; }
+.col-end-2 { grid-column-end: 2; }
+.col-end-3 { grid-column-end: 3; }
+.col-end-4 { grid-column-end: 4; }
+.col-end-5 { grid-column-end: 5; }
+.col-end-6 { grid-column-end: 6; }
+.col-end-7 { grid-column-end: 7; }
+.col-end-8 { grid-column-end: 8; }
+.col-end-9 { grid-column-end: 9; }
+.col-end-10 { grid-column-end: 10; }
+.col-end-11 { grid-column-end: 11; }
+.col-end-12 { grid-column-end: 12; }
+.col-end-13 { grid-column-end: 13; }
+
+/* Row Start */
+.row-start-1 { grid-row-start: 1; }
+.row-start-2 { grid-row-start: 2; }
+.row-start-3 { grid-row-start: 3; }
+.row-start-4 { grid-row-start: 4; }
+.row-start-5 { grid-row-start: 5; }
+.row-start-6 { grid-row-start: 6; }
+.row-start-7 { grid-row-start: 7; }
+
+/* Row End */
+.row-end-1 { grid-row-end: 1; }
+.row-end-2 { grid-row-end: 2; }
+.row-end-3 { grid-row-end: 3; }
+.row-end-4 { grid-row-end: 4; }
+.row-end-5 { grid-row-end: 5; }
+.row-end-6 { grid-row-end: 6; }
+.row-end-7 { grid-row-end: 7; }
+
+
+/* * ------------------------------------------
+ * 4. Content & Item Alignment
+ * ------------------------------------------
+ * - justify-content -> justify-*
+ * - align-content   -> content-*
+ * - justify-items   -> items-*
+ * - align-items     -> align-*
+ * - justify-self    -> justify-self-*
+ * - align-self      -> self-*
+ * ------------------------------------------
+ */
+
+/* Justify Content (Aligns grid along the row axis) */
+.justify-start { justify-content: start; }
+.justify-end { justify-content: end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+
+/* Align Content (Aligns grid along the column axis) */
+.content-start { align-content: start; }
+.content-end { align-content: end; }
+.content-center { align-content: center; }
+.content-between { align-content: space-between; }
+.content-around { align-content: space-around; }
+.content-evenly { align-content: space-evenly; }
+.content-stretch { align-content: stretch; }
+
+/* Justify Items (Aligns all items along the row axis) */
+.items-start { justify-items: start; }
+.items-end { justify-items: end; }
+.items-center { justify-items: center; }
+.items-stretch { justify-items: stretch; }
+
+/* Align Items (Aligns all items along the column axis) */
+.align-start { align-items: start; }
+.align-end { align-items: end; }
+.align-center { align-items: center; }
+.align-stretch { align-items: stretch; }
+.align-baseline { align-items: baseline; }
+
+
+/* Justify Self (Aligns a single item along the row axis) */
+.justify-self-auto { justify-self: auto; }
+.justify-self-start { justify-self: start; }
+.justify-self-end { justify-self: end; }
+.justify-self-center { justify-self: center; }
+.justify-self-stretch { justify-self: stretch; }
+
+/* Align Self (Aligns a single item along the column axis) */
+.self-auto { align-self: auto; }
+.self-start { align-self: start; }
+.self-end { align-self: end; }
+.self-center { align-self: center; }
+.self-stretch { align-self: stretch; }
+.self-baseline { align-self: baseline; }
+
+/* * ------------------------------------------
+ * 5. Grid Area
+ * ------------------------------------------
+ * Assigns a grid area name to an item.
+ * Combine with a custom `grid-template-areas`
+ * style on the parent container.
+ * ------------------------------------------
+ */
+
+.area-header { grid-area: header; }
+.area-nav { grid-area: nav; }
+.area-main { grid-area: main; }
+.area-sidebar { grid-area: sidebar; }
+.area-content { grid-area: content; }
+.area-footer { grid-area: footer; }
+.area-a { grid-area: a; }
+.area-b { grid-area: b; }
+.area-c { grid-area: c; }
+.area-d { grid-area: d; }
+
+.top-left { grid-column: 1 / 2; grid-row: 1 / 2; justify-self: start; }
+.top-center { grid-column: 2 / 3; grid-row: 1 / 2; justify-self: center; color: var(--text-color); }
+.top-right { grid-column: 3 / 4; grid-row: 1 / 2; justify-self: end; }
+.bottom-left { grid-column: 1 / 2; grid-row: 3 / 4; justify-self: start; align-self: end; }
+.bottom-center { grid-column: 2 / 3; grid-row: 3 / 4; justify-self: center; align-self: end; color: var(--text-color); }
+.bottom-right { grid-column: 3 / 4; grid-row: 3 / 4; justify-self: end; align-self: end; }
