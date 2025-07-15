@@ -3,11 +3,11 @@
 // LAYOUT Card KEBENET© 
 // =============================================================================
 
-card, block,
-card>content,
-card>footer {display: grid; }
+.card, block,
+.card> content,
+.card> footer {display: grid; }
 
-card {
+.card {
 
     background-color: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -16,9 +16,9 @@ card {
 }
 
 
-div[ratio-1]>card>img   {aspect-ratio: 1/1; }
+div[ratio-1]>.card>img   {aspect-ratio: 1/1; }
 
-card>content { padding: var(--padding-base); }
+.card>content { padding: var(--padding-base); }
 
 [radius] {
     overflow: hidden;
@@ -27,14 +27,14 @@ card>content { padding: var(--padding-base); }
 
 // Card automatic Color | border
 
-card[border] {border: medium solid var(--primary-20)!important; }
+article[border] {border: medium solid var(--primary-20)!important; }
 
-card[primary]>header {background-color: var(--primary)!important; }
+article[primary]>header {background-color: var(--primary)!important; }
 
-card[primary] {border-color: var(--primary)!important; }
+article[primary] {border-color: var(--primary)!important; }
 
-card[secondary]>header {background-color: var(--secondary)!important; }
+article[secondary]>header {background-color: var(--secondary)!important; }
 
-card[secondary] {border-color: var(--secondary)!important; }
+article[secondary] {border-color: var(--secondary)!important; }
 
-card>footer {padding: var(--padding-base); justify-items: start;align-items: end; }
+article>footer {padding: var(--padding-base); justify-items: start;align-items: end; }

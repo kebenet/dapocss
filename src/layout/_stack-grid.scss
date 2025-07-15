@@ -15,8 +15,8 @@
 }
 
 
-stack-grid {@include set-stack-grid; background-color: white; }
-stack-side {
+.stack-grid {@include set-stack-grid; background-color: white; }
+.stack-side {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
   writing-mode: vertical-lr;
@@ -25,14 +25,14 @@ stack-side {
   font-weight: bolder;
 }
 
-grid[primary] > stack-grid > stack-side{background-color: var(--secondary);}
-grid[secondary] > stack-grid > stack-side{background-color: var(--primary);}
+grid[primary] > .stack-grid > .stack-side{background-color: var(--secondary);}
+grid[secondary] > .stack-grid > .stack-side{background-color: var(--primary);}
 
-stack-grid[primary] > stack-side{background-color: var(--secondary);}
-stack-grid[secondary] > stack-side{background-color: var(--primary);}
+.stack-grid[primary] > .stack-side{background-color: var(--secondary);}
+.stack-grid[secondary] > .stack-side{background-color: var(--primary);}
 
-stack-grid[primary] > card>header{background-color: var(--primary);}
-stack-grid[secondary] > card>header{background-color: var(--secondary);}
+.stack-grid[primary] > .card>header{background-color: var(--primary);}
+.stack-grid[secondary] > .card>header{background-color: var(--secondary);}
 
 
 // stack-grid > stack-main > img { @include mixin.set-img-16-9;}

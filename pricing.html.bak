@@ -122,7 +122,7 @@ p[prefixer]>sup{font-size: medium; vertical-align: inherit; }
                         </footer>
 
                     
-                </article>
+                </card>
 
                 <article class="card" primary>
 
@@ -171,7 +171,7 @@ p[prefixer]>sup{font-size: medium; vertical-align: inherit; }
                                 <a href="https://api.whatsapp.com/send/?phone=60173609475&amp;text=Saya+berminat+https://kebenet.com/pakej-kabinet-dapur-pahang/promosi-pakej-kabinet-lengkap-1-rumah-pahang/" button>GET STARTED</a>
                     </footer>
 
-                </article>
+                </card>
             </grid>
 
         </section>

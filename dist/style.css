@@ -64,6 +64,7 @@
   --text-muted: #70777f;
   --links: hsl(163, 53%, 38%);
   --border: hsl(163, 53%, 38%);
+  --divider-color:hsl(163, 53%, 38%);
   --code: #000;
   --focus: hsla(163, 53%, 38%, 0.44);
   --selection: hsla(163, 53%, 38%, 0.44);
@@ -78,6 +79,11 @@
   --secondary-focus: hsla(23, 84%, 73%, 0.4);
   --scrollbar-thumb: hsl(163, 53%, 38%);
   --scrollbar-thumb-hover: hsl(23, 84%, 73%);
+  --padding-base: 8px;
+  --padding-m: 16px;
+  --padding-l: 24px;
+  --margin-base: 8px;
+  --margin-xl: 78px;
   --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
 }
 
@@ -148,13 +154,11 @@ h6 {
   font-size: var(--text-s);
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   margin-top: 0;
   color: var(--text-bright);
-  padding-top: var(--padding-base);
-  padding-left: var(--padding-base);
-  padding-right: var(--padding-base);
+  padding: 0;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, th {
@@ -720,7 +724,7 @@ img, video {
 
 hr {
   border: none;
-  border-top: medium solid var(--primary);
+  border-top: medium solid var(--divider-color);
   width: 13%;
 }
 
@@ -937,18 +941,6 @@ a[button-icon]::before {
   display: inline-block;
 }
 
-footer {
-  border-top: 1px solid var(--border);
-}
-
-footer, footer > p, footer > h5, footer > h4 {
-  color: var(--text-muted);
-}
-
-body > footer {
-  margin-top: var(--margin-VA);
-}
-
 @media print {
   body,
   pre,
@@ -1067,24 +1059,24 @@ grid[auto-three] {
   grid-template-columns: auto auto auto;
 }
 
-grid[border] > card {
+grid[border] > .card {
   border: medium solid hsla(163, 53%, 38%, 0.2);
 }
 
-grid[round] > card {
+grid[round] > .card {
   overflow: hidden;
   border-radius: 7px 7px 0 0;
 }
 
-grid[primary] > card {
+grid[primary] > .card {
   border-color: hsl(163, 53%, 38%);
 }
 
-grid[primary] > card > header {
+grid[primary] > .card > header {
   background-color: hsl(163, 53%, 38%);
 }
 
-grid[secondary] > card > header {
+grid[secondary] > .card > header {
   background-color: hsl(23, 84%, 73%);
 }
 
@@ -1099,24 +1091,23 @@ grid[secondary] > card > header {
   }
 }
 /* Medium devices (md) and up (>= 768px) */
-/* Large devices (lg) and up (>= 992px) */
-card, block,
-card > content,
-card > footer {
+.card, block,
+.card > content,
+.card > footer {
   display: grid;
 }
 
-card {
+.card {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
 }
 
-div[ratio-1] > card > img {
+div[ratio-1] > .card > img {
   aspect-ratio: 1/1;
 }
 
-card > content {
+.card > content {
   padding: var(--padding-base);
 }
 
@@ -1125,27 +1116,27 @@ card > content {
   border-radius: var(--border-radius-base) var(--border-radius-base) 0 0;
 }
 
-card[border] {
+article[border] {
   border: medium solid var(--primary-20) !important;
 }
 
-card[primary] > header {
+article[primary] > header {
   background-color: var(--primary) !important;
 }
 
-card[primary] {
+article[primary] {
   border-color: var(--primary) !important;
 }
 
-card[secondary] > header {
+article[secondary] > header {
   background-color: var(--secondary) !important;
 }
 
-card[secondary] {
+article[secondary] {
   border-color: var(--secondary) !important;
 }
 
-card > footer {
+article > footer {
   padding: var(--padding-base);
   justify-items: start;
   align-items: end;
@@ -1210,16 +1201,8 @@ grid[hover] > stack-grid:hover {
   color: #212121;
 }
 
-section {
+section, main {
   max-width: var(--max-width);
-}
-
-container, .container {
-  width: 100%;
-}
-
-section, container, .container, card, grid {
-  max-width: 100%;
 }
 
 section {
@@ -1230,17 +1213,35 @@ section:last-child {
   margin-bottom: 78px;
 }
 
-container,
-.container {
-  display: grid;
+main, container, .container {
+  width: 100%;
+}
+
+main, container, .container {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
 }
 
+section, container, .container, article, grid {
+  max-width: 100%;
+}
+
 block {
   align-content: center;
   justify-items: center;
+}
+
+footer {
+  border-top: 1px solid var(--divider-color);
+}
+
+body > footer {
+  margin-top: var(--margin-VA);
+}
+
+footer, footer > p, footer > h5, footer > h6 {
+  color: var(--text-muted);
 }
 
 [pad] {
@@ -1286,14 +1287,14 @@ section > header {
  * which simplifies the HTML markup.
  * ===================================================================
 */
-stack-grid {
+.stack-grid {
   display: grid;
   grid-template-columns: min-content 1fr; /* Sidebar fits content, right auto-fills */
   grid-template-rows: 1fr min-content;
   background-color: white;
 }
 
-stack-side {
+.stack-side {
   grid-column: 1/2;
   grid-row: 1/2;
   writing-mode: vertical-lr;
@@ -1302,27 +1303,27 @@ stack-side {
   font-weight: bolder;
 }
 
-grid[primary] > stack-grid > stack-side {
+grid[primary] > .stack-grid > .stack-side {
   background-color: var(--secondary);
 }
 
-grid[secondary] > stack-grid > stack-side {
+grid[secondary] > .stack-grid > .stack-side {
   background-color: var(--primary);
 }
 
-stack-grid[primary] > stack-side {
+.stack-grid[primary] > .stack-side {
   background-color: var(--secondary);
 }
 
-stack-grid[secondary] > stack-side {
+.stack-grid[secondary] > .stack-side {
   background-color: var(--primary);
 }
 
-stack-grid[primary] > card > header {
+.stack-grid[primary] > .card > header {
   background-color: var(--primary);
 }
 
-stack-grid[secondary] > card > header {
+.stack-grid[secondary] > .card > header {
   background-color: var(--secondary);
 }
 

@@ -2,31 +2,29 @@
 
 
 
-
 // =============================================================================
 // LAYOUT Section
 // =============================================================================
 
 // Section Layout Bricks style
 
-section { max-width: var(--max-width); }
+section,main { max-width: var(--max-width); }
+section {margin-top: vars.$margin-xl; }
+section:last-child {margin-bottom: vars.$margin-xl; }
 
-container, .container {width: 100%; }
+main, container, .container {width: 100%; }
+main, container, .container {align-items: center; margin-left: auto; margin-right: auto; }
 
-section, container, .container, card, grid {max-width: 100%; }
-
-
-section {margin-top: vars.$margin-VA; }
-section:last-child {margin-bottom: vars.$margin-VA; }
-
-container,
-.container {display: grid; align-items: center; margin-left: auto; margin-right: auto; }
-
-
-
+section, container, .container, article, grid {max-width: 100%; }
 
 // =============================================================================
-// LAYOUT Block - grid inline
+// LAYOUT Block - grid inline Center, Center
 // =============================================================================
 
 block{align-content: center; justify-items: center; }
+
+// Footer
+// =============================================================================
+footer {border-top: 1px solid var(--divider-color); }
+body > footer {margin-top: var(--margin-VA); }
+footer, footer>p, footer>h5, footer>h6{color: var(--text-muted);}

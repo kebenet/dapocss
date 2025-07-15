@@ -5,13 +5,6 @@
 @use '../abstracts/variables' as vars;
 @use '../abstracts/mixins' as mixins;
 
-// Footer
-// =============================================================================
-footer {border-top: 1px solid var(--border); }
-
-footer, footer>p, footer>h5, footer>h4{color: var(--text-muted);}
-
-body > footer {margin-top: var(--margin-VA); }
 
 // Print Styles
 // =============================================================================

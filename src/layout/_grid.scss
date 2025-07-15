@@ -49,13 +49,13 @@ grid[auto-three]{ grid-template-columns: auto auto auto; }
 // Grid auto cards style
 // ---------------------
 
-grid[border] > card{border: medium solid vars.$primary-20; }
-grid[round] > card{ @include mixins.set-border-radius; }
+grid[border] > .card{border: medium solid vars.$primary-20; }
+grid[round] > .card{ @include mixins.set-border-radius; }
 
-grid[primary] > card  {border-color: vars.$primary; }
+grid[primary] > .card  {border-color: vars.$primary; }
 
-grid[primary]> card > header {background-color: vars.$primary; }
-grid[secondary] > card > header {background-color: vars.$secondary; }
+grid[primary]> .card > header {background-color: vars.$primary; }
+grid[secondary] > .card > header {background-color: vars.$secondary; }
 
 
 /* Base (xs) columns */
@@ -68,13 +68,13 @@ grid[secondary] > card > header {background-color: vars.$secondary; }
 
 /* Medium devices (md) and up (>= 768px) */
 
-@media (min-width: 64em) {
+// @media (min-width: 64em) {
 
 
-}
+// }
 
-/* Large devices (lg) and up (>= 992px) */
-@media (min-width: 75em) {
+// /* Large devices (lg) and up (>= 992px) */
+// @media (min-width: 75em) {
 
-}
+// }
 

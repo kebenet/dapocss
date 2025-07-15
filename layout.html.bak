@@ -4,10 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DapoCSS Layout Showcase</title>
+    <title>Layout Preview</title>
     <link rel="stylesheet" href="dist/style.css">
     <style>
 
+        [padder]{ padding-top:8px; padding-bottom:8px; padding-right: 8px; }
+        .row[gap]{
+            grid-gap: 0.5em;
+            /*padding: 8px;*/
+        }
     </style>
 
 </head>
@@ -26,7 +31,7 @@
             </header>
             <grid two pad>
                 <article class="card" secondary>
-                    <header inline pad>
+                    <header inline padder>
                         <p>Card Header</p>
                         
                         <div>
@@ -41,19 +46,19 @@
                         <p>Call now!</p>
                         <button>submit</button>
                     </footer>
-                </article>
+                </card>
                 <article class="card" primary>
-                    <header pad>
+                    <header padder>
                         <p>Card Header</p>
                     </header>
                     <content>
                         This is the content of the card. It's concise, informative, and to the point.
                     </content>
                     <footer justify="center">
-                        <p>Call now!</p>
+                        Call now!
                         <button>submit</button>
                     </footer>
-                </article>
+                </card>
             </grid>
         </section>
 
@@ -66,27 +71,27 @@
                         This is the content of the card. It's concise, informative, and to the point.
                     </content>
                     <footer>
-                        <p>Card Footer</p>
+                        Card Footer
                     </footer>
-                </article>
+                </card>
                 <article class="card">
                     <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
                     <content>
                         This is the content of the card. It's concise, informative, and to the point.
                     </content>
                     <footer>
-                        <p>Card Footer</p>
+                        Card Footer
                     </footer>
-                </article>
+                </card>
                 <article class="card">
                     <img src="https://placehold.co/600x300/2e9578/ffffff?text=Placeholder+Image" alt="Placeholder Image">
                     <content>
                         This is the content of the card. It's concise, informative, and to the point.
                     </content>
                     <footer>
-                        <p>Card Footer</p>
+                        Card Footer
                     </footer>
-                </article>
+                </card>
             </grid>
         </section>
         <section bg="primary-light" gap>
@@ -106,7 +111,7 @@
                         <p>Call now!</p>
                         <button>submit</button>
                     </footer>
-                </article>
+                </card>
 
                 <article class="card" primary border radius>
                     <header>
@@ -119,7 +124,7 @@
                         Call now!
                         <button>submit</button>
                     </footer>
-                </article>
+                </card>
                 
             </grid>
         </section>
@@ -140,7 +145,7 @@
                     <footer>
                         Another Footer
                     </footer>
-                </article>
+                </card>
             </grid>
         </section>
         <section>
@@ -155,7 +160,7 @@
                     <footer>
                         Another Footer
                     </footer>
-                </article>
+                </card>
             </grid>
         </section>
         <section>
@@ -171,7 +176,7 @@
                     <footer>
                         Card Footer
                     </footer>
-                </article>
+                </card>
             </grid>
         </section>
     </main>

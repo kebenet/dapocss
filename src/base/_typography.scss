@@ -14,12 +14,13 @@ h4 { font-size: var(--text-m); }
 h5 { font-size: var(--text-base); }
 h6 { font-size: var(--text-s); }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6 {
   @include mixins.heading-styles;
   // add default padding
-  padding-top: var(--padding-base);
-  padding-left: var(--padding-base);
-  padding-right: var(--padding-base);
+  // padding-top: var(--padding-base);
+  // padding-left: var(--padding-base);
+  // padding-right: var(--padding-base);
+  padding:0;
 }
 
 h1, h2, h3, h4, h5, h6, b, strong, th {
