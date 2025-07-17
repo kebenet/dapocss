@@ -49,6 +49,7 @@
 // =============================================================================
 @mixin default-theme-colors {
   --background-body: #{vars.$background-body};
+  --block-bg: white;
   --background: #{vars.$background};
   --background-alt: #{vars.$background-alt};
   --text-main: #{vars.$text-main};
