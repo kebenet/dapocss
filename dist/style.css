@@ -80,6 +80,7 @@
   --scrollbar-thumb: hsl(163, 53%, 38%);
   --scrollbar-thumb-hover: hsl(23, 84%, 73%);
   --padding-base: 8px;
+  --border-radius-base: 7px;
   --padding-m: 16px;
   --padding-l: 24px;
   --margin-base: 8px;
