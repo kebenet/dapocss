@@ -37,7 +37,7 @@ $text-colors: (
   "primary": vars.$primary,
   "secondary": vars.$secondary,
   "dark": vars.$text-main, // NOTE: Using natural dark color for titles/descriptions
-  "light": vars.$text-bright // NOTE: Using natural light color for titles/descriptions
+  "light": vars.$text-main // NOTE: Using natural light color for titles/descriptions
 );
 
 

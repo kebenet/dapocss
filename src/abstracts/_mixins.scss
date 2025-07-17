@@ -52,7 +52,6 @@
   --background: #{vars.$background};
   --background-alt: #{vars.$background-alt};
   --text-main: #{vars.$text-main};
-  --text-bright: #{vars.$text-bright};
   --text-muted: #{vars.$text-muted};
   --links: #{vars.$links};
 
@@ -179,7 +178,7 @@
 @mixin heading-styles {
   margin-bottom: 0;
   margin-top: 0;
-  color: var(--text-bright);
+  color: var(--text-main);
   // font-weight: vars.$font-weight-normal;
 }
 
@@ -203,7 +202,7 @@
 
 // Selection Styles
 // =============================================================================
-@mixin selection-styles {background-color: var(--selection); color: var(--text-bright); }
+@mixin selection-styles {background-color: var(--selection); color: var(--text-main); }
 
 // Print Mixins
 // =============================================================================

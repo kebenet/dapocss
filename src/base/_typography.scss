@@ -31,7 +31,7 @@ p{margin-bottom: var(--padding-base);}
 // Text Elements
 // =============================================================================
 strong {
-  color: var(--text-bright);
+  color: var(--text-main);
 }
 
 // Quote Elements
@@ -104,7 +104,7 @@ a {
 
 // Code Elements
 // =============================================================================
-code, samp, time {
+code, samp {
   @include mixins.code-styles;
   padding: 2.5px 5px;
 }

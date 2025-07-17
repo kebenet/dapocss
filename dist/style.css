@@ -59,8 +59,7 @@
   --background-body: hsla(163, 53%, 38%, 0.08);
   --background: hsla(163, 53%, 38%, 0.2);
   --background-alt: hsla(163, 53%, 38%, 0.44);
-  --text-main: #363636;
-  --text-bright: #212121;
+  --text-main: #212121;
   --text-muted: #70777f;
   --links: hsl(163, 53%, 38%);
   --border: hsl(163, 53%, 38%);
@@ -122,12 +121,12 @@ body {
 
 ::-moz-selection {
   background-color: var(--selection);
-  color: var(--text-bright);
+  color: var(--text-main);
 }
 
 ::selection {
   background-color: var(--selection);
-  color: var(--text-bright);
+  color: var(--text-main);
 }
 
 h1 {
@@ -157,7 +156,7 @@ h6 {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   margin-top: 0;
-  color: var(--text-bright);
+  color: var(--text-main);
   padding: 0;
 }
 
@@ -170,7 +169,7 @@ p {
 }
 
 strong {
-  color: var(--text-bright);
+  color: var(--text-main);
 }
 
 q::before,
@@ -229,7 +228,7 @@ a > strong {
   color: inherit;
 }
 
-code, samp, time {
+code, samp {
   background: var(--background);
   color: var(--code);
   border-radius: 7px;
@@ -391,7 +390,7 @@ button:disabled {
   padding-right: 16px;
   padding-left: 16px;
   background-color: var(--secondary);
-  color: var(--text-bright);
+  color: var(--text-main);
 }
 .btn-secondary:hover {
   background: var(--button-hover);
@@ -442,7 +441,7 @@ button:disabled {
 }
 .btn-secondary-outline:hover {
   background-color: var(--secondary);
-  color: var(--text-bright);
+  color: var(--text-main);
   border-color: var(--secondary);
 }
 .btn-secondary-outline:focus {
@@ -804,7 +803,7 @@ a[button] {
   display: inline-block;
   padding: var(--padding-base) var(--padding-base);
   background-color: var(--links);
-  color: var(--text-bright);
+  color: var(--text-main);
   text-decoration: none;
   border-radius: var(--border-radius-small);
   font-weight: var(--font-weight-bold);
@@ -840,12 +839,12 @@ a[outline] {
 }
 a[outline]:hover {
   background-color: var(--secondary);
-  color: var(--text-bright);
+  color: var(--text-main);
 }
 
 a[secondary] {
   background-color: var(--secondary);
-  color: var(--text-bright);
+  color: var(--text-main);
 }
 a[secondary]:hover {
   background-color: var(--secondary-hover);
@@ -920,7 +919,7 @@ a[button-icon]::before {
   border-top: 2px solid currentColor;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  color: var(--text-bright);
+  color: var(--text-main);
 }
 
 @keyframes spin {
@@ -1194,7 +1193,7 @@ grid[hover] > stack-grid:hover {
 }
 
 [color=dark] {
-  color: #363636;
+  color: #212121;
 }
 
 [color=light] {

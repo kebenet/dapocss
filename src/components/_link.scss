@@ -10,7 +10,7 @@ a[button] {
   display: inline-block;
   padding: var(--padding-base) var(--padding-base);
   background-color: var(--links);
-  color: var(--text-bright);
+  color: var(--text-main);
   text-decoration: none;
   border-radius: var(--border-radius-small);
   font-weight: var(--font-weight-bold);
@@ -38,10 +38,10 @@ a[small] {padding: calc(var(--padding-base) * 0.5) var(--padding-base); font-siz
 // Button link style modifiers
 a[outline]{background-color: transparent; border-color: var(--primary); color: var(--text-main);
   
-  &:hover {background-color: var(--secondary); color: var(--text-bright); }
+  &:hover {background-color: var(--secondary); color: var(--text-main); }
 }
 
-a[secondary] {background-color: var(--secondary); color: var(--text-bright);
+a[secondary] {background-color: var(--secondary); color: var(--text-main);
   
   &:hover {background-color: var(--secondary-hover); }
 }
@@ -101,7 +101,7 @@ a[button-icon] {display: inline-flex; align-items: center; gap: calc(var(--paddi
     border-top: 2px solid currentColor;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    color: var(--text-bright);
+    color: var(--text-main);
   }
 }
 

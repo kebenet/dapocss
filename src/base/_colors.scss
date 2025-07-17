@@ -22,7 +22,6 @@
   --background: #{vars.$background};
   --background-alt: #{vars.$background-alt};
   --text-main: #{vars.$text-main};
-  --text-bright: #{vars.$text-bright};
   --text-muted: #{vars.$text-muted};
   --links: #{vars.$links};
   --border: #{vars.$border};
@@ -94,7 +93,8 @@
   --bg-dark: #263238;
   --bg-light: #f5f6f7;
   --bg-tooltip: #23282d;
-  --renova: #132129;
+  // important color for future darkmode
+  --renova: hsl(203, 36%, 12%) // #132129;
   
   --dark: #212121;
   --light: hsla(192, 33%, 97%, 1);
@@ -117,7 +117,6 @@
 //   --background: #{vars.$background-dark};
 //   --background-alt: #{vars.$background-alt-dark};
 //   --text-main: #{vars.$text-main-dark};
-//   --text-bright: #{vars.$text-bright-dark};
 //   --text-muted: #{vars.$text-muted-dark};
 //   --links: #{vars.$links-dark};
 //   --border: #{vars.$border-dark};
@@ -166,5 +165,5 @@ clr[secondary] { color: var(--secondary); }
 [color="primary"] { color: var(--primary) !important; }
 [color="secondary"] { color: var(--secondary) !important; }
 [color="dark"] { color: var(--text-main) !important; } // NOTE: Using natural dark color for titles/descriptions
-[color="light"] { color: var(--text-bright) !important; } // NOTE: Using natural light color for titles/descriptions
+[color="light"] { color: var(--text-main) !important; } // NOTE: Using natural light color for titles/descriptions
 [color="muted"] { color: var(--text-muted) !important; }

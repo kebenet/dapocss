@@ -54,102 +54,89 @@ $secondary-08: hsla(23, 84%, 73%, 0.08);
 
 // Default Theme Colors
 // =============================================================================
-// $background-body-light: $primary-08; // COMMENTED: Original light theme variable
+
 $background-body: $primary-08;
-// $background-light: $primary-20; // COMMENTED: Original light theme variable
+
 $background: $primary-20;
-// $background-alt-light: $primary-44; // COMMENTED: Original light theme variable
+
 $background-alt: $primary-44;
-// $text-main-light: #363636; // COMMENTED: Original light theme variable
-$text-main: #363636;
-// $text-bright-light: #212121; // COMMENTED: Original light theme variable
-$text-bright: #212121;
-// $text-muted-light: #70777f; // COMMENTED: Original light theme variable
+
+$text-main: #212121;
+
 $text-muted: #70777f;
-// $links-light: $primary; // COMMENTED: Original light theme variable
+
 $links: $primary;
-// $border-light: $primary; // COMMENTED: Original light theme variable
+
 $border: $primary;
-// $code-light: #000; // COMMENTED: Original light theme variable
+
 $code: #000;
 
 // DARK THEME COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
 // =============================================================================
-// $background-body-dark: #202b38;
-// $background-dark: #161f27;
-// $background-alt-dark: #1a242f;
-// $text-main-dark: #dbdbdb;
-// $text-bright-dark: #fff;
-// $text-muted-dark: #a9b1ba;
-// $links-dark: #41adff;
-// $border-dark: #526980;
-// $code-dark: #ffbe85;
+
 
 // Default UI Colors
 // =============================================================================
-// $focus-color-light: $primary-44; // COMMENTED: Original light theme variable
+
 $focus-color: $primary-44;
-// $selection-color-light: $primary-44; // COMMENTED: Original light theme variable
+
 $selection-color: $primary-44;
-// $highlight-color-light: $primary; // COMMENTED: Original light theme variable
+
 $highlight-color: $primary;
-// $variable-color-light: #39a33c; // COMMENTED: Original light theme variable
+
 $variable-color: #39a33c;
 
 // DARK THEME UI COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
 // =============================================================================
-// $focus-color-dark: #0096bfab;
-// $selection-color-dark: #1c76c5;
-// $highlight-color-dark: #efdb43;
-// $variable-color-dark: #d941e2;
+
+
+
+
 
 // Default Form Colors
 // =============================================================================
-// $form-text-light: #1d1d1d; // COMMENTED: Original light theme variable
+
 $form-text: #1d1d1d;
-// $form-placeholder-light: #949494; // COMMENTED: Original light theme variable
+
 $form-placeholder: #949494;
 
 // DARK THEME FORM COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
 // =============================================================================
-// $form-text-dark: #fff;
-// $form-placeholder-dark: #a9a9a9;
+
+
 
 // Default Button Colors
 // =============================================================================
-// $button-base-light: #d0cfcf; // COMMENTED: Original light theme variable
+
 $button-base: #d0cfcf;
-// $button-hover-light: #9b9b9b; // COMMENTED: Original light theme variable
+
 $button-hover: #9b9b9b;
 
 // DARK THEME BUTTON COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
 // =============================================================================
-// $button-base-dark: #0c151c;
-// $button-hover-dark: #040a0f;
+
+
 
 // Default Secondary Button Colors
 // =============================================================================
-// $secondary-hover-light: hsla(23, 84%, 65%, 1); // COMMENTED: Original light theme variable
+
 $secondary-hover: hsla(23, 84%, 65%, 1);
-// $secondary-focus-light: hsla(23, 84%, 73%, 0.4); // COMMENTED: Original light theme variable
+
 $secondary-focus: hsla(23, 84%, 73%, 0.4);
 
 // DARK THEME SECONDARY BUTTON COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
 // =============================================================================
-// $secondary-hover-dark: hsla(23, 84%, 80%, 1);
-// $secondary-focus-dark: hsla(23, 84%, 73%, 0.6);
+
+
 
 // Default Scrollbar Colors
 // =============================================================================
-// $scrollbar-thumb-light: $primary; // COMMENTED: Original light theme variable
+
 $scrollbar-thumb: $primary;
-// $scrollbar-thumb-hover-light: $secondary; // COMMENTED: Original light theme variable
+
 $scrollbar-thumb-hover: $secondary;
 
-// DARK THEME SCROLLBAR COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
-// =============================================================================
-// $scrollbar-thumb-dark: #040a0f;
-// $scrollbar-thumb-hover-dark: rgb(0, 0, 0);
+
 
 // Spacing variables (CSS variables)
 // =============================================================================
@@ -176,12 +163,12 @@ $z-index-header: 50;
 
 // Default SVG Icons
 // =============================================================================
-// $select-arrow-light: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E"); // COMMENTED: Original light theme variable
+
 $select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
 
 // DARK THEME SVG ICONS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
 // =============================================================================
-// $select-arrow-dark: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23efefef'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+
 
 
 
