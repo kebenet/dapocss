@@ -25,6 +25,9 @@ git commit -m "$@"
 
 
 echo "✅ Success! All changes have been pushed to main."
+echo ""
+echo "status :"
+echo ""
 
 git status
 

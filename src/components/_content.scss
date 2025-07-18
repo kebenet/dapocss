@@ -36,7 +36,9 @@ hr[widest]   {--hr-width: 100%; }
 hr[wider] {--hr-width: 50%; }
 hr[wide] {--hr-width: 13%; }
 
-hr[bold]{height: 4px; }
+hr[bold]{height: 2px; }
+hr[bolder]{height: 4px; }
+hr[boldest]{height: 7px; }
 
 
 // Details & Summary

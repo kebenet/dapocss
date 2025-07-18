@@ -767,7 +767,15 @@ hr[wide] {
 }
 
 hr[bold] {
+  height: 2px;
+}
+
+hr[bolder] {
   height: 4px;
+}
+
+hr[boldest] {
+  height: 7px;
 }
 
 details {
