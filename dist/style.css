@@ -1327,16 +1327,8 @@ block {
   justify-items: center;
 }
 
-footer {
-  border-top: 1px solid var(--border-color);
-}
-
 body > footer {
   margin-top: var(--margin-VA);
-}
-
-footer, footer > p, footer > h5, footer > h6 {
-  color: var(--text-muted);
 }
 
 [pad] {

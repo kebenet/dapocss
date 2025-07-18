@@ -26,6 +26,6 @@ block{align-content: center; justify-items: center; }
 
 // Footer
 // =============================================================================
-footer {border-top: 1px solid var(--border-color); }
 body > footer {margin-top: var(--margin-VA); }
-footer, footer>p, footer>h5, footer>h6{color: var(--text-muted);}
+// footer {border-top: 1px solid var(--border-color); }
+// footer, footer>p, footer>h5, footer>h6{color: var(--text-muted);}
