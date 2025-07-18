@@ -735,8 +735,27 @@ hr {
   margin-bottom: var(--margin-base);
   margin-left: 0;
   margin-right: auto;
-  --hr-width: 100%;
-  width: var(--hr-width);
+  width: var(--hr-width, 100%);
+}
+
+hr[vertical] {
+  width: 1px;
+  height: var(--hr-width, 44%);
+  background-color: var(--border-color, #363636);
+  padding: 0;
+  margin: auto 0;
+}
+
+hr[widest] {
+  --hr-width: 78%;
+}
+
+hr[wider] {
+  --hr-width: 44%;
+}
+
+hr[wide] {
+  --hr-width: 13%;
 }
 
 hr[left] {
@@ -752,18 +771,6 @@ hr[right] {
 hr[center] {
   margin-left: auto;
   margin-right: auto;
-}
-
-hr[widest] {
-  --hr-width: 100%;
-}
-
-hr[wider] {
-  --hr-width: 50%;
-}
-
-hr[wide] {
-  --hr-width: 13%;
 }
 
 hr[bold] {
