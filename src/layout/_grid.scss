@@ -1,11 +1,6 @@
 @use '../abstracts/variables'as vars;
 @use '../abstracts/mixins' as mixins;
 
-// Column calc for Grid template-column minmax px
-// ----------------------------------------------
-// $column-2: calc(var(--max-width)/2);
-// $column-3: calc(var(--max-width)/3);
-
 @mixin set-inline {display: grid; grid-template-columns: auto auto; justify-content: space-between; align-items: center; }
 
 // =============================================================================
@@ -62,25 +57,27 @@ grid[auto-three]{ grid-template-columns: auto auto auto; }
 // Grid auto cards style
 // ---------------------
 
-grid[border] > .card{border: medium solid vars.$primary-20; }
-grid[round] > .card{ @include mixins.set-border-radius; }
+grid[border] > article{border: medium solid vars.$primary-20; }
+grid[round] > article{ @include mixins.set-border-radius; }
 
-grid[primary] > .card  {border-color: vars.$primary; }
+grid[primary] > article  {border-color: vars.$primary; }
 
-grid[primary]> .card > header {background-color: vars.$primary; }
-grid[secondary] > .card > header {background-color: vars.$secondary; }
+grid[primary]> article > header {background-color: vars.$primary; }
+grid[secondary] > article > header {background-color: vars.$secondary; }
 
 
 
 /* Selector Even|Odd ----------------------------------------- */
 grid[grid-reverse]:nth-child(even){ flex-direction: row-reverse;}
-/* Base (xs) columns */
-/* Small devices (sm) and up (>= 576px) */
+
 
 @media (min-width: 48em) {
   grid[two]{ grid-template-columns: 1fr 1fr; }
   grid[three]{ grid-template-columns: 1fr 1fr 1fr; }
 }
+
+
+
 
 /* Medium devices (md) and up (>= 768px) */
 
@@ -94,3 +91,8 @@ grid[grid-reverse]:nth-child(even){ flex-direction: row-reverse;}
 
 // }
 
+
+// Column calc for Grid template-column minmax px
+// ----------------------------------------------
+// $column-2: calc(var(--max-width)/2);
+// $column-3: calc(var(--max-width)/3);

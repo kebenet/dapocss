@@ -57,7 +57,7 @@
   --links: #{vars.$links};
 
   --border: #{vars.$border};
-  --divider-color:#{vars.$border};
+  --border-color:#{vars.$border};
   
   --code: #{vars.$code};
   --focus: #{vars.$focus-color};
@@ -80,6 +80,7 @@
   --padding-l:    #{vars.$padding-l};
   --margin-base:  #{vars.$margin-base};
   --margin-xl:    #{vars.$margin-xl};
+  --hr-width: 100%;
   
   --select-arrow: #{vars.$select-arrow};
 }
