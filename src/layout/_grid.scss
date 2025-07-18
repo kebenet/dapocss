@@ -32,9 +32,7 @@
 
 
 /* Reverse by even selector ----------------------------------------- */
-grid[grid-reverse] card:nth-child(even){ direction:rtl; }
-
-
+grid[grid-reverse] article:nth-child(even){ direction:rtl; }
 
 
 // New Grid row

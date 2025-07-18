@@ -1080,7 +1080,7 @@ a[button-icon]::before {
 }
 
 /* Reverse by even selector ----------------------------------------- */
-grid[grid-reverse] card:nth-child(even) {
+grid[grid-reverse] article:nth-child(even) {
   direction: rtl;
 }
 
