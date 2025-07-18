@@ -12,6 +12,7 @@ section,main { max-width: var(--max-width); }
 section {margin-top: vars.$margin-xl; }
 section:last-child {margin-bottom: vars.$margin-xl; }
 
+
 main, container, .container {width: 100%; }
 main, container, .container {align-items: center; margin-left: auto; margin-right: auto; }
 

@@ -1046,9 +1046,13 @@ a[button-icon]::before {
   align-items: center;
 }
 
+/* Reverse by even selector ----------------------------------------- */
+grid[grid-reverse] card:nth-child(even) {
+  direction: rtl;
+}
+
 grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 grid[one], grid[two], grid[three] {
@@ -1101,6 +1105,11 @@ grid[secondary] > .card > header {
   background-color: hsl(23, 84%, 73%);
 }
 
+/* Selector Even|Odd ----------------------------------------- */
+grid[grid-reverse]:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
 /* Base (xs) columns */
 /* Small devices (sm) and up (>= 576px) */
 @media (min-width: 48em) {
@@ -1145,14 +1154,14 @@ card > content {
   padding: var(--padding-base);
 }
 
-[radius] {
+section[radius-full] card {
+  border-radius: var(--border-radius-base);
   overflow: hidden;
-  border-radius: var(--border-radius-base) var(--border-radius-base) 0 0;
 }
 
-[radius-full] {
+section[radius] card {
   overflow: hidden;
-  border-radius: var(--border-radius-base) var(--border-radius-base) var(--border-radius-base) var(--border-radius-base);
+  border-radius: var(--border-radius-base) var(--border-radius-base) 0 0;
 }
 
 article[border] {

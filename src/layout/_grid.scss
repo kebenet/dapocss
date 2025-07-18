@@ -3,8 +3,8 @@
 
 // Column calc for Grid template-column minmax px
 // ----------------------------------------------
-$column-2: calc(var(--max-width)/2);
-$column-3: calc(var(--max-width)/3);
+// $column-2: calc(var(--max-width)/2);
+// $column-3: calc(var(--max-width)/3);
 
 @mixin set-inline {display: grid; grid-template-columns: auto auto; justify-content: space-between; align-items: center; }
 
@@ -34,9 +34,17 @@ $column-3: calc(var(--max-width)/3);
 // heading and icon box on right
 [inline] { @include set-inline; }
 
-// New Grid row
 
-grid{display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+/* Reverse by even selector ----------------------------------------- */
+grid[grid-reverse] card:nth-child(even){ direction:rtl; }
+
+
+
+
+// New Grid row
+// grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+grid{display: grid;  }
 
 grid[one],grid[two],grid[three]{ grid-template-columns: 1fr; }
 
@@ -63,6 +71,9 @@ grid[primary]> .card > header {background-color: vars.$primary; }
 grid[secondary] > .card > header {background-color: vars.$secondary; }
 
 
+
+/* Selector Even|Odd ----------------------------------------- */
+grid[grid-reverse]:nth-child(even){ flex-direction: row-reverse;}
 /* Base (xs) columns */
 /* Small devices (sm) and up (>= 576px) */
 
