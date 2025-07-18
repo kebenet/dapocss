@@ -4,4 +4,7 @@
 
 # Standardize Component Theme 
 
-# more themeable
+# more themeable [done v1]
+
+# utility - semiouto
+
