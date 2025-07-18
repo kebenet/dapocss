@@ -54,8 +54,7 @@ grid[auto-two]{ grid-template-columns: auto auto; }
 grid[auto-three]{ grid-template-columns: auto auto auto; }
 
 
-// Grid auto cards style
-// ---------------------
+/* Grid Article Cards ----------------------------------------- */
 
 grid[border] > article{border: medium solid vars.$primary-20; }
 grid[round] > article{ @include mixins.set-border-radius; }

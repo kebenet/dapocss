@@ -86,6 +86,7 @@
   --margin-base: 8px;
   --margin-xl: 78px;
   --hr-width: 100%;
+  --block-bg: white;
   --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
 }
 
@@ -1116,24 +1117,25 @@ grid[auto-three] {
   grid-template-columns: auto auto auto;
 }
 
-grid[border] > .card {
+/* Grid Article Cards ----------------------------------------- */
+grid[border] > article {
   border: medium solid hsla(163, 53%, 38%, 0.2);
 }
 
-grid[round] > .card {
+grid[round] > article {
   overflow: hidden;
   border-radius: 7px 7px 0 0;
 }
 
-grid[primary] > .card {
+grid[primary] > article {
   border-color: hsl(163, 53%, 38%);
 }
 
-grid[primary] > .card > header {
+grid[primary] > article > header {
   background-color: hsl(163, 53%, 38%);
 }
 
-grid[secondary] > .card > header {
+grid[secondary] > article > header {
   background-color: hsl(23, 84%, 73%);
 }
 
@@ -1142,8 +1144,6 @@ grid[grid-reverse]:nth-child(even) {
   flex-direction: row-reverse;
 }
 
-/* Base (xs) columns */
-/* Small devices (sm) and up (>= 576px) */
 @media (min-width: 48em) {
   grid[two] {
     grid-template-columns: 1fr 1fr;
@@ -1153,19 +1153,19 @@ grid[grid-reverse]:nth-child(even) {
   }
 }
 /* Medium devices (md) and up (>= 768px) */
-card,
-card > content,
-card > footer {
+article,
+article > content,
+article > footer {
   display: grid;
 }
 
-card {
+article {
   background-color: var(--block-bg);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
 }
 
-div[ratio-1] > card > img {
+div[ratio-1] > article > img {
   aspect-ratio: 1/1;
 }
 
@@ -1182,16 +1182,16 @@ img[full] {
   height: 100%;
 }
 
-card > content {
+article > content {
   padding: var(--padding-base);
 }
 
-section[radius-full] card {
+section[radius-full] article {
   border-radius: var(--border-radius-base);
   overflow: hidden;
 }
 
-section[radius] card {
+section[radius] article {
   overflow: hidden;
   border-radius: var(--border-radius-base) var(--border-radius-base) 0 0;
 }
