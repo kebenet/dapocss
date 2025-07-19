@@ -1,0 +1,13 @@
+/* Sections themeable Settings ----------------------------------------- */
+
+section[theme] toptitle{--text-main :var(--secondary); }
+section[theme] title{--text-main:var(--primary); }
+section[theme] time{--block-bg:var(--primary); }
+
+section[theme-heading] toptitle{--text-main :var(--secondary); }
+section[theme-heading] title{--text-main:var(--primary); }
+/*section[theme-heading] time{--block-bg:var(--primary); }*/
+
+section[theme-invert] toptitle{--text-main :var(--primary); }
+section[theme-invert] title{--text-main:var(--secondary); }
+section[theme-invert] time{--block-bg:var(--secondary); }

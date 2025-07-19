@@ -134,6 +134,32 @@ body {
   color: var(--text-main);
 }
 
+/* Time -----------------Always Center------------------------ */
+title, subtitle, toptitle {
+  display: block;
+  color: var(--text-main);
+}
+
+title {
+  font-size: var(--text-l);
+  font-weight: 700;
+}
+
+subtitle {
+  font-size: var(--text-s);
+  font-weight: 200;
+  color: var(--text-muted);
+}
+
+toptitle {
+  font-size: var(--text-s);
+  text-transform: uppercase;
+}
+
+toptitle b, subtitle b, title b {
+  font-weight: bolder;
+}
+
 h1 {
   font-size: var(--text-xxl);
 }
@@ -158,6 +184,11 @@ h6 {
   font-size: var(--text-s);
 }
 
+h5, h6 {
+  font-weight: 200;
+  color: var(--text-muted);
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   margin-top: 0;
@@ -165,20 +196,11 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6, b, strong, th {
-  font-weight: var(--font-weight-bold);
+b, strong, th {
+  font-weight: bolder;
 }
 
-p {
-  margin-bottom: var(--spacing-s);
-}
-
-strong {
-  color: var(--text-main);
-}
-
-q::before,
-q::after {
+q::before, q::after {
   content: none;
 }
 
@@ -1329,6 +1351,40 @@ block {
 
 body > footer {
   margin-top: var(--margin-VA);
+}
+
+/* Sections themeable Settings ----------------------------------------- */
+section[theme] toptitle {
+  --text-main:var(--secondary);
+}
+
+section[theme] title {
+  --text-main:var(--primary);
+}
+
+section[theme] time {
+  --block-bg:var(--primary);
+}
+
+section[theme-heading] toptitle {
+  --text-main:var(--secondary);
+}
+
+section[theme-heading] title {
+  --text-main:var(--primary);
+}
+
+/*section[theme-heading] time{--block-bg:var(--primary); }*/
+section[theme-invert] toptitle {
+  --text-main:var(--primary);
+}
+
+section[theme-invert] title {
+  --text-main:var(--secondary);
+}
+
+section[theme-invert] time {
+  --block-bg:var(--secondary);
 }
 
 [pad] {

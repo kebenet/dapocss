@@ -5,41 +5,55 @@
 @use '../abstracts/variables' as vars;
 @use '../abstracts/mixins' as mixins;
 
+/* Time -----------------Always Center------------------------ */
+
+// time[primary]{--block-bg:var(--secondary);}
+// time[secondary]{--block-bg:var(--primary);}
+
+// time{
+//     display:grid; background-color: var(--block-bg);
+//     font-size:var(--text-xl);
+//     font-weight:var(--weight-l);
+//     line-height: var(--line-height-xs);
+//     place-content:center;
+//     text-align: center;
+// }
+
+
+// Title heading
+// =============================================================================
+title, subtitle, toptitle{display:block;color:var(--text-main);}
+
+title{font-size:var(--text-l); font-weight:700; }
+subtitle{font-size:var(--text-s); font-weight:200; color: var(--text-muted); }
+toptitle {font-size:var(--text-s); text-transform: uppercase; }
+
+toptitle b, subtitle b, title b {font-weight: bolder; }
+
 // Headings
 // =============================================================================
 h1 { font-size: var(--text-xxl); }
 h2 { font-size: var(--text-xl); }
 h3 { font-size: var(--text-l); }
 h4 { font-size: var(--text-m); }
-h5 { font-size: var(--text-base); }
+h5 { font-size: var(--text-base);}
 h6 { font-size: var(--text-s); }
+
+// this heading is like p tags but for title
+h5,h6 { font-weight: 200;color: var(--text-muted); }
 
 h1, h2, h3, h4, h5, h6 {
   @include mixins.heading-styles;
-  // add default padding
-  // padding-top: var(--padding-base);
-  // padding-left: var(--padding-base);
-  // padding-right: var(--padding-base);
   padding:0;
 }
 
-h1, h2, h3, h4, h5, h6, b, strong, th {
-  font-weight: var(--font-weight-bold);
-}
-p{margin-bottom: var(--spacing-s);}
+b, strong, th {font-weight: bolder; }
+// p{margin-bottom: var(--spacing-s);}
 
-// Text Elements
-// =============================================================================
-strong {
-  color: var(--text-main);
-}
 
 // Quote Elements
 // =============================================================================
-q::before,
-q::after {
-  content: none;
-}
+q::before, q::after {content: none; }
 
 blockquote, q {
   @include mixins.focus-border;
