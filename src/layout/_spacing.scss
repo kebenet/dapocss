@@ -17,8 +17,8 @@ $fluid-padding-05: clamp(0.5em, 2vw + 0.1em, 3em);
 $fluid-padding-01: clamp(0.1em, 2vw + 0.1em, 3em);
 
 
-section[gap] grid {@include clamp-gap; }
-section[pad] grid {@include clamp-padding; }
+section[gap]> grid {@include clamp-gap; }
+section[pad]> grid {@include clamp-padding; }
 
 section>header{padding-bottom: var(--spacing-s);}
 
