@@ -1057,7 +1057,6 @@ a[button-icon]::before {
 [align=middle-center] {
   justify-items: center;
   place-content: center;
-  text-align: center;
 }
 
 [align=end] {
@@ -1350,22 +1349,16 @@ body > footer {
   padding-right: var(--spacing-s);
 }
 
-section[gap] > grid {
+section[gap] grid {
   grid-gap: clamp(0.5em, 2vw + 0.1em, 3em);
 }
 
-section[pad] > grid {
+section[pad] grid {
   padding: clamp(0.5em, 2vw + 0.1em, 3em);
 }
 
 section > header {
   padding-bottom: var(--spacing-s);
-}
-
-.pad-clamp,
-[pad-clamp] {
-  padding-left: clamp(0.1em, 2vw + 0.1em, 3em);
-  padding-right: clamp(0.1em, 2vw + 0.1em, 3em);
 }
 
 /*

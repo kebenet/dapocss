@@ -15,7 +15,7 @@
 
 [align="start"]   {justify-items: start; }
 [align="center"]  {justify-items: center;text-align: unset; }
-[align="middle-center"]  {justify-items: center; place-content: center; text-align: center; }
+[align="middle-center"]  {justify-items: center; place-content: center; }
 [align="end"]     {justify-items: end; }
 
 [space="around" ] {justify-content: space-around; }
@@ -77,16 +77,10 @@ grid[grid-reverse]:nth-child(even){ flex-direction: row-reverse;}
 
 
 /* Medium devices (md) and up (>= 768px) */
-
-// @media (min-width: 64em) {
-
-
-// }
+// @media (min-width: 64em) { // }
 
 // /* Large devices (lg) and up (>= 992px) */
-// @media (min-width: 75em) {
-
-// }
+// @media (min-width: 75em) { // }
 
 
 // Column calc for Grid template-column minmax px
