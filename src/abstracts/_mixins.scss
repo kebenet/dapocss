@@ -73,16 +73,17 @@
   --secondary-focus: #{vars.$secondary-focus};
   --scrollbar-thumb: #{vars.$scrollbar-thumb};
   --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover};
-  // Padding 
-  --padding-base: #{vars.$padding-base};
   --border-radius-base: #{vars.$border-radius-base};
-  --padding-m:    #{vars.$padding-m};
-  --padding-l:    #{vars.$padding-l};
-  --margin-base:  #{vars.$margin-base};
-  --margin-xl:    #{vars.$margin-xl};
   --hr-width: 100%;
   --block-bg: white;
-  
+
+  --spacing-xs: #{vars.$spacing-xs};
+  --spacing-s:  #{vars.$spacing-s};
+  --spacing-m:  #{vars.$spacing-m};
+  --spacing-l:  #{vars.$spacing-l};
+  --spacing-xl: #{vars.$spacing-xl};
+  --spacing-xxl:#{vars.$spacing-xxl};
+
   --select-arrow: #{vars.$select-arrow};
 }
 
@@ -147,7 +148,7 @@
 
 // Layout Mixins
 // =============================================================================
-@mixin container {max-width: vars.$max-width; margin: 0 auto; padding: 0 vars.$padding-base; }
+@mixin container {max-width: vars.$max-width; margin: 0 auto; padding: 0 var(--spacing-s); }
 
 @mixin clearfix {&::after {content: ""; display: table; clear: both; } }
 

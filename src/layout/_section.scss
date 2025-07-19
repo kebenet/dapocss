@@ -9,8 +9,8 @@
 // Section Layout Bricks style
 
 section,main { max-width: var(--max-width); }
-section {margin-top: vars.$margin-xl; }
-section:last-child {margin-bottom: vars.$margin-xl; }
+section {margin-top: var(--spacing-xl); }
+section:last-child {margin-bottom: var(--spacing-xl); }
 
 
 main, container, .container {width: 100%; }

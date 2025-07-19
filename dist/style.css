@@ -79,14 +79,15 @@
   --secondary-focus: hsla(23, 84%, 73%, 0.4);
   --scrollbar-thumb: hsl(163, 53%, 38%);
   --scrollbar-thumb-hover: hsl(23, 84%, 73%);
-  --padding-base: 8px;
   --border-radius-base: 7px;
-  --padding-m: 16px;
-  --padding-l: 24px;
-  --margin-base: 8px;
-  --margin-xl: 78px;
   --hr-width: 100%;
   --block-bg: white;
+  --spacing-xs: 4px;
+  --spacing-s: 8px;
+  --spacing-m: 16px;
+  --spacing-l: 32px;
+  --spacing-xl: 78px;
+  --spacing-xxl:120px;
   --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
 }
 
@@ -116,7 +117,7 @@ body {
   line-height: 1.4;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 8px;
+  padding: 0 var(--spacing-s);
   word-wrap: break-word;
   color: var(--text-main);
   background: var(--background-body);
@@ -169,7 +170,7 @@ h1, h2, h3, h4, h5, h6, b, strong, th {
 }
 
 p {
-  margin-bottom: var(--padding-base);
+  margin-bottom: var(--spacing-s);
 }
 
 strong {
@@ -684,7 +685,7 @@ input[type=range]:focus::-ms-fill-upper {
 
 table {
   border-collapse: collapse;
-  margin-bottom: 8px;
+  margin-bottom: var(--spacing-s);
   width: 100%;
   table-layout: fixed;
 }
@@ -731,8 +732,8 @@ hr {
   display: block;
   border-radius: 2px;
   background: var(--border-color);
-  margin-top: var(--margin-base);
-  margin-bottom: var(--margin-base);
+  margin-top: var(--spacing-s);
+  margin-bottom: var(--spacing-s);
   margin-left: 0;
   margin-right: auto;
   width: var(--hr-width, 100%);
@@ -851,7 +852,7 @@ dialog::backdrop {
 
 a[button] {
   display: inline-block;
-  padding: var(--padding-base) var(--padding-base);
+  padding: var(--spacing-s);
   background-color: var(--links);
   color: var(--text-main);
   text-decoration: none;
@@ -878,7 +879,7 @@ a[button]:focus {
 }
 
 a[small] {
-  padding: calc(var(--padding-base) * 0.5) var(--padding-base);
+  padding: var(--spacing-xs) var(--spacing-s);
   font-size: var(--text-s);
 }
 
@@ -935,7 +936,7 @@ a[disabled]:hover {
 a[button-icon] {
   display: inline-flex;
   align-items: center;
-  gap: calc(var(--padding-base) * 0.5);
+  gap: var(--spacing-xs);
 }
 a[button-icon]::before {
   content: attr(data-icon);
@@ -944,7 +945,7 @@ a[button-icon]::before {
 
 .button-group {
   display: inline-flex;
-  gap: calc(var(--padding-base) * 0.5);
+  gap: var(--spacing-xs);
 }
 .button-group .button {
   flex: 1;
@@ -1198,7 +1199,7 @@ img[full] {
 }
 
 article > content {
-  padding: var(--padding-base);
+  padding: var(--spacing-s);
 }
 
 section[radius-full] article {
@@ -1232,7 +1233,7 @@ article[secondary] {
 }
 
 article > footer {
-  padding: var(--padding-base);
+  padding: var(--spacing-s);
   justify-items: start;
   align-items: end;
 }
@@ -1301,11 +1302,11 @@ section, main {
 }
 
 section {
-  margin-top: 78px;
+  margin-top: var(--spacing-xl);
 }
 
 section:last-child {
-  margin-bottom: 78px;
+  margin-bottom: var(--spacing-xl);
 }
 
 main, container, .container {
@@ -1332,21 +1333,21 @@ body > footer {
 }
 
 [pad] {
-  padding: 8px;
+  padding: var(--spacing-s);
 }
 
 [pad-m] {
-  padding: 16px;
+  padding: var(--spacing-m);
 }
 
 [pad-l] {
-  padding: 24px;
+  padding: var(--spacing-l);
 }
 
 [pad-tbr] {
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-right: 8px;
+  padding-top: var(--spacing-s);
+  padding-bottom: var(--spacing-s);
+  padding-right: var(--spacing-s);
 }
 
 section[gap] > grid {
@@ -1358,7 +1359,7 @@ section[pad] > grid {
 }
 
 section > header {
-  padding-bottom: 8px;
+  padding-bottom: var(--spacing-s);
 }
 
 .pad-clamp,
@@ -1386,7 +1387,7 @@ section > header {
   grid-row: 1/2;
   writing-mode: vertical-lr;
   text-orientation: mixed;
-  padding: 16px;
+  padding: var(--spacing-m);
   font-weight: bolder;
 }
 

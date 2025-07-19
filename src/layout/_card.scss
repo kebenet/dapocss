@@ -20,7 +20,7 @@ img[ratio-1-1]{aspect-ratio: 1/1;}
 img[ratio-16-9]{aspect-ratio: 16/9;}
 img[full]{width:100%; height:100%;}
 
-article>content { padding: var(--padding-base); }
+article>content { padding: var(--spacing-s); }
 
 
 section[radius-full] article{border-radius:var(--border-radius-base); overflow:hidden;}
@@ -41,4 +41,4 @@ article[secondary]>header {background-color: var(--secondary)!important; }
 
 article[secondary] {border-color: var(--secondary)!important; }
 
-article>footer {padding: var(--padding-base); justify-items: start;align-items: end; }
+article>footer {padding: var(--spacing-s); justify-items: start;align-items: end; }

@@ -9,7 +9,7 @@
 // =============================================================================
 table {
   border-collapse: collapse;
-  margin-bottom: vars.$margin-base;
+  margin-bottom: var(--spacing-s);
   width: 100%;
   table-layout: fixed;
   

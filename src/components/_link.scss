@@ -8,7 +8,7 @@
 // Base button link styles
 a[button] {
   display: inline-block;
-  padding: var(--padding-base) var(--padding-base);
+  padding: var(--spacing-s);
   background-color: var(--links);
   color: var(--text-main);
   text-decoration: none;
@@ -32,7 +32,7 @@ a[button] {
 }
 
 // Button link size modifiers
-a[small] {padding: calc(var(--padding-base) * 0.5) var(--padding-base); font-size: var(--text-s); }
+a[small] {padding: var(--spacing-xs) var(--spacing-s); font-size: var(--text-s); }
 
 
 // Button link style modifiers
@@ -67,7 +67,7 @@ a[disabled] {opacity: 0.6; cursor: not-allowed; pointer-events: none;
 }
 
 // Button link with icons
-a[button-icon] {display: inline-flex; align-items: center; gap: calc(var(--padding-base) * 0.5);
+a[button-icon] {display: inline-flex; align-items: center; gap: var(--spacing-xs);
 
   &::before {content: attr(data-icon); display: inline-block; }
 }
@@ -78,7 +78,7 @@ a[button-icon] {display: inline-flex; align-items: center; gap: calc(var(--paddi
 // Button link group
 .button-group {
   display: inline-flex;
-  gap: calc(var(--padding-base) * 0.5);
+  gap: var(--spacing-xs);
   
   .button {flex: 1; }
   

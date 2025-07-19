@@ -3,13 +3,13 @@
 
 @mixin clamp-gap{ grid-gap: clamp(0.5em, 2vw + 0.1em, 3em);}
 @mixin clamp-padding{ padding: clamp(0.5em, 2vw + 0.1em, 3em);}
-@mixin padding-topbottomleft{ padding-top:vars.$padding-base; padding-bottom:vars.$padding-base; padding-right: vars.$padding-base;}
+@mixin padding-topbottomleft{ padding-top:var(--spacing-s); padding-bottom:var(--spacing-s); padding-right: var(--spacing-s);}
 
 
 // Padding gap - grid
-[pad]{ padding:vars.$padding-base; }
-[pad-m]{ padding:vars.$padding-m; }
-[pad-l]{ padding:vars.$padding-l; }
+[pad]{ padding:var(--spacing-s); }
+[pad-m]{ padding:var(--spacing-m); }
+[pad-l]{ padding:var(--spacing-l); }
 [pad-tbr]{ @include padding-topbottomleft; }
 
 
@@ -20,7 +20,7 @@ $fluid-padding-01: clamp(0.1em, 2vw + 0.1em, 3em);
 section[gap]> grid {@include clamp-gap; }
 section[pad]> grid {@include clamp-padding; }
 
-section>header{padding-bottom: vars.$padding-base;}
+section>header{padding-bottom: var(--spacing-s);}
 
 
 

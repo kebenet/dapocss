@@ -48,11 +48,12 @@
   --scrollbar-thumb-hover: #{vars.$scrollbar-thumb-hover};
   
   // Spacing
-  --padding-base: #{vars.$padding-base};
-  --padding-m: #{vars.$padding-m};
-  --padding-l: #{vars.$padding-l};
-  --margin-base: #{vars.$margin-base};
-  --margin-VA: #{vars.$margin-VA};
+  --spacing-xs: #{vars.$spacing-xs};
+  --spacing-s: #{vars.$spacing-s};
+  --spacing-m: #{vars.$spacing-m};
+  --spacing-l: #{vars.$spacing-l};
+  --spacing-xl: #{vars.$spacing-xl};
+  --spacing-xxl: #{vars.$spacing-xxl};
   --border-radius-base: #{vars.$border-radius-base};
   --border-radius-small: #{vars.$border-radius-small};
   --border-radius-large: #{vars.$border-radius-large};
