@@ -39,8 +39,8 @@ h4 { font-size: var(--text-m); }
 h5 { font-size: var(--text-base);}
 h6 { font-size: var(--text-s); }
 
-// this heading is like p tags but for title
-h5,h6 { font-weight: 200;color: var(--text-muted); }
+// this heading is like p tags but for title-------------------------------------
+h5,h6 { font-weight: 200;color: var(--text-muted);letter-spacing:var(--spacing-xs); }
 
 h1, h2, h3, h4, h5, h6 {
   @include mixins.heading-styles;

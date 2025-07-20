@@ -22,7 +22,7 @@ section, container, .container, article, grid {max-width: 100%; }
 // LAYOUT Block - grid inline Center, Center
 // =============================================================================
 
-block{align-content: center; justify-items: center; }
+block{display: grid; align-content: center; justify-items: center; }
 
 // Footer
 // =============================================================================

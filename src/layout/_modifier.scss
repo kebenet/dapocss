@@ -6,10 +6,10 @@
 
 
 
-grid[hover] > card,
+grid[hover] > article,
 grid[hover] > stack-grid {transition: transform 0.3s ease, box-shadow 0.3s ease; }
 
-grid[hover] > card:hover,
+grid[hover] > article:hover,
 grid[hover] > stack-grid:hover {@include mixins.set-hover; }
 
 
@@ -52,11 +52,11 @@ $text-colors: (
 }
 
 // Loop for text colors
-@each $name, $color in $text-colors {
-  [color="#{$name}"] {
-    color: $color ;
-  }
-}
+// @each $name, $color in $text-colors {
+//   [color="#{$name}"] {
+//     color: $color ;
+//   }
+// }
 
 
 // =============================================================================
