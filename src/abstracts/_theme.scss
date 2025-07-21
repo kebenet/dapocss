@@ -11,3 +11,20 @@ section[theme-heading] title{--text-main:var(--primary); }
 section[theme-invert] toptitle{--text-main :var(--primary); }
 section[theme-invert] title{--text-main:var(--secondary); }
 section[theme-invert] time{--block-bg:var(--secondary); }
+
+
+/* Theme Dark-mode ----------------------------------------- */
+section[darkmode] {
+    --primary: var(--primary);
+    --secondary: var(--secondary);
+    --page-bg: hsl(203, 36%, 12%);
+    --block-bg: hsl(203, 36%, 14%);
+    --text-main: #ecf0f1;
+    --text-muted: #bdc3c7;
+    --border-color: #4a627a;
+    --accent-bg: #5e4a3c;
+    --success-color: #2ecc71;
+    --success-bg: #2c5b42;
+    --warning-color: #f1c40f;
+    --warning-bg: #79642a;
+}

@@ -56,12 +56,20 @@
   --secondary-44: hsla(23, 84%, 73%, 0.44);
   --secondary-08: hsla(23, 84%, 73%, 0.08);
   --animation-duration: 0.1s;
+  --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, sans-serif;
+  --font-family-mono: monospace;
   --background-body: hsla(163, 53%, 38%, 0.08);
   --block-bg: white;
   --background: hsla(163, 53%, 38%, 0.2);
   --background-alt: hsla(163, 53%, 38%, 0.44);
   --text-main: #212121;
   --text-muted: #70777f;
+  --color-info: #00b0f4;
+  --color-success: #11b76b;
+  --color-warning: #ffa100;
+  --color-danger: red;
+  --color-error: var(--color-danger);
+  --renova: hsl(203, 36%, 12%);
   --links: hsl(163, 53%, 38%);
   --border: hsl(163, 53%, 38%);
   --border-color:hsl(163, 53%, 38%);
@@ -69,11 +77,11 @@
   --focus: hsla(163, 53%, 38%, 0.44);
   --selection: hsla(163, 53%, 38%, 0.44);
   --highlight: hsl(163, 53%, 38%);
-  --variable: #39a33c;
+  --variable: var(--text-theme);
   --form-text: #1d1d1d;
   --form-placeholder: #949494;
   --button-base: #d0cfcf;
-  --button-hover: #9b9b9b;
+  --button-hover: transparent;
   --secondary: hsl(23, 84%, 73%);
   --secondary-hover: hsl(23, 84%, 65%);
   --secondary-focus: hsla(23, 84%, 73%, 0.4);
@@ -1260,12 +1268,12 @@ article > footer {
   align-items: end;
 }
 
-grid[hover] > card,
+grid[hover] > article,
 grid[hover] > stack-grid {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-grid[hover] > card:hover,
+grid[hover] > article:hover,
 grid[hover] > stack-grid:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -1303,22 +1311,6 @@ grid[hover] > stack-grid:hover {
   background-color: hsla(23, 84%, 73%, 0.08);
 }
 
-[color=primary] {
-  color: hsl(163, 53%, 38%);
-}
-
-[color=secondary] {
-  color: hsl(23, 84%, 73%);
-}
-
-[color=dark] {
-  color: #212121;
-}
-
-[color=light] {
-  color: #212121;
-}
-
 section, main {
   max-width: var(--max-width);
 }
@@ -1346,6 +1338,7 @@ section, container, .container, article, grid {
 }
 
 block {
+  display: grid;
   align-content: center;
   justify-items: center;
 }
@@ -1386,6 +1379,22 @@ section[theme-invert] title {
 
 section[theme-invert] time {
   --block-bg:var(--secondary);
+}
+
+/* Theme Dark-mode ----------------------------------------- */
+section[darkmode] {
+  --primary: var(--primary);
+  --secondary: var(--secondary);
+  --page-bg: hsl(203, 36%, 12%);
+  --block-bg: hsl(203, 36%, 14%);
+  --text-main: #ecf0f1;
+  --text-muted: #bdc3c7;
+  --border-color: #4a627a;
+  --accent-bg: #5e4a3c;
+  --success-color: #2ecc71;
+  --success-bg: #2c5b42;
+  --warning-color: #f1c40f;
+  --warning-bg: #79642a;
 }
 
 [pad] {

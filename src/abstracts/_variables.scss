@@ -64,9 +64,14 @@ $links: $primary;
 $border: $primary;
 $code: #000;
 
-// DARK THEME COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
+// Informative Color
 // =============================================================================
 
+  $color-info: #00b0f4;
+  $color-success: #11b76b;
+  $color-warning: #ffa100;
+  $color-danger: red;
+  $color-error: var(--color-danger);
 
 // Default UI Colors
 // =============================================================================
@@ -74,7 +79,7 @@ $code: #000;
 $focus-color: $primary-44;
 $selection-color: $primary-44;
 $highlight-color: $primary;
-$variable-color: #39a33c;
+$variable-color: var(--text-theme);
 
 
 // Default Form Colors
@@ -83,20 +88,12 @@ $variable-color: #39a33c;
 $form-text: #1d1d1d;
 $form-placeholder: #949494;
 
-// DARK THEME FORM COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
-// =============================================================================
-
-
 
 // Default Button Colors
 // =============================================================================
 
 $button-base: #d0cfcf;
-$button-hover: #9b9b9b;
-
-// DARK THEME BUTTON COLORS - COMMENTED OUT FOR FUTURE THEME IMPLEMENTATION
-// =============================================================================
-
+$button-hover: transparent;
 
 
 // Default Secondary Button Colors
@@ -110,7 +107,6 @@ $secondary-focus: hsla(23, 84%, 73%, 0.4);
 // =============================================================================
 
 $scrollbar-thumb: $primary;
-
 $scrollbar-thumb-hover: $secondary;
 
 
@@ -125,12 +121,6 @@ $spacing-l: 32px;
 $spacing-xl: 78px;
 $spacing-xxl: 120px;
 
-// $padding-base: 8px;
-// $padding-m: 16px;
-// $padding-l: 32px;
-// $margin-base: 8px;
-// $margin-xl: 78px;
-// >>>>>>> Stashed changes
 
 $border-radius-base: 7px;
 $border-radius-small: 2px;
