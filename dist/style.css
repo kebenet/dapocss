@@ -47,21 +47,20 @@
   }
 }
 :root {
-  --primary: hsl(163, 53%, 38%);
-  --primary-20: hsla(163, 53%, 38%, 0.2);
-  --primary-44: hsla(163, 53%, 38%, 0.44);
-  --primary-08: hsla(163, 53%, 38%, 0.08);
-  --secondary: hsl(23, 84%, 73%);
-  --secondary-02: hsla(23, 84%, 73%, 0.2);
-  --secondary-44: hsla(23, 84%, 73%, 0.44);
-  --secondary-08: hsla(23, 84%, 73%, 0.08);
-  --animation-duration: 0.1s;
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, sans-serif;
   --font-family-mono: monospace;
+  --primary: hsl(163, 53%, 38%);
+  --primary-200: hsla(163, 53%, 38%, 0.2);
+  --primary-300: hsla(163, 53%, 38%, 0.44);
+  --primary-100: hsla(163, 53%, 38%, 0.08);
+  --secondary: hsl(23, 84%, 73%);
+  --secondary-100: hsla(23, 84%, 73%, 0.08);
+  --secondary-200: hsla(23, 84%, 73%, 0.2);
+  --secondary-300: hsla(23, 84%, 73%, 0.44);
   --bg-body: hsla(163, 53%, 38%, 0.08);
-  --background: hsla(163, 53%, 38%, 0.2);
+  --bg-body-200: hsla(163, 53%, 38%, 0.2);
+  --bg-body-300: hsla(163, 53%, 38%, 0.44);
   --block-bg: white;
-  --background-alt: hsl(163, 53%, 38%);
   --text-main: #212121;
   --text-muted: #70777f;
   --color-info:#00b0f4;
@@ -80,7 +79,6 @@
   --highlight: hsl(163, 53%, 38%);
   --form-text: #1d1d1d;
   --form-placeholder: #949494;
-  --button-base: #d0cfcf;
   --button-hover: hsla(163, 53%, 38%, 0.44);
   --secondary: hsl(23, 84%, 73%);
   --secondary-hover: hsl(23, 84%, 65%);
@@ -96,6 +94,7 @@
   --spacing-xl: 78px;
   --spacing-xxl:120px;
   --select-arrow: url("data:image/svg+xml;charset=utf-8,%3C?xml version='1.0' encoding='utf-8'?%3E %3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' height='62.5' width='116.9' fill='%23161f27'%3E %3Cpath d='M115.3,1.6 C113.7,0 111.1,0 109.5,1.6 L58.5,52.7 L7.4,1.6 C5.8,0 3.2,0 1.6,1.6 C0,3.2 0,5.8 1.6,7.4 L55.5,61.3 C56.3,62.1 57.3,62.5 58.4,62.5 C59.4,62.5 60.5,62.1 61.3,61.3 L115.2,7.4 C116.9,5.8 116.9,3.2 115.3,1.6Z'/%3E %3C/svg%3E");
+  --animation-duration: 0.1s;
 }
 
 html {
@@ -741,7 +740,7 @@ tbody tr:nth-child(even) {
   background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
 }
 tbody tr:nth-child(even) button {
-  background-color: var(--background-alt);
+  background-color: var(--bg-body-300);
 }
 tbody tr:nth-child(even) button:hover {
   background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
@@ -816,7 +815,7 @@ details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: var(--background-alt);
+  background-color: var(--bg-body-300);
   padding: 10px 10px 0;
   margin: 1em 0;
   border-radius: 7px;
@@ -837,7 +836,7 @@ details > :not(summary) {
 
 summary {
   display: list-item;
-  background-color: var(--background);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   padding: 10px;
   margin: -10px -10px 0;
   cursor: pointer;
@@ -1279,7 +1278,7 @@ grid[hover] > stack-grid:hover {
 }
 
 [bg=lighter] {
-  background-color: hsl(163, 53%, 38%);
+  background-color: hsla(163, 53%, 38%, 0.44);
 }
 
 [bg=primary] {

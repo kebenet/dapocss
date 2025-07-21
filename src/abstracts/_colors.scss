@@ -6,7 +6,6 @@
 // Brand Colors (base values)
 // =============================================================================
 $primary: hsla(163, 53%, 38%, 1);
-
 $primary-100: hsla(163, 53%, 38%, 0.08);
 $primary-200: hsla(163, 53%, 38%, 0.20);
 $primary-300: hsla(163, 53%, 38%, 0.44);
@@ -22,8 +21,8 @@ $secondary-300: hsla(23, 84%, 73%, 0.44);
 $text-main: #212121;
 $text-muted: #70777f;
 $bg-body: $primary-100;
-$background: $primary-200;
-$background-alt: $primary-300;
+$bg-body-200: $primary-200;
+$bg-body-300: $primary-300;
 $border-color: $primary;
 
 $text-theme: $text-main;
@@ -41,7 +40,6 @@ $color-error: $color-danger;
 // =============================================================================
 $form-text: #1d1d1d;
 $form-placeholder: #949494;
-$button-base: #d0cfcf;
 $button-hover: $primary-300;
 
 // UI Colors
@@ -70,8 +68,8 @@ $transparent: transparent;
 //========================================
 // Text Color Placeholders
 //========================================
-
-%text-body {color: var(--text-main,$text-main); }
+$text-body:#000;
+%text-body {color: var(--text-body,$text-body); }
 %text-theme {color: var(--text-theme, $primary); }
 %text-colored {color: $primary; }
 %text-code {color: $code-color; }
@@ -89,9 +87,7 @@ $transparent: transparent;
 %bg-secondary-200 {background-color: $secondary-200; }
 %bg-secondary-300 {background-color: $secondary-300; }
 
-
-%bg-code {background-color: $code-background; }
-%hilighted {background-color: $primary-100; color: $text-colored; } // <-- 100 bg and colored text
+%hilighted {background-color: $primary-100; color: $text-colored; } // <-- 100 bg and colored text ect:kbd
 
 %bg-success {background-color: var(--block-bg, white); }
 %bg-warning {background-color: var(--block-bg, white); }
@@ -116,18 +112,18 @@ title, subtitle, toptitle {@extend %text-body; }
 
 // In _forms.scss
 //------------------------------------
-button {@extend %bg-primary; color: $white; }
-.btn-secondary {@extend %bg-secondary; color: $white; }
+button {@extend %bg-primary; @extend %text-body }
+.btn-secondary {@extend %bg-secondary; @extend %text-body }
 .btn-secondary-outline {color: $secondary-color; background-color: transparent; }
 
 
 // In _link.scss
 //------------------------------------
-a[button] {@extend %bg-primary; color: $white; }
-a[secondary] {@extend %bg-secondary; color: $white; }
-a[success] {@extend %bg-success; color: $white; }
-a[warning] {@extend %bg-warning; color: $white; }
-a[danger] {@extend %bg-danger; color: $white; }
+a[button] {@extend %bg-primary; @extend %text-body }
+a[secondary] {@extend %bg-secondary; @extend %text-body }
+a[success] {@extend %bg-success; @extend %text-body }
+a[warning] {@extend %bg-warning; @extend %text-body }
+a[danger] {@extend %bg-danger; @extend %text-body }
 
 
 // In _card.scss or _layout.scss

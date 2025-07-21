@@ -9,7 +9,7 @@
 a[button] {
   display: inline-block;
   padding: var(--spacing-s);
-  background-color: var(--bg-theme);
+  background-color: var(--bg-theme); // <-- empty color(bg-theme)
   color: var(--text-main);
   text-decoration: none;
   border-radius: var(--border-radius-small);

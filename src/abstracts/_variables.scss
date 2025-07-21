@@ -2,6 +2,76 @@
 // DAPOCSS VARIABLES
 // =============================================================================
 
+
+// Theme Mixins (Using Generic Variables)
+// =============================================================================
+@mixin default-theme-colors {
+
+
+  --font-family-base: #{$font-family-base};
+  --font-family-mono: #{$font-family-mono};
+
+  --primary: #{$primary};
+  --primary-200: #{$primary-200};
+  --primary-300: #{$primary-300};
+  --primary-100: #{$primary-100};
+  --secondary: #{$secondary};
+  --secondary-100: #{$secondary-100};
+  --secondary-200: #{$secondary-200};
+  --secondary-300: #{$secondary-300};
+
+  --bg-body: #{$bg-body};
+  --bg-body-200: #{$bg-body-200};
+  --bg-body-300: #{$bg-body-300};
+  --block-bg: white;
+  --text-main: #{$text-main};
+  --text-muted: #{$text-muted};
+
+  --color-info:#{$color-info};
+  --color-success: #{$color-success};
+  --color-warning: #{$color-warning};
+  --color-danger: #{$color-danger};
+  --color-error: #{$color-error};
+
+  // Our special dark background Color
+  --renova: hsl(203, 36%, 12%); // #132129;
+
+  --links: #{$links};
+  --border-color:#{$border-color};
+
+  --text-theme: #{$text-theme};
+  --bg-theme: #{$bg-theme};
+  --border-color:#{$border-color};
+  
+
+  --focus-color: #{$focus-color} ;
+  --selection: #{$selection-color};
+  --highlight: #{$highlight-color};
+  --form-text: #{$form-text};
+  --form-placeholder: #{$form-placeholder};
+
+  --button-hover: #{$button-hover};
+  --secondary: #{$secondary};
+  --secondary-hover: #{$secondary-hover};
+  --secondary-focus: #{$secondary-focus};
+  --scrollbar-thumb: #{$scrollbar-thumb};
+  --scrollbar-thumb-hover: #{$scrollbar-thumb-hover};
+  --border-radius-base: #{$border-radius-base};
+
+  --hr-width: 100%;
+
+  --spacing-xs: #{$spacing-xs};
+  --spacing-s:  #{$spacing-s};
+  --spacing-m:  #{$spacing-m};
+  --spacing-l:  #{$spacing-l};
+  --spacing-xl: #{$spacing-xl};
+  --spacing-xxl:#{$spacing-xxl};
+
+  --select-arrow: #{$select-arrow};
+  --animation-duration: #{$animation-duration};
+}
+
+
 // Build-time variables (keep as SASS variables)
 // =============================================================================
 $font-family-base: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
@@ -43,21 +113,22 @@ $text-xxxl-large: 5.26rem;
 // Brand Colors (base values)
 // =============================================================================
 $primary: hsla(163, 53%, 38%, 1);
-$primary-20: hsla(163, 53%, 38%, 0.2);
-$primary-44: hsla(163, 53%, 38%, 0.44);
-$primary-08: hsla(163, 53%, 38%, 0.08);
+
+$primary-100: hsla(163, 53%, 38%, 0.08);
+$primary-200: hsla(163, 53%, 38%, 0.20);
+$primary-300: hsla(163, 53%, 38%, 0.44);
 
 $secondary: hsla(23, 84%, 73%, 1);
-$secondary-02: hsla(23, 84%, 73%, 0.2);
-$secondary-44: hsla(23, 84%, 73%, 0.44);
-$secondary-08: hsla(23, 84%, 73%, 0.08);
+$secondary-100: hsla(23, 84%, 73%, 0.08);
+$secondary-200: hsla(23, 84%, 73%, 0.2);
+$secondary-300: hsla(23, 84%, 73%, 0.44);
 
 // Default Theme Colors
 // =============================================================================
 
-$bg-body: $primary-08;
-$background: $primary-20;
-$background-alt: $primary;
+$bg-body: $primary-100;
+$bg-body-200: $primary-200;
+$bg-body-300: $primary-300;
 $text-main: #212121;
 $text-muted: #70777f;
 
@@ -73,8 +144,8 @@ $color-error: var(--color-danger);
 // Default UI Colors
 // =============================================================================
 
-$focus-color: $primary-44;
-$selection-color: $primary-44;
+$focus-color: $primary-300;
+$selection-color: $primary-300;
 $highlight-color: $primary;
 
 $links: var(--text-theme);
@@ -95,8 +166,8 @@ $form-placeholder: #949494;
 // Default Button Colors
 // =============================================================================
 
-$button-base: #d0cfcf;
-$button-hover: $primary-44;
+$button-base: $primary;
+$button-hover: $primary-300;
 
 
 // Default Secondary Button Colors

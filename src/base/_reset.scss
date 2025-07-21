@@ -37,20 +37,12 @@
 // =============================================================================
 :root {
   // Brand colors as CSS custom properties
-  --primary: #{vars.$primary};
-  --primary-20: #{vars.$primary-20};
-  --primary-44: #{vars.$primary-44};
-  --primary-08: #{vars.$primary-08};
-  --secondary: #{vars.$secondary};
-  --secondary-02: #{vars.$secondary-02};
-  --secondary-44: #{vars.$secondary-44};
-  --secondary-08: #{vars.$secondary-08};
+
   
   // Animation
-  --animation-duration: #{vars.$animation-duration};
   
   // Default theme colors
-  @include mixins.default-theme-colors;
+  @include vars.default-theme-colors;
   
   // DARK THEME COLORS - COMMENTED OUT FOR FUTURE USE
 }

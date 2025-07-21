@@ -45,7 +45,7 @@ tbody tr:nth-child(even) {
   background-color: var(--bg-body, vars.$bg-body);
   
   button {
-    background-color: var(--background-alt);
+    background-color: var(--bg-body-300);
     
     &:hover {
       background-color: var(--bg-body, vars.$bg-body);

@@ -54,7 +54,7 @@ details {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: var(--background-alt);
+  background-color: var(--bg-body-300);
   padding: 10px 10px 0;
   margin: 1em 0;
   border-radius: vars.$border-radius-base;
@@ -69,7 +69,7 @@ details {
 
 summary {
   display: list-item;
-  background-color: var(--background);
+  background-color: var(--bg-body, vars.$bg-body);
   padding: 10px;
   margin: -10px -10px 0;
   cursor: pointer;
