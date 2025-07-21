@@ -33,13 +33,6 @@ $background-colors: (
   "secondary-lighter": vars.$secondary-08
 );
 
-$text-colors: (
-  "primary": vars.$primary,
-  "secondary": vars.$secondary,
-  "dark": vars.$text-main, // NOTE: Using natural dark color for titles/descriptions
-  "light": vars.$text-main // NOTE: Using natural light color for titles/descriptions
-);
-
 
 // =============================================================================
 // 3. GENERATE ATTRIBUTE-BASED UTILITIES WITH @EACH LOOPS
@@ -50,24 +43,3 @@ $text-colors: (
 @each $name, $color in $background-colors {
   [bg="#{$name}"] {background-color: $color ; }
 }
-
-// Loop for text colors
-// @each $name, $color in $text-colors {
-//   [color="#{$name}"] {
-//     color: $color ;
-//   }
-// }
-
-
-// =============================================================================
-// 2. Padding Dynamic Automatic
-// =============================================================================
-// .pad-gap {
-//   --padding: 0.5rem; 
-//   padding: var(--padding);
-// }
-
-// /* 3. Update the variable's value at each breakpoint */
-// @media (min-width: 48em) {.pad-gap {--padding: 1rem; } }
-// @media (min-width: 64em) {.pad-gap {--padding: 1.5rem; } }
-// @media (min-width: 75em) {.pad-gap {--padding: 2rem; } }

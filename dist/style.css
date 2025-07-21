@@ -61,10 +61,10 @@
   --background-body: hsla(163, 53%, 38%, 0.08);
   --background: hsla(163, 53%, 38%, 0.2);
   --block-bg: white;
-  --background-alt: hsla(163, 53%, 38%, 0.44);
+  --background-alt: hsl(163, 53%, 38%);
   --text-main: #212121;
   --text-muted: #70777f;
-  --color-info: #00b0f4;
+  --color-info:#00b0f4;
   --color-success: #11b76b;
   --color-warning: #ffa100;
   --color-danger: red;
@@ -75,13 +75,13 @@
   --text-theme: #212121;
   --bg-theme: unset;
   --border-color:hsl(163, 53%, 38%);
-  --focus: var(--primary-44);
+  --focus-color: hsla(163, 53%, 38%, 0.44) ;
   --selection: hsla(163, 53%, 38%, 0.44);
   --highlight: hsl(163, 53%, 38%);
   --form-text: #1d1d1d;
   --form-placeholder: #949494;
   --button-base: #d0cfcf;
-  --button-hover: #9b9b9b;
+  --button-hover: hsla(163, 53%, 38%, 0.44);
   --secondary: hsl(23, 84%, 73%);
   --secondary-hover: hsl(23, 84%, 65%);
   --secondary-focus: hsla(23, 84%, 73%, 0.4);
@@ -335,7 +335,7 @@ input {
   padding: 10px;
 }
 input:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 input:disabled {
   cursor: not-allowed;
@@ -367,7 +367,7 @@ textarea:not([rows]) {
   height: 140px;
 }
 textarea:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 textarea:disabled {
   cursor: not-allowed;
@@ -394,14 +394,14 @@ button:hover {
   background: var(--button-hover);
 }
 button:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 button:active {
   transform: translateY(2px);
 }
 button:hover {
-  border: 1px var(--primary) solid;
-  background-color: transparent;
+  border: 1px var(--border-color) solid;
+  background-color: var(--button-hover);
 }
 button:disabled {
   cursor: not-allowed;
@@ -429,7 +429,7 @@ button:disabled {
   background: var(--button-hover);
 }
 .btn-secondary:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 .btn-secondary:active {
   transform: translateY(2px);
@@ -467,7 +467,7 @@ button:disabled {
   background: var(--button-hover);
 }
 .btn-secondary-outline:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 .btn-secondary-outline:active {
   transform: translateY(2px);
@@ -475,7 +475,7 @@ button:disabled {
 .btn-secondary-outline:hover {
   background-color: var(--bg-theme);
   color: var(--text-main);
-  border-color: var(--secondary);
+  border-color: var(--border-color);
 }
 .btn-secondary-outline:focus {
   box-shadow: 0 0 0 2px var(--secondary-focus);
@@ -510,7 +510,7 @@ input[type=button]:hover {
 input[type=submit]:focus,
 input[type=reset]:focus,
 input[type=button]:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 input[type=submit]:active,
 input[type=reset]:active,
@@ -520,7 +520,7 @@ input[type=button]:active {
 input[type=submit]:focus,
 input[type=reset]:focus,
 input[type=button]:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 input[type=submit]:disabled,
 input[type=reset]:disabled,
@@ -586,7 +586,7 @@ select[multiple] {
   overflow-y: auto;
 }
 select:focus {
-  box-shadow: 0 0 0 2px var(--focus);
+  box-shadow: 0 0 0 2px var(--focus-color);
 }
 select:disabled {
   cursor: not-allowed;
@@ -1279,7 +1279,7 @@ grid[hover] > stack-grid:hover {
 }
 
 [bg=lighter] {
-  background-color: hsla(163, 53%, 38%, 0.44);
+  background-color: hsl(163, 53%, 38%);
 }
 
 [bg=primary] {
@@ -1360,11 +1360,6 @@ section[darkmode] {
   --text-main: #ecf0f1;
   --text-muted: #bdc3c7;
   --border-color: #4a627a;
-  --accent-bg: #5e4a3c;
-  --success-color: #2ecc71;
-  --success-bg: #2c5b42;
-  --warning-color: #f1c40f;
-  --warning-bg: #79642a;
 }
 
 section[theme] {

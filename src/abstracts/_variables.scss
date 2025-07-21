@@ -57,7 +57,7 @@ $secondary-08: hsla(23, 84%, 73%, 0.08);
 
 $background-body: $primary-08;
 $background: $primary-20;
-$background-alt: $primary-44;
+$background-alt: $primary;
 $text-main: #212121;
 $text-muted: #70777f;
 
@@ -77,9 +77,7 @@ $focus-color: $primary-44;
 $selection-color: $primary-44;
 $highlight-color: $primary;
 
-$variable-color: var(--text-theme);
 $links: var(--text-theme);
-
 $border-color: $primary;
 
 $text-theme: $text-main;
@@ -98,11 +96,7 @@ $form-placeholder: #949494;
 // =============================================================================
 
 $button-base: #d0cfcf;
-
-$button-hover: transparent;
-
-$button-hover: #9b9b9b;
-
+$button-hover: $primary-44;
 
 
 // Default Secondary Button Colors

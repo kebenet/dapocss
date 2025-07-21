@@ -60,11 +60,11 @@
   --text-main: #{vars.$text-main};
   --text-muted: #{vars.$text-muted};
 
-  --color-info: #00b0f4;
-  --color-success: #11b76b;
-  --color-warning: #ffa100;
-  --color-danger: red;
-  --color-error: var(--color-danger);
+  --color-info:#{vars.$color-info};
+  --color-success: #{vars.$color-success};
+  --color-warning: #{vars.$color-warning};
+  --color-danger: #{vars.$color-danger};
+  --color-error: #{vars.$color-error};
 
   // Our special dark background Color
   --renova: hsl(203, 36%, 12%); // #132129;
@@ -77,7 +77,7 @@
   --border-color:#{vars.$border-color};
   
 
-  --focus: var(--primary-44);
+  --focus-color: #{vars.$focus-color} ;
   --selection: #{vars.$selection-color};
   --highlight: #{vars.$highlight-color};
   --form-text: #{vars.$form-text};
@@ -148,7 +148,7 @@
   
   &:hover {background: var(--button-hover); }
   
-  &:focus {box-shadow: 0 0 0 2px var(--focus); }
+  &:focus {box-shadow: 0 0 0 2px var(--focus-color); }
   
   &:active {transform: translateY(2px); }
 }
@@ -157,7 +157,7 @@
 
 // Focus States
 // =============================================================================
-@mixin focus-ring {box-shadow: 0 0 0 2px var(--focus); }
+@mixin focus-ring {box-shadow: 0 0 0 2px var(--focus-color); }
 
 // Disabled States
 // =============================================================================

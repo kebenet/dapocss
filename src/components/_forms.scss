@@ -54,9 +54,8 @@ button {
   padding-left: 16px;
   justify-self: start;
   &:hover {
-    border: 1px var(--primary) solid;
-    // background-color: var(--secondary);
-    background-color: transparent;
+    border: 1px var(--border-color) solid;
+    background-color: var(--button-hover);
   }
   
   @include mixins.disabled-state;
@@ -90,13 +89,12 @@ button {
   padding-right: 16px;
   padding-left: 16px;
   background-color: transparent;
-  // color: var(--secondary);
   border: 1px solid var(--border-color);
   
   &:hover {
     background-color: var(--bg-theme);
     color: var(--text-main);
-    border-color: var(--secondary);
+    border-color: var(--border-color);
   }
   
   &:focus {
