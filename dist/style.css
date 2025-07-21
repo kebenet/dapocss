@@ -58,7 +58,7 @@
   --animation-duration: 0.1s;
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, sans-serif;
   --font-family-mono: monospace;
-  --background-body: hsla(163, 53%, 38%, 0.08);
+  --bg-body: hsla(163, 53%, 38%, 0.08);
   --background: hsla(163, 53%, 38%, 0.2);
   --block-bg: white;
   --background-alt: hsl(163, 53%, 38%);
@@ -100,7 +100,7 @@
 
 html {
   font-size: 100%;
-  scrollbar-color: var(--scrollbar-thumb) var(--background-body);
+  scrollbar-color: var(--scrollbar-thumb) var(--bg-body, hsla(163, 53%, 38%, 0.08));
   scrollbar-width: thin;
 }
 html::-webkit-scrollbar {
@@ -108,7 +108,7 @@ html::-webkit-scrollbar {
   width: 10px;
 }
 html::-webkit-scrollbar-track {
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   border-radius: 7px;
 }
 html::-webkit-scrollbar-thumb {
@@ -127,7 +127,7 @@ body {
   padding: 0 var(--spacing-s);
   word-wrap: break-word;
   color: var(--text-main);
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   text-rendering: optimizeLegibility;
 }
 
@@ -264,7 +264,7 @@ a > strong {
 }
 
 code, samp {
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   color: var(--text-main);
   border-radius: 7px;
   font-size: var(--text-sm);
@@ -292,7 +292,7 @@ var {
 }
 
 kbd {
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   color: var(--text-main);
   border-radius: 7px;
   font-size: var(--text-sm);
@@ -328,7 +328,7 @@ input {
   border-radius: 7px;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -349,7 +349,7 @@ textarea {
   border-radius: 7px;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -381,7 +381,7 @@ button {
   border-radius: 7px;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
@@ -415,7 +415,7 @@ button:disabled {
   border-radius: 7px;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
@@ -453,7 +453,7 @@ button:disabled {
   border-radius: 7px;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
@@ -494,7 +494,7 @@ input[type=button] {
   border-radius: 7px;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
@@ -569,12 +569,12 @@ select {
   border-radius: 7px;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   margin-right: 6px;
   margin-bottom: 6px;
   padding: 10px;
-  background: var(--background-body) var(--select-arrow) calc(100% - 12px) 50%/12px no-repeat;
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08)) var(--select-arrow) calc(100% - 12px) 50%/12px no-repeat;
   padding-right: 35px;
 }
 select::-ms-expand {
@@ -645,7 +645,7 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 9.5px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   border-radius: 13px;
 }
 input[type=range]::-webkit-slider-thumb {
@@ -658,14 +658,14 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -7px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
 }
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 9.5px;
   -moz-transition: 0.2s;
   transition: 0.2s;
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   border-radius: 13px;
 }
 input[type=range]::-moz-range-thumb {
@@ -684,13 +684,13 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   border: 0.2px solid #010101;
   border-radius: 13px;
   box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
 }
 input[type=range]::-ms-fill-upper {
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   border: 0.2px solid #010101;
   border-radius: 13px;
   box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
@@ -704,10 +704,10 @@ input[type=range]::-ms-thumb {
   background: var(--border-color);
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: var(--background-body);
+  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
 }
 
 table {
@@ -738,13 +738,13 @@ tfoot {
 }
 
 tbody tr:nth-child(even) {
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
 }
 tbody tr:nth-child(even) button {
   background-color: var(--background-alt);
 }
 tbody tr:nth-child(even) button:hover {
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
 }
 
 img, video {
@@ -859,7 +859,7 @@ dialog {
   padding: 10px 30px;
 }
 dialog > header:first-child {
-  background-color: var(--background-body);
+  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   border-radius: 7px 7px 0 0;
   margin: -10px -30px 10px;
   padding: 10px;

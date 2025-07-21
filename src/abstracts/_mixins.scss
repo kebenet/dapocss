@@ -53,7 +53,7 @@
   --font-family-base: #{vars.$font-family-base};
   --font-family-mono: #{vars.$font-family-mono};
 
-  --background-body: #{vars.$background-body};
+  --bg-body: #{vars.$bg-body};
   --background: #{vars.$background};
   --block-bg: white;
   --background-alt: #{vars.$background-alt};
@@ -134,7 +134,7 @@
   border-radius: vars.$border-radius-base;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background-body);
+  background-color: var(--bg-body, vars.$bg-body);
   @include form-transition;
 }
 
@@ -172,13 +172,13 @@
 // Scrollbar Mixins
 // =============================================================================
 @mixin scrollbar-styling {
-  scrollbar-color: var(--scrollbar-thumb) var(--background-body);
+  scrollbar-color: var(--scrollbar-thumb) var(--bg-body, vars.$bg-body);
   scrollbar-width: thin;
 
   &::-webkit-scrollbar {height: 10px; width: 10px; }
 
   &::-webkit-scrollbar-track {
-    background: var(--background-body);
+    background: var(--bg-body, vars.$bg-body);
     border-radius: vars.$border-radius-base;
   }
 
@@ -202,7 +202,7 @@
 }
 
 @mixin code-styles {
-  background: var(--background-body);
+  background: var(--bg-body, vars.$bg-body);
   color: var(--text-main);
   border-radius: vars.$border-radius-base;
   font-size: var(--text-sm);

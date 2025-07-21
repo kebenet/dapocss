@@ -70,7 +70,7 @@ body {
   @include mixins.container;
   word-wrap: break-word;
   color: var(--text-main);
-  background: var(--background-body);
+  background: var(--bg-body, vars.$bg-body);
   text-rendering: optimizeLegibility;
 }
 

@@ -21,9 +21,9 @@ grid[hover] > stack-grid:hover {@include mixins.set-hover; }
 // =============================================================================
 
 $background-colors: (
-  "light": vars.$background-body,
+  "light": vars.$bg-body,
   "lighter": vars.$background-alt,
-  // "dark": vars.$background-body-dark, // COMMENTED: Dark theme color
+  // "dark": vars.$bg-body-dark, // COMMENTED: Dark theme color
   // "darker": vars.$background-dark, // COMMENTED: Dark theme color
   "primary": vars.$primary,
   "primary-light": vars.$primary-20,

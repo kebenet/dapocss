@@ -146,7 +146,7 @@ textarea {
 // =============================================================================
 select {
   @include mixins.input-base;
-  background: var(--background-body) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
+  background: var(--bg-body, vars.$bg-body) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
   padding-right: 35px;
   
   &::-ms-expand {display: none; }
@@ -217,7 +217,7 @@ input[type='range'] {
     height: 9.5px;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    background: var(--background-body);
+    background: var(--bg-body, vars.$bg-body);
     border-radius: vars.$border-radius-large;
   }
   
@@ -232,7 +232,7 @@ input[type='range'] {
   }
   
   &:focus::-webkit-slider-runnable-track {
-    background: var(--background-body);
+    background: var(--bg-body, vars.$bg-body);
   }
   
   // Firefox styles
@@ -241,7 +241,7 @@ input[type='range'] {
     height: 9.5px;
     -moz-transition: 0.2s;
     transition: 0.2s;
-    background: var(--background-body);
+    background: var(--bg-body, vars.$bg-body);
     border-radius: vars.$border-radius-large;
   }
   
@@ -264,14 +264,14 @@ input[type='range'] {
   }
   
   &::-ms-fill-lower {
-    background: var(--background-body);
+    background: var(--bg-body, vars.$bg-body);
     border: 0.2px solid #010101;
     border-radius: vars.$border-radius-large;
     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
   }
   
   &::-ms-fill-upper {
-    background: var(--background-body);
+    background: var(--bg-body, vars.$bg-body);
     border: 0.2px solid #010101;
     border-radius: vars.$border-radius-large;
     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
@@ -287,10 +287,10 @@ input[type='range'] {
   }
   
   &:focus::-ms-fill-lower {
-    background: var(--background-body);
+    background: var(--bg-body, vars.$bg-body);
   }
   
   &:focus::-ms-fill-upper {
-    background: var(--background-body);
+    background: var(--bg-body, vars.$bg-body);
   }
 }

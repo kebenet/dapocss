@@ -1,0 +1,154 @@
+// =============================================================================
+// CENTRALIZED COLOR SYSTEM
+// All color values are defined here for easy theming
+// =============================================================================
+
+// Brand Colors (base values)
+// =============================================================================
+$primary: hsla(163, 53%, 38%, 1);
+
+$primary-100: hsla(163, 53%, 38%, 0.08);
+$primary-200: hsla(163, 53%, 38%, 0.20);
+$primary-300: hsla(163, 53%, 38%, 0.44);
+
+$secondary: hsla(23, 84%, 73%, 1);
+$secondary-100: hsla(23, 84%, 73%, 0.08);
+$secondary-200: hsla(23, 84%, 73%, 0.20);
+$secondary-300: hsla(23, 84%, 73%, 0.44);
+
+
+// Base Theme Colors
+// =============================================================================
+$text-main: #212121;
+$text-muted: #70777f;
+$bg-body: $primary-100;
+$background: $primary-200;
+$background-alt: $primary-300;
+$border-color: $primary;
+
+$text-theme: $text-main;
+$bg-theme: $primary; // <--
+
+// Informative Colors
+// =============================================================================
+$color-info: #00b0f4;
+$color-success: #11b76b;
+$color-warning: #ffa100;
+$color-danger: red;
+$color-error: $color-danger;
+
+// Form Colors
+// =============================================================================
+$form-text: #1d1d1d;
+$form-placeholder: #949494;
+$button-base: #d0cfcf;
+$button-hover: $primary-300;
+
+// UI Colors
+// =============================================================================
+$focus-color: $primary-300;
+$selection-color: $primary-300;
+$highlight-color: $primary-300;
+$scrollbar-thumb: $primary;
+$scrollbar-thumb-hover: $secondary;
+
+// Component-specific color values
+// =============================================================================
+$dialog-backdrop: #0000009c;
+$shadow-dark: #000;
+$shadow-light: #0d0d0d;
+$range-border: #010101;
+$transparent: transparent;
+
+// =============================================================================
+// COLOR MIXINS - Component-specific color applications
+// =============================================================================
+// File: src/abstracts/_color-utilities.scss
+// Description: Placeholder selectors for color utilities to be extended across components.
+// This approach groups shared color properties to produce more efficient, DRY CSS.
+
+//========================================
+// Text Color Placeholders
+//========================================
+
+%text-body {color: var(--text-main,$text-main); }
+%text-theme {color: var(--text-theme, $primary); }
+%text-colored {color: $primary; }
+%text-code {color: $code-color; }
+
+//========================================
+// Background Color Placeholders
+//========================================
+
+%bg-primary-100 {background-color: $primary-100; }
+%bg-primary-200 {background-color: $primary-200; }
+%bg-primary-300 {background-color: $primary-300; }
+%bg-body {background-color: $primary-100; }
+
+%bg-secondary-100 {background-color: $secondary-100; }
+%bg-secondary-200 {background-color: $secondary-200; }
+%bg-secondary-300 {background-color: $secondary-300; }
+
+
+%bg-code {background-color: $code-background; }
+%hilighted {background-color: $primary-100; color: $text-colored; } // <-- 100 bg and colored text
+
+%bg-success {background-color: var(--block-bg, white); }
+%bg-warning {background-color: var(--block-bg, white); }
+%bg-danger {background-color: var(--block-bg, white); }
+%bg-danger {background-color: var(--block-bg, white); }
+
+//========================================
+// Applying the Extensions
+// (This shows how you would refactor other files)
+//========================================
+
+// In _typography.scss
+//------------------------------------
+body {@extend %text-body; @extend %bg-body; }
+a {@extend %text-colored; }
+kbd {@extend %bg-primary-100; }
+mark {@extend %bg-primary; }
+var,code, samp {@extend %text-body; }
+
+h1, h2, h3, h4, h5, h6 {@extend %text-body; }
+title, subtitle, toptitle {@extend %text-body; }
+
+// In _forms.scss
+//------------------------------------
+button {@extend %bg-primary; color: $white; }
+.btn-secondary {@extend %bg-secondary; color: $white; }
+.btn-secondary-outline {color: $secondary-color; background-color: transparent; }
+
+
+// In _link.scss
+//------------------------------------
+a[button] {@extend %bg-primary; color: $white; }
+a[secondary] {@extend %bg-secondary; color: $white; }
+a[success] {@extend %bg-success; color: $white; }
+a[warning] {@extend %bg-warning; color: $white; }
+a[danger] {@extend %bg-danger; color: $white; }
+
+
+// In _card.scss or _layout.scss
+//------------------------------------
+article[primary] > header {
+  @extend %bg-primary;
+}
+
+article[secondary] > header {
+  @extend %bg-secondary;
+}
+
+// In _modifier.scss
+//------------------------------------
+
+[bg=primary] { @extend %bg-primary; }
+[bg=primary-100] { @extend %bg-primary-100; }
+[bg=primary-200] { @extend %bg-primary-200; }
+[bg=primary-300] { @extend %bg-primary-300; }
+[bg=secondary-100] { @extend %bg-secondary-100; }
+[bg=secondary-200] { @extend %bg-secondary-200; }
+[bg=secondary-300] { @extend %bg-secondary-300; }
+
+

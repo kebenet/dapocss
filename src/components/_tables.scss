@@ -42,13 +42,13 @@ tfoot {
 // Table Row Styling
 // =============================================================================
 tbody tr:nth-child(even) {
-  background-color: var(--background-body);
+  background-color: var(--bg-body, vars.$bg-body);
   
   button {
     background-color: var(--background-alt);
     
     &:hover {
-      background-color: var(--background-body);
+      background-color: var(--bg-body, vars.$bg-body);
     }
   }
 }
