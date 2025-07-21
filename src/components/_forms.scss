@@ -68,7 +68,7 @@ button {
   padding-right: 16px;
   padding-left: 16px;
   background-color: var(--secondary);
-  color: var(--text-main);
+  color: var(--text-body);
   
   &:hover {
     background-color: var(--secondary-hover);
@@ -93,7 +93,7 @@ button {
   
   &:hover {
     background-color: var(--bg-theme);
-    color: var(--text-main);
+    color: var(--text-body);
     border-color: var(--border-color);
   }
   

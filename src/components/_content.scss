@@ -77,14 +77,14 @@ summary {
   
   &:hover, &:focus {text-decoration: underline; }
   
-  &::-webkit-details-marker {color: var(--text-main); }
+  &::-webkit-details-marker {color: var(--text-body); }
 }
 
 // Dialog Element
 // =============================================================================
 dialog {
-  background-color: var(--block-bg);
-  color: var(--text-main);
+  background-color: var(--block-theme);
+  color: var(--text-body);
   border: none;
   border-radius: vars.$border-radius-base;
   border-color: var(--border-color);

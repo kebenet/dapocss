@@ -66,7 +66,7 @@ Successfully refactored the DAPOCSS framework to properly utilize CSS variables 
   
   // Theme Colors (Light)
   bg-body: hsla(163, 53%, 38%, 0.08);
-  --text-main: #363636;
+  --text-body: #363636;
   
   // Spacing
   --padding-base: 8px;
@@ -78,7 +78,7 @@ Successfully refactored the DAPOCSS framework to properly utilize CSS variables 
 
 [data-theme="dark"] {
   bg-body: #202b38;
-  --text-main: #dbdbdb;
+  --text-body: #dbdbdb;
 }
 ```
 

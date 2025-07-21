@@ -7,6 +7,75 @@
  * Copyright (c) 2025 KEBENET
  * Licensed under MIT
  */
+a[secondary], a[button], .btn-secondary, button, title, subtitle, toptitle, h1, h2, h3, h4, h5, h6, var, code, samp, body {
+  color: var(--text-body, #212121);
+}
+
+a {
+  color: hsl(163, 53%, 38%);
+}
+
+body {
+  background-color: hsla(163, 53%, 38%, 0.08);
+}
+
+[bg=primary], article[primary] > header, a[button], button, mark {
+  background-color: hsl(163, 53%, 38%);
+}
+
+[bg=primary-100], kbd {
+  background-color: hsla(163, 53%, 38%, 0.08);
+}
+
+[bg=primary-200] {
+  background-color: hsla(163, 53%, 38%, 0.2);
+}
+
+[bg=primary-300] {
+  background-color: hsla(163, 53%, 38%, 0.44);
+}
+
+article[secondary] > header, a[secondary], .btn-secondary {
+  background-color: hsl(23, 84%, 73%);
+}
+
+[bg=secondary-100] {
+  background-color: hsla(23, 84%, 73%, 0.08);
+}
+
+[bg=secondary-200] {
+  background-color: hsla(23, 84%, 73%, 0.2);
+}
+
+[bg=secondary-300] {
+  background-color: hsla(23, 84%, 73%, 0.44);
+}
+
+a[info] {
+  background-color: #00b0f4;
+  color: var(--text-body, #212121);
+}
+
+a[success] {
+  background-color: #11b76b;
+  color: var(--text-body, #212121);
+}
+
+a[warning] {
+  background-color: #ffa100;
+  color: var(--text-body, #212121);
+}
+
+a[danger] {
+  background-color: red;
+  color: var(--text-body, #212121);
+}
+
+.btn-secondary-outline {
+  color: hsl(23, 84%, 73%);
+  background-color: transparent;
+}
+
 *,
 *::before,
 *::after {
@@ -60,19 +129,18 @@
   --bg-body: hsla(163, 53%, 38%, 0.08);
   --bg-body-200: hsla(163, 53%, 38%, 0.2);
   --bg-body-300: hsla(163, 53%, 38%, 0.44);
-  --block-bg: white;
-  --text-main: #212121;
+  --text-body: #212121;
   --text-muted: #70777f;
-  --color-info:#00b0f4;
-  --color-success: #11b76b;
-  --color-warning: #ffa100;
-  --color-danger: red;
-  --color-error: var(--color-danger);
+  --info-color:#00b0f4;
+  --success-color: #11b76b;
+  --warning-color: #ffa100;
+  --danger-color: red;
+  --error-color: var(--danger-color, red);
   --renova: hsl(203, 36%, 12%);
-  --links: var(--text-theme);
   --border-color:hsl(163, 53%, 38%);
   --text-theme: #212121;
   --bg-theme: unset;
+  --block-theme: white;
   --border-color:hsl(163, 53%, 38%);
   --focus-color: hsla(163, 53%, 38%, 0.44) ;
   --selection: hsla(163, 53%, 38%, 0.44);
@@ -125,19 +193,19 @@ body {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   word-wrap: break-word;
-  color: var(--text-main);
+  color: var(--text-body);
   background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   text-rendering: optimizeLegibility;
 }
 
 ::-moz-selection {
   background-color: var(--selection);
-  color: var(--text-main);
+  color: var(--text-body);
 }
 
 ::selection {
   background-color: var(--selection);
-  color: var(--text-main);
+  color: var(--text-body);
 }
 
 /* Time -----------------Always Center------------------------ */
@@ -199,7 +267,7 @@ h5, h6 {
 h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
   margin-top: 0;
-  color: var(--text-main);
+  color: var(--text-body);
   padding: 0;
 }
 
@@ -264,7 +332,7 @@ a > strong {
 
 code, samp {
   background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
-  color: var(--text-main);
+  color: var(--text-body);
   border-radius: 7px;
   font-size: var(--text-sm);
   padding: 2.5px 5px;
@@ -292,12 +360,12 @@ var {
 
 kbd {
   background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
-  color: var(--text-main);
+  color: var(--text-body);
   border-radius: 7px;
   font-size: var(--text-sm);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-small);
-  color: var(--text-main);
+  color: var(--text-body);
   padding: 2px 4px 2px 4px;
 }
 
@@ -422,7 +490,7 @@ button:disabled {
   padding-right: 16px;
   padding-left: 16px;
   background-color: var(--secondary);
-  color: var(--text-main);
+  color: var(--text-body);
 }
 .btn-secondary:hover {
   background: var(--button-hover);
@@ -473,7 +541,7 @@ button:disabled {
 }
 .btn-secondary-outline:hover {
   background-color: var(--bg-theme);
-  color: var(--text-main);
+  color: var(--text-body);
   border-color: var(--border-color);
 }
 .btn-secondary-outline:focus {
@@ -846,12 +914,12 @@ summary:hover, summary:focus {
   text-decoration: underline;
 }
 summary::-webkit-details-marker {
-  color: var(--text-main);
+  color: var(--text-body);
 }
 
 dialog {
-  background-color: var(--block-bg);
-  color: var(--text-main);
+  background-color: var(--block-theme);
+  color: var(--text-body);
   border: none;
   border-radius: 7px;
   border-color: var(--border-color);
@@ -879,7 +947,7 @@ a[button] {
   display: inline-block;
   padding: var(--spacing-s);
   background-color: var(--bg-theme);
-  color: var(--text-main);
+  color: var(--text-body);
   text-decoration: none;
   border-radius: var(--border-radius-small);
   font-weight: var(--font-weight-bold);
@@ -911,16 +979,16 @@ a[small] {
 a[outline] {
   background-color: transparent;
   border-color: var(--border-color);
-  color: var(--text-main);
+  color: var(--text-body);
 }
 a[outline]:hover {
   background-color: var(--secondary);
-  color: var(--text-main);
+  color: var(--text-body);
 }
 
 a[secondary] {
   background-color: var(--secondary);
-  color: var(--text-main);
+  color: var(--text-body);
 }
 a[secondary]:hover {
   background-color: var(--secondary-hover);
@@ -935,7 +1003,7 @@ a[success]:hover {
 
 a[warning] {
   background-color: var(--warning, #ffc107);
-  color: var(--text-main);
+  color: var(--text-body);
 }
 a[warning]:hover {
   background-color: var(--warning-hover, #e0a800);
@@ -995,7 +1063,7 @@ a[button-icon]::before {
   border-top: 2px solid currentColor;
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  color: var(--text-main);
+  color: var(--text-body);
 }
 
 @keyframes spin {
@@ -1200,7 +1268,7 @@ article > footer, block {
 }
 
 article {
-  background-color: var(--block-bg);
+  background-color: var(--block-theme);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   height: 100%;
 }
@@ -1349,14 +1417,14 @@ section[theme-heading] title {
   --text-theme:var(--primary);
 }
 
-/*section[theme-heading] time{--block-bg:var(--primary); }*/
+/*section[theme-heading] time{--block-theme:var(--primary); }*/
 /* Theme Dark-mode ----------------------------------------- */
 section[darkmode] {
   --primary: var(--primary);
   --secondary: var(--secondary);
-  --page-bg: hsl(203, 36%, 12%);
-  --block-bg: hsl(203, 36%, 14%);
-  --text-main: #ecf0f1;
+  --bg-body: hsl(203, 36%, 12%);
+  --text-body: #ecf0f1;
+  --block-theme: hsl(203, 36%, 14%);
   --text-muted: #bdc3c7;
   --border-color: #4a627a;
 }

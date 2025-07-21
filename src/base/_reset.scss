@@ -61,7 +61,7 @@ body {
   line-height: vars.$line-height-base;
   @include mixins.container;
   word-wrap: break-word;
-  color: var(--text-main);
+  color: var(--text-body);
   background: var(--bg-body, vars.$bg-body);
   text-rendering: optimizeLegibility;
 }

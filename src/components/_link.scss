@@ -10,7 +10,7 @@ a[button] {
   display: inline-block;
   padding: var(--spacing-s);
   background-color: var(--bg-theme); // <-- empty color(bg-theme)
-  color: var(--text-main);
+  color: var(--text-body);
   text-decoration: none;
   border-radius: var(--border-radius-small);
   font-weight: var(--font-weight-bold);
@@ -36,12 +36,12 @@ a[small] {padding: var(--spacing-xs) var(--spacing-s); font-size: var(--text-s);
 
 
 // Button link style modifiers
-a[outline]{background-color: transparent; border-color: var(--border-color); color: var(--text-main);
+a[outline]{background-color: transparent; border-color: var(--border-color); color: var(--text-body);
   
-  &:hover {background-color: var(--secondary); color: var(--text-main); }
+  &:hover {background-color: var(--secondary); color: var(--text-body); }
 }
 
-a[secondary] {background-color: var(--secondary); color: var(--text-main);
+a[secondary] {background-color: var(--secondary); color: var(--text-body);
   
   &:hover {background-color: var(--secondary-hover); }
 }
@@ -51,7 +51,7 @@ a[success] {background-color: var(--success, #28a745);
   &:hover {background-color: var(--bg-success, #218838); }
 }
 
-a[warning] {background-color: var(--warning, #ffc107); color: var(--text-main);
+a[warning] {background-color: var(--warning, #ffc107); color: var(--text-body);
   &:hover {background-color: var(--warning-hover, #e0a800); }
 }
 
@@ -101,7 +101,7 @@ a[button-icon] {display: inline-flex; align-items: center; gap: var(--spacing-xs
     border-top: 2px solid currentColor;
     border-radius: 50%;
     animation: spin 1s linear infinite;
-    color: var(--text-main);
+    color: var(--text-body);
   }
 }
 

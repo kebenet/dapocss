@@ -7,11 +7,11 @@
 
 /* Time -----------------Always Center------------------------ */
 
-// time[primary]{--block-bg:var(--secondary);}
-// time[secondary]{--block-bg:var(--primary);}
+// time[primary]{--block-theme:var(--secondary);}
+// time[secondary]{--block-theme:var(--primary);}
 
 // time{
-//     display:grid; background-color: var(--block-bg);
+//     display:grid; background-color: var(--block-theme);
 //     font-size:var(--text-xl);
 //     font-weight:var(--weight-l);
 //     line-height: var(--line-height-xs);
@@ -133,6 +133,6 @@ kbd {
   @include mixins.code-styles;
   @include mixins.border-accent;
   border-radius: var(--border-radius-small);
-  color: var(--text-main);
+  color: var(--text-body);
   padding: 2px 4px 2px 4px;
 }

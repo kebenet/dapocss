@@ -5,16 +5,16 @@
 
 section[theme-heading] toptitle{--text-theme :var(--secondary); }
 section[theme-heading] title{--text-theme:var(--primary); }
-/*section[theme-heading] time{--block-bg:var(--primary); }*/
+/*section[theme-heading] time{--block-theme:var(--primary); }*/
 
 
 /* Theme Dark-mode ----------------------------------------- */
 section[darkmode] {
     --primary: var(--primary);
     --secondary: var(--secondary);
-    --page-bg: hsl(203, 36%, 12%);
-    --block-bg: hsl(203, 36%, 14%);
-    --text-main: #ecf0f1;
+    --bg-body: hsl(203, 36%, 12%);
+    --text-body: #ecf0f1;
+    --block-theme: hsl(203, 36%, 14%);
     --text-muted: #bdc3c7;
     --border-color: #4a627a;
 }
@@ -36,7 +36,7 @@ section[theme] {
 }
 
 section[theme-invert] {
-	--border-color:var(--secondary); 
+	--border-color:var(--secondary);
 	--text-theme:var(--primary);
 	--bg-theme:var(--secondary);
 

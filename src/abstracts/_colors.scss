@@ -1,98 +1,52 @@
+@use 'variables' as vars;
+
 // =============================================================================
 // CENTRALIZED COLOR SYSTEM
 // All color values are defined here for easy theming
 // =============================================================================
 
-// Brand Colors (base values)
-// =============================================================================
-$primary: hsla(163, 53%, 38%, 1);
-$primary-100: hsla(163, 53%, 38%, 0.08);
-$primary-200: hsla(163, 53%, 38%, 0.20);
-$primary-300: hsla(163, 53%, 38%, 0.44);
-
-$secondary: hsla(23, 84%, 73%, 1);
-$secondary-100: hsla(23, 84%, 73%, 0.08);
-$secondary-200: hsla(23, 84%, 73%, 0.20);
-$secondary-300: hsla(23, 84%, 73%, 0.44);
-
-
-// Base Theme Colors
-// =============================================================================
-$text-main: #212121;
-$text-muted: #70777f;
-$bg-body: $primary-100;
-$bg-body-200: $primary-200;
-$bg-body-300: $primary-300;
-$border-color: $primary;
-
-$text-theme: $text-main;
-$bg-theme: $primary; // <--
-
-// Informative Colors
-// =============================================================================
-$color-info: #00b0f4;
-$color-success: #11b76b;
-$color-warning: #ffa100;
-$color-danger: red;
-$color-error: $color-danger;
-
-// Form Colors
-// =============================================================================
-$form-text: #1d1d1d;
-$form-placeholder: #949494;
-$button-hover: $primary-300;
-
-// UI Colors
-// =============================================================================
-$focus-color: $primary-300;
-$selection-color: $primary-300;
-$highlight-color: $primary-300;
-$scrollbar-thumb: $primary;
-$scrollbar-thumb-hover: $secondary;
-
-// Component-specific color values
-// =============================================================================
-$dialog-backdrop: #0000009c;
-$shadow-dark: #000;
-$shadow-light: #0d0d0d;
-$range-border: #010101;
-$transparent: transparent;
-
-// =============================================================================
-// COLOR MIXINS - Component-specific color applications
-// =============================================================================
-// File: src/abstracts/_color-utilities.scss
-// Description: Placeholder selectors for color utilities to be extended across components.
-// This approach groups shared color properties to produce more efficient, DRY CSS.
 
 //========================================
 // Text Color Placeholders
 //========================================
-$text-body:#000;
-%text-body {color: var(--text-body,$text-body); }
-%text-theme {color: var(--text-theme, $primary); }
-%text-colored {color: $primary; }
-%text-code {color: $code-color; }
+
+%text-body {color: var(--text-body,vars.$text-body); }
+%text-theme {color: var(--text-theme, vars.$primary); }
+
+%default-colored {color: vars.$default-colored; }
+%bg-default-colored {background-color: vars.$default-colored; }
 
 //========================================
 // Background Color Placeholders
 //========================================
 
-%bg-primary-100 {background-color: $primary-100; }
-%bg-primary-200 {background-color: $primary-200; }
-%bg-primary-300 {background-color: $primary-300; }
-%bg-body {background-color: $primary-100; }
+%bg-body {background-color: vars.$primary-100; }
+%bg-primary {background-color: vars.$primary; }
+%bg-primary-100 {background-color: vars.$primary-100; }
+%bg-primary-200 {background-color: vars.$primary-200; }
+%bg-primary-300 {background-color: vars.$primary-300; }
 
-%bg-secondary-100 {background-color: $secondary-100; }
-%bg-secondary-200 {background-color: $secondary-200; }
-%bg-secondary-300 {background-color: $secondary-300; }
+%bg-secondary {background-color: vars.$secondary; }
+%bg-secondary-100 {background-color: vars.$secondary-100; }
+%bg-secondary-200 {background-color: vars.$secondary-200; }
+%bg-secondary-300 {background-color: vars.$secondary-300; }
 
-%hilighted {background-color: $primary-100; color: $text-colored; } // <-- 100 bg and colored text ect:kbd
+%highlight {@extend %bg-primary-100; @extend %default-colored; } // <-- 100 bg and colored text ect:kbd
 
-%bg-success {background-color: var(--block-bg, white); }
-%bg-warning {background-color: var(--block-bg, white); }
-%bg-danger {background-color: var(--block-bg, white); }
-%bg-danger {background-color: var(--block-bg, white); }
+%bg-info, %bg-success, %bg-warning, %bg-danger , %bg-error
+{background-color: var(--block-theme, vars.$block-theme);}
+
+%info    { color: vars.$info-color; }
+%success { color: vars.$success-color; }
+%warning { color: vars.$warning-color; }
+%danger  { color: vars.$danger-color; }
+%error   { color: vars.$error-color; }
+
+%button-info    { background-color: vars.$info-color; color: var(--text-body, vars.$text-body); }
+%button-success { background-color: vars.$success-color; color: var(--text-body, vars.$text-body); }
+%button-warning { background-color: vars.$warning-color; color: var(--text-body, vars.$text-body); }
+%button-danger  { background-color: vars.$danger-color; color: var(--text-body, vars.$text-body); }
+%button-error   { background-color: vars.$error-color; color: var(--text-body, vars.$text-body); }
 
 //========================================
 // Applying the Extensions
@@ -101,40 +55,38 @@ $text-body:#000;
 
 // In _typography.scss
 //------------------------------------
+
 body {@extend %text-body; @extend %bg-body; }
-a {@extend %text-colored; }
+a {@extend %default-colored; }
 kbd {@extend %bg-primary-100; }
 mark {@extend %bg-primary; }
-var,code, samp {@extend %text-body; }
 
-h1, h2, h3, h4, h5, h6 {@extend %text-body; }
-title, subtitle, toptitle {@extend %text-body; }
+var,code, samp              {@extend %text-body; }
+h1, h2, h3, h4, h5, h6      {@extend %text-body; }
+title, subtitle, toptitle   {@extend %text-body; }
 
 // In _forms.scss
 //------------------------------------
 button {@extend %bg-primary; @extend %text-body }
 .btn-secondary {@extend %bg-secondary; @extend %text-body }
-.btn-secondary-outline {color: $secondary-color; background-color: transparent; }
+.btn-secondary-outline {color: vars.$secondary; background-color: transparent; }
 
 
 // In _link.scss
 //------------------------------------
 a[button] {@extend %bg-primary; @extend %text-body }
 a[secondary] {@extend %bg-secondary; @extend %text-body }
-a[success] {@extend %bg-success; @extend %text-body }
-a[warning] {@extend %bg-warning; @extend %text-body }
-a[danger] {@extend %bg-danger; @extend %text-body }
+
+a[info]   {@extend %button-info; }
+a[success]   {@extend %button-success; }
+a[warning]   {@extend %button-warning; }
+a[danger]    {@extend %button-danger;  }
 
 
 // In _card.scss or _layout.scss
 //------------------------------------
-article[primary] > header {
-  @extend %bg-primary;
-}
-
-article[secondary] > header {
-  @extend %bg-secondary;
-}
+article[primary] > header {@extend %bg-primary; }
+article[secondary] > header {@extend %bg-secondary; }
 
 // In _modifier.scss
 //------------------------------------

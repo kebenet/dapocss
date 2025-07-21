@@ -16,7 +16,7 @@
 
 .pricing-price-wrapper {
     align-self: stretch;
-    color: var(--text-main);
+    color: var(--text-body);
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -55,7 +55,7 @@ li i {margin-right: 10px; color: var(--primary); font-size: 1.78rem; }
 
 
 [pad-m] {padding:16px;}
-header > p{ color:var(--text-main); }
+header > p{ color:var(--text-body); }
 
 p[prefixer]{font-size: 4em;padding:0;margin:0; }
 p[prefixer]>sup{font-size: medium; vertical-align: inherit; }
