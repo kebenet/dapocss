@@ -7,7 +7,9 @@
  * Copyright (c) 2025 KEBENET
  * Licensed under MIT
  */
-a[secondary], a[button], .btn-secondary, button, title, subtitle, toptitle, h1, h2, h3, h4, h5, h6, var, code, samp, body {
+a[secondary], a[button], input, textarea, button, .btn-secondary, .btn-secondary-outline, input[type=submit],
+input[type=reset],
+input[type=button], select, title, subtitle, toptitle, h1, h2, h3, h4, h5, h6, var, code, samp, body {
   color: var(--text-body, #212121);
 }
 
@@ -15,11 +17,13 @@ a {
   color: hsl(163, 53%, 38%);
 }
 
-body {
+input, textarea, button, .btn-secondary, .btn-secondary-outline, input[type=submit],
+input[type=reset],
+input[type=button], select, body {
   background-color: hsla(163, 53%, 38%, 0.08);
 }
 
-[bg=primary], article[primary] > header, a[button], button, mark {
+[bg=primary], article[primary] > header, a[button], mark {
   background-color: hsl(163, 53%, 38%);
 }
 
@@ -35,7 +39,7 @@ body {
   background-color: hsla(163, 53%, 38%, 0.44);
 }
 
-article[secondary] > header, a[secondary], .btn-secondary {
+article[secondary] > header, a[secondary] {
   background-color: hsl(23, 84%, 73%);
 }
 
@@ -71,11 +75,14 @@ a[danger] {
   color: var(--text-body, #212121);
 }
 
-.btn-secondary-outline {
-  color: hsl(23, 84%, 73%);
-  background-color: transparent;
-}
-
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 *,
 *::before,
 *::after {
@@ -208,6 +215,14 @@ body {
   color: var(--text-body);
 }
 
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 /* Time -----------------Always Center------------------------ */
 title, subtitle, toptitle {
   display: block;
@@ -369,6 +384,14 @@ kbd {
   padding: 2px 4px 2px 4px;
 }
 
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 button,
 select,
 input[type=submit],
@@ -394,8 +417,6 @@ input {
   border: none;
   border-radius: 7px;
   outline: none;
-  color: var(--form-text);
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -415,8 +436,6 @@ textarea {
   border: none;
   border-radius: 7px;
   outline: none;
-  color: var(--form-text);
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -447,8 +466,6 @@ button {
   border: none;
   border-radius: 7px;
   outline: none;
-  color: var(--form-text);
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
@@ -481,8 +498,6 @@ button:disabled {
   border: none;
   border-radius: 7px;
   outline: none;
-  color: var(--form-text);
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
@@ -519,8 +534,6 @@ button:disabled {
   border: none;
   border-radius: 7px;
   outline: none;
-  color: var(--form-text);
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
@@ -560,8 +573,6 @@ input[type=button] {
   border: none;
   border-radius: 7px;
   outline: none;
-  color: var(--form-text);
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   padding: 8px;
   cursor: pointer;
@@ -635,8 +646,6 @@ select {
   border: none;
   border-radius: 7px;
   outline: none;
-  color: var(--form-text);
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
   margin-right: 6px;
   margin-bottom: 6px;
@@ -777,6 +786,14 @@ input[type=range]:focus::-ms-fill-upper {
   background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
 }
 
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 table {
   border-collapse: collapse;
   margin-bottom: var(--spacing-s);
@@ -814,6 +831,14 @@ tbody tr:nth-child(even) button:hover {
   background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
 }
 
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 img, video {
   width: 100%;
   aspect-ratio: 16/9;
@@ -943,6 +968,14 @@ dialog::backdrop {
   backdrop-filter: blur(4px);
 }
 
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 a[button] {
   display: inline-block;
   padding: var(--spacing-s);
@@ -1084,6 +1117,14 @@ a[button-icon]::before {
   display: inline-block;
 }
 
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 @media print {
   body,
   pre,
@@ -1126,6 +1167,14 @@ a[button-icon]::before {
     text-decoration: underline !important;
   }
 }
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 [align-v=start] {
   align-items: start;
 }
@@ -1330,6 +1379,14 @@ article > footer {
   align-items: end;
 }
 
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 grid[hover] > article,
 grid[hover] > stack-grid {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1471,6 +1528,14 @@ section > header {
   padding-bottom: var(--spacing-s);
 }
 
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
 /*
  * ===================================================================
  * NEW: PSEUDO-CSS DESIGN Stack Design

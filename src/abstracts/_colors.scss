@@ -21,15 +21,19 @@
 //========================================
 
 %bg-body {background-color: vars.$primary-100; }
+
+%color-primary {color: vars.$primary; }
 %bg-primary {background-color: vars.$primary; }
 %bg-primary-100 {background-color: vars.$primary-100; }
 %bg-primary-200 {background-color: vars.$primary-200; }
 %bg-primary-300 {background-color: vars.$primary-300; }
 
+%color-secondary {color: vars.$secondary; }
 %bg-secondary {background-color: vars.$secondary; }
 %bg-secondary-100 {background-color: vars.$secondary-100; }
 %bg-secondary-200 {background-color: vars.$secondary-200; }
 %bg-secondary-300 {background-color: vars.$secondary-300; }
+%bg-transparent {background-color: transparent; }
 
 %highlight {@extend %bg-primary-100; @extend %default-colored; } // <-- 100 bg and colored text ect:kbd
 
@@ -42,6 +46,7 @@
 %danger  { color: vars.$danger-color; }
 %error   { color: vars.$error-color; }
 
+%button-primary { @extend %bg-primary; color: var(--text-body, vars.$text-body); }
 %button-info    { background-color: vars.$info-color; color: var(--text-body, vars.$text-body); }
 %button-success { background-color: vars.$success-color; color: var(--text-body, vars.$text-body); }
 %button-warning { background-color: vars.$warning-color; color: var(--text-body, vars.$text-body); }
@@ -67,15 +72,16 @@ title, subtitle, toptitle   {@extend %text-body; }
 
 // In _forms.scss
 //------------------------------------
-button {@extend %bg-primary; @extend %text-body }
-.btn-secondary {@extend %bg-secondary; @extend %text-body }
-.btn-secondary-outline {color: vars.$secondary; background-color: transparent; }
+%form-element-base { @extend %bg-body; @extend %text-body; }
+// button {@extend %bg-primary; @extend %text-body; }
+// .btn-secondary {@extend %bg-secondary; @extend %text-body; }
+// .btn-secondary-outline {@extend %color-primary; @extend %bg-transparent; }
 
 
 // In _link.scss
 //------------------------------------
-a[button] {@extend %bg-primary; @extend %text-body }
-a[secondary] {@extend %bg-secondary; @extend %text-body }
+a[button] {@extend %bg-primary; @extend %text-body; }
+a[secondary] {@extend %bg-secondary; @extend %text-body; }
 
 a[info]   {@extend %button-info; }
 a[success]   {@extend %button-success; }

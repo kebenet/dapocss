@@ -3,6 +3,7 @@
 // =============================================================================
 
 @use 'variables' as vars;
+@use 'colors' as colors;
 
 
 // Media Query Mixins
@@ -75,8 +76,9 @@
   border: none;
   border-radius: vars.$border-radius-base;
   outline: none;
-  color: var(--form-text);
-  background-color: var(--bg-body, vars.$bg-body);
+  // color: var(--form-text);
+  // background-color: var(--bg-body, vars.$bg-body);
+  @extend %form-element-base;
   @include form-transition;
 }
 
