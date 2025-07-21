@@ -60,18 +60,15 @@ $background: $primary-20;
 $background-alt: $primary-44;
 $text-main: #212121;
 $text-muted: #70777f;
-$links: $primary;
-$border: $primary;
-$code: #000;
 
 // Informative Color
 // =============================================================================
 
-  $color-info: #00b0f4;
-  $color-success: #11b76b;
-  $color-warning: #ffa100;
-  $color-danger: red;
-  $color-error: var(--color-danger);
+$color-info: #00b0f4;
+$color-success: #11b76b;
+$color-warning: #ffa100;
+$color-danger: red;
+$color-error: var(--color-danger);
 
 // Default UI Colors
 // =============================================================================
@@ -79,7 +76,15 @@ $code: #000;
 $focus-color: $primary-44;
 $selection-color: $primary-44;
 $highlight-color: $primary;
+
 $variable-color: var(--text-theme);
+$links: var(--text-theme);
+
+$border-color: $primary;
+
+$text-theme: $text-main;
+$bg-theme: unset;
+
 
 
 // Default Form Colors
@@ -93,7 +98,11 @@ $form-placeholder: #949494;
 // =============================================================================
 
 $button-base: #d0cfcf;
+
 $button-hover: transparent;
+
+$button-hover: #9b9b9b;
+
 
 
 // Default Secondary Button Colors
@@ -120,7 +129,6 @@ $spacing-m: 16px;
 $spacing-l: 32px;
 $spacing-xl: 78px;
 $spacing-xxl: 120px;
-
 
 $border-radius-base: 7px;
 $border-radius-small: 2px;

@@ -1,16 +1,11 @@
 /* Sections themeable Settings ----------------------------------------- */
 
-section[theme] toptitle{--text-main :var(--secondary); }
-section[theme] title{--text-main:var(--primary); }
-section[theme] time{--block-bg:var(--primary); }
 
-section[theme-heading] toptitle{--text-main :var(--secondary); }
-section[theme-heading] title{--text-main:var(--primary); }
+
+
+section[theme-heading] toptitle{--text-theme :var(--secondary); }
+section[theme-heading] title{--text-theme:var(--primary); }
 /*section[theme-heading] time{--block-bg:var(--primary); }*/
-
-section[theme-invert] toptitle{--text-main :var(--primary); }
-section[theme-invert] title{--text-main:var(--secondary); }
-section[theme-invert] time{--block-bg:var(--secondary); }
 
 
 /* Theme Dark-mode ----------------------------------------- */
@@ -27,4 +22,27 @@ section[darkmode] {
     --success-bg: #2c5b42;
     --warning-color: #f1c40f;
     --warning-bg: #79642a;
+}
+// section[theme] toptitle{--text-theme :var(--secondary); }
+// section[theme] title{--text-theme:var(--primary); }
+// section[theme] time{--bg-theme:var(--primary); }
+// section[theme] hr{--border-color:var(--primary); }
+
+// section[theme-invert] toptitle{--text-theme :var(--primary); }
+// section[theme-invert] title{--text-theme:var(--secondary); }
+// section[theme-invert] time{--bg-theme:var(--secondary); }
+// section[theme-invert] hr{--border-color:var(--secondary); }
+
+
+section[theme] {
+	--border-color:var(--primary);
+	--text-theme:var(--secondary);
+	--bg-theme:var(--primary);
+}
+
+section[theme-invert] {
+	--border-color:var(--secondary); 
+	--text-theme:var(--primary);
+	--bg-theme:var(--secondary);
+
 }

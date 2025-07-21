@@ -19,10 +19,10 @@ main, container, .container {align-items: center; margin-left: auto; margin-righ
 section, container, .container, article, grid {max-width: 100%; }
 
 // =============================================================================
-// LAYOUT Block - grid inline Center, Center
+// LAYOUT Block - Center Center layout
 // =============================================================================
 
-block{display: grid; align-content: center; justify-items: center; }
+block{align-content: center; justify-items: center; }
 
 // Footer
 // =============================================================================

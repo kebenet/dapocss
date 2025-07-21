@@ -8,7 +8,7 @@
 
 # utility - semiouto
 
+# Compacting Colorable Theme [button link border text bg]
 
-refactor padding & margin name to be "spacing". margin and padding wil be equal.
-please anylisys padding and margin variable to be refactor to make it not breaking the value and variable.
 
+grouping

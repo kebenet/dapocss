@@ -5,7 +5,7 @@
 
 article, 
 article> content,
-article> footer {display: grid; }
+article> footer, block {display: grid; }
 
 article {
     background-color: var(--block-bg);
@@ -42,3 +42,5 @@ article[secondary]>header {background-color: var(--secondary)!important; }
 article[secondary] {border-color: var(--secondary)!important; }
 
 article>footer {padding: var(--spacing-s); justify-items: start;align-items: end; }
+
+

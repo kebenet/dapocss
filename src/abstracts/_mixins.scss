@@ -54,8 +54,8 @@
   --font-family-mono: #{vars.$font-family-mono};
 
   --background-body: #{vars.$background-body};
-  --block-bg: white;
   --background: #{vars.$background};
+  --block-bg: white;
   --background-alt: #{vars.$background-alt};
   --text-main: #{vars.$text-main};
   --text-muted: #{vars.$text-muted};
@@ -70,16 +70,19 @@
   --renova: hsl(203, 36%, 12%); // #132129;
 
   --links: #{vars.$links};
-  --border: #{vars.$border};
-  --border-color:#{vars.$border};
+  --border-color:#{vars.$border-color};
+
+  --text-theme: #{vars.$text-theme};
+  --bg-theme: #{vars.$bg-theme};
+  --border-color:#{vars.$border-color};
   
-  --code: #{vars.$code};
-  --focus: #{vars.$focus-color};
+
+  --focus: var(--primary-44);
   --selection: #{vars.$selection-color};
   --highlight: #{vars.$highlight-color};
-  --variable: #{vars.$variable-color};
   --form-text: #{vars.$form-text};
   --form-placeholder: #{vars.$form-placeholder};
+
   --button-base: #{vars.$button-base};
   --button-hover: #{vars.$button-hover};
   --secondary: #{vars.$secondary};
@@ -90,9 +93,7 @@
   --border-radius-base: #{vars.$border-radius-base};
 
   --hr-width: 100%;
-  --block-bg: white;
 
-// <<<<<<< Updated upstream
   --spacing-xs: #{vars.$spacing-xs};
   --spacing-s:  #{vars.$spacing-s};
   --spacing-m:  #{vars.$spacing-m};
@@ -133,7 +134,7 @@
   border-radius: vars.$border-radius-base;
   outline: none;
   color: var(--form-text);
-  background-color: var(--background);
+  background-color: var(--background-body);
   @include form-transition;
 }
 
@@ -174,13 +175,10 @@
   scrollbar-color: var(--scrollbar-thumb) var(--background-body);
   scrollbar-width: thin;
 
-  &::-webkit-scrollbar {
-    height: 10px;
-    width: 10px;
-  }
+  &::-webkit-scrollbar {height: 10px; width: 10px; }
 
   &::-webkit-scrollbar-track {
-    background: var(--background);
+    background: var(--background-body);
     border-radius: vars.$border-radius-base;
   }
 
@@ -204,17 +202,17 @@
 }
 
 @mixin code-styles {
-  background: var(--background);
-  color: var(--code);
+  background: var(--background-body);
+  color: var(--text-main);
   border-radius: vars.$border-radius-base;
   font-size: var(--text-sm);
 }
 
 // Border Styles
 // =============================================================================
-@mixin border-accent {border: 1px solid var(--border); }
+@mixin border-accent {border: 1px solid var(--border-color); }
 
-@mixin focus-border {border-left: 4px solid var(--focus); }
+@mixin focus-border {border-left: 4px solid var(--border-color); }
 
 // Icon Mixins
 // =============================================================================
@@ -232,3 +230,4 @@
 @mixin set-img-16-9{width: 100%; aspect-ratio: 16/9; object-fit: cover; }
 @mixin set-border-radius{overflow: hidden; border-radius: vars.$border-radius-base vars.$border-radius-base 0 0; }
 @mixin set-hover {transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }
+

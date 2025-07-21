@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as vars;
+
+// =============================================================================
+// CSS CUSTOM PROPERTIES (CSS Variables)
+// =============================================================================
+
+// Default Theme
+// =============================================================================
+:root {
+  // Typography
+
+  --renova: hsl(203, 36%, 12%); // #132129;
+  
+}
+
+// DARK THEME IMPLEMENTATION - COMMENTED OUT FOR FUTURE USE
+// =============================================================================
+// [data-theme="dark"] {
+// }
+
+// =============================================================================
+// COLOR UTILITY CLASSES
+// =============================================================================
+
+
+[bg="primary"] { --bg-theme: var(--primary); }
+[bg="primary-light"] { --bg-theme: var(--primary-20); }
+[bg="primary-lighter"] { --bg-theme: var(--primary-44); }
+[bg="secondary"] { --bg-theme: var(--secondary); }
+[bg="secondary-light"] { --bg-theme: var(--secondary-02); }
+[bg="secondary-lighter"] { --bg-theme: var(--secondary-08); }
+
+// Text theme colorfull
+[color="primary"] { --text-theme: var(--primary); }
+[color="secondary"] { --text-theme: var(--secondary); }
+// Text only main & muted
+[color="main"] { --text-theme: var(--text-main); }
+[color="muted"] { --text-theme: var(--text-muted); }

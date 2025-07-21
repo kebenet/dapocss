@@ -30,7 +30,7 @@ hr {
 hr[vertical] {
     width: 1px;
     height: var(--hr-width, 44%);
-    background-color: var(--border-color, #363636);
+    // background-color: var(--border-color, #363636);
     padding:0;
     margin: auto 0;
 }
@@ -60,21 +60,11 @@ details {
   border-radius: vars.$border-radius-base;
   overflow: hidden;
   
-  &[open] {
-    padding: 10px;
-    
-    summary {
-      margin-bottom: 10px;
-    }
-  }
+  &[open] {padding: 10px; summary {margin-bottom: 10px; } }
   
-  > :last-child {
-    margin-bottom: 0;
-  }
+  > :last-child {margin-bottom: 0; }
   
-  > :not(summary) {
-    margin-top: 0;
-  }
+  > :not(summary) {margin-top: 0; }
 }
 
 summary {
@@ -85,43 +75,30 @@ summary {
   cursor: pointer;
   outline: none;
   
-  &:hover,
-  &:focus {
-    text-decoration: underline;
-  }
+  &:hover, &:focus {text-decoration: underline; }
   
-  &::-webkit-details-marker {
-    color: var(--text-main);
-  }
+  &::-webkit-details-marker {color: var(--text-main); }
 }
 
 // Dialog Element
 // =============================================================================
 dialog {
-  background-color: var(--background-alt);
+  background-color: var(--block-bg);
   color: var(--text-main);
   border: none;
   border-radius: vars.$border-radius-base;
-  border-color: var(--border);
+  border-color: var(--border-color);
   padding: 10px 30px;
   
   > header:first-child {
-    background-color: var(--background);
+    background-color: var(--background-body);
     border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
     margin: -10px -30px 10px;
     padding: 10px;
     text-align: center;
   }
   
-  &::-webkit-backdrop {
-    background: #0000009c;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-  }
+  &::-webkit-backdrop {background: #0000009c; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
   
-  &::backdrop {
-    background: #0000009c;
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-  }
+  &::backdrop {background: #0000009c; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }
 }

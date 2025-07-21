@@ -9,7 +9,7 @@
 a[button] {
   display: inline-block;
   padding: var(--spacing-s);
-  background-color: var(--links);
+  background-color: var(--bg-theme);
   color: var(--text-main);
   text-decoration: none;
   border-radius: var(--border-radius-small);
@@ -36,7 +36,7 @@ a[small] {padding: var(--spacing-xs) var(--spacing-s); font-size: var(--text-s);
 
 
 // Button link style modifiers
-a[outline]{background-color: transparent; border-color: var(--primary); color: var(--text-main);
+a[outline]{background-color: transparent; border-color: var(--border-color); color: var(--text-main);
   
   &:hover {background-color: var(--secondary); color: var(--text-main); }
 }

@@ -14,28 +14,17 @@ input[type='reset'],
 input[type='button'],
 input[type='checkbox'],
 input[type='range'],
-input[type='radio'] {
-  cursor: pointer;
-}
+input[type='radio'] {cursor: pointer; }
 
-input,
-select {
-  display: block;
-}
+input, select {display: block; }
 
-[type='checkbox'],
-[type='radio'] {
-  display: initial;
-}
+[type='checkbox'], [type='radio'] {display: initial; }
 
 // Input Elements
 // =============================================================================
-input {
-  @include mixins.input-base;
+input {@include mixins.input-base;
   
-  &:focus {
-    @include mixins.focus-ring;
-  }
+  &:focus {@include mixins.focus-ring; }
   
   @include mixins.disabled-state;
 }
@@ -49,18 +38,10 @@ textarea {
   box-sizing: border-box;
   resize: vertical;
   
-  &:not([cols]) {
-    width: 100%;
-  }
+  &:not([cols]) {width: 100%; }
+  &:not([rows]) {min-height: 40px; height: 140px; }
   
-  &:not([rows]) {
-    min-height: 40px;
-    height: 140px;
-  }
-  
-  &:focus {
-    @include mixins.focus-ring;
-  }
+  &:focus {@include mixins.focus-ring; }
   
   @include mixins.disabled-state;
 }
@@ -110,10 +91,10 @@ button {
   padding-left: 16px;
   background-color: transparent;
   // color: var(--secondary);
-  border: 1px solid var(--secondary);
+  border: 1px solid var(--border-color);
   
   &:hover {
-    background-color: var(--secondary);
+    background-color: var(--bg-theme);
     color: var(--text-main);
     border-color: var(--secondary);
   }
@@ -141,33 +122,17 @@ input[type='button'] {
 
 // Special Input Types
 // =============================================================================
-input[type='color'] {
-  min-height: 2rem;
-  padding: 8px;
-  cursor: pointer;
-}
+input[type='color'] {min-height: 2rem; padding: 8px; cursor: pointer; }
 
-input[type='checkbox'],
-input[type='radio'] {
-  height: 1em;
-  width: 1em;
-}
+input[type='checkbox'], input[type='radio'] {height: 1em; width: 1em; }
 
-input[type='radio'] {
-  border-radius: 100%;
-}
+input[type='radio'] {border-radius: 100%; }
 
 // Input Alignment
 // =============================================================================
-input {
-  vertical-align: top;
-}
+input {vertical-align: top; }
 
-label {
-  vertical-align: middle;
-  margin-bottom: 4px;
-  display: inline-block;
-}
+label {vertical-align: middle; margin-bottom: 4px; display: inline-block; }
 
 // Appearance Reset
 // =============================================================================
@@ -183,18 +148,12 @@ textarea {
 // =============================================================================
 select {
   @include mixins.input-base;
-  background: var(--background) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
+  background: var(--background-body) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
   padding-right: 35px;
   
-  &::-ms-expand {
-    display: none;
-  }
+  &::-ms-expand {display: none; }
   
-  &[multiple] {
-    padding-right: 10px;
-    background-image: none;
-    overflow-y: auto;
-  }
+  &[multiple] {padding-right: 10px; background-image: none; overflow-y: auto; }
   
   &:focus {
     @include mixins.focus-ring;
@@ -243,10 +202,7 @@ fieldset {
   padding: 10px;
 }
 
-legend {
-  font-size: var(--text-sm);
-  font-weight: 600;
-}
+legend {font-size: var(--text-sm); font-weight: 600; }
 
 // Range Input Styling
 // =============================================================================
@@ -255,9 +211,7 @@ input[type='range'] {
   padding: 10px 0;
   background: transparent;
   
-  &:focus {
-    outline: none;
-  }
+  &:focus {outline: none; }
   
   // WebKit styles
   &::-webkit-slider-runnable-track {
@@ -265,7 +219,7 @@ input[type='range'] {
     height: 9.5px;
     -webkit-transition: 0.2s;
     transition: 0.2s;
-    background: var(--background);
+    background: var(--background-body);
     border-radius: vars.$border-radius-large;
   }
   
@@ -274,13 +228,13 @@ input[type='range'] {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--border);
+    background: var(--border-color);
     -webkit-appearance: none;
     margin-top: -7px;
   }
   
   &:focus::-webkit-slider-runnable-track {
-    background: var(--background);
+    background: var(--background-body);
   }
   
   // Firefox styles
@@ -289,7 +243,7 @@ input[type='range'] {
     height: 9.5px;
     -moz-transition: 0.2s;
     transition: 0.2s;
-    background: var(--background);
+    background: var(--background-body);
     border-radius: vars.$border-radius-large;
   }
   
@@ -298,7 +252,7 @@ input[type='range'] {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--border);
+    background: var(--border-color);
   }
   
   // Internet Explorer styles
@@ -312,14 +266,14 @@ input[type='range'] {
   }
   
   &::-ms-fill-lower {
-    background: var(--background);
+    background: var(--background-body);
     border: 0.2px solid #010101;
     border-radius: vars.$border-radius-large;
     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
   }
   
   &::-ms-fill-upper {
-    background: var(--background);
+    background: var(--background-body);
     border: 0.2px solid #010101;
     border-radius: vars.$border-radius-large;
     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
@@ -331,14 +285,14 @@ input[type='range'] {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--border);
+    background: var(--border-color);
   }
   
   &:focus::-ms-fill-lower {
-    background: var(--background);
+    background: var(--background-body);
   }
   
   &:focus::-ms-fill-upper {
-    background: var(--background);
+    background: var(--background-body);
   }
 }

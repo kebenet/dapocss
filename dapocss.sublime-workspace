@@ -4,6 +4,7 @@
 		"selected_items":
 		[
 			[
+<<<<<<< Updated upstream
 				"--colo",
 				"--color-danger"
 			],
@@ -20,6 +21,8 @@
 				"--primary-08"
 			],
 			[
+=======
+>>>>>>> Stashed changes
 				"--bor",
 				"--border-color"
 			],
@@ -32,6 +35,13 @@
 				"--text-theme"
 			],
 			[
+<<<<<<< Updated upstream
+=======
+				"--te",
+				"--text-theme"
+			],
+			[
+>>>>>>> Stashed changes
 				"pad",
 				"pad-l"
 			],
@@ -399,7 +409,11 @@
 			"file": "Notice.md",
 			"settings":
 			{
+<<<<<<< Updated upstream
 				"buffer_size": 309,
+=======
+				"buffer_size": 179,
+>>>>>>> Stashed changes
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
@@ -411,7 +425,11 @@
 					"left_delete",
 					null,
 					"AQAAAHcAAAAAAAAAdwAAAAAAAAC+AAAACnJlZmFjdG9yIHBhZGRpbmcgJiBtYXJnaW4gbmFtZSB0byBiZSAic3BhY2luZyIuIG1hcmdpbiBhbmQgcGFkZGluZyB3aWwgYmUgZXF1YWwuCnBsZWFzZSBhbnlsaXN5cyBwYWRkaW5nIGFuZCBtYXJnaW4gdmFyaWFibGUgdG8gYmUgcmVmYWN0b3IgdG8gbWFrZSBpdCBub3QgYnJlYWtpbmcgdGhlIHZhbHVlIGFuZCB2YXJpYWJsZS4KCg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHcAAAAAAAAANQEAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB3AAAAAAAAADUBAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					8,
@@ -421,7 +439,11 @@
 						"characters": "#"
 					},
 					"AQAAAHcAAAAAAAAAeAAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHcAAAAAAAAAdwAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB3AAAAAAAAAHcAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					9,
@@ -431,7 +453,11 @@
 						"characters": " Compa"
 					},
 					"BgAAAHgAAAAAAAAAeQAAAAAAAAAAAAAAeQAAAAAAAAB6AAAAAAAAAAAAAAB6AAAAAAAAAHsAAAAAAAAAAAAAAHsAAAAAAAAAfAAAAAAAAAAAAAAAfAAAAAAAAAB9AAAAAAAAAAAAAAB9AAAAAAAAAH4AAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHgAAAAAAAAAeAAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB4AAAAAAAAAHgAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					10,
@@ -441,7 +467,11 @@
 						"characters": "cting"
 					},
 					"BQAAAH4AAAAAAAAAfwAAAAAAAAAAAAAAfwAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAIEAAAAAAAAAAAAAAIEAAAAAAAAAggAAAAAAAAAAAAAAggAAAAAAAACDAAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAH4AAAAAAAAAfgAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB+AAAAAAAAAH4AAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					11,
@@ -451,7 +481,11 @@
 						"characters": " Theme"
 					},
 					"BgAAAIMAAAAAAAAAhAAAAAAAAAAAAAAAhAAAAAAAAACFAAAAAAAAAAAAAACFAAAAAAAAAIYAAAAAAAAAAAAAAIYAAAAAAAAAhwAAAAAAAAAAAAAAhwAAAAAAAACIAAAAAAAAAAAAAACIAAAAAAAAAIkAAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIMAAAAAAAAAgwAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACDAAAAAAAAAIMAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					12,
@@ -461,7 +495,11 @@
 						"characters": " "
 					},
 					"AQAAAIkAAAAAAAAAigAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIkAAAAAAAAAiQAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACJAAAAAAAAAIkAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					13,
@@ -471,7 +509,11 @@
 						"contents": "[$0]"
 					},
 					"AQAAAIoAAAAAAAAAjAAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIoAAAAAAAAAigAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACKAAAAAAAAAIoAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					14,
@@ -481,7 +523,11 @@
 						"characters": "button"
 					},
 					"BgAAAIsAAAAAAAAAjAAAAAAAAAAAAAAAjAAAAAAAAACNAAAAAAAAAAAAAACNAAAAAAAAAI4AAAAAAAAAAAAAAI4AAAAAAAAAjwAAAAAAAAAAAAAAjwAAAAAAAACQAAAAAAAAAAAAAACQAAAAAAAAAJEAAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIsAAAAAAAAAiwAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACLAAAAAAAAAIsAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					16,
@@ -491,7 +537,11 @@
 						"characters": "Colorav"
 					},
 					"BwAAAIQAAAAAAAAAhQAAAAAAAAAAAAAAhQAAAAAAAACGAAAAAAAAAAAAAACGAAAAAAAAAIcAAAAAAAAAAAAAAIcAAAAAAAAAiAAAAAAAAAAAAAAAiAAAAAAAAACJAAAAAAAAAAAAAACJAAAAAAAAAIoAAAAAAAAAAAAAAIoAAAAAAAAAiwAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIQAAAAAAAAAhAAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACEAAAAAAAAAIQAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					17,
@@ -499,7 +549,11 @@
 					"left_delete",
 					null,
 					"AQAAAIoAAAAAAAAAigAAAAAAAAABAAAAdg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIsAAAAAAAAAiwAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACLAAAAAAAAAIsAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					18,
@@ -509,7 +563,11 @@
 						"characters": "ble"
 					},
 					"AwAAAIoAAAAAAAAAiwAAAAAAAAAAAAAAiwAAAAAAAACMAAAAAAAAAAAAAACMAAAAAAAAAI0AAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIoAAAAAAAAAigAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACKAAAAAAAAAIoAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					19,
@@ -519,7 +577,11 @@
 						"characters": " "
 					},
 					"AQAAAI0AAAAAAAAAjgAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAI0AAAAAAAAAjQAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACNAAAAAAAAAI0AAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					23,
@@ -529,7 +591,11 @@
 						"characters": " link"
 					},
 					"BQAAAJsAAAAAAAAAnAAAAAAAAAAAAAAAnAAAAAAAAACdAAAAAAAAAAAAAACdAAAAAAAAAJ4AAAAAAAAAAAAAAJ4AAAAAAAAAnwAAAAAAAAAAAAAAnwAAAAAAAACgAAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJsAAAAAAAAAmwAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACbAAAAAAAAAJsAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					24,
@@ -539,7 +605,11 @@
 						"characters": " border"
 					},
 					"BwAAAKAAAAAAAAAAoQAAAAAAAAAAAAAAoQAAAAAAAACiAAAAAAAAAAAAAACiAAAAAAAAAKMAAAAAAAAAAAAAAKMAAAAAAAAApAAAAAAAAAAAAAAApAAAAAAAAAClAAAAAAAAAAAAAAClAAAAAAAAAKYAAAAAAAAAAAAAAKYAAAAAAAAApwAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKAAAAAAAAAAoAAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACgAAAAAAAAAKAAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					25,
@@ -549,7 +619,11 @@
 						"characters": " text"
 					},
 					"BQAAAKcAAAAAAAAAqAAAAAAAAAAAAAAAqAAAAAAAAACpAAAAAAAAAAAAAACpAAAAAAAAAKoAAAAAAAAAAAAAAKoAAAAAAAAAqwAAAAAAAAAAAAAAqwAAAAAAAACsAAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKcAAAAAAAAApwAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACnAAAAAAAAAKcAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					26,
@@ -559,7 +633,11 @@
 						"characters": " bg"
 					},
 					"AwAAAKwAAAAAAAAArQAAAAAAAAAAAAAArQAAAAAAAACuAAAAAAAAAAAAAACuAAAAAAAAAK8AAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKwAAAAAAAAArAAAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACsAAAAAAAAAKwAAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					9,
@@ -569,6 +647,7 @@
 						"characters": "\n\n\n"
 					},
 					"AwAAALAAAAAAAAAAsQAAAAAAAAAAAAAAsQAAAAAAAACyAAAAAAAAAAAAAACyAAAAAAAAALMAAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACwAAAAAAAAALAAAAAAAAAAAAAAAAAA8L8"
 				],
 				[
@@ -578,6 +657,9 @@
 					null,
 					"AgAAAAAAAAAAAAAAAAAAAAAAAACzAAAACgojIFR5cG9ncmFwaHkgcGFkZGluZyBpbiBjb21wb25lbnQKCiMgU3RhbmRhcmRpemUgQ29tcG9uZW50IFRoZW1lIAoKIyBtb3JlIHRoZW1lYWJsZSBbZG9uZSB2MV0KCiMgdXRpbGl0eSAtIHNlbWlvdXRvCgojIENvbXBhY3RpbmcgQ29sb3JhYmxlIFRoZW1lIFtidXR0b24gbGluayBib3JkZXIgdGV4dCBiZ10KCgoAAAAAAAAAADUBAAAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAAsgAAAAAAAACyAAAAAAAAAAAAAAAAAPC/"
+=======
+					"AQAAAAAAAAABAAAAsAAAAAAAAACwAAAAAAAAAAAAAAAAAPC/"
+>>>>>>> Stashed changes
 				]
 			]
 		},
@@ -585,7 +667,11 @@
 			"file": "src/abstracts/_mixins.scss",
 			"settings":
 			{
+<<<<<<< Updated upstream
 				"buffer_size": 7165,
+=======
+				"buffer_size": 7123,
+>>>>>>> Stashed changes
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
 			},
@@ -599,7 +685,11 @@
 						"characters": "\n"
 					},
 					"AQAAAPUHAAAAAAAA+AcAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPUHAAAAAAAA9QcAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD1BwAAAAAAAPUHAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					8,
@@ -607,7 +697,11 @@
 					"paste",
 					null,
 					"AQAAAPgHAAAAAAAAFggAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPgHAAAAAAAA+AcAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD4BwAAAAAAAPgHAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					13,
@@ -617,7 +711,11 @@
 						"characters": "-bo"
 					},
 					"BAAAAKkPAAAAAAAAqg8AAAAAAAAAAAAA9gcAAAAAAAD2BwAAAAAAAAIAAAAgIKgPAAAAAAAAqQ8AAAAAAAAAAAAAqQ8AAAAAAACqDwAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKkPAAAAAAAAqQ8AAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACpDwAAAAAAAKkPAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					14,
@@ -631,7 +729,11 @@
 						"trigger": "--background-body"
 					},
 					"AgAAAJsPAAAAAAAAmw8AAAAAAAAPAAAALS1iYWNrZ3JvdW5kLWJvmw8AAAAAAACsDwAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKoPAAAAAAAAqg8AAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACqDwAAAAAAAKoPAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					29,
@@ -641,7 +743,11 @@
 						"characters": "\n\n"
 					},
 					"AgAAANwbAAAAAAAA3RsAAAAAAAAAAAAA3RsAAAAAAADeGwAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADcGwAAAAAAANwbAAAAAAAAAAAAAAAA8L8"
+=======
+					"AQAAAAAAAAABAAAA3BsAAAAAAADcGwAAAAAAAAAAAAAAAPC/"
+>>>>>>> Stashed changes
 				],
 				[
 					57,
@@ -649,6 +755,7 @@
 					"join_lines",
 					null,
 					"AwAAAOQUAAAAAAAA5BQAAAAAAAAFAAAACiAgICDxFAAAAAAAAPIUAAAAAAAABQAAAAogICAg/hQAAAAAAAD/FAAAAAAAAAMAAAAKICA",
+<<<<<<< Updated upstream
 					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADkFAAAAAAAAOQUAAAAAAAAAAAAAAAA8L8"
 				],
 				[
@@ -658,10 +765,14 @@
 					null,
 					"AgAAAAAAAAAAAAAAAAAAAAAAAADTGwAALy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gREFQT0NTUyBNSVhJTlMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KCkB1c2UgJ3ZhcmlhYmxlcycgYXMgdmFyczsKCgovLyBNZWRpYSBRdWVyeSBNaXhpbnMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KQG1peGluIGxhcmdlLXNjcmVlbiB7QG1lZGlhIHNjcmVlbiBhbmQgKG1pbi13aWR0aDogdmFycy4kYnJlYWtwb2ludC1sYXJnZSkge0Bjb250ZW50OyB9IH0KCkBtaXhpbiBkYXJrLXRoZW1lIHtAbWVkaWEgKHByZWZlcnMtY29sb3Itc2NoZW1lOiBkYXJrKSB7QGNvbnRlbnQ7IH0gfQoKQG1peGluIHByaW50LXN0eWxlcyB7QG1lZGlhIHByaW50IHtAY29udGVudDsgfSB9CgovLyBUeXBvZ3JhcGh5IE1peGlucwovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpAbWl4aW4gdHlwb2dyYXBoeS1zY2FsZSgkc3VwcG9ydHMtY2xhbXA6IHRydWUpIHsKICBAaWYgJHN1cHBvcnRzLWNsYW1wIHsKICAgIC0tdGV4dC1zOiAje3ZhcnMuJHRleHQtc307CiAgICAtLXRleHQtYmFzZTogI3t2YXJzLiR0ZXh0LWJhc2V9OwogICAgLS10ZXh0LW06ICN7dmFycy4kdGV4dC1tfTsKICAgIC0tdGV4dC1sOiAje3ZhcnMuJHRleHQtbH07CiAgICAtLXRleHQteGw6ICN7dmFycy4kdGV4dC14bH07CiAgICAtLXRleHQteHhsOiAje3ZhcnMuJHRleHQteHhsfTsKICAgIC0tdGV4dC14eHhsOiAje3ZhcnMuJHRleHQteHh4bH07CiAgfSBAZWxzZSB7CiAgICAtLXRleHQtczogI3t2YXJzLiR0ZXh0LXMtZmFsbGJhY2t9OwogICAgLS10ZXh0LWJhc2U6ICN7dmFycy4kdGV4dC1iYXNlLWZhbGxiYWNrfTsKICAgIC0tdGV4dC1tOiAje3ZhcnMuJHRleHQtbS1mYWxsYmFja307CiAgICAtLXRleHQtbDogI3t2YXJzLiR0ZXh0LWwtZmFsbGJhY2t9OwogICAgLS10ZXh0LXhsOiAje3ZhcnMuJHRleHQteGwtZmFsbGJhY2t9OwogICAgLS10ZXh0LXh4bDogI3t2YXJzLiR0ZXh0LXh4bC1mYWxsYmFja307CiAgICAtLXRleHQteHh4bDogI3t2YXJzLiR0ZXh0LXh4eGwtZmFsbGJhY2t9OwogIH0KfQoKQG1peGluIHR5cG9ncmFwaHktc2NhbGUtbGFyZ2UgewogIC0tdGV4dC1zOiAje3ZhcnMuJHRleHQtcy1sYXJnZX07CiAgLS10ZXh0LWJhc2U6ICN7dmFycy4kdGV4dC1iYXNlLWxhcmdlfTsKICAtLXRleHQtbTogI3t2YXJzLiR0ZXh0LW0tbGFyZ2V9OwogIC0tdGV4dC1sOiAje3ZhcnMuJHRleHQtbC1sYXJnZX07CiAgLS10ZXh0LXhsOiAje3ZhcnMuJHRleHQteGwtbGFyZ2V9OwogIC0tdGV4dC14eGw6ICN7dmFycy4kdGV4dC14eGwtbGFyZ2V9OwogIC0tdGV4dC14eHhsOiAje3ZhcnMuJHRleHQteHh4bC1sYXJnZX07Cn0KCi8vIFRoZW1lIE1peGlucyAoVXNpbmcgR2VuZXJpYyBWYXJpYWJsZXMpCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CkBtaXhpbiBkZWZhdWx0LXRoZW1lLWNvbG9ycyB7CiAgLS1iYWNrZ3JvdW5kLWJvZHk6ICN7dmFycy4kYmFja2dyb3VuZC1ib2R5fTsKICAtLWJhY2tncm91bmQ6ICN7dmFycy4kYmFja2dyb3VuZH07CiAgLS1ibG9jay1iZzogd2hpdGU7CiAgLS1iYWNrZ3JvdW5kLWFsdDogI3t2YXJzLiRiYWNrZ3JvdW5kLWFsdH07CiAgLS10ZXh0LW1haW46ICN7dmFycy4kdGV4dC1tYWlufTsKICAtLXRleHQtbXV0ZWQ6ICN7dmFycy4kdGV4dC1tdXRlZH07CgogIC0tdGV4dC10aGVtZTogI3t2YXJzLiR0ZXh0LXRoZW1lfTsKICAtLWJnLXRoZW1lOiAje3ZhcnMuJGJnLXRoZW1lfTsKICAtLWJvcmRlci1jb2xvcjoje3ZhcnMuJGJvcmRlci1jb2xvcn07CiAgCgogIC0tZm9jdXM6IHZhcigtLXByaW1hcnktNDQpOwogIC0tc2VsZWN0aW9uOiAje3ZhcnMuJHNlbGVjdGlvbi1jb2xvcn07CiAgLS1oaWdobGlnaHQ6ICN7dmFycy4kaGlnaGxpZ2h0LWNvbG9yfTsKICAtLWZvcm0tdGV4dDogI3t2YXJzLiRmb3JtLXRleHR9OwogIC0tZm9ybS1wbGFjZWhvbGRlcjogI3t2YXJzLiRmb3JtLXBsYWNlaG9sZGVyfTsKCiAgLS1idXR0b24tYmFzZTogI3t2YXJzLiRidXR0b24tYmFzZX07CiAgLS1idXR0b24taG92ZXI6ICN7dmFycy4kYnV0dG9uLWhvdmVyfTsKICAtLXNlY29uZGFyeTogI3t2YXJzLiRzZWNvbmRhcnl9OwogIC0tc2Vjb25kYXJ5LWhvdmVyOiAje3ZhcnMuJHNlY29uZGFyeS1ob3Zlcn07CiAgLS1zZWNvbmRhcnktZm9jdXM6ICN7dmFycy4kc2Vjb25kYXJ5LWZvY3VzfTsKICAtLXNjcm9sbGJhci10aHVtYjogI3t2YXJzLiRzY3JvbGxiYXItdGh1bWJ9OwogIC0tc2Nyb2xsYmFyLXRodW1iLWhvdmVyOiAje3ZhcnMuJHNjcm9sbGJhci10aHVtYi1ob3Zlcn07CiAgLS1ib3JkZXItcmFkaXVzLWJhc2U6ICN7dmFycy4kYm9yZGVyLXJhZGl1cy1iYXNlfTsKCiAgLS1oci13aWR0aDogMTAwJTsKCi8vIDw8PDw8PDwgVXBkYXRlZCB1cHN0cmVhbQogIC0tc3BhY2luZy14czogI3t2YXJzLiRzcGFjaW5nLXhzfTsKICAtLXNwYWNpbmctczogICN7dmFycy4kc3BhY2luZy1zfTsKICAtLXNwYWNpbmctbTogICN7dmFycy4kc3BhY2luZy1tfTsKICAtLXNwYWNpbmctbDogICN7dmFycy4kc3BhY2luZy1sfTsKICAtLXNwYWNpbmcteGw6ICN7dmFycy4kc3BhY2luZy14bH07CiAgLS1zcGFjaW5nLXh4bDoje3ZhcnMuJHNwYWNpbmcteHhsfTsKCiAgLS1zZWxlY3QtYXJyb3c6ICN7dmFycy4kc2VsZWN0LWFycm93fTsKfQoKLy8gREFSSyBUSEVNRSBNSVhJTiAtIENPTU1FTlRFRCBPVVQgRk9SIEZVVFVSRSBVU0UKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gQG1peGluIGRhcmstdGhlbWUtY29sb3JzIHsKCi8vIH0KCi8vIFRyYW5zaXRpb24gTWl4aW5zCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CkBtaXhpbiBzbW9vdGgtdHJhbnNpdGlvbigkcHJvcGVydGllczogYWxsKSB7CiAgdHJhbnNpdGlvbjogI3skcHJvcGVydGllc30gdmFycy4kYW5pbWF0aW9uLWR1cmF0aW9uIHZhcnMuJHRyYW5zaXRpb24tdGltaW5nOwp9CgpAbWl4aW4gZm9ybS10cmFuc2l0aW9uIHsKICB0cmFuc2l0aW9uOgogICAgYmFja2dyb3VuZC1jb2xvciB2YXJzLiRhbmltYXRpb24tZHVyYXRpb24gdmFycy4kdHJhbnNpdGlvbi10aW1pbmcsCiAgICBib3JkZXItY29sb3IgdmFycy4kYW5pbWF0aW9uLWR1cmF0aW9uIHZhcnMuJHRyYW5zaXRpb24tdGltaW5nLAogICAgY29sb3IgdmFycy4kYW5pbWF0aW9uLWR1cmF0aW9uIHZhcnMuJHRyYW5zaXRpb24tdGltaW5nLAogICAgYm94LXNoYWRvdyB2YXJzLiRhbmltYXRpb24tZHVyYXRpb24gdmFycy4kdHJhbnNpdGlvbi10aW1pbmcsCiAgICB0cmFuc2Zvcm0gdmFycy4kYW5pbWF0aW9uLWR1cmF0aW9uIHZhcnMuJHRyYW5zaXRpb24tdGltaW5nLWVhc2U7Cn0KCi8vIEZvcm0gRWxlbWVudCBNaXhpbnMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KQG1peGluIGZvcm0tZWxlbWVudC1iYXNlIHsKICBmb250LWZhbWlseTogaW5oZXJpdDsKICBmb250LXNpemU6IGluaGVyaXQ7CiAgYm9yZGVyOiBub25lOwogIGJvcmRlci1yYWRpdXM6IHZhcnMuJGJvcmRlci1yYWRpdXMtYmFzZTsKICBvdXRsaW5lOiBub25lOwogIGNvbG9yOiB2YXIoLS1mb3JtLXRleHQpOwogIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWJhY2tncm91bmQtYm9keSk7CiAgQGluY2x1ZGUgZm9ybS10cmFuc2l0aW9uOwp9CgpAbWl4aW4gaW5wdXQtYmFzZSB7QGluY2x1ZGUgZm9ybS1lbGVtZW50LWJhc2U7IG1hcmdpbi1yaWdodDogNnB4OyBtYXJnaW4tYm90dG9tOiA2cHg7IHBhZGRpbmc6IDEwcHg7IH0KCkBtaXhpbiBidXR0b24tYmFzZSB7CiAgQGluY2x1ZGUgZm9ybS1lbGVtZW50LWJhc2U7CiAgcGFkZGluZzogOHB4OwogIGN1cnNvcjogcG9pbnRlcjsKICBiYWNrZ3JvdW5kLWNvbG9yOiB2YXIoLS1wcmltYXJ5KTsKICAKICAmOmhvdmVyIHtiYWNrZ3JvdW5kOiB2YXIoLS1idXR0b24taG92ZXIpOyB9CiAgCiAgJjpmb2N1cyB7Ym94LXNoYWRvdzogMCAwIDAgMnB4IHZhcigtLWZvY3VzKTsgfQogIAogICY6YWN0aXZlIHt0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMnB4KTsgfQp9CgpAbWl4aW4gYnV0dG9uLWlucHV0IHtAaW5jbHVkZSBidXR0b24tYmFzZTsgcGFkZGluZy1yaWdodDogMzBweDsgcGFkZGluZy1sZWZ0OiAzMHB4OyB9CgovLyBGb2N1cyBTdGF0ZXMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KQG1peGluIGZvY3VzLXJpbmcge2JveC1zaGFkb3c6IDAgMCAwIDJweCB2YXIoLS1mb2N1cyk7IH0KCi8vIERpc2FibGVkIFN0YXRlcwovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQpAbWl4aW4gZGlzYWJsZWQtc3RhdGUgeyY6ZGlzYWJsZWQge2N1cnNvcjogbm90LWFsbG93ZWQ7IG9wYWNpdHk6IDAuNTsgfSB9CgovLyBMYXlvdXQgTWl4aW5zCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CkBtaXhpbiBjb250YWluZXIge21heC13aWR0aDogdmFycy4kbWF4LXdpZHRoOyBtYXJnaW46IDAgYXV0bzsgcGFkZGluZzogMCB2YXIoLS1zcGFjaW5nLXMpOyB9CgpAbWl4aW4gY2xlYXJmaXggeyY6OmFmdGVyIHtjb250ZW50OiAiIjsgZGlzcGxheTogdGFibGU7IGNsZWFyOiBib3RoOyB9IH0KCi8vIFNjcm9sbGJhciBNaXhpbnMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KQG1peGluIHNjcm9sbGJhci1zdHlsaW5nIHsKICBzY3JvbGxiYXItY29sb3I6IHZhcigtLXNjcm9sbGJhci10aHVtYikgdmFyKC0tYmFja2dyb3VuZC1ib2R5KTsKICBzY3JvbGxiYXItd2lkdGg6IHRoaW47CgogICY6Oi13ZWJraXQtc2Nyb2xsYmFyIHtoZWlnaHQ6IDEwcHg7IHdpZHRoOiAxMHB4OyB9CgogICY6Oi13ZWJraXQtc2Nyb2xsYmFyLXRyYWNrIHsKICAgIGJhY2tncm91bmQ6IHZhcigtLWJhY2tncm91bmQtYm9keSk7CiAgICBib3JkZXItcmFkaXVzOiB2YXJzLiRib3JkZXItcmFkaXVzLWJhc2U7CiAgfQoKICAmOjotd2Via2l0LXNjcm9sbGJhci10aHVtYiB7CiAgICBiYWNrZ3JvdW5kOiB2YXIoLS1zY3JvbGxiYXItdGh1bWIpOwogICAgYm9yZGVyLXJhZGl1czogdmFycy4kYm9yZGVyLXJhZGl1cy1iYXNlOwoKICAgICY6aG92ZXIgewogICAgICBiYWNrZ3JvdW5kOiB2YXIoLS1zY3JvbGxiYXItdGh1bWItaG92ZXIpOwogICAgfQogIH0KfQoKLy8gQ29udGVudCBNaXhpbnMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KQG1peGluIGhlYWRpbmctc3R5bGVzIHsKICBtYXJnaW4tYm90dG9tOiAwOwogIG1hcmdpbi10b3A6IDA7CiAgY29sb3I6IHZhcigtLXRleHQtbWFpbik7CiAgLy8gZm9udC13ZWlnaHQ6IHZhcnMuJGZvbnQtd2VpZ2h0LW5vcm1hbDsKfQoKQG1peGluIGNvZGUtc3R5bGVzIHsKICBiYWNrZ3JvdW5kOiB2YXIoLS1iYWNrZ3JvdW5kLWJvZHkpOwogIGNvbG9yOiB2YXIoLS10ZXh0LW1haW4pOwogIGJvcmRlci1yYWRpdXM6IHZhcnMuJGJvcmRlci1yYWRpdXMtYmFzZTsKICBmb250LXNpemU6IHZhcigtLXRleHQtc20pOwp9CgovLyBCb3JkZXIgU3R5bGVzCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CkBtaXhpbiBib3JkZXItYWNjZW50IHtib3JkZXI6IDFweCBzb2xpZCB2YXIoLS1ib3JkZXItY29sb3IpOyB9CgpAbWl4aW4gZm9jdXMtYm9yZGVyIHtib3JkZXItbGVmdDogNHB4IHNvbGlkIHZhcigtLWJvcmRlci1jb2xvcik7IH0KCi8vIEljb24gTWl4aW5zCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CkBtaXhpbiBjb250YWN0LWljb24oJGljb24pIHsmOjpiZWZvcmUge2NvbnRlbnQ6ICRpY29uOyB9Cn0KCi8vIFNlbGVjdGlvbiBTdHlsZXMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KQG1peGluIHNlbGVjdGlvbi1zdHlsZXMge2JhY2tncm91bmQtY29sb3I6IHZhcigtLXNlbGVjdGlvbik7IGNvbG9yOiB2YXIoLS10ZXh0LW1haW4pOyB9CgovLyBQcmludCBNaXhpbnMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KQG1peGluIHByaW50LXJlc2V0IHtiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmICFpbXBvcnRhbnQ7IGNvbG9yOiAjMDAwICFpbXBvcnRhbnQ7IH0KCkBtaXhpbiBzZXQtaW1nLTE2LTl7d2lkdGg6IDEwMCU7IGFzcGVjdC1yYXRpbzogMTYvOTsgb2JqZWN0LWZpdDogY292ZXI7IH0KQG1peGluIHNldC1ib3JkZXItcmFkaXVze292ZXJmbG93OiBoaWRkZW47IGJvcmRlci1yYWRpdXM6IHZhcnMuJGJvcmRlci1yYWRpdXMtYmFzZSB2YXJzLiRib3JkZXItcmFkaXVzLWJhc2UgMCAwOyB9CkBtaXhpbiBzZXQtaG92ZXIge3RyYW5zZm9ybTogdHJhbnNsYXRlWSgtNXB4KTsgYm94LXNoYWRvdzogMCA4cHggMTZweCByZ2JhKDAsIDAsIDAsIDAuMik7IH0KCgAAAAAAAAAA/RsAAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAAhQ8AAAAAAACVDwAAAAAAAAAAAAAAAPC/"
+=======
+					"AQAAAAAAAAABAAAA5BQAAAAAAADkFAAAAAAAAAAAAAAAAPC/"
+>>>>>>> Stashed changes
 				]
 			]
 		},
 		{
+<<<<<<< Updated upstream
 			"contents": "Searching 41 files for \"box\\-shadow\" (regex)\n\nC:\\Users\\user\\Documents\\dapocss\\src\\abstracts\\_mixins.scss:\n  108:     box-shadow vars.$animation-duration vars.$transition-timing,\n  135:   &:focus {box-shadow: 0 0 0 2px var(--focus); }\n  144: @mixin focus-ring {box-shadow: 0 0 0 2px var(--focus); }\n  216: @mixin set-hover {transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\components\\_forms.scss:\n   80:     box-shadow: 0 0 0 2px var(--secondary-focus);\n  103:     box-shadow: 0 0 0 2px var(--secondary-focus);\n  227:     box-shadow: 0 1px 1px #000, 0 0 1px #0d0d0d;\n  251:     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;\n  272:     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;\n  279:     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;\n  283:     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;\n\nC:\\Users\\user\\Documents\\dapocss\\src\\components\\_link.scss:\n   26:     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n   29:   &:active {transform: translateY(0); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }\n   66:   &:hover {transform: none; box-shadow: none; }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_card.scss:\n   12:     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_modifier.scss:\n   10: grid[hover] > stack-grid {transition: transform 0.3s ease, box-shadow 0.3s ease; }\n\n16 matches across 5 files\n\n\nSearching 41 files for \"background\\-color\" (regex)\n\nC:\\Users\\user\\Documents\\dapocss\\ai.txt:\n   36:             background-color: #1f2937; /* A dark background for the overall page */\n\nC:\\Users\\user\\Documents\\dapocss\\css_categories.yaml:\n   61:         properties: [\"color\", \"background-color\", \"background-image\"]\n\nC:\\Users\\user\\Documents\\dapocss\\theme-test.html:\n   61:             <div class=\"swatch\" style=\"background-color: var(--primary); color: white;\">Primary</div>\n   62:             <div class=\"swatch\" style=\"background-color: var(--secondary); color: white;\">Secondary</div>\n   63:             <div class=\"swatch\" style=\"background-color: var(--background-body);\">Background</div>\n   64:             <div class=\"swatch\" style=\"background-color: var(--text-main); color: var(--background-body);\">Text Main</div>\n   65:             <div class=\"swatch\" style=\"background-color: var(--text-theme); color: white;\">Links</div>\n   66:             <div class=\"swatch\" style=\"background-color: var(--focus); color: white;\">Focus</div>\n\nC:\\Users\\user\\Documents\\dapocss\\src\\abstracts\\_mixins.scss:\n  105:     background-color vars.$animation-duration vars.$transition-timing,\n  121:   background-color: var(--background-body);\n  131:   background-color: var(--primary);\n  208: @mixin selection-styles {background-color: var(--selection); color: var(--text-main); }\n  212: @mixin print-reset {background-color: #fff !important; color: #000 !important; }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\base\\_colors.scss:\n  150: [bg=\"light\"] { background-color: var(--background-body) !important; }\n  151: [bg=\"lighter\"] { background-color: var(--background-alt) !important; }\n  152: // [bg=\"dark\"] { background-color: var(--background-body-dark) !important; } // COMMENTED: Dark theme utility\n  153: // [bg=\"darker\"] { background-color: var(--background-dark) !important; } // COMMENTED: Dark theme utility\n  154: [bg=\"primary\"] { background-color: var(--primary) !important; }\n  155: [bg=\"primary-light\"] { background-color: var(--primary-20) !important; }\n  156: [bg=\"primary-lighter\"] { background-color: var(--primary-08) !important; }\n  157: [bg=\"secondary\"] { background-color: var(--secondary) !important; }\n  158: [bg=\"secondary-light\"] { background-color: var(--secondary-02) !important; }\n  159: [bg=\"secondary-lighter\"] { background-color: var(--secondary-08) !important; }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\base\\_typography.scss:\n   14: //     display:grid; background-color: var(--block-bg);\n   90:   background-color: var(--highlight);\n\nC:\\Users\\user\\Documents\\dapocss\\src\\components\\_content.scss:\n   33:     // background-color: var(--border-color, #363636);\n   57:   background-color: var(--background-alt);\n   72:   background-color: var(--background);\n   86:   background-color: var(--block-bg);\n   94:     background-color: var(--background-body);\n\nC:\\Users\\user\\Documents\\dapocss\\src\\components\\_forms.scss:\n   58:     // background-color: var(--secondary);\n   59:     background-color: transparent;\n   71:   background-color: var(--secondary);\n   75:     background-color: var(--secondary-hover);\n   92:   background-color: transparent;\n   97:     background-color: var(--bg-theme);\n\nC:\\Users\\user\\Documents\\dapocss\\src\\components\\_link.scss:\n   12:   background-color: var(--bg-theme);\n   23:     background-color: var(--secondary);\n   39: a[outline]{background-color: transparent; border-color: var(--border-color); color: var(--text-main);\n   41:   &:hover {background-color: var(--secondary); color: var(--text-main); }\n   44: a[secondary] {background-color: var(--secondary); color: var(--text-main);\n   46:   &:hover {background-color: var(--secondary-hover); }\n   49: a[success] {background-color: var(--success, #28a745);\n   51:   &:hover {background-color: var(--bg-success, #218838); }\n   54: a[warning] {background-color: var(--warning, #ffc107); color: var(--text-main);\n   55:   &:hover {background-color: var(--warning-hover, #e0a800); }\n   58: a[danger] {background-color: var(--danger, #dc3545);\n   59:   &:hover {background-color: var(--danger-hover, #c82333); }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\components\\_tables.scss:\n   45:   background-color: var(--background-body);\n   48:     background-color: var(--background-alt);\n   51:       background-color: var(--background-body);\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_card.scss:\n   11:     background-color: var(--block-bg);\n   36: article[primary]>header {background-color: var(--primary)!important; }\n   40: article[secondary]>header {background-color: var(--secondary)!important; }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_grid.scss:\n   62: grid[primary]> article > header {background-color: vars.$primary; }\n   63: grid[secondary] > article > header {background-color: vars.$secondary; }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_layout.scss:\n   40:   tbody tr:nth-child(even) {background-color: #f2f2f2 !important; }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_modifier.scss:\n   23: $background-colors: (\n   50: @each $name, $color in $background-colors {\n   51:   [bg=\"#{$name}\"] {background-color: $color ; }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_stack-grid.scss:\n   18: .stack-grid {@include set-stack-grid; background-color: white; }\n   28: grid[primary] > .stack-grid > .stack-side{background-color: var(--secondary);}\n   29: grid[secondary] > .stack-grid > .stack-side{background-color: var(--primary);}\n   31: .stack-grid[primary] > .stack-side{background-color: var(--secondary);}\n   32: .stack-grid[secondary] > .stack-side{background-color: var(--primary);}\n   34: .stack-grid[primary] > .card>header{background-color: var(--primary);}\n   35: .stack-grid[secondary] > .card>header{background-color: var(--secondary);}\n\n67 matches across 15 files\n",
 			"settings":
 			{
@@ -681,20 +792,47 @@
 				"buffer_size": 2394,
 				"encoding": "UTF-8",
 				"line_ending": "Unix"
+=======
+			"file": "dapocss.sublime-project",
+			"settings":
+			{
+				"buffer_size": 169,
+				"line_ending": "Windows"
+>>>>>>> Stashed changes
 			},
 			"undo_stack":
 			[
 				[
+<<<<<<< Updated upstream
 					7,
 					1,
 					"left_delete",
 					null,
 					"AQAAAOUHAAAAAAAA5QcAAAAAAACXAAAACiAgLS1mb250LXdlaWdodC1ub3JtYWw6ICN7dmFycy4kZm9udC13ZWlnaHQtbm9ybWFsfTsKICAtLWZvbnQtd2VpZ2h0LWJvbGQ6ICN7dmFycy4kZm9udC13ZWlnaHQtYm9sZH07CiAgLS1saW5lLWhlaWdodC1iYXNlOiAje3ZhcnMuJGxpbmUtaGVpZ2h0LWJhc2V9Ow",
 					"AQAAAAAAAAABAAAAfAgAAAAAAADlBwAAAAAAAAAAAAAAAPC/"
+=======
+					13,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAACYAAAAAAAAAKQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJgAAAAAAAAAmAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"paste",
+					null,
+					"AQAAACYAAAAAAAAAngAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAJgAAAAAAAAAmAAAAAAAAAAAAAAAAgE1A"
+>>>>>>> Stashed changes
 				],
 				[
 					16,
 					1,
+<<<<<<< Updated upstream
 					"left_delete",
 					null,
 					"AQAAAF0BAAAAAAAAXQEAAAAAAAAWBgAACiAgLy8gQnJhbmQgQ29sb3JzCiAgLS1wcmltYXJ5OiAje3ZhcnMuJHByaW1hcnl9OwogIC0tcHJpbWFyeS0yMDogI3t2YXJzLiRwcmltYXJ5LTIwfTsKICAtLXByaW1hcnktNDQ6ICN7dmFycy4kcHJpbWFyeS00NH07CiAgLS1wcmltYXJ5LTA4OiAje3ZhcnMuJHByaW1hcnktMDh9OwogIC0tc2Vjb25kYXJ5OiAje3ZhcnMuJHNlY29uZGFyeX07CiAgLS1zZWNvbmRhcnktMDI6ICN7dmFycy4kc2Vjb25kYXJ5LTAyfTsKICAtLXNlY29uZGFyeS00NDogI3t2YXJzLiRzZWNvbmRhcnktNDR9OwogIC0tc2Vjb25kYXJ5LTA4OiAje3ZhcnMuJHNlY29uZGFyeS0wOH07CiAgCiAgLy8gVGhlbWUgQ29sb3JzCiAgLS1iYWNrZ3JvdW5kLWJvZHk6ICN7dmFycy4kYmFja2dyb3VuZC1ib2R5fTsKICAtLWJhY2tncm91bmQ6ICN7dmFycy4kYmFja2dyb3VuZH07CiAgLS1iYWNrZ3JvdW5kLWFsdDogI3t2YXJzLiRiYWNrZ3JvdW5kLWFsdH07CiAgLS10ZXh0LW1haW46ICN7dmFycy4kdGV4dC1tYWlufTsKICAtLXRleHQtbXV0ZWQ6ICN7dmFycy4kdGV4dC1tdXRlZH07CiAgLS1ib3JkZXI6ICN7dmFycy4kYm9yZGVyfTsKICAtLWNvZGU6ICN7dmFycy4kY29kZX07CiAgCiAgLy8gVUkgQ29sb3JzCiAgLS1mb2N1czogI3t2YXJzLiRmb2N1cy1jb2xvcn07CiAgLS1zZWxlY3Rpb246ICN7dmFycy4kc2VsZWN0aW9uLWNvbG9yfTsKICAtLWhpZ2hsaWdodDogI3t2YXJzLiRoaWdobGlnaHQtY29sb3J9OwogIAogIC8vIEZvcm0gQ29sb3JzCiAgLS1mb3JtLXRleHQ6ICN7dmFycy4kZm9ybS10ZXh0fTsKICAtLWZvcm0tcGxhY2Vob2xkZXI6ICN7dmFycy4kZm9ybS1wbGFjZWhvbGRlcn07CiAgCiAgLy8gQnV0dG9uIENvbG9ycwogIC0tYnV0dG9uLWJhc2U6ICN7dmFycy4kYnV0dG9uLWJhc2V9OwogIC0tYnV0dG9uLWhvdmVyOiAje3ZhcnMuJGJ1dHRvbi1ob3Zlcn07CiAgLS1zZWNvbmRhcnktaG92ZXI6ICN7dmFycy4kc2Vjb25kYXJ5LWhvdmVyfTsKICAtLXNlY29uZGFyeS1mb2N1czogI3t2YXJzLiRzZWNvbmRhcnktZm9jdXN9OwogIAogIC8vIFNjcm9sbGJhciBDb2xvcnMKICAtLXNjcm9sbGJhci10aHVtYjogI3t2YXJzLiRzY3JvbGxiYXItdGh1bWJ9OwogIC0tc2Nyb2xsYmFyLXRodW1iLWhvdmVyOiAje3ZhcnMuJHNjcm9sbGJhci10aHVtYi1ob3Zlcn07CiAgCiAgLy8gU3BhY2luZwogIC0tc3BhY2luZy14czogI3t2YXJzLiRzcGFjaW5nLXhzfTsKICAtLXNwYWNpbmctczogI3t2YXJzLiRzcGFjaW5nLXN9OwogIC0tc3BhY2luZy1tOiAje3ZhcnMuJHNwYWNpbmctbX07CiAgLS1zcGFjaW5nLWw6ICN7dmFycy4kc3BhY2luZy1sfTsKICAtLXNwYWNpbmcteGw6ICN7dmFycy4kc3BhY2luZy14bH07CiAgLS1zcGFjaW5nLXh4bDogI3t2YXJzLiRzcGFjaW5nLXh4bH07CiAgLS1ib3JkZXItcmFkaXVzLWJhc2U6ICN7dmFycy4kYm9yZGVyLXJhZGl1cy1iYXNlfTsKICAtLWJvcmRlci1yYWRpdXMtc21hbGw6ICN7dmFycy4kYm9yZGVyLXJhZGl1cy1zbWFsbH07CiAgLS1ib3JkZXItcmFkaXVzLWxhcmdlOiAje3ZhcnMuJGJvcmRlci1yYWRpdXMtbGFyZ2V9OwogIA",
@@ -1417,10 +1555,17 @@
 					},
 					"AgAAAFgJAAAAAAAAWQkAAAAAAAAAAAAAWQkAAAAAAABaCQAAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAAWAkAAAAAAABYCQAAAAAAAAAAAAAAAPC/"
+=======
+					"revert",
+					null,
+					"AgAAAAAAAAAAAAAAAAAAAAAAAACoAAAAewoJImZvbGRlcnMiOgoJWwoJCXsKCQkJInBhdGgiOiAiLiIKCQkgICAgICAiZm9sZGVyX2V4Y2x1ZGVfcGF0dGVybnMiOgogICAgICBbCiAgICAgICAgIm5vZGVfbW9kdWxlcyIsCiAgICAgICAgImRpc3QiLAogICAgICAgICJidWlsZCIsCiAgICAgICAgIi5naXQiCiAgICAgIF0KCQl9CgldCn0KAAAAAAAAAACpAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAngAAAAAAAACeAAAAAAAAAAAAAAAAAPC/"
+>>>>>>> Stashed changes
 				]
 			]
 		},
 		{
+<<<<<<< Updated upstream
 			"file": "src/abstracts/_theme.scss",
 			"settings":
 			{
@@ -1469,14 +1614,30 @@
 					"AQAAAAAAAAABAAAAhw8AAAAAAAAOEAAAAAAAAAAAAAAAAPC/"
 				]
 			]
+=======
+			"contents": "Searching 41 files for \"box\\-shadow\" (regex)\n\nC:\\Users\\user\\Documents\\dapocss\\src\\abstracts\\_mixins.scss:\n  108:     box-shadow vars.$animation-duration vars.$transition-timing,\n  135:   &:focus {box-shadow: 0 0 0 2px var(--focus); }\n  144: @mixin focus-ring {box-shadow: 0 0 0 2px var(--focus); }\n  216: @mixin set-hover {transform: translateY(-5px); box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\components\\_forms.scss:\n   80:     box-shadow: 0 0 0 2px var(--secondary-focus);\n  103:     box-shadow: 0 0 0 2px var(--secondary-focus);\n  227:     box-shadow: 0 1px 1px #000, 0 0 1px #0d0d0d;\n  251:     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;\n  272:     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;\n  279:     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;\n  283:     box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;\n\nC:\\Users\\user\\Documents\\dapocss\\src\\components\\_link.scss:\n   26:     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);\n   29:   &:active {transform: translateY(0); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); }\n   66:   &:hover {transform: none; box-shadow: none; }\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_card.scss:\n   12:     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n\nC:\\Users\\user\\Documents\\dapocss\\src\\layout\\_modifier.scss:\n   10: grid[hover] > stack-grid {transition: transform 0.3s ease, box-shadow 0.3s ease; }\n\n16 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 1403,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+>>>>>>> Stashed changes
 		},
 		{
 			"file": "src/components/_content.scss",
 			"settings":
 			{
+<<<<<<< Updated upstream
 				"buffer_size": 2865,
 				"encoding": "UTF-8",
 				"line_ending": "Windows"
+=======
+				"buffer_size": 2786,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+>>>>>>> Stashed changes
 			},
 			"undo_stack":
 			[
@@ -1486,7 +1647,11 @@
 					"join_lines",
 					null,
 					"BgAAAHQGAAAAAAAAdAYAAAAAAAAFAAAACiAgICCCBgAAAAAAAIMGAAAAAAAABQAAAAogICAgggYAAAAAAACCBgAAAAAAAAEAAAAgggYAAAAAAACDBgAAAAAAAAUAAAAKICAgIIwGAAAAAAAAjAYAAAAAAAAHAAAACiAgICAgIKAGAAAAAAAAoQYAAAAAAAAFAAAACiAgICA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHQGAAAAAAAAdAYAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB0BgAAAAAAAHQGAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					4,
@@ -1494,7 +1659,11 @@
 					"join_lines",
 					null,
 					"AQAAAKIGAAAAAAAAowYAAAAAAAADAAAACiAg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKAGAAAAAAAAoAYAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACgBgAAAAAAAKAGAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					7,
@@ -1502,7 +1671,11 @@
 					"join_lines",
 					null,
 					"AgAAALkGAAAAAAAAuQYAAAAAAAAFAAAACiAgICDKBgAAAAAAAMsGAAAAAAAAAwAAAAogIA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALkGAAAAAAAAuQYAAAAAAAAAAAAAAFB6QA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC5BgAAAAAAALkGAAAAAAAAAAAAAABQekA"
+>>>>>>> Stashed changes
 				],
 				[
 					9,
@@ -1510,7 +1683,11 @@
 					"join_lines",
 					null,
 					"AgAAAOMGAAAAAAAA4wYAAAAAAAAFAAAACiAgICDxBgAAAAAAAPIGAAAAAAAAAwAAAAogIA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOMGAAAAAAAA4wYAAAAAAAAAAAAAAGBvQA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADjBgAAAAAAAOMGAAAAAAAAAAAAAABgb0A"
+>>>>>>> Stashed changes
 				],
 				[
 					13,
@@ -1518,7 +1695,11 @@
 					"join_lines",
 					null,
 					"AwAAAJkHAAAAAAAAmgcAAAAAAAADAAAACiAgowcAAAAAAACjBwAAAAAAAAUAAAAKICAgIL4HAAAAAAAAvwcAAAAAAAADAAAACiAg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJkHAAAAAAAAmQcAAAAAAAAAAAAAAIBuQA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACZBwAAAAAAAJkHAAAAAAAAAAAAAACAbkA"
+>>>>>>> Stashed changes
 				],
 				[
 					15,
@@ -1526,7 +1707,11 @@
 					"join_lines",
 					null,
 					"AgAAAOEHAAAAAAAA4QcAAAAAAAAFAAAACiAgICD5BwAAAAAAAPoHAAAAAAAAAwAAAAogIA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAOEHAAAAAAAA4QcAAAAAAAAAAAAAALB1QA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADhBwAAAAAAAOEHAAAAAAAAAAAAAACwdUA"
+>>>>>>> Stashed changes
 				],
 				[
 					20,
@@ -1536,7 +1721,11 @@
 						"characters": "-bo"
 					},
 					"AwAAAGMJAAAAAAAAZAkAAAAAAAAAAAAAZAkAAAAAAABlCQAAAAAAAAAAAABlCQAAAAAAAGYJAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAGMJAAAAAAAAYwkAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABjCQAAAAAAAGMJAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					21,
@@ -1546,7 +1735,11 @@
 						"characters": "dy"
 					},
 					"AgAAAGYJAAAAAAAAZwkAAAAAAAAAAAAAZwkAAAAAAABoCQAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAGYJAAAAAAAAZgkAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABmCQAAAAAAAGYJAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					26,
@@ -1556,7 +1749,11 @@
 						"characters": "--block"
 					},
 					"BwAAAIMIAAAAAAAAhAgAAAAAAAAQAAAALS1iYWNrZ3JvdW5kLWFsdIQIAAAAAAAAhQgAAAAAAAAAAAAAhQgAAAAAAACGCAAAAAAAAAAAAACGCAAAAAAAAIcIAAAAAAAAAAAAAIcIAAAAAAAAiAgAAAAAAAAAAAAAiAgAAAAAAACJCAAAAAAAAAAAAACJCAAAAAAAAIoIAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIMIAAAAAAAAkwgAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACDCAAAAAAAAJMIAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					27,
@@ -1566,7 +1763,11 @@
 						"characters": "-bg"
 					},
 					"AwAAAIoIAAAAAAAAiwgAAAAAAAAAAAAAiwgAAAAAAACMCAAAAAAAAAAAAACMCAAAAAAAAI0IAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIoIAAAAAAAAiggAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACKCAAAAAAAAIoIAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					32,
@@ -1576,7 +1777,11 @@
 						"characters": "-color"
 					},
 					"BgAAAAIJAAAAAAAAAwkAAAAAAAAAAAAAAwkAAAAAAAAECQAAAAAAAAAAAAAECQAAAAAAAAUJAAAAAAAAAAAAAAUJAAAAAAAABgkAAAAAAAAAAAAABgkAAAAAAAAHCQAAAAAAAAAAAAAHCQAAAAAAAAgJAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAIJAAAAAAAAAgkAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAACCQAAAAAAAAIJAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					41,
@@ -1584,7 +1789,11 @@
 					"join_lines",
 					null,
 					"BAAAABwKAAAAAAAAHAoAAAAAAAAFAAAACiAgICAyCgAAAAAAADMKAAAAAAAABQAAAAogICAgVgoAAAAAAABXCgAAAAAAAAUAAAAKICAgIHIKAAAAAAAAcwoAAAAAAAADAAAACiAg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABwKAAAAAAAAHAoAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAcCgAAAAAAABwKAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					43,
@@ -1592,6 +1801,7 @@
 					"join_lines",
 					null,
 					"BAAAAIcKAAAAAAAAhwoAAAAAAAAFAAAACiAgICCdCgAAAAAAAJ4KAAAAAAAABQAAAAogICAgwQoAAAAAAADCCgAAAAAAAAUAAAAKICAgIN0KAAAAAAAA3goAAAAAAAADAAAACiAg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIcKAAAAAAAAhwoAAAAAAAAAAAAAACiJQA"
 				],
 				[
@@ -1621,6 +1831,29 @@
 					null,
 					"AQAAAPQCAAAAAAAA9AIAAAAAAAADAAAACiAg",
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAPQCAAAAAAAA9AIAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACHCgAAAAAAAIcKAAAAAAAAAAAAAAAoiUA"
+				]
+			]
+		},
+		{
+			"file": "src/components/_forms.scss",
+			"settings":
+			{
+				"buffer_size": 7242,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"join_lines",
+					null,
+					"AQAAAPQCAAAAAAAA9AIAAAAAAAADAAAACiAg",
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAD0AgAAAAAAAPQCAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					7,
@@ -1628,7 +1861,11 @@
 					"join_lines",
 					null,
 					"AgAAAB4DAAAAAAAAHgMAAAAAAAAFAAAACiAgICA5AwAAAAAAADoDAAAAAAAAAwAAAAogIA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABoDAAAAAAAAGgMAAAAAAAAAAAAAAABKQA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAaAwAAAAAAABoDAAAAAAAAAAAAAAAASkA"
+>>>>>>> Stashed changes
 				],
 				[
 					10,
@@ -1636,7 +1873,11 @@
 					"join_lines",
 					null,
 					"BAAAAFEEAAAAAAAAUQQAAAAAAAAFAAAACiAgICBdBAAAAAAAAF4EAAAAAAAAAwAAAAogIF8EAAAAAAAAYAQAAAAAAAADAAAACiAgXwQAAAAAAABfBAAAAAAAAAEAAAAg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAFEEAAAAAAAAUQQAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABRBAAAAAAAAFEEAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					12,
@@ -1644,7 +1885,11 @@
 					"join_lines",
 					null,
 					"AwAAAHEEAAAAAAAAcQQAAAAAAAAFAAAACiAgICCCBAAAAAAAAIMEAAAAAAAABQAAAAogICAgkQQAAAAAAACSBAAAAAAAAAMAAAAKICA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHEEAAAAAAAAcQQAAAAAAAAAAAAAAKBsQA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABxBAAAAAAAAHEEAAAAAAAAAAAAAACgbEA"
+>>>>>>> Stashed changes
 				],
 				[
 					14,
@@ -1652,7 +1897,11 @@
 					"join_lines",
 					null,
 					"AgAAAKIEAAAAAAAAogQAAAAAAAAFAAAACiAgICC9BAAAAAAAAL4EAAAAAAAAAwAAAAogIA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKIEAAAAAAAAogQAAAAAAAAAAAAAAKB2QA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACiBAAAAAAAAKIEAAAAAAAAAAAAAACgdkA"
+>>>>>>> Stashed changes
 				],
 				[
 					33,
@@ -1662,7 +1911,11 @@
 						"characters": "--bor"
 					},
 					"BQAAAHMJAAAAAAAAdAkAAAAAAAALAAAALS1zZWNvbmRhcnl0CQAAAAAAAHUJAAAAAAAAAAAAAHUJAAAAAAAAdgkAAAAAAAAAAAAAdgkAAAAAAAB3CQAAAAAAAAAAAAB3CQAAAAAAAHgJAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHMJAAAAAAAAfgkAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzCQAAAAAAAH4JAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					35,
@@ -1676,7 +1929,11 @@
 						"trigger": "--border-color"
 					},
 					"AgAAAHMJAAAAAAAAcwkAAAAAAAAFAAAALS1ib3JzCQAAAAAAAIEJAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHgJAAAAAAAAeAkAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB4CQAAAAAAAHgJAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					40,
@@ -1686,7 +1943,11 @@
 						"characters": "--"
 					},
 					"AgAAAK0JAAAAAAAArgkAAAAAAAALAAAALS1zZWNvbmRhcnmuCQAAAAAAAK8JAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAK0JAAAAAAAAuAkAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACtCQAAAAAAALgJAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					41,
@@ -1696,7 +1957,11 @@
 						"characters": "bg-the"
 					},
 					"BgAAAK8JAAAAAAAAsAkAAAAAAAAAAAAAsAkAAAAAAACxCQAAAAAAAAAAAACxCQAAAAAAALIJAAAAAAAAAAAAALIJAAAAAAAAswkAAAAAAAAAAAAAswkAAAAAAAC0CQAAAAAAAAAAAAC0CQAAAAAAALUJAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAK8JAAAAAAAArwkAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACvCQAAAAAAAK8JAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					42,
@@ -1706,7 +1971,11 @@
 						"characters": "me"
 					},
 					"AgAAALUJAAAAAAAAtgkAAAAAAAAAAAAAtgkAAAAAAAC3CQAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALUJAAAAAAAAtQkAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC1CQAAAAAAALUJAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					65,
@@ -1714,7 +1983,11 @@
 					"join_lines",
 					null,
 					"BAAAAA0MAAAAAAAADQwAAAAAAAADAAAACiAgHgwAAAAAAAAfDAAAAAAAAAMAAAAKICAsDAAAAAAAAC0MAAAAAAAAAwAAAAogID0MAAAAAAAAPgwAAAAAAAABAAAACg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAA0MAAAAAAAADQwAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAANDAAAAAAAAA0MAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					67,
@@ -1722,7 +1995,11 @@
 					"join_lines",
 					null,
 					"BAAAAFgMAAAAAAAAWQwAAAAAAAABAAAACm4MAAAAAAAAbgwAAAAAAAADAAAACiAgegwAAAAAAAB7DAAAAAAAAAMAAAAKICCGDAAAAAAAAIcMAAAAAAAAAQAAAAo",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAFgMAAAAAAAAWAwAAAAAAAAAAAAAAOB/QA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABYDAAAAAAAAFgMAAAAAAAAAAAAAADgf0A"
+>>>>>>> Stashed changes
 				],
 				[
 					69,
@@ -1730,7 +2007,11 @@
 					"join_lines",
 					null,
 					"AgAAAJ8MAAAAAAAAnwwAAAAAAAADAAAACiAgswwAAAAAAAC0DAAAAAAAAAEAAAAK",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJ8MAAAAAAAAnwwAAAAAAAAAAAAAAOB/QA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACfDAAAAAAAAJ8MAAAAAAAAAAAAAADgf0A"
+>>>>>>> Stashed changes
 				],
 				[
 					71,
@@ -1738,7 +2019,11 @@
 					"join_lines",
 					null,
 					"AgAAACINAAAAAAAAIg0AAAAAAAADAAAACiAgNg0AAAAAAAA3DQAAAAAAAAEAAAAK",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAACINAAAAAAAAIg0AAAAAAAAAAAAAAPByQA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAiDQAAAAAAACINAAAAAAAAAAAAAADwckA"
+>>>>>>> Stashed changes
 				],
 				[
 					73,
@@ -1746,7 +2031,11 @@
 					"join_lines",
 					null,
 					"BAAAAEENAAAAAAAAQQ0AAAAAAAADAAAACiAgWA0AAAAAAABZDQAAAAAAAAMAAAAKICBsDQAAAAAAAG0NAAAAAAAAAwAAAAogIIMNAAAAAAAAhA0AAAAAAAABAAAACg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAEENAAAAAAAAQQ0AAAAAAAAAAAAAAOBoQA"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABBDQAAAAAAAEENAAAAAAAAAAAAAADgaEA"
+>>>>>>> Stashed changes
 				],
 				[
 					78,
@@ -1756,7 +2045,11 @@
 						"characters": "-"
 					},
 					"AQAAABUPAAAAAAAAFg8AAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABUPAAAAAAAAFQ8AAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAVDwAAAAAAABUPAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					79,
@@ -1770,7 +2063,11 @@
 						"trigger": "--background-body"
 					},
 					"AgAAAAkPAAAAAAAACQ8AAAAAAAANAAAALS1iYWNrZ3JvdW5kLQkPAAAAAAAAGg8AAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAABYPAAAAAAAAFg8AAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAWDwAAAAAAABYPAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					84,
@@ -1778,7 +2075,11 @@
 					"join_lines",
 					null,
 					"AgAAAIMPAAAAAAAAgw8AAAAAAAAFAAAACiAgICCRDwAAAAAAAJIPAAAAAAAAAwAAAAogIA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAIMPAAAAAAAAgw8AAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACDDwAAAAAAAIMPAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					87,
@@ -1786,7 +2087,11 @@
 					"join_lines",
 					null,
 					"BAAAAKYPAAAAAAAApg8AAAAAAAAFAAAACiAgICC6DwAAAAAAALsPAAAAAAAABQAAAAogICAg0g8AAAAAAADTDwAAAAAAAAUAAAAKICAgIOQPAAAAAAAA5Q8AAAAAAAADAAAACiAg",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAKYPAAAAAAAApg8AAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACmDwAAAAAAAKYPAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					96,
@@ -1794,7 +2099,11 @@
 					"join_lines",
 					null,
 					"AwAAANITAAAAAAAA0hMAAAAAAAADAAAACiAg7BMAAAAAAADtEwAAAAAAAAMAAAAKICD+EwAAAAAAAP8TAAAAAAAAAQAAAAo",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAANITAAAAAAAA0hMAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADSEwAAAAAAANITAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					99,
@@ -1802,7 +2111,11 @@
 					"join_lines",
 					null,
 					"AgAAAM4UAAAAAAAAzhQAAAAAAAAFAAAACiAgICDcFAAAAAAAAN0UAAAAAAAAAwAAAAogIA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAM4UAAAAAAAAzhQAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAADOFAAAAAAAAM4UAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					102,
@@ -1812,7 +2125,11 @@
 						"characters": "-b"
 					},
 					"AgAAAJIVAAAAAAAAkxUAAAAAAAAAAAAAkxUAAAAAAACUFQAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJIVAAAAAAAAkhUAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACSFQAAAAAAAJIVAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					103,
@@ -1826,7 +2143,11 @@
 						"trigger": "--background-body"
 					},
 					"AgAAAIYVAAAAAAAAhhUAAAAAAAAOAAAALS1iYWNrZ3JvdW5kLWKGFQAAAAAAAJcVAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJQVAAAAAAAAlBUAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACUFQAAAAAAAJQVAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					106,
@@ -1836,7 +2157,11 @@
 						"characters": "-co"
 					},
 					"AwAAAHMWAAAAAAAAdBYAAAAAAAAAAAAAdBYAAAAAAAB1FgAAAAAAAAAAAAB1FgAAAAAAAHYWAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHMWAAAAAAAAcxYAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABzFgAAAAAAAHMWAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					107,
@@ -1850,7 +2175,11 @@
 						"trigger": "--border-color"
 					},
 					"AgAAAGsWAAAAAAAAaxYAAAAAAAALAAAALS1ib3JkZXItY29rFgAAAAAAAHkWAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAHYWAAAAAAAAdhYAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAB2FgAAAAAAAHYWAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					112,
@@ -1860,7 +2189,11 @@
 						"characters": "-b"
 					},
 					"AgAAAAIXAAAAAAAAAxcAAAAAAAAAAAAAAxcAAAAAAAAEFwAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAIXAAAAAAAAAhcAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAACFwAAAAAAAAIXAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					113,
@@ -1874,7 +2207,11 @@
 						"trigger": "--background-body"
 					},
 					"AgAAAPYWAAAAAAAA9hYAAAAAAAAOAAAALS1iYWNrZ3JvdW5kLWL2FgAAAAAAAAcXAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAAQXAAAAAAAABBcAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAEFwAAAAAAAAQXAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					120,
@@ -1884,7 +2221,11 @@
 						"characters": "-b"
 					},
 					"AgAAALIXAAAAAAAAsxcAAAAAAAAAAAAAsxcAAAAAAAC0FwAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALIXAAAAAAAAshcAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACyFwAAAAAAALIXAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					121,
@@ -1898,7 +2239,11 @@
 						"trigger": "--background-body"
 					},
 					"AgAAAKYXAAAAAAAAphcAAAAAAAAOAAAALS1iYWNrZ3JvdW5kLWKmFwAAAAAAALcXAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAALQXAAAAAAAAtBcAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAC0FwAAAAAAALQXAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					125,
@@ -1908,7 +2253,11 @@
 						"characters": "-co"
 					},
 					"AwAAAJEYAAAAAAAAkhgAAAAAAAAAAAAAkhgAAAAAAACTGAAAAAAAAAAAAACTGAAAAAAAAJQYAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJEYAAAAAAAAkRgAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACRGAAAAAAAAJEYAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					126,
@@ -1922,7 +2271,11 @@
 						"trigger": "--border-color"
 					},
 					"AgAAAIkYAAAAAAAAiRgAAAAAAAALAAAALS1ib3JkZXItY2+JGAAAAAAAAJcYAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAJQYAAAAAAAAlBgAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACUGAAAAAAAAJQYAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					137,
@@ -1932,7 +2285,11 @@
 						"characters": "-bo"
 					},
 					"DAAAADAcAAAAAAAAMRwAAAAAAAAAAAAA6hsAAAAAAADrGwAAAAAAAAAAAABhGgAAAAAAAGIaAAAAAAAAAAAAAJ8ZAAAAAAAAoBkAAAAAAAAAAAAANBwAAAAAAAA1HAAAAAAAAAAAAADtGwAAAAAAAO4bAAAAAAAAAAAAAGMaAAAAAAAAZBoAAAAAAAAAAAAAoBkAAAAAAAChGQAAAAAAAAAAAAA4HAAAAAAAADkcAAAAAAAAAAAAAPAbAAAAAAAA8RsAAAAAAAAAAAAAZRoAAAAAAABmGgAAAAAAAAAAAAChGQAAAAAAAKIZAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAABAAAAJ8ZAAAAAAAAnxkAAAAAAAAAAAAAAADwv2EaAAAAAAAAYRoAAAAAAAAAAAAAAADwv+obAAAAAAAA6hsAAAAAAAAAAAAAAADwvzAcAAAAAAAAMBwAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAQAAACfGQAAAAAAAJ8ZAAAAAAAAAAAAAAAA8L9hGgAAAAAAAGEaAAAAAAAAAAAAAAAA8L/qGwAAAAAAAOobAAAAAAAAAAAAAAAA8L8wHAAAAAAAADAcAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					138,
@@ -1942,7 +2299,11 @@
 						"characters": "dy"
 					},
 					"CAAAADwcAAAAAAAAPRwAAAAAAAAAAAAA8xsAAAAAAAD0GwAAAAAAAAAAAABnGgAAAAAAAGgaAAAAAAAAAAAAAKIZAAAAAAAAoxkAAAAAAAAAAAAAQBwAAAAAAABBHAAAAAAAAAAAAAD2GwAAAAAAAPcbAAAAAAAAAAAAAGkaAAAAAAAAahoAAAAAAAAAAAAAoxkAAAAAAACkGQAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAABAAAAKIZAAAAAAAAohkAAAAAAAAAAAAAAADwv2caAAAAAAAAZxoAAAAAAAAAAAAAAADwv/MbAAAAAAAA8xsAAAAAAAAAAAAAAADwvzwcAAAAAAAAPBwAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAQAAACiGQAAAAAAAKIZAAAAAAAAAAAAAAAA8L9nGgAAAAAAAGcaAAAAAAAAAAAAAAAA8L/zGwAAAAAAAPMbAAAAAAAAAAAAAAAA8L88HAAAAAAAADwcAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					147,
@@ -1952,7 +2313,11 @@
 						"characters": "-color"
 					},
 					"BgAAAK4bAAAAAAAArxsAAAAAAAAAAAAArxsAAAAAAACwGwAAAAAAAAAAAACwGwAAAAAAALEbAAAAAAAAAAAAALEbAAAAAAAAshsAAAAAAAAAAAAAshsAAAAAAACzGwAAAAAAAAAAAACzGwAAAAAAALQbAAAAAAAAAAAAAA",
+<<<<<<< Updated upstream
 					"AwAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA8L8AAAAAAQAAAK4bAAAAAAAArhsAAAAAAAAAAAAAAADwvw"
+=======
+					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAACuGwAAAAAAAK4bAAAAAAAAAAAAAAAA8L8"
+>>>>>>> Stashed changes
 				],
 				[
 					47,
@@ -1960,7 +2325,11 @@
 					"join_lines",
 					null,
 					"AgAAABMCAAAAAAAAEwIAAAAAAAADAAAACiAgIwIAAAAAAAAkAgAAAAAAAAEAAAAK",
+<<<<<<< Updated upstream
 					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAATAgAAAAAAABMCAAAAAAAAAAAAAAAA8L8"
+=======
+					"AQAAAAAAAAABAAAAEwIAAAAAAAATAgAAAAAAAAAAAAAAAPC/"
+>>>>>>> Stashed changes
 				],
 				[
 					49,
@@ -1968,7 +2337,11 @@
 					"join_lines",
 					null,
 					"AwAAAC0CAAAAAAAALgIAAAAAAAABAAAACjYCAAAAAAAANgIAAAAAAAADAAAACiAgRQIAAAAAAABGAgAAAAAAAAEAAAAK",
+<<<<<<< Updated upstream
 					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAAAtAgAAAAAAAC0CAAAAAAAAAAAAAAAQcUA"
+=======
+					"AQAAAAAAAAABAAAALQIAAAAAAAAtAgAAAAAAAAAAAAAAEHFA"
+>>>>>>> Stashed changes
 				],
 				[
 					51,
@@ -1976,6 +2349,7 @@
 					"join_lines",
 					null,
 					"AwAAAFsCAAAAAAAAXAIAAAAAAAABAAAACmwCAAAAAAAAbAIAAAAAAAADAAAACiAgfQIAAAAAAAB+AgAAAAAAAAEAAAAK",
+<<<<<<< Updated upstream
 					"AgAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/AAAAAAEAAABbAgAAAAAAAFsCAAAAAAAAAAAAAADAa0A"
 				],
 				[
@@ -1985,6 +2359,9 @@
 					null,
 					"AgAAAAAAAAAAAAAAAAAAAAAAAABKHAAALy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KLy8gRk9STVMgJiBJTlRFUkFDVElWRSBFTEVNRU5UUwovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQoKQHVzZSAnLi4vYWJzdHJhY3RzL3ZhcmlhYmxlcycgYXMgdmFyczsKQHVzZSAnLi4vYWJzdHJhY3RzL21peGlucycgYXMgbWl4aW5zOwoKLy8gRm9ybSBFbGVtZW50IEJhc2UgQmVoYXZpb3IKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KYnV0dG9uLApzZWxlY3QsCmlucHV0W3R5cGU9J3N1Ym1pdCddLAppbnB1dFt0eXBlPSdyZXNldCddLAppbnB1dFt0eXBlPSdidXR0b24nXSwKaW5wdXRbdHlwZT0nY2hlY2tib3gnXSwKaW5wdXRbdHlwZT0ncmFuZ2UnXSwKaW5wdXRbdHlwZT0ncmFkaW8nXSB7Y3Vyc29yOiBwb2ludGVyOyB9CgppbnB1dCwgc2VsZWN0IHtkaXNwbGF5OiBibG9jazsgfQoKW3R5cGU9J2NoZWNrYm94J10sIFt0eXBlPSdyYWRpbyddIHtkaXNwbGF5OiBpbml0aWFsOyB9CgovLyBJbnB1dCBFbGVtZW50cwovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQppbnB1dCB7QGluY2x1ZGUgbWl4aW5zLmlucHV0LWJhc2U7CiAgCiAgJjpmb2N1cyB7QGluY2x1ZGUgbWl4aW5zLmZvY3VzLXJpbmc7IH0KICAKICBAaW5jbHVkZSBtaXhpbnMuZGlzYWJsZWQtc3RhdGU7Cn0KCi8vIFRleHRhcmVhCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CnRleHRhcmVhIHsKICBAaW5jbHVkZSBtaXhpbnMuaW5wdXQtYmFzZTsKICBkaXNwbGF5OiBibG9jazsKICBtYXJnaW4tcmlnaHQ6IDA7CiAgYm94LXNpemluZzogYm9yZGVyLWJveDsKICByZXNpemU6IHZlcnRpY2FsOwogIAogICY6bm90KFtjb2xzXSkge3dpZHRoOiAxMDAlOyB9CiAgJjpub3QoW3Jvd3NdKSB7bWluLWhlaWdodDogNDBweDsgaGVpZ2h0OiAxNDBweDsgfQogIAogICY6Zm9jdXMge0BpbmNsdWRlIG1peGlucy5mb2N1cy1yaW5nOyB9CiAgCiAgQGluY2x1ZGUgbWl4aW5zLmRpc2FibGVkLXN0YXRlOwp9CgovLyBCdXR0b24gRWxlbWVudHMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KYnV0dG9uIHsKICBAaW5jbHVkZSBtaXhpbnMuYnV0dG9uLWJhc2U7CiAgcGFkZGluZy1yaWdodDogMTZweDsKICBwYWRkaW5nLWxlZnQ6IDE2cHg7CiAganVzdGlmeS1zZWxmOiBzdGFydDsKICAmOmhvdmVyIHsKICAgIGJvcmRlcjogMXB4IHZhcigtLXByaW1hcnkpIHNvbGlkOwogICAgLy8gYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTsKICAgIGJhY2tncm91bmQtY29sb3I6IHRyYW5zcGFyZW50OwogIH0KICAKICBAaW5jbHVkZSBtaXhpbnMuZGlzYWJsZWQtc3RhdGU7Cn0KCi8vIFNlY29uZGFyeSBCdXR0b24gU3R5bGVzCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Ci5idG4tc2Vjb25kYXJ5IHsKICBAaW5jbHVkZSBtaXhpbnMuYnV0dG9uLWJhc2U7CiAgcGFkZGluZy1yaWdodDogMTZweDsKICBwYWRkaW5nLWxlZnQ6IDE2cHg7CiAgYmFja2dyb3VuZC1jb2xvcjogdmFyKC0tc2Vjb25kYXJ5KTsKICBjb2xvcjogdmFyKC0tdGV4dC1tYWluKTsKICAKICAmOmhvdmVyIHsKICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLXNlY29uZGFyeS1ob3Zlcik7CiAgICBib3JkZXI6IDFweCB2YXIoLS1zZWNvbmRhcnkpIHNvbGlkOwogIH0KICAKICAmOmZvY3VzIHsKICAgIGJveC1zaGFkb3c6IDAgMCAwIDJweCB2YXIoLS1zZWNvbmRhcnktZm9jdXMpOwogIH0KICAKICBAaW5jbHVkZSBtaXhpbnMuZGlzYWJsZWQtc3RhdGU7Cn0KCi8vIFNlY29uZGFyeSBCdXR0b24gT3V0bGluZSBTdHlsZQovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQouYnRuLXNlY29uZGFyeS1vdXRsaW5lIHsKICBAaW5jbHVkZSBtaXhpbnMuYnV0dG9uLWJhc2U7CiAgcGFkZGluZy1yaWdodDogMTZweDsKICBwYWRkaW5nLWxlZnQ6IDE2cHg7CiAgYmFja2dyb3VuZC1jb2xvcjogdHJhbnNwYXJlbnQ7CiAgLy8gY29sb3I6IHZhcigtLXNlY29uZGFyeSk7CiAgYm9yZGVyOiAxcHggc29saWQgdmFyKC0tYm9yZGVyLWNvbG9yKTsKICAKICAmOmhvdmVyIHsKICAgIGJhY2tncm91bmQtY29sb3I6IHZhcigtLWJnLXRoZW1lKTsKICAgIGNvbG9yOiB2YXIoLS10ZXh0LW1haW4pOwogICAgYm9yZGVyLWNvbG9yOiB2YXIoLS1zZWNvbmRhcnkpOwogIH0KICAKICAmOmZvY3VzIHsKICAgIGJveC1zaGFkb3c6IDAgMCAwIDJweCB2YXIoLS1zZWNvbmRhcnktZm9jdXMpOwogIH0KICAKICBAaW5jbHVkZSBtaXhpbnMuZGlzYWJsZWQtc3RhdGU7Cn0KCi8vIElucHV0IEJ1dHRvbiBUeXBlcwovLyA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PQppbnB1dFt0eXBlPSdzdWJtaXQnXSwKaW5wdXRbdHlwZT0ncmVzZXQnXSwKaW5wdXRbdHlwZT0nYnV0dG9uJ10gewogIEBpbmNsdWRlIG1peGlucy5idXR0b24taW5wdXQ7CiAgCiAgJjpmb2N1cyB7CiAgICBAaW5jbHVkZSBtaXhpbnMuZm9jdXMtcmluZzsKICB9CiAgCiAgQGluY2x1ZGUgbWl4aW5zLmRpc2FibGVkLXN0YXRlOwp9CgovLyBTcGVjaWFsIElucHV0IFR5cGVzCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CmlucHV0W3R5cGU9J2NvbG9yJ10ge21pbi1oZWlnaHQ6IDJyZW07IHBhZGRpbmc6IDhweDsgY3Vyc29yOiBwb2ludGVyOyB9CgppbnB1dFt0eXBlPSdjaGVja2JveCddLCBpbnB1dFt0eXBlPSdyYWRpbyddIHtoZWlnaHQ6IDFlbTsgd2lkdGg6IDFlbTsgfQoKaW5wdXRbdHlwZT0ncmFkaW8nXSB7Ym9yZGVyLXJhZGl1czogMTAwJTsgfQoKLy8gSW5wdXQgQWxpZ25tZW50Ci8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CmlucHV0IHt2ZXJ0aWNhbC1hbGlnbjogdG9wOyB9CgpsYWJlbCB7dmVydGljYWwtYWxpZ246IG1pZGRsZTsgbWFyZ2luLWJvdHRvbTogNHB4OyBkaXNwbGF5OiBpbmxpbmUtYmxvY2s7IH0KCi8vIEFwcGVhcmFuY2UgUmVzZXQKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KaW5wdXQ6bm90KFt0eXBlPSdjaGVja2JveCddKTpub3QoW3R5cGU9J3JhZGlvJ10pLAppbnB1dFt0eXBlPSdyYW5nZSddLApzZWxlY3QsCmJ1dHRvbiwKdGV4dGFyZWEgewogIC13ZWJraXQtYXBwZWFyYW5jZTogbm9uZTsKfQoKLy8gU2VsZWN0IEVsZW1lbnQKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0Kc2VsZWN0IHsKICBAaW5jbHVkZSBtaXhpbnMuaW5wdXQtYmFzZTsKICBiYWNrZ3JvdW5kOiB2YXIoLS1iYWNrZ3JvdW5kLWJvZHkpIHZhcigtLXNlbGVjdC1hcnJvdykgY2FsYygxMDAlIC0gMTJweCkgNTAlIC8gMTJweCBuby1yZXBlYXQ7CiAgcGFkZGluZy1yaWdodDogMzVweDsKICAKICAmOjotbXMtZXhwYW5kIHtkaXNwbGF5OiBub25lOyB9CiAgCiAgJlttdWx0aXBsZV0ge3BhZGRpbmctcmlnaHQ6IDEwcHg7IGJhY2tncm91bmQtaW1hZ2U6IG5vbmU7IG92ZXJmbG93LXk6IGF1dG87IH0KICAKICAmOmZvY3VzIHsKICAgIEBpbmNsdWRlIG1peGlucy5mb2N1cy1yaW5nOwogIH0KICAKICBAaW5jbHVkZSBtaXhpbnMuZGlzYWJsZWQtc3RhdGU7Cn0KCi8vIEFjdGl2ZSBTdGF0ZXMKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KaW5wdXRbdHlwZT0nY2hlY2tib3gnXTphY3RpdmUsCmlucHV0W3R5cGU9J3JhZGlvJ106YWN0aXZlLAppbnB1dFt0eXBlPSdzdWJtaXQnXTphY3RpdmUsCmlucHV0W3R5cGU9J3Jlc2V0J106YWN0aXZlLAppbnB1dFt0eXBlPSdidXR0b24nXTphY3RpdmUsCmlucHV0W3R5cGU9J3JhbmdlJ106YWN0aXZlLApidXR0b246YWN0aXZlIHsKICB0cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMnB4KTsKfQoKLy8gUGxhY2Vob2xkZXIgU3R5bGVzCi8vID09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09Cjo6LW1vei1wbGFjZWhvbGRlciB7CiAgY29sb3I6IHZhcigtLWZvcm0tcGxhY2Vob2xkZXIpOwp9Cgo6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsKICBjb2xvcjogdmFyKC0tZm9ybS1wbGFjZWhvbGRlcik7Cn0KCjo6LW1zLWlucHV0LXBsYWNlaG9sZGVyIHsKICBjb2xvcjogdmFyKC0tZm9ybS1wbGFjZWhvbGRlcik7Cn0KCjo6cGxhY2Vob2xkZXIgewogIGNvbG9yOiB2YXIoLS1mb3JtLXBsYWNlaG9sZGVyKTsKfQoKLy8gRmllbGRzZXQgJiBMZWdlbmQKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KZmllbGRzZXQgewogIEBpbmNsdWRlIG1peGlucy5ib3JkZXItYWNjZW50OwogIGJvcmRlci1yYWRpdXM6IHZhcnMuJGJvcmRlci1yYWRpdXMtYmFzZTsKICBtYXJnaW46IDA7CiAgbWFyZ2luLWJvdHRvbTogMTJweDsKICBwYWRkaW5nOiAxMHB4Owp9CgpsZWdlbmQge2ZvbnQtc2l6ZTogdmFyKC0tdGV4dC1zbSk7IGZvbnQtd2VpZ2h0OiA2MDA7IH0KCi8vIFJhbmdlIElucHV0IFN0eWxpbmcKLy8gPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0KaW5wdXRbdHlwZT0ncmFuZ2UnXSB7CiAgbWFyZ2luOiAxMHB4IDA7CiAgcGFkZGluZzogMTBweCAwOwogIGJhY2tncm91bmQ6IHRyYW5zcGFyZW50OwogIAogICY6Zm9jdXMge291dGxpbmU6IG5vbmU7IH0KICAKICAvLyBXZWJLaXQgc3R5bGVzCiAgJjo6LXdlYmtpdC1zbGlkZXItcnVubmFibGUtdHJhY2sgewogICAgd2lkdGg6IDEwMCU7CiAgICBoZWlnaHQ6IDkuNXB4OwogICAgLXdlYmtpdC10cmFuc2l0aW9uOiAwLjJzOwogICAgdHJhbnNpdGlvbjogMC4yczsKICAgIGJhY2tncm91bmQ6IHZhcigtLWJhY2tncm91bmQtYm9keSk7CiAgICBib3JkZXItcmFkaXVzOiB2YXJzLiRib3JkZXItcmFkaXVzLWxhcmdlOwogIH0KICAKICAmOjotd2Via2l0LXNsaWRlci10aHVtYiB7CiAgICBib3gtc2hhZG93OiAwIDFweCAxcHggIzAwMCwgMCAwIDFweCAjMGQwZDBkOwogICAgaGVpZ2h0OiAyMHB4OwogICAgd2lkdGg6IDIwcHg7CiAgICBib3JkZXItcmFkaXVzOiA1MCU7CiAgICBiYWNrZ3JvdW5kOiB2YXIoLS1ib3JkZXItY29sb3IpOwogICAgLXdlYmtpdC1hcHBlYXJhbmNlOiBub25lOwogICAgbWFyZ2luLXRvcDogLTdweDsKICB9CiAgCiAgJjpmb2N1czo6LXdlYmtpdC1zbGlkZXItcnVubmFibGUtdHJhY2sgewogICAgYmFja2dyb3VuZDogdmFyKC0tYmFja2dyb3VuZC1ib2R5KTsKICB9CiAgCiAgLy8gRmlyZWZveCBzdHlsZXMKICAmOjotbW96LXJhbmdlLXRyYWNrIHsKICAgIHdpZHRoOiAxMDAlOwogICAgaGVpZ2h0OiA5LjVweDsKICAgIC1tb3otdHJhbnNpdGlvbjogMC4yczsKICAgIHRyYW5zaXRpb246IDAuMnM7CiAgICBiYWNrZ3JvdW5kOiB2YXIoLS1iYWNrZ3JvdW5kLWJvZHkpOwogICAgYm9yZGVyLXJhZGl1czogdmFycy4kYm9yZGVyLXJhZGl1cy1sYXJnZTsKICB9CiAgCiAgJjo6LW1vei1yYW5nZS10aHVtYiB7CiAgICBib3gtc2hhZG93OiAxcHggMXB4IDFweCAjMDAwLCAwIDAgMXB4ICMwZDBkMGQ7CiAgICBoZWlnaHQ6IDIwcHg7CiAgICB3aWR0aDogMjBweDsKICAgIGJvcmRlci1yYWRpdXM6IDUwJTsKICAgIGJhY2tncm91bmQ6IHZhcigtLWJvcmRlci1jb2xvcik7CiAgfQogIAogIC8vIEludGVybmV0IEV4cGxvcmVyIHN0eWxlcwogICY6Oi1tcy10cmFjayB7CiAgICB3aWR0aDogMTAwJTsKICAgIGhlaWdodDogOS41cHg7CiAgICBiYWNrZ3JvdW5kOiB0cmFuc3BhcmVudDsKICAgIGJvcmRlci1jb2xvcjogdHJhbnNwYXJlbnQ7CiAgICBib3JkZXItd2lkdGg6IDE2cHggMDsKICAgIGNvbG9yOiB0cmFuc3BhcmVudDsKICB9CiAgCiAgJjo6LW1zLWZpbGwtbG93ZXIgewogICAgYmFja2dyb3VuZDogdmFyKC0tYmFja2dyb3VuZC1ib2R5KTsKICAgIGJvcmRlcjogMC4ycHggc29saWQgIzAxMDEwMTsKICAgIGJvcmRlci1yYWRpdXM6IHZhcnMuJGJvcmRlci1yYWRpdXMtbGFyZ2U7CiAgICBib3gtc2hhZG93OiAxcHggMXB4IDFweCAjMDAwLCAwIDAgMXB4ICMwZDBkMGQ7CiAgfQogIAogICY6Oi1tcy1maWxsLXVwcGVyIHsKICAgIGJhY2tncm91bmQ6IHZhcigtLWJhY2tncm91bmQtYm9keSk7CiAgICBib3JkZXI6IDAuMnB4IHNvbGlkICMwMTAxMDE7CiAgICBib3JkZXItcmFkaXVzOiB2YXJzLiRib3JkZXItcmFkaXVzLWxhcmdlOwogICAgYm94LXNoYWRvdzogMXB4IDFweCAxcHggIzAwMCwgMCAwIDFweCAjMGQwZDBkOwogIH0KICAKICAmOjotbXMtdGh1bWIgewogICAgYm94LXNoYWRvdzogMXB4IDFweCAxcHggIzAwMCwgMCAwIDFweCAjMGQwZDBkOwogICAgYm9yZGVyOiAxcHggc29saWQgIzAwMDsKICAgIGhlaWdodDogMjBweDsKICAgIHdpZHRoOiAyMHB4OwogICAgYm9yZGVyLXJhZGl1czogNTAlOwogICAgYmFja2dyb3VuZDogdmFyKC0tYm9yZGVyLWNvbG9yKTsKICB9CiAgCiAgJjpmb2N1czo6LW1zLWZpbGwtbG93ZXIgewogICAgYmFja2dyb3VuZDogdmFyKC0tYmFja2dyb3VuZC1ib2R5KTsKICB9CiAgCiAgJjpmb2N1czo6LW1zLWZpbGwtdXBwZXIgewogICAgYmFja2dyb3VuZDogdmFyKC0tYmFja2dyb3VuZC1ib2R5KTsKICB9Cn0KAAAAAAAAAAB4HAAAAAAAAAAAAAA",
 					"AQAAAAAAAAABAAAA4QcAAAAAAADrBwAAAAAAAAAAAAAAAPC/"
+=======
+					"AQAAAAAAAAABAAAAWwIAAAAAAABbAgAAAAAAAAAAAAAAwGtA"
+>>>>>>> Stashed changes
 				]
 			]
 		}
@@ -2087,6 +2464,7 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+<<<<<<< Updated upstream
 	"expanded_folders":
 	[
 		"/C/Users/user/Documents/dapocss",
@@ -2097,6 +2475,10 @@
 	"file_history":
 	[
 		"/C/Users/user/Documents/dapocss/dapocss.sublime-project",
+=======
+	"file_history":
+	[
+>>>>>>> Stashed changes
 		"/C/Users/user/Documents/dapocss/src/components/_tables.scss",
 		"/C/Users/user/Documents/dapocss/src/abstracts/_theme.scss",
 		"/C/Users/user/Documents/dapocss/src/abstracts/_variables.scss",
@@ -2234,7 +2616,10 @@
 		"height": 101.0,
 		"where_history":
 		[
+<<<<<<< Updated upstream
 			"",
+=======
+>>>>>>> Stashed changes
 			"-*legacy/*, -*dist/*",
 			"-*legacy/* -*dist/*",
 			"-*legacy/ -*dist/",
@@ -2247,10 +2632,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+<<<<<<< Updated upstream
 			"color",
 			"!important",
 			"background-color",
 			"background\\-color",
+=======
+>>>>>>> Stashed changes
 			"box\\-shadow",
 			"border\\-radius",
 			"box\\-shadow",
@@ -2295,7 +2683,11 @@
 					"semi_transient": false,
 					"settings":
 					{
+<<<<<<< Updated upstream
 						"buffer_size": 309,
+=======
+						"buffer_size": 179,
+>>>>>>> Stashed changes
 						"regions":
 						{
 						},
@@ -2304,6 +2696,7 @@
 							[
 								178,
 								178
+<<<<<<< Updated upstream
 							]
 						],
 						"settings":
@@ -2771,33 +3164,49 @@
 							[
 								133,
 								133
+=======
+>>>>>>> Stashed changes
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax"
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
+<<<<<<< Updated upstream
 					"stack_index": 0,
+=======
+					"stack_index": 5,
+>>>>>>> Stashed changes
 					"stack_multiselect": false,
 					"type": "text"
 				},
 				{
+<<<<<<< Updated upstream
 					"buffer": 5,
 					"file": "src/abstracts/_variables.scss",
 					"semi_transient": false,
 					"settings":
 					{
 						"buffer_size": 4996,
+=======
+					"buffer": 1,
+					"file": "src/abstracts/_mixins.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7123,
+>>>>>>> Stashed changes
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
+<<<<<<< Updated upstream
 								2294,
 								2294
 							]
@@ -2829,6 +3238,10 @@
 							[
 								2045,
 								2045
+=======
+								4624,
+								4634
+>>>>>>> Stashed changes
 							]
 						],
 						"settings":
@@ -2838,7 +3251,43 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+<<<<<<< Updated upstream
 						"translation.y": 1275.0,
+=======
+						"translation.y": 1875.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "dapocss.sublime-project",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 169,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								119,
+								119
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JSON/JSON.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+>>>>>>> Stashed changes
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -2873,6 +3322,175 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1403,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										117,
+										127
+									],
+									[
+										196,
+										206
+									],
+									[
+										260,
+										270
+									],
+									[
+										352,
+										362
+									],
+									[
+										469,
+										479
+									],
+									[
+										526,
+										536
+									],
+									[
+										583,
+										593
+									],
+									[
+										639,
+										649
+									],
+									[
+										697,
+										707
+									],
+									[
+										755,
+										765
+									],
+									[
+										813,
+										823
+									],
+									[
+										931,
+										941
+									],
+									[
+										1018,
+										1028
+									],
+									[
+										1097,
+										1107
+									],
+									[
+										1184,
+										1194
+									],
+									[
+										1352,
+										1362
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"line_numbers": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([^ \t].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/components/_content.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2786,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1722,
+								1722
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 750.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/components/_forms.scss",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7242,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2017,
+								2027
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/SCSS.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 900.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
 					"stack_multiselect": false,
 					"type": "text"
 				}
