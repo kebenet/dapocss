@@ -10,17 +10,25 @@
 // Text Color Placeholders
 //========================================
 
-%text-body {color: var(--text-body,vars.$text-body); }
-%text-theme {color: var(--text-theme, vars.$primary); }
+
+%bg-body {background-color: vars.$primary-100; }
+
+%text-body {color: vars.$text-body; }
+%text-muted {color: vars.$text-muted }
+%text-natural {color: vars.$text-body }
+
+%text-theme {color: vars.$primary; }
+%bg-theme {background-color: vars.$bg-theme }
+%block-theme {background-color: vars.$block-theme }
 
 %default-colored {color: vars.$default-colored; }
 %bg-default-colored {background-color: vars.$default-colored; }
+
 
 //========================================
 // Background Color Placeholders
 //========================================
 
-%bg-body {background-color: vars.$primary-100; }
 
 %color-primary {color: vars.$primary; }
 %bg-primary {background-color: vars.$primary; }
@@ -33,25 +41,28 @@
 %bg-secondary-100 {background-color: vars.$secondary-100; }
 %bg-secondary-200 {background-color: vars.$secondary-200; }
 %bg-secondary-300 {background-color: vars.$secondary-300; }
+
+
 %bg-transparent {background-color: transparent; }
 
 %highlight {@extend %bg-primary-100; @extend %default-colored; } // <-- 100 bg and colored text ect:kbd
 
 %bg-info, %bg-success, %bg-warning, %bg-danger , %bg-error
-{background-color: var(--block-theme, vars.$block-theme);}
+{background-color: vars.$block-theme}
 
-%info    { color: vars.$info-color; }
-%success { color: vars.$success-color; }
-%warning { color: vars.$warning-color; }
-%danger  { color: vars.$danger-color; }
-%error   { color: vars.$error-color; }
+%info    { color: vars.$info; }
+%success { color: vars.$success; }
+%warning { color: vars.$warning; }
+%danger  { color: vars.$danger; }
+%error   { color: vars.$danger; }
 
-%button-primary { @extend %bg-primary; color: var(--text-body, vars.$text-body); }
-%button-info    { background-color: vars.$info-color; color: var(--text-body, vars.$text-body); }
-%button-success { background-color: vars.$success-color; color: var(--text-body, vars.$text-body); }
-%button-warning { background-color: vars.$warning-color; color: var(--text-body, vars.$text-body); }
-%button-danger  { background-color: vars.$danger-color; color: var(--text-body, vars.$text-body); }
-%button-error   { background-color: vars.$error-color; color: var(--text-body, vars.$text-body); }
+%button-primary { @extend %bg-primary;@extend %text-body;  }
+
+%button-info    { background-color: vars.$info;    @extend %text-body; }
+%button-success { background-color: vars.$success; @extend %text-body; }
+%button-warning { background-color: vars.$warning; @extend %text-body; }
+%button-danger  { background-color: vars.$danger;  @extend %text-body; }
+%button-error   { background-color: vars.$danger;  @extend %text-body; }
 
 //========================================
 // Applying the Extensions
@@ -59,16 +70,18 @@
 //========================================
 
 // In _typography.scss
-//------------------------------------
+//----------------------------------------
 
 body {@extend %text-body; @extend %bg-body; }
-a {@extend %default-colored; }
-kbd {@extend %bg-primary-100; }
-mark {@extend %bg-primary; }
+a { @extend %bg-theme; @extend %default-colored; }
+kbd,mark {@extend %bg-primary-100; @extend %default-colored; }
 
-var,code, samp              {@extend %text-body; }
-h1, h2, h3, h4, h5, h6      {@extend %text-body; }
-title, subtitle, toptitle   {@extend %text-body; }
+
+var,code, samp      {@extend %text-body; }
+h1, h2, h3, h4      {@extend %text-body; }
+h5, h6, subtitle    {@extend %text-muted; }
+
+title, toptitle   {@extend %text-theme; }
 
 // In _forms.scss
 //------------------------------------

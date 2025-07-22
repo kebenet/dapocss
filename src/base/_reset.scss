@@ -7,11 +7,7 @@
 
 // Box Sizing Reset
 // =============================================================================
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
+*, *::before, *::after {box-sizing: border-box; }
 
 // Root Variables & Typography Scale
 // =============================================================================
@@ -35,24 +31,11 @@
 
 // Root Theme Variables
 // =============================================================================
-:root {
-  // Brand colors as CSS custom properties
-
-  
-  // Animation
-  
-  // Default theme colors
-  @include vars.default-theme-colors;
-  
-  // DARK THEME COLORS - COMMENTED OUT FOR FUTURE USE
-}
+:root {@include vars.default-theme-colors; }
 
 // Base HTML Element
 // =============================================================================
-html {
-  font-size: 100%;
-  @include mixins.scrollbar-styling;
-}
+html {font-size: 100%; @include mixins.scrollbar-styling; }
 
 // Body Element
 // =============================================================================
@@ -61,17 +44,11 @@ body {
   line-height: vars.$line-height-base;
   @include mixins.container;
   word-wrap: break-word;
-  color: var(--text-body);
-  background: var(--bg-body, vars.$bg-body);
   text-rendering: optimizeLegibility;
 }
 
 // Selection Styles
 // =============================================================================
-::-moz-selection {
-  @include mixins.selection-styles;
-}
+::-moz-selection {@include mixins.selection-styles; }
 
-::selection {
-  @include mixins.selection-styles;
-}
+::selection {@include mixins.selection-styles; }

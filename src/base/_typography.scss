@@ -22,10 +22,10 @@
 
 // Title heading
 // =============================================================================
-title, subtitle, toptitle{display:block;color:var(--text-theme);}
+title, toptitle{display:block;}
 
 title{font-size:var(--text-l); font-weight:700; }
-subtitle{font-size:var(--text-s); font-weight:200; color: var(--text-muted); }
+subtitle{font-size:var(--text-s); font-weight:200; }
 toptitle {font-size:var(--text-s); text-transform: uppercase; }
 
 toptitle b, subtitle b, title b {font-weight: bolder; }
@@ -40,7 +40,7 @@ h5 { font-size: var(--text-base);}
 h6 { font-size: var(--text-s); }
 
 // this heading is like p tags but for title-------------------------------------
-h5,h6 { font-weight: 200;color: var(--text-muted);letter-spacing:var(--spacing-xs); }
+h5,h6 { font-weight: 200;letter-spacing:var(--spacing-xs); }
 
 h1, h2, h3, h4, h5, h6 {
   @include mixins.heading-styles;
@@ -72,17 +72,6 @@ address {font-style: normal; }
 
 // Contact Links with Icons
 // =============================================================================
-a[href^='mailto:'] {
-  @include mixins.contact-icon('📧 ');
-}
-
-a[href^='tel:'] {
-  @include mixins.contact-icon('📞 ');
-}
-
-a[href^='sms:'] {
-  @include mixins.contact-icon('💬 ');
-}
 
 // Mark & Highlight
 // =============================================================================
@@ -95,19 +84,6 @@ mark {
 
 // Links
 // =============================================================================
-a {
-  text-decoration: none;
-  color: var(--text-theme);
-  
-  &:hover {
-    text-decoration: underline;
-  }
-  
-  > code,
-  > strong {
-    color: inherit;
-  }
-}
 
 // Code Elements
 // =============================================================================

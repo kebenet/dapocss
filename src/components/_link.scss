@@ -5,12 +5,23 @@
 // BUTTON-STYLE LINKS
 // =============================================================================
 
+a {text-decoration: none;
+  
+  &:hover {text-decoration: underline; }
+  
+  > code, > strong, > b {color: inherit; }
+}
+
+a[href^='mailto:'] {@include mixins.contact-icon('📧 '); }
+
+a[href^='tel:'] {@include mixins.contact-icon('📞 '); }
+
+a[href^='sms:'] {@include mixins.contact-icon('💬 '); }
+
 // Base button link styles
 a[button] {
   display: inline-block;
   padding: var(--spacing-s);
-  background-color: var(--bg-theme); // <-- empty color(bg-theme)
-  color: var(--text-body);
   text-decoration: none;
   border-radius: var(--border-radius-small);
   font-weight: var(--font-weight-bold);

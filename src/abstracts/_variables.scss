@@ -1,24 +1,56 @@
-// =============================================================================
-// DAPOCSS VARIABLES
-// =============================================================================
+/*!
+ * DAPOCSS v1.1.0
+ * A lightweight and modern CSS styling framework designed specifically for KEBENET
+ * 
+ * Built with Sass for better maintainability and scalability
+ * Copyright (c) 2025 KEBENET
+ * Licensed under MIT
+ */
+
+// Make variables and functions available to other files
+
+
+@function from($name) { @return var(--#{$name}, #{$name}); }
+@function themeof($name) { @return var(--#{$name}, #{$name}); }
+
+
+// This map will be applied to EVERY color in the $theme-colors map.
+$tints: (100: 0.08, 200: 0.20, 300: 0.44);
 
 
 // Theme Mixins (Using Generic Variables)
 // =============================================================================
 @mixin default-theme-colors {
 
-
   --font-family-base: #{$font-family-base};
   --font-family-mono: #{$font-family-mono};
 
-  --primary: #{$primary};
-  --primary-200: #{$primary-200};
-  --primary-300: #{$primary-300};
-  --primary-100: #{$primary-100};
-  --secondary: #{$secondary};
-  --secondary-100: #{$secondary-100};
-  --secondary-200: #{$secondary-200};
-  --secondary-300: #{$secondary-300};
+
+  --primary:#{$primary};
+  --primary-100:#{$primary-100};
+  --primary-200:#{$primary-200};
+  --primary-300:#{$primary-300};
+  --secondary:#{$secondary};
+  --secondary-100:#{$secondary-100};
+  --secondary-200:#{$secondary-200};
+  --secondary-300:#{$secondary-300};
+  --info:#{$info};
+  --info-100:#{$info-100};
+  --info-200:#{$info-200};
+  --info-300:#{$info-300};
+  --danger:#{$danger};
+  --danger-100:#{$danger-100};
+  --danger-200:#{$danger-200};
+  --danger-300:#{$danger-300};
+  --success:#{$success};
+  --success-100:#{$success-100};
+  --success-200:#{$success-200};
+  --success-300:#{$success-300};
+  --warning:#{$warning};
+  --warning-100:#{$warning-100};
+  --warning-200:#{$warning-200};
+  --warning-300:#{$warning-300};
+
 
   --bg-body: #{$bg-body};
   --bg-body-200: #{$bg-body-200};
@@ -27,11 +59,6 @@
   --text-body: #{$text-body};
   --text-muted: #{$text-muted};
 
-  --info-color:#{$info-color};
-  --success-color: #{$success-color};
-  --warning-color: #{$warning-color};
-  --danger-color: #{$danger-color};
-  --error-color: #{$error-color};
 
   // Our special dark background Color
   --renova: hsl(203, 36%, 12%); // #132129;
@@ -43,7 +70,6 @@
   --block-theme: #{$block-theme};
 
   --border-color:#{$border-color};
-  
   --focus-color: #{$focus-color} ;
   --selection: #{$selection-color};
   --highlight: #{$highlight-color};
@@ -51,9 +77,9 @@
   --form-placeholder: #{$form-placeholder};
 
   --button-hover: #{$button-hover};
-  --secondary: #{$secondary};
   --secondary-hover: #{$secondary-hover};
   --secondary-focus: #{$secondary-focus};
+
   --scrollbar-thumb: #{$scrollbar-thumb};
   --scrollbar-thumb-hover: #{$scrollbar-thumb-hover};
   --border-radius-base: #{$border-radius-base};
@@ -69,7 +95,35 @@
 
   --select-arrow: #{$select-arrow};
   --animation-duration: #{$animation-duration};
+
 }
+
+
+$primary: #2e9578;
+$primary-100: #2e957814;
+$primary-200: #2e957833;
+$primary-300: #2e957870;
+$secondary: #f4ae81;
+$secondary-100: #f4ae8114;
+$secondary-200: #f4ae8133;
+$secondary-300: #f4ae8170;
+$info: #70c9db;
+$info-100: #70c9db14;
+$info-200: #70c9db33;
+$info-300: #70c9db70;
+$danger: #dd3c3c;
+$danger-100: #dd3c3c14;
+$danger-200: #dd3c3c33;
+$danger-300: #dd3c3c70;
+$success: #2eb82e;
+$success-100: #2eb82e14;
+$success-200: #2eb82e33;
+$success-300: #2eb82e70;
+$warning: #f2b90d;
+$warning-100: #f2b90d14;
+$warning-200: #f2b90d33;
+$warning-300: #f2b90d70;
+
 
 
 // Build-time variables (keep as SASS variables)
@@ -112,16 +166,16 @@ $text-xxxl-large: 5.26rem;
 
 // Brand Colors (base values)
 // =============================================================================
-$primary: hsla(163, 53%, 38%, 1);
+// $primary: hsla(163, 53%, 38%, 1);
 
-$primary-100: hsla(163, 53%, 38%, 0.08);
-$primary-200: hsla(163, 53%, 38%, 0.20);
-$primary-300: hsla(163, 53%, 38%, 0.44);
+// $primary-100: hsla(163, 53%, 38%, 0.08);
+// $primary-200: hsla(163, 53%, 38%, 0.20);
+// $primary-300: hsla(163, 53%, 38%, 0.44);
 
-$secondary: hsla(23, 84%, 73%, 1);
-$secondary-100: hsla(23, 84%, 73%, 0.08);
-$secondary-200: hsla(23, 84%, 73%, 0.2);
-$secondary-300: hsla(23, 84%, 73%, 0.44);
+// $secondary: hsla(23, 84%, 73%, 1);
+// $secondary-100: hsla(23, 84%, 73%, 0.08);
+// $secondary-200: hsla(23, 84%, 73%, 0.2);
+// $secondary-300: hsla(23, 84%, 73%, 0.44);
 
 // Default Theme Colors
 // =============================================================================
@@ -133,32 +187,32 @@ $bg-body-300: $primary-300;
 // =============================================================================
 $text-body: #212121;
 $text-muted: #70777f;
-$default-colored:$primary; // <-- default colorable text|bg ect.. button-bg | a link color
+$default-colored: $primary; // <-- default colorable text|bg ect.. button-bg | a link color
 
 // this variable is for card inside element that can set different bg
-$text-theme: $text-body; // <-- flexible theming color
-$bg-theme: $primary; // <-- flexible theming bg
-$block-theme: white; // <-- default card bg
+$text-theme: varof($text-body); // <-- flexible theming color
+$bg-theme: $primary;    // <-- flexible theming bg
+$block-theme: white;    // <-- default card bg
 
 // Informative Color
 // =============================================================================
 
-$info-color: #00b0f4;
-$success-color: #11b76b;
-$warning-color: #ffa100;
-$danger-color: red;
-$error-color: var(--danger-color, $danger-color);
+// $info-color: #00b0f4;
+// $success-color: #11b76b;
+// $warning-color: #ffa100;
+// $danger-color: red;
+$error-color: $danger;
 
 // Default UI Colors
 // =============================================================================
 
 $focus-color: $primary-300;
 $selection-color: $primary-300;
-$highlight-color: $primary;
+$highlight-color: $primary-300;
 
 $border-color: $primary;
 
-$text-theme: $text-body;
+$text-theme: varof($text-body);
 $bg-theme: unset;
 
 
@@ -173,14 +227,9 @@ $form-placeholder: #949494;
 // Default Button Colors
 // =============================================================================
 
-$button-hover: $primary-300;
-
-
-// Default Secondary Button Colors
-// =============================================================================
-
-$secondary-hover: hsla(23, 84%, 65%, 1);
-$secondary-focus: hsla(23, 84%, 73%, 0.4);
+$button-hover: $primary-200;
+$secondary-hover: $secondary-200;
+$secondary-focus:$secondary-300;
 
 
 // Default Scrollbar Colors
@@ -188,7 +237,6 @@ $secondary-focus: hsla(23, 84%, 73%, 0.4);
 
 $scrollbar-thumb: $primary;
 $scrollbar-thumb-hover: $secondary;
-
 
 
 // Spacing variables (CSS variables)
@@ -227,6 +275,5 @@ $shadow-dark: #000;
 $shadow-light: #0d0d0d;
 $range-border: #010101;
 $transparent: transparent;
-
 
 

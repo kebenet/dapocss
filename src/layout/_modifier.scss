@@ -20,26 +20,26 @@ grid[hover] > stack-grid:hover {@include mixins.set-hover; }
 // These maps link the class name suffix to the color variable.
 // =============================================================================
 
-$background-colors: (
-  "light": vars.$bg-body,
-  "lighter": vars.$bg-body-300,
-  // "dark": vars.$bg-body-dark, // COMMENTED: Dark theme color
-  // "darker": vars.$background-dark, // COMMENTED: Dark theme color
-  "primary": vars.$primary,
-  "primary-light": vars.$primary-200,
-  "primary-lighter": vars.$primary-100,
-  "secondary": vars.$secondary,
-  "secondary-light": vars.$secondary-200,
-  "secondary-lighter": vars.$secondary-100
-);
+// $background-colors: (
+//   "light": vars.$bg-body,
+//   "lighter": vars.$bg-body-300,
+//   // "dark": vars.$bg-body-dark, // COMMENTED: Dark theme color
+//   // "darker": vars.$background-dark, // COMMENTED: Dark theme color
+//   "primary": vars.$primary,
+//   "primary-light": vars.$primary-200,
+//   "primary-lighter": vars.$primary-100,
+//   "secondary": vars.$secondary,
+//   "secondary-light": vars.$secondary-200,
+//   "secondary-lighter": vars.$secondary-100
+// );
 
 
-// =============================================================================
-// 3. GENERATE ATTRIBUTE-BASED UTILITIES WITH @EACH LOOPS
-// These loops automatically create all the CSS attribute selectors for you.
-// =============================================================================
+// // =============================================================================
+// // 3. GENERATE ATTRIBUTE-BASED UTILITIES WITH @EACH LOOPS
+// // These loops automatically create all the CSS attribute selectors for you.
+// // =============================================================================
 
-// Loop for background colors
-@each $name, $color in $background-colors {
-  [bg="#{$name}"] {background-color: $color ; }
-}
+// // Loop for background colors
+// @each $name, $color in $background-colors {
+//   [bg="#{$name}"] {background-color: $color ; }
+// }

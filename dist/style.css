@@ -7,85 +7,83 @@
  * Copyright (c) 2025 KEBENET
  * Licensed under MIT
  */
-a[secondary], a[button], input, textarea, button, .btn-secondary, .btn-secondary-outline, input[type=submit],
-input[type=reset],
-input[type=button], select, title, subtitle, toptitle, h1, h2, h3, h4, h5, h6, var, code, samp, body {
-  color: var(--text-body, #212121);
-}
-
-a {
-  color: hsl(163, 53%, 38%);
-}
-
 input, textarea, button, .btn-secondary, .btn-secondary-outline, input[type=submit],
 input[type=reset],
 input[type=button], select, body {
-  background-color: hsla(163, 53%, 38%, 0.08);
+  background-color: rgba(46, 149, 120, 0.0784313725);
 }
 
-[bg=primary], article[primary] > header, a[button], mark {
-  background-color: hsl(163, 53%, 38%);
+a[secondary], a[button], input, textarea, button, .btn-secondary, .btn-secondary-outline, input[type=submit],
+input[type=reset],
+input[type=button], select, h1, h2, h3, h4, var, code, samp, body, a[danger], a[warning], a[success], a[info] {
+  color: #212121;
 }
 
-[bg=primary-100], kbd {
-  background-color: hsla(163, 53%, 38%, 0.08);
+h5, h6, subtitle {
+  color: #70777f;
+}
+
+title, toptitle {
+  color: #2e9578;
+}
+
+a {
+  background-color: unset;
+}
+
+kbd, mark, a {
+  color: #2e9578;
+}
+
+[bg=primary], article[primary] > header, a[button] {
+  background-color: #2e9578;
+}
+
+[bg=primary-100], kbd, mark {
+  background-color: rgba(46, 149, 120, 0.0784313725);
 }
 
 [bg=primary-200] {
-  background-color: hsla(163, 53%, 38%, 0.2);
+  background-color: rgba(46, 149, 120, 0.2);
 }
 
 [bg=primary-300] {
-  background-color: hsla(163, 53%, 38%, 0.44);
+  background-color: rgba(46, 149, 120, 0.4392156863);
 }
 
 article[secondary] > header, a[secondary] {
-  background-color: hsl(23, 84%, 73%);
+  background-color: #f4ae81;
 }
 
 [bg=secondary-100] {
-  background-color: hsla(23, 84%, 73%, 0.08);
+  background-color: rgba(244, 174, 129, 0.0784313725);
 }
 
 [bg=secondary-200] {
-  background-color: hsla(23, 84%, 73%, 0.2);
+  background-color: rgba(244, 174, 129, 0.2);
 }
 
 [bg=secondary-300] {
-  background-color: hsla(23, 84%, 73%, 0.44);
+  background-color: rgba(244, 174, 129, 0.4392156863);
 }
 
 a[info] {
-  background-color: #00b0f4;
-  color: var(--text-body, #212121);
+  background-color: #70c9db;
 }
 
 a[success] {
-  background-color: #11b76b;
-  color: var(--text-body, #212121);
+  background-color: #2eb82e;
 }
 
 a[warning] {
-  background-color: #ffa100;
-  color: var(--text-body, #212121);
+  background-color: #f2b90d;
 }
 
 a[danger] {
-  background-color: red;
-  color: var(--text-body, #212121);
+  background-color: #dd3c3c;
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
-*,
-*::before,
-*::after {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
@@ -125,41 +123,51 @@ a[danger] {
 :root {
   --font-family-base: system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, Segoe UI Emoji, Apple Color Emoji, Noto Color Emoji, sans-serif;
   --font-family-mono: monospace;
-  --primary: hsl(163, 53%, 38%);
-  --primary-200: hsla(163, 53%, 38%, 0.2);
-  --primary-300: hsla(163, 53%, 38%, 0.44);
-  --primary-100: hsla(163, 53%, 38%, 0.08);
-  --secondary: hsl(23, 84%, 73%);
-  --secondary-100: hsla(23, 84%, 73%, 0.08);
-  --secondary-200: hsla(23, 84%, 73%, 0.2);
-  --secondary-300: hsla(23, 84%, 73%, 0.44);
-  --bg-body: hsla(163, 53%, 38%, 0.08);
-  --bg-body-200: hsla(163, 53%, 38%, 0.2);
-  --bg-body-300: hsla(163, 53%, 38%, 0.44);
+  --primary:#2e9578;
+  --primary-100:rgba(46, 149, 120, 0.0784313725);
+  --primary-200:rgba(46, 149, 120, 0.2);
+  --primary-300:rgba(46, 149, 120, 0.4392156863);
+  --secondary:#f4ae81;
+  --secondary-100:rgba(244, 174, 129, 0.0784313725);
+  --secondary-200:rgba(244, 174, 129, 0.2);
+  --secondary-300:rgba(244, 174, 129, 0.4392156863);
+  --info:#70c9db;
+  --info-100:rgba(112, 201, 219, 0.0784313725);
+  --info-200:rgba(112, 201, 219, 0.2);
+  --info-300:rgba(112, 201, 219, 0.4392156863);
+  --danger:#dd3c3c;
+  --danger-100:rgba(221, 60, 60, 0.0784313725);
+  --danger-200:rgba(221, 60, 60, 0.2);
+  --danger-300:rgba(221, 60, 60, 0.4392156863);
+  --success:#2eb82e;
+  --success-100:rgba(46, 184, 46, 0.0784313725);
+  --success-200:rgba(46, 184, 46, 0.2);
+  --success-300:rgba(46, 184, 46, 0.4392156863);
+  --warning:#f2b90d;
+  --warning-100:rgba(242, 185, 13, 0.0784313725);
+  --warning-200:rgba(242, 185, 13, 0.2);
+  --warning-300:rgba(242, 185, 13, 0.4392156863);
+  --bg-body: rgba(46, 149, 120, 0.0784313725);
+  --bg-body-200: rgba(46, 149, 120, 0.2);
+  --bg-body-300: rgba(46, 149, 120, 0.4392156863);
   --text-body: #212121;
   --text-muted: #70777f;
-  --info-color:#00b0f4;
-  --success-color: #11b76b;
-  --warning-color: #ffa100;
-  --danger-color: red;
-  --error-color: var(--danger-color, red);
   --renova: hsl(203, 36%, 12%);
-  --border-color:hsl(163, 53%, 38%);
-  --text-theme: #212121;
+  --border-color:#2e9578;
+  --text-theme: varof(#212121);
   --bg-theme: unset;
   --block-theme: white;
-  --border-color:hsl(163, 53%, 38%);
-  --focus-color: hsla(163, 53%, 38%, 0.44) ;
-  --selection: hsla(163, 53%, 38%, 0.44);
-  --highlight: hsl(163, 53%, 38%);
+  --border-color:#2e9578;
+  --focus-color: rgba(46, 149, 120, 0.4392156863) ;
+  --selection: rgba(46, 149, 120, 0.4392156863);
+  --highlight: rgba(46, 149, 120, 0.4392156863);
   --form-text: #1d1d1d;
   --form-placeholder: #949494;
-  --button-hover: hsla(163, 53%, 38%, 0.44);
-  --secondary: hsl(23, 84%, 73%);
-  --secondary-hover: hsl(23, 84%, 65%);
-  --secondary-focus: hsla(23, 84%, 73%, 0.4);
-  --scrollbar-thumb: hsl(163, 53%, 38%);
-  --scrollbar-thumb-hover: hsl(23, 84%, 73%);
+  --button-hover: rgba(46, 149, 120, 0.2);
+  --secondary-hover: rgba(244, 174, 129, 0.2);
+  --secondary-focus: rgba(244, 174, 129, 0.4392156863);
+  --scrollbar-thumb: #2e9578;
+  --scrollbar-thumb-hover: #f4ae81;
   --border-radius-base: 7px;
   --hr-width: 100%;
   --spacing-xs: 4px;
@@ -174,7 +182,7 @@ a[danger] {
 
 html {
   font-size: 100%;
-  scrollbar-color: var(--scrollbar-thumb) var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  scrollbar-color: var(--scrollbar-thumb) var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   scrollbar-width: thin;
 }
 html::-webkit-scrollbar {
@@ -182,7 +190,7 @@ html::-webkit-scrollbar {
   width: 10px;
 }
 html::-webkit-scrollbar-track {
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   border-radius: 7px;
 }
 html::-webkit-scrollbar-thumb {
@@ -200,8 +208,6 @@ body {
   margin: 0 auto;
   padding: 0 var(--spacing-s);
   word-wrap: break-word;
-  color: var(--text-body);
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
   text-rendering: optimizeLegibility;
 }
 
@@ -215,18 +221,9 @@ body {
   color: var(--text-body);
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
 /* Time -----------------Always Center------------------------ */
-title, subtitle, toptitle {
+title, toptitle {
   display: block;
-  color: var(--text-theme);
 }
 
 title {
@@ -237,7 +234,6 @@ title {
 subtitle {
   font-size: var(--text-s);
   font-weight: 200;
-  color: var(--text-muted);
 }
 
 toptitle {
@@ -275,7 +271,6 @@ h6 {
 
 h5, h6 {
   font-weight: 200;
-  color: var(--text-muted);
   letter-spacing: var(--spacing-xs);
 }
 
@@ -314,18 +309,6 @@ address {
   font-style: normal;
 }
 
-a[href^="mailto:"]::before {
-  content: "📧 ";
-}
-
-a[href^="tel:"]::before {
-  content: "📞 ";
-}
-
-a[href^="sms:"]::before {
-  content: "💬 ";
-}
-
 mark {
   background-color: var(--highlight);
   border-radius: var(--border-radius-small);
@@ -333,20 +316,8 @@ mark {
   color: var(--text-theme);
 }
 
-a {
-  text-decoration: none;
-  color: var(--text-theme);
-}
-a:hover {
-  text-decoration: underline;
-}
-a > code,
-a > strong {
-  color: inherit;
-}
-
 code, samp {
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   color: var(--text-body);
   border-radius: 7px;
   font-size: var(--text-sm);
@@ -374,7 +345,7 @@ var {
 }
 
 kbd {
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   color: var(--text-body);
   border-radius: 7px;
   font-size: var(--text-sm);
@@ -384,14 +355,6 @@ kbd {
   padding: 2px 4px 2px 4px;
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
 button,
 select,
 input[type=submit],
@@ -650,7 +613,7 @@ select {
   margin-right: 6px;
   margin-bottom: 6px;
   padding: 10px;
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08)) var(--select-arrow) calc(100% - 12px) 50%/12px no-repeat;
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725)) var(--select-arrow) calc(100% - 12px) 50%/12px no-repeat;
   padding-right: 35px;
 }
 select::-ms-expand {
@@ -721,7 +684,7 @@ input[type=range]::-webkit-slider-runnable-track {
   height: 9.5px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   border-radius: 13px;
 }
 input[type=range]::-webkit-slider-thumb {
@@ -734,14 +697,14 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -7px;
 }
 input[type=range]:focus::-webkit-slider-runnable-track {
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
 }
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 9.5px;
   -moz-transition: 0.2s;
   transition: 0.2s;
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   border-radius: 13px;
 }
 input[type=range]::-moz-range-thumb {
@@ -760,13 +723,13 @@ input[type=range]::-ms-track {
   color: transparent;
 }
 input[type=range]::-ms-fill-lower {
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   border: 0.2px solid #010101;
   border-radius: 13px;
   box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
 }
 input[type=range]::-ms-fill-upper {
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   border: 0.2px solid #010101;
   border-radius: 13px;
   box-shadow: 1px 1px 1px #000, 0 0 1px #0d0d0d;
@@ -780,20 +743,12 @@ input[type=range]::-ms-thumb {
   background: var(--border-color);
 }
 input[type=range]:focus::-ms-fill-lower {
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
 }
 input[type=range]:focus::-ms-fill-upper {
-  background: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
 table {
   border-collapse: collapse;
   margin-bottom: var(--spacing-s);
@@ -822,23 +777,15 @@ tfoot {
 }
 
 tbody tr:nth-child(even) {
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background-color: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
 }
 tbody tr:nth-child(even) button {
   background-color: var(--bg-body-300);
 }
 tbody tr:nth-child(even) button:hover {
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background-color: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
 img, video {
   width: 100%;
   aspect-ratio: 16/9;
@@ -929,7 +876,7 @@ details > :not(summary) {
 
 summary {
   display: list-item;
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background-color: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   padding: 10px;
   margin: -10px -10px 0;
   cursor: pointer;
@@ -951,7 +898,7 @@ dialog {
   padding: 10px 30px;
 }
 dialog > header:first-child {
-  background-color: var(--bg-body, hsla(163, 53%, 38%, 0.08));
+  background-color: var(--bg-body, rgba(46, 149, 120, 0.0784313725));
   border-radius: 7px 7px 0 0;
   margin: -10px -30px 10px;
   padding: 10px;
@@ -968,19 +915,31 @@ dialog::backdrop {
   backdrop-filter: blur(4px);
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a > code, a > strong, a > b {
+  color: inherit;
+}
+
+a[href^="mailto:"]::before {
+  content: "📧 ";
+}
+
+a[href^="tel:"]::before {
+  content: "📞 ";
+}
+
+a[href^="sms:"]::before {
+  content: "💬 ";
+}
+
 a[button] {
   display: inline-block;
   padding: var(--spacing-s);
-  background-color: var(--bg-theme);
-  color: var(--text-body);
   text-decoration: none;
   border-radius: var(--border-radius-small);
   font-weight: var(--font-weight-bold);
@@ -1117,14 +1076,6 @@ a[button-icon]::before {
   display: inline-block;
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
 @media print {
   body,
   pre,
@@ -1167,14 +1118,6 @@ a[button-icon]::before {
     text-decoration: underline !important;
   }
 }
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
 [align-v=start] {
   align-items: start;
 }
@@ -1276,7 +1219,7 @@ grid[auto-three] {
 
 /* Grid Article Cards ----------------------------------------- */
 grid[border] > article {
-  border: medium solid hsla(163, 53%, 38%, 0.2);
+  border: medium solid rgba(46, 149, 120, 0.2);
 }
 
 grid[round] > article {
@@ -1285,15 +1228,15 @@ grid[round] > article {
 }
 
 grid[primary] > article {
-  border-color: hsl(163, 53%, 38%);
+  border-color: #2e9578;
 }
 
 grid[primary] > article > header {
-  background-color: hsl(163, 53%, 38%);
+  background-color: #2e9578;
 }
 
 grid[secondary] > article > header {
-  background-color: hsl(23, 84%, 73%);
+  background-color: #f4ae81;
 }
 
 /* Selector Even|Odd ----------------------------------------- */
@@ -1379,14 +1322,6 @@ article > footer {
   align-items: end;
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
 grid[hover] > article,
 grid[hover] > stack-grid {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1396,38 +1331,6 @@ grid[hover] > article:hover,
 grid[hover] > stack-grid:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-[bg=light] {
-  background-color: hsla(163, 53%, 38%, 0.08);
-}
-
-[bg=lighter] {
-  background-color: hsla(163, 53%, 38%, 0.44);
-}
-
-[bg=primary] {
-  background-color: hsl(163, 53%, 38%);
-}
-
-[bg=primary-light] {
-  background-color: hsla(163, 53%, 38%, 0.2);
-}
-
-[bg=primary-lighter] {
-  background-color: hsla(163, 53%, 38%, 0.08);
-}
-
-[bg=secondary] {
-  background-color: hsl(23, 84%, 73%);
-}
-
-[bg=secondary-light] {
-  background-color: hsla(23, 84%, 73%, 0.2);
-}
-
-[bg=secondary-lighter] {
-  background-color: hsla(23, 84%, 73%, 0.08);
 }
 
 section, main {
@@ -1528,14 +1431,6 @@ section > header {
   padding-bottom: var(--spacing-s);
 }
 
-/*!
- * DAPOCSS v1.1.0
- * A lightweight and modern CSS styling framework designed specifically for KEBENET
- * 
- * Built with Sass for better maintainability and scalability
- * Copyright (c) 2025 KEBENET
- * Licensed under MIT
- */
 /*
  * ===================================================================
  * NEW: PSEUDO-CSS DESIGN Stack Design
