@@ -2,12 +2,12 @@
   "name": "dapocss",
   "version": "1.1.0",
   "description": "A lightweight and modern CSS styling framework designed specifically for KEBENET and KEBENET Dapo projects",
-  "main": "dist/style.css",
+  "main": "out/style.css",
   "scripts": {
-    "build": "sass src/main.scss dist/style.css --style=expanded",
-    "build:min": "sass src/main.scss dist/style.min.css --style=compressed",
+    "build": "sass src/main.scss out/style.css --style=expanded",
+    "build:min": "sass src/main.scss out/style.min.css --style=compressed",
     "build:all": "npm run build && npm run build:min",
-    "watch": "sass --watch src/main.scss:dist/style.css --style=expanded",
+    "watch": "sass --watch src/main.scss:out/style.css --style=expanded",
     "dev": "npm run watch"
   },
   "keywords": [
@@ -27,7 +27,7 @@
     "sass": "^1.89.2"
   },
   "files": [
-    "dist/",
+    "out/",
     "src/",
     "README.md",
     "LICENSE"

@@ -17,22 +17,15 @@ hr {
     height: 1px;
     display: block;
     border-radius: 2px;
-    background: var(--border-color);
-
-    margin-top: var(--spacing-s);
-    margin-bottom: var(--spacing-s);
-    margin-left: 0;
-    margin-right: auto;
-
+    background: var(--default-colored);
+    // _spacing.scss
     width: var(--hr-width, 100%);
 }
 
 hr[vertical] {
     width: 1px;
     height: var(--hr-width, 44%);
-    // background-color: var(--border-color, #363636);
-    padding:0;
-    margin: auto 0;
+    // background-color: var(--default-colored, #363636);
 }
 
 hr[widest]   {--hr-width: 78%; }
@@ -69,33 +62,32 @@ details {
 
 summary {
   display: list-item;
-  background-color: var(--bg-body, vars.$bg-body);
-  padding: 10px;
-  margin: -10px -10px 0;
+  // background-color: var(--bg-body, vars.$bg-body);
+  padding: 10px; margin: -10px -10px 0;
   cursor: pointer;
   outline: none;
   
   &:hover, &:focus {text-decoration: underline; }
   
-  &::-webkit-details-marker {color: var(--text-body); }
+  // &::-webkit-details-marker {color: var(--text-body); }
 }
 
 // Dialog Element
 // =============================================================================
 dialog {
-  background-color: var(--block-theme);
-  color: var(--text-body);
+  // background-color: var(--block-theme);
+  // color: var(--text-body);
   border: none;
   border-radius: vars.$border-radius-base;
-  border-color: var(--border-color);
-  padding: 10px 30px;
+  // border-color: var(--default-colored);
+  padding: 10px 30px; // <-- spacing
   
   > header:first-child {
-    background-color: var(--bg-body, vars.$bg-body);
+    // background-color: var(--bg-body, vars.$bg-body);
     border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
     margin: -10px -30px 10px;
     padding: 10px;
-    text-align: center;
+    text-align: center; // <-- content or textual aligment
   }
   
   &::-webkit-backdrop {background: #0000009c; -webkit-backdrop-filter: blur(4px); backdrop-filter: blur(4px); }

@@ -49,6 +49,6 @@ body {
 
 // Selection Styles
 // =============================================================================
-::-moz-selection {@include mixins.selection-styles; }
+// ::-moz-selection {@include mixins.selection-styles; }
 
-::selection {@include mixins.selection-styles; }
+// ::selection {@include mixins.selection-styles; }

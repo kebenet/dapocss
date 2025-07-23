@@ -11,110 +11,161 @@
 //========================================
 
 
-%bg-body {background-color: vars.$primary-100; }
+%bg-body {background-color: var(--primary-100); }
 
-%text-body {color: vars.$text-body; }
-%text-muted {color: vars.$text-muted }
-%text-natural {color: vars.$text-body }
+%text-body {color: var(--text-body); }
+%text-muted {color: var(--text-muted); }
 
-%text-theme {color: vars.$primary; }
-%bg-theme {background-color: vars.$bg-theme }
-%block-theme {background-color: vars.$block-theme }
+%text-theme {color: var(--primary); }
+%bg-theme {background-color: var(--bg-theme); }
+%block-theme {background-color: var(--block-theme); }
 
-%default-colored {color: vars.$default-colored; }
-%bg-default-colored {background-color: vars.$default-colored; }
+%default-colored {color: var(--default-colored); }
+%bg-default-colored {background-color: var(--default-colored); }
 
+
+//========================================
+// Line Base Color Placeholders
+//========================================
+
+%border-default-colored {border-color: var(--default-colored); }
 
 //========================================
 // Background Color Placeholders
 //========================================
 
 
-%color-primary {color: vars.$primary; }
-%bg-primary {background-color: vars.$primary; }
-%bg-primary-100 {background-color: vars.$primary-100; }
-%bg-primary-200 {background-color: vars.$primary-200; }
-%bg-primary-300 {background-color: vars.$primary-300; }
+%color-primary {color: var(--primary); }
+%bg-primary {background-color: var(--primary); }
+%bg-primary-100 {background-color: var(--primary-100); }
+%bg-primary-200 {background-color: var(--primary-200); }
+%bg-primary-300 {background-color: var(--primary-300); }
 
-%color-secondary {color: vars.$secondary; }
-%bg-secondary {background-color: vars.$secondary; }
-%bg-secondary-100 {background-color: vars.$secondary-100; }
-%bg-secondary-200 {background-color: vars.$secondary-200; }
-%bg-secondary-300 {background-color: vars.$secondary-300; }
+%color-secondary {color: var(--secondary); }
+%bg-secondary {background-color: var(--secondary); }
+%bg-secondary-100 {background-color: var(--secondary-100); }
+%bg-secondary-200 {background-color: var(--secondary-200); }
+%bg-secondary-300 {background-color: var(--secondary-300); }
 
+%bg-info   {background-color: var(--info);}   
+%bg-success{background-color: var(--success);}
+%bg-warning{background-color: var(--warning);}
+%bg-danger{background-color: var(--danger);} 
+%bg-danger{background-color: var(--danger);} 
 
 %bg-transparent {background-color: transparent; }
-
 %highlight {@extend %bg-primary-100; @extend %default-colored; } // <-- 100 bg and colored text ect:kbd
 
 %bg-info, %bg-success, %bg-warning, %bg-danger , %bg-error
-{background-color: vars.$block-theme}
+{background-color: var(--block-theme);}
 
-%info    { color: vars.$info; }
-%success { color: vars.$success; }
-%warning { color: vars.$warning; }
+%info    { color: vars.$info;   }
+%success { color: vars.$success;}
+%warning { color: vars.$warning;}
 %danger  { color: vars.$danger; }
 %error   { color: vars.$danger; }
 
 %button-primary { @extend %bg-primary;@extend %text-body;  }
 
-%button-info    { background-color: vars.$info;    @extend %text-body; }
-%button-success { background-color: vars.$success; @extend %text-body; }
-%button-warning { background-color: vars.$warning; @extend %text-body; }
-%button-danger  { background-color: vars.$danger;  @extend %text-body; }
-%button-error   { background-color: vars.$danger;  @extend %text-body; }
+%button-info    { @extend %text-body; @extend %bg-info;   }
+%button-success { @extend %text-body; @extend %bg-success;}
+%button-warning { @extend %text-body; @extend %bg-warning;}
+%button-danger  { @extend %text-body; @extend %bg-danger; }
+%button-error   { @extend %text-body; @extend %bg-danger; }
 
+@mixin set-theme($color: $text-body, $bg: $bg-body) {
+  color: $color;
+  background-color: $bg;
+}
 //========================================
 // Applying the Extensions
-// (This shows how you would refactor other files)
 //========================================
 
 // In _typography.scss
 //----------------------------------------
 
-body {@extend %text-body; @extend %bg-body; }
-a { @extend %bg-theme; @extend %default-colored; }
-kbd,mark {@extend %bg-primary-100; @extend %default-colored; }
+body {
+	@extend %text-body; @extend %bg-body;
+  scrollbar-color: var(--primary) var(--bg-body);
+}
 
+kbd,mark {@extend %bg-primary-200; @extend %default-colored; }
 
 var,code, samp      {@extend %text-body; }
 h1, h2, h3, h4      {@extend %text-body; }
-h5, h6, subtitle    {@extend %text-muted; }
 
-title, toptitle   {@extend %text-theme; }
+h5, h6, subtitle    {@extend %text-muted; }
+title,  toptitle    {@extend %text-theme; }
+
+summary{
+	@extend %bg-body;
+	&::-webkit-details-marker {@extend %text-body; }
+}
+
+dialog{
+	@extend %text-theme; 
+	@extend %block-theme; 
+	@extend %border-default-colored;
+	> header:first-child{@extend %bg-default-colored;} // theming colored 
+}
+// In _link.scss
+//------------------------------------
+a { @extend %bg-theme; @extend %default-colored; }
+a { @include set-theme(vars.$primary, vars.$bg-theme); }
+
+a[button] {@include set-theme(vars.$text-body, vars.$primary); }
+a[button]:hover{@extend %bg-secondary-300;}
+a[outline]{@extend %bg-transparent;}
+a[outline]:hover{@extend %bg-secondary;}
+a[secondary] {@include set-theme(vars.$text-body, vars.$primary); }
+a[secondary]:hover {@extend %bg-secondary-300; }
+
+a[info]    {@extend %button-info; }
+a[success] {@extend %button-success; }
+a[warning] {@extend %button-warning; }
+a[danger]  {@extend %button-danger;  }
 
 // In _forms.scss
 //------------------------------------
-%form-element-base { @extend %bg-body; @extend %text-body; }
-// button {@extend %bg-primary; @extend %text-body; }
-// .btn-secondary {@extend %bg-secondary; @extend %text-body; }
-// .btn-secondary-outline {@extend %color-primary; @extend %bg-transparent; }
+%form-element-color { @extend %bg-body; @extend %text-body; }
+
+button{ @extend %text-body; @extend %bg-primary;}
+button:hover{@extend %bg-primary-300;}
+button[secondary]{@extend %bg-secondary;}
+button[secondary]:hover{@extend %bg-secondary-300;}
+button[secondary-outline]{@extend %bg-transparent;}
+button[secondary-outline]:hover{@extend %bg-secondary; border-color: var(--default-colored)}
 
 
-// In _link.scss
-//------------------------------------
-a[button] {@extend %bg-primary; @extend %text-body; }
-a[secondary] {@extend %bg-secondary; @extend %text-body; }
+::-moz-placeholder,:-ms-input-placeholder,::-ms-input-placeholder, ::placeholder{
+  @extend %bg-primary-300;
+}
 
-a[info]   {@extend %button-info; }
-a[success]   {@extend %button-success; }
-a[warning]   {@extend %button-warning; }
-a[danger]    {@extend %button-danger;  }
+// Selection Styles
+// =============================================================================
+%selection-style{@include set-theme(vars.$text-body,vars.$primary-300)}
+::-moz-selection, ::selection {@extend %selection-style; }
+
+/* Need more nesting works ----------------------------------------- */
+// input[type='range']{@extend %bg-transparent; }
+
 
 
 // In _card.scss or _layout.scss
 //------------------------------------
 article[primary] > header {@extend %bg-primary; }
 article[secondary] > header {@extend %bg-secondary; }
+grid[primary] > article  { @extend %border-default-colored; }
+grid[primary]> article > header {@extend %bg-primary; }
+grid[secondary] > article > header {@extend %bg-secondary; }
 
 // In _modifier.scss
 //------------------------------------
 
 [bg=primary] { @extend %bg-primary; }
-[bg=primary-100] { @extend %bg-primary-100; }
 [bg=primary-200] { @extend %bg-primary-200; }
 [bg=primary-300] { @extend %bg-primary-300; }
-[bg=secondary-100] { @extend %bg-secondary-100; }
+[bg=secondary] { @extend %bg-secondary-100; }
 [bg=secondary-200] { @extend %bg-secondary-200; }
 [bg=secondary-300] { @extend %bg-secondary-300; }
 

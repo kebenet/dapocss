@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive CSS Analyzer (using CSSTree)</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="../out/style.css">
+    
+    <!-- CSSTree library for parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/css-tree/dist/csstree.min.js"></script>
+
+    <style>
+        /* Applying user's brand colors */
+        :root {
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            transition: background-color 0.3s;
+        }
+        .btn-primary:hover {
+            background-color: #257a63;
+        }
+        .btn-filter {
+            background-color: white;
+            color: #333;
+            border: 1px solid #ccc;
+            transition: all 0.3s;
+        }
+        .btn-filter.active, .btn-filter:hover {
+            background-color: var(--secondary-color);
+            color: white;
+            border-color: var(--secondary-color);
+        }
+        .result-card {
+            background-color: white;
+            border-left: 5px solid var(--primary-color);
+        }
+        section[pad] article { padding: var(--spacing-l); }
+        section[gao] grid { grid-gap: var(--spacing-l); }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body >
+
+<main >
+<section theme pad gap radius align="center">
+            
+            <grid one pad>
+                <article >
+                    <h1 >Interactive CSS Analyzer</h1>
+                    <p >Enter the URL of a CSS file to fetch, parse with <strong>CSSTree</strong>, and filter its rules.</p>
+                </article>
+                
+                <!-- Input and Load section -->
+                <article >
+
+                    <grid >
+                            <label for="cssUrl">CSS File URL</label>
+                            <input type="text" id="cssUrl" value="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+                            <button id="loadBtn" >
+                                <i class="fas fa-sync-alt"></i>
+                                <span>Load & Analyze</span>
+                            </button>
+                    </grid>
+
+                    <div id="loading" >
+                        <i class="fas fa-spinner fa-spin"></i>Loading, please wait...
+                    </div>
+                    <div id="error">
+                        
+                    </div>
+                </article>
+
+
+            <!-- Filter and Results Section -->
+            <div id="analysis-section" class="hidden">
+                <!-- Filter buttons -->
+                <div class="bg-white p-4 rounded-xl shadow-lg mb-8">
+                    <h2 class="text-lg font-semibold mb-3 text-gray-700">Filter by Property:</h2>
+                    <div id="filter-buttons" class="flex flex-wrap gap-2">
+                        <button class="btn-filter py-2 px-4 rounded-full text-sm font-medium" data-filter="color">color</button>
+                        <button class="btn-filter py-2 px-4 rounded-full text-sm font-medium" data-filter="background-color">background-color</button>
+                        <button class="btn-filter py-2 px-4 rounded-full text-sm font-medium" data-filter="padding">padding</button>
+                        <button class="btn-filter py-2 px-4 rounded-full text-sm font-medium" data-filter="margin">margin</button>
+                        <button class="btn-filter py-2 px-4 rounded-full text-sm font-medium" data-filter="border">border</button>
+                        <button class="btn-filter py-2 px-4 rounded-full text-sm font-medium" data-filter="font-size">font-size</button>
+                    </div>
+                </div>
+            </div>
+
+        </grid>
+</section>
+<section theme align="center">
+
+    <!-- Results display -->
+    <div>
+        <h2 class="text-xl font-bold mb-4">
+            <span id="results-title">Results</span>
+            <span id="results-count" class="text-sm font-medium text-white bg-[var(--primary-color)] py-1 px-2 rounded-full ml-2">0</span>
+        </h2>
+        <div id="results" class="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+            <!-- Filtered rules will be injected here -->
+        </div>
+    </div>
+
+
+</section>
+    </main>
+
+    <script>
+        // DOM Elements
+        const loadBtn = document.getElementById('loadBtn');
+        const cssUrlInput = document.getElementById('cssUrl');
+        const loadingDiv = document.getElementById('loading');
+        const errorDiv = document.getElementById('error');
+        const analysisSection = document.getElementById('analysis-section');
+        const resultsDiv = document.getElementById('results');
+        const resultsTitle = document.getElementById('results-title');
+        const resultsCount = document.getElementById('results-count');
+        const filterButtonsContainer = document.getElementById('filter-buttons');
+
+        let ast = null; // To store the parsed CSS Abstract Syntax Tree
+
+        // --- Main Logic ---
+
+        /**
+         * Fetches and parses the CSS from the URL.
+         */
+        async function handleLoadAndAnalyze() {
+            const url = cssUrlInput.value.trim();
+            if (!url) {
+                showError('Please enter a valid CSS URL.');
+                return;
+            }
+
+            // Reset UI
+            hideError();
+            showLoading(true);
+            analysisSection.classList.add('hidden');
+            resultsDiv.innerHTML = '';
+            ast = null;
+
+            try {
+                // Step 1: Fetch the CSS file
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}. This could be a CORS issue if the server doesn't allow cross-origin requests.`);
+                }
+                const cssText = await response.text();
+
+                // Step 2: Parse the CSS text with CSSTree
+                ast = csstree.parse(cssText);
+                analysisSection.classList.remove('hidden');
+                
+                // Automatically trigger the first filter as an example
+                filterAndDisplayRules('color');
+                setActiveButton('color');
+
+            } catch (error) {
+                console.error('Error fetching or parsing CSS:', error);
+                showError(error.message);
+                ast = null;
+            } finally {
+                showLoading(false);
+            }
+        }
+
+        /**
+         * Filters the parsed stylesheet, groups by value, sorts, and displays the results.
+         * @param {string} propertyName - The CSS property to filter by (e.g., 'color').
+         */
+        function filterAndDisplayRules(propertyName) {
+            if (!ast) {
+                showError('No stylesheet loaded. Please load a CSS file first.');
+                return;
+            }
+
+            resultsDiv.innerHTML = ''; // Clear previous results
+            const groupedByValue = {};
+            let totalRulesCount = 0;
+
+            // Step 3a: Walk the AST and group selectors by their value
+            csstree.walk(ast, function(node) {
+                if (node.type === 'Rule') {
+                    node.block.children.forEach(declaration => {
+                        if (declaration.type === 'Declaration' && declaration.property === propertyName) {
+                            const value = csstree.generate(declaration.value);
+                            const selector = csstree.generate(node.prelude);
+                            
+                            if (!groupedByValue[value]) {
+                                groupedByValue[value] = [];
+                            }
+                            groupedByValue[value].push(selector);
+                            totalRulesCount++;
+                        }
+                    });
+                }
+            });
+
+            // Step 3b: Convert the grouped object to an array and sort it by value (A-Z)
+            const sortedGroups = Object.entries(groupedByValue).sort((a, b) => a[0].localeCompare(b[0]));
+
+            // Update title and count
+            resultsTitle.textContent = `Results for "${propertyName}"`;
+            resultsCount.textContent = totalRulesCount;
+
+            // Step 4: Display the sorted and grouped results
+            if (sortedGroups.length === 0) {
+                resultsDiv.innerHTML = `<p class="text-gray-500 col-span-full">No rules found with the property "${propertyName}".</p>`;
+                return;
+            }
+
+            sortedGroups.forEach(([value, selectors]) => {
+                const card = document.createElement('article');
+                card.className = 'result-card p-4 rounded-lg shadow-md flex flex-col';
+                
+                // Create a numbered list of selectors
+                const selectorList = selectors.map(s => {
+                    const sanitized = s.replace(/</g, "&lt;").replace(/>/g, "&gt;");
+                    return `<li class="ml-4">${sanitized}</li>`;
+                }).join('');
+
+                card.innerHTML = `
+                    <div class="font-semibold text-gray-800 mb-2 pb-2 border-b border-gray-200">
+                        ${propertyName}: <span class="font-normal text-[var(--primary-color)]">${value}</span>
+                    </div>
+                    <ol class="list-decimal list-inside font-mono text-sm text-gray-600 break-words flex-grow">
+                        ${selectorList}
+                    </ol>
+                `;
+                resultsDiv.appendChild(card);
+            });
+        }
+        
+        // --- Event Listeners ---
+
+        loadBtn.addEventListener('click', handleLoadAndAnalyze);
+        
+        filterButtonsContainer.addEventListener('click', (event) => {
+            const button = event.target.closest('button');
+            if (button && button.dataset.filter) {
+                const filter = button.dataset.filter;
+                filterAndDisplayRules(filter);
+                setActiveButton(filter);
+            }
+        });
+
+
+        // --- UI Helper Functions ---
+
+        function showLoading(isLoading) {
+            loadingDiv.classList.toggle('hidden', !isLoading);
+            loadBtn.disabled = isLoading;
+            loadBtn.querySelector('span').textContent = isLoading ? 'Loading...' : 'Load & Analyze';
+        }
+
+        function showError(message) {
+            errorDiv.textContent = message;
+            errorDiv.classList.remove('hidden');
+        }
+
+        function hideError() {
+            errorDiv.classList.add('hidden');
+        }
+        
+        function setActiveButton(activeFilter) {
+            const buttons = filterButtonsContainer.querySelectorAll('button');
+            buttons.forEach(btn => {
+                if (btn.dataset.filter === activeFilter) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+        }
+        
+        // Automatically trigger a load on page start for demonstration
+        window.addEventListener('DOMContentLoaded', () => {
+            handleLoadAndAnalyze();
+        });
+
+    </script>
+</body>
+</html>

@@ -18,20 +18,17 @@
 	### Groups
 		## Colors
 		## Spacing
-		## Font
+		## Lining
+		## Font | textual
 		## Animations
+# Unknown
+	- filtered
+	- selection | html page
+	- keyframe
+
+# Default-colored
+- is a text or bg default colored element. example default link text color, 
+  button bg theme color and hr line color. its must be a colored theme item: primary or secondary.
 
 
-
-#2e9578
-#f4ae81
-
-$theme-colors: (
-  "primary": #2e9578,
-  "secondary": #f4ae81,
-  "info": #00b0f4,
-  "danger": red,
-  "success": #11b76b,
-  "warning": #ffa100
-);
 

@@ -1,5 +1,321 @@
+@use 'variables' as vars;
+
+// =============================================================================
+// CENTRALIZED SPACING SYSTEM
+// All spacing values are defined here for easy management using @extend
+// Based on spacing variables: xs(4px), s(8px), m(16px), l(32px), xl(78px), xxl(120px)
+// =============================================================================
 
 
-%padding-0s{}
-%margin-y{}
-%margin-x{}
+//========================================
+// Margin Placeholders
+//========================================
+
+// All sides margin
+%mg-0 { margin: 0; }
+%mg-xs { margin: var(--spacing-xs); }
+%mg-s { margin: var(--spacing-s); }
+%mg-m { margin: var(--spacing-m); }
+%mg-l { margin: var(--spacing-l); }
+%mg-xl { margin: var(--spacing-xl); }
+%mg-xxl { margin: var(--spacing-xxl); }
+%mg-auto { margin: auto; }
+
+// Margin Top
+%mg-top-0 { margin-top: 0; }
+%mg-top-xs { margin-top: var(--spacing-xs); }
+%mg-top-s { margin-top: var(--spacing-s); }
+%mg-top-m { margin-top: var(--spacing-m); }
+%mg-top-l { margin-top: var(--spacing-l); }
+%mg-top-xl { margin-top: var(--spacing-xl); }
+%mg-top-xxl { margin-top: var(--spacing-xxl); }
+%mg-top-auto { margin-top: auto; }
+
+// Margin Y | Top/Bottom
+%mg-y-0 { margin-top: 0; margin-bottom: 0; }
+%mg-y-xs{ margin-top: var(--spacing-xs);margin-bottom: var(--spacing-xs); }
+%mg-y-s { margin-top: var(--spacing-s);margin-bottom: var(--spacing-s); }
+%mg-y-m { margin-top: var(--spacing-m);margin-bottom: var(--spacing-m); }
+%mg-y-l { margin-top: var(--spacing-l);margin-bottom: var(--spacing-l); }
+%mg-y-xl { margin-top: var(--spacing-xl);margin-bottom: var(--spacing-xl); }
+%mg-y-xxl { margin-top: var(--spacing-xxl);margin-bottom: var(--spacing-xxl); }
+%mg-y-auto { margin-top: auto; margin-bottom: auto; }
+
+// Margin X | Left - Right
+%mg-x-0 { margin-left: 0; margin-right: 0; }
+%mg-x-xs{ margin-left: var(--spacing-xs);margin-right: var(--spacing-xs); }
+%mg-x-s { margin-left: var(--spacing-s);margin-right: var(--spacing-s); }
+%mg-x-m { margin-left: var(--spacing-m);margin-right: var(--spacing-m); }
+%mg-x-l { margin-left: var(--spacing-l);margin-right: var(--spacing-l); }
+%mg-x-xl { margin-left: var(--spacing-xl);margin-right: var(--spacing-xl); }
+%mg-x-xxl { margin-left: var(--spacing-xxl);margin-right: var(--spacing-xxl); }
+%mg-x-auto { margin-left: auto; margin-right: auto; }
+
+// Margin Bottom
+%mg-bot-0 { margin-bottom: 0; }
+%mg-bot-xs { margin-bottom: var(--spacing-xs); }
+%mg-bot-s { margin-bottom: var(--spacing-s); }
+%mg-bot-m { margin-bottom: var(--spacing-m); }
+%mg-bot-l { margin-bottom: var(--spacing-l); }
+%mg-bot-xl { margin-bottom: var(--spacing-xl); }
+%mg-bot-xxl { margin-bottom: var(--spacing-xxl); }
+%mg-bot-auto { margin-bottom: auto; }
+
+// Margin Left
+%mg-left-0 { margin-left: 0; }
+%mg-left-xs { margin-left: var(--spacing-xs); }
+%mg-left-s { margin-left: var(--spacing-s); }
+%mg-left-m { margin-left: var(--spacing-m); }
+%mg-left-l { margin-left: var(--spacing-l); }
+%mg-left-xl { margin-left: var(--spacing-xl); }
+%mg-left-xxl { margin-left: var(--spacing-xxl); }
+%mg-left-auto { margin-left: auto; }
+
+// Margin Right
+%mg-right-0 { margin-right: 0; }
+%mg-right-xs { margin-right: var(--spacing-xs); }
+%mg-right-s { margin-right: var(--spacing-s); }
+%mg-right-m { margin-right: var(--spacing-m); }
+%mg-right-l { margin-right: var(--spacing-l); }
+%mg-right-xl { margin-right: var(--spacing-xl); }
+%mg-right-xxl { margin-right: var(--spacing-xxl); }
+%mg-right-auto { margin-right: auto; }
+
+// Margin Horizontal (left + right)
+%mg-x-0 { margin-left: 0; margin-right: 0; }
+%mg-x-xs { margin-left: var(--spacing-xs); margin-right: var(--spacing-xs); }
+%mg-x-s { margin-left: var(--spacing-s); margin-right: var(--spacing-s); }
+%mg-x-m { margin-left: var(--spacing-m); margin-right: var(--spacing-m); }
+%mg-x-l { margin-left: var(--spacing-l); margin-right: var(--spacing-l); }
+%mg-x-xl { margin-left: var(--spacing-xl); margin-right: var(--spacing-xl); }
+%mg-x-xxl { margin-left: var(--spacing-xxl); margin-right: var(--spacing-xxl); }
+%mg-x-auto { margin-left: auto; margin-right: auto; }
+
+// Margin Vertical (top + bottom)
+%mg-y-0 { margin-top: 0; margin-bottom: 0; }
+%mg-y-xs { margin-top: var(--spacing-xs); margin-bottom: var(--spacing-xs); }
+%mg-y-s { margin-top: var(--spacing-s); margin-bottom: var(--spacing-s); }
+%mg-y-m { margin-top: var(--spacing-m); margin-bottom: var(--spacing-m); }
+%mg-y-l { margin-top: var(--spacing-l); margin-bottom: var(--spacing-l); }
+%mg-y-xl { margin-top: var(--spacing-xl); margin-bottom: var(--spacing-xl); }
+%mg-y-xxl { margin-top: var(--spacing-xxl); margin-bottom: var(--spacing-xxl); }
+%mg-y-auto { margin-top: auto; margin-bottom: auto; }
+
+%mg-auto-0 { margin: auto 0; }
+
+//========================================
+// Padding Placeholders
+//========================================
+
+// All sides padding
+%pad-0 { padding: 0; }
+%pad-xs { padding: var(--spacing-xs); }
+%pad-s { padding: var(--spacing-s); }
+%pad-m { padding: var(--spacing-m); }
+%pad-l { padding: var(--spacing-l); }
+%pad-xl { padding: var(--spacing-xl); }
+%pad-xxl { padding: var(--spacing-xxl); }
+
+// Padding Top
+%pad-top-0 { padding-top: 0; }
+%pad-top-xs { padding-top: var(--spacing-xs); }
+%pad-top-s { padding-top: var(--spacing-s); }
+%pad-top-m { padding-top: var(--spacing-m); }
+%pad-top-l { padding-top: var(--spacing-l); }
+%pad-top-xl { padding-top: var(--spacing-xl); }
+%pad-top-xxl { padding-top: var(--spacing-xxl); }
+
+// Padding Bottom
+%pad-bot-0 { padding-bottom: 0; }
+%pad-bot-xs { padding-bottom: var(--spacing-xs); }
+%pad-bot-s { padding-bottom: var(--spacing-s); }
+%pad-bot-m { padding-bottom: var(--spacing-m); }
+%pad-bot-l { padding-bottom: var(--spacing-l); }
+%pad-bot-xl { padding-bottom: var(--spacing-xl); }
+%pad-bot-xxl { padding-bottom: var(--spacing-xxl); }
+
+// Padding Left
+%pad-left-0 { padding-left: 0; }
+%pad-left-xs { padding-left: var(--spacing-xs); }
+%pad-left-s { padding-left: var(--spacing-s); }
+%pad-left-m { padding-left: var(--spacing-m); }
+%pad-left-l { padding-left: var(--spacing-l); }
+%pad-left-xl { padding-left: var(--spacing-xl); }
+%pad-left-xxl { padding-left: var(--spacing-xxl); }
+
+// Padding Right
+%pad-right-0 { padding-right: 0; }
+%pad-right-xs { padding-right: var(--spacing-xs); }
+%pad-right-s { padding-right: var(--spacing-s); }
+%pad-right-m { padding-right: var(--spacing-m); }
+%pad-right-l { padding-right: var(--spacing-l); }
+%pad-right-xl { padding-right: var(--spacing-xl); }
+%pad-right-xxl { padding-right: var(--spacing-xxl); }
+
+// Padding Horizontal (left + right)
+%pad-x-0 { padding-left: 0; padding-right: 0; }
+%pad-x-xs { padding-left: var(--spacing-xs); padding-right: var(--spacing-xs); }
+%pad-x-s { padding-left: var(--spacing-s); padding-right: var(--spacing-s); }
+%pad-x-m { padding-left: var(--spacing-m); padding-right: var(--spacing-m); }
+%pad-x-l { padding-left: var(--spacing-l); padding-right: var(--spacing-l); }
+%pad-x-xl { padding-left: var(--spacing-xl); padding-right: var(--spacing-xl); }
+%pad-x-xxl { padding-left: var(--spacing-xxl); padding-right: var(--spacing-xxl); }
+
+// Padding Vertical (top + bottom)
+%pad-y-0 { padding-top: 0; padding-bottom: 0; }
+%pad-y-xs { padding-top: var(--spacing-xs); padding-bottom: var(--spacing-xs); }
+%pad-y-s { padding-top: var(--spacing-s); padding-bottom: var(--spacing-s); }
+%pad-y-m { padding-top: var(--spacing-m); padding-bottom: var(--spacing-m); }
+%pad-y-l { padding-top: var(--spacing-l); padding-bottom: var(--spacing-l); }
+%pad-y-xl { padding-top: var(--spacing-xl); padding-bottom: var(--spacing-xl); }
+%pad-y-xxl { padding-top: var(--spacing-xxl); padding-bottom: var(--spacing-xxl); }
+
+
+//========================================
+// Gap Placeholders (for Grid/Flexbox)
+//========================================
+
+%gap-0 { gap: 0; }
+%gap-xs { gap: var(--spacing-xs); }
+%gap-s { gap: var(--spacing-s); }
+%gap-m { gap: var(--spacing-m); }
+%gap-l { gap: var(--spacing-l); }
+%gap-xl { gap: var(--spacing-xl); }
+%gap-xxl { gap: var(--spacing-xxl); }
+
+// Row Gap
+%row-gap-0 { row-gap: 0; }
+%row-gap-xs { row-gap: var(--spacing-xs); }
+%row-gap-s { row-gap: var(--spacing-s); }
+%row-gap-m { row-gap: var(--spacing-m); }
+%row-gap-l { row-gap: var(--spacing-l); }
+%row-gap-xl { row-gap: var(--spacing-xl); }
+%row-gap-xxl { row-gap: var(--spacing-xxl); }
+
+// Column Gap
+%column-gap-0 { column-gap: 0; }
+%column-gap-xs { column-gap: var(--spacing-xs); }
+%column-gap-s { column-gap: var(--spacing-s); }
+%column-gap-m { column-gap: var(--spacing-m); }
+%column-gap-l { column-gap: var(--spacing-l); }
+%column-gap-xl { column-gap: var(--spacing-xl); }
+%column-gap-xxl { column-gap: var(--spacing-xxl); }
+
+
+//========================================
+// Fluid/Responsive Spacing Placeholders
+//========================================
+
+// Clamp-based responsive spacing
+%fluid-padding-small { padding: clamp(0.5em, 2vw + 0.1em, 1.5em); }
+%fluid-padding-medium { padding: clamp(0.5em, 2vw + 0.1em, 3em); }
+%fluid-padding-large { padding: clamp(1em, 4vw + 0.5em, 5em); }
+
+%fluid-gap-small { gap: clamp(0.5em, 2vw + 0.1em, 1.5em); }
+%fluid-gap-medium { gap: clamp(0.5em, 2vw + 0.1em, 3em); }
+%fluid-gap-large { gap: clamp(1em, 4vw + 0.5em, 5em); }
+
+%fluid-margin-small { margin: clamp(0.5em, 2vw + 0.1em, 1.5em); }
+%fluid-margin-medium { margin: clamp(0.5em, 2vw + 0.1em, 3em); }
+%fluid-margin-large { margin: clamp(1em, 4vw + 0.5em, 5em); }
+
+//========================================
+// Wide Spacing 3/2 ratio
+//========================================
+
+%mg-custom-neg{margin: -10px -10px 0;}
+
+//========================================
+// Wide Spacing 3/2 ratio
+//========================================
+
+%padding-wide-s{ %extend %pad-y-s; %extend %pad-x-m; }
+%padding-wide-m{ %extend %pad-y-m; %extend %pad-x-l; }
+%padding-wide-l{ %extend %pad-y-s; %extend %pad-x-xl; }
+
+//========================================
+// Common Spacing Combinations
+//========================================
+// Container-like spacing
+%container-padding { @extend %pad-x-s; @extend %mg-x-auto; }
+%container-padding-large { @extend %pad-x-l; @extend %mg-x-auto; }
+
+// Card-like spacing
+%card-padding { @extend %pad-m; }
+%card-padding-large { @extend %pad-l; }
+
+// Section spacing
+%section-spacing { @extend %mg-y-l; }
+%section-spacing-large { @extend %mg-y-xl; }
+
+// List spacing
+%list-item-spacing { @extend %mg-bot-s; }
+%list-spacing { @extend %mg-bot-m; }
+
+// Form spacing
+%form-element-spacing { @extend %mg-bot-s; @extend %mg-right-xs; }
+%form-group-spacing { @extend %mg-bot-m; }
+
+// Button spacing
+%button-padding { @extend %pad-y-s; @extend %pad-x-m; }
+%button-padding-large { @extend %pad-y-m; @extend %pad-x-l; }
+
+// Stack spacing (for vertical layouts)
+%stack-spacing-tight { @extend %gap-xs; }
+%stack-spacing { @extend %gap-s; }
+%stack-spacing-loose { @extend %gap-m; }
+
+
+//========================================
+// Applying the Extensions
+// (This shows how the existing elements can use the new system)
+//========================================
+
+// Form Elements (updating existing patterns)
+//----------------------------------------
+label { @extend %mg-bot-xs; }
+input, select, textarea { @extend %form-element-spacing; }
+fieldset { @extend %form-group-spacing; @extend %pad-s; }
+button { @extend %button-padding; }
+
+// Content Elements
+//----------------------------------------
+hr{ @extend %mg-y-s; @extend %mg-left-0; @extend %mg-right-auto; }
+hr[vertical] { %extend %mg-auto-0; %extend %pad-0;}
+summary{%extend %pad-s; %extend %mg-custom-neg; }
+dialog{
+	%extend %padding-wide-s; 
+	> header:first-child{
+		%extend %mg-custom-neg; 
+		%extend %pad-s;
+	}
+}
+
+
+// Layout Elements
+//----------------------------------------
+section {@extend %mg-top-xl; }
+section > header { @extend %pad-bot-s; }
+section:last-child { @extend %mg-bot-xl; }
+table{%extend %mg-bot;}
+article>content { %extend %pad-s; }
+article>footer { %extend %pad-s; }
+
+// Typography Elements
+//----------------------------------------
+a[button]{ %extend %pad-s;}
+a[small]{ %extend %pad-s;}
+h1, h2, h3, h4, h5, h6 { @extend %mg-bot-s; @extend %mg-top-0; }
+p { @extend %mg-bot-s; }
+blockquote { @extend %mg-y-m; @extend %pad-left-m; }
+ul, ol { @extend %list-spacing; }
+li { @extend %list-item-spacing; }
+
+// Component spacing layout/_spacing.scss
+//----------------------------------------
+[pad] { @extend %pad-s; }
+[pad-m] { @extend %pad-m; }
+[pad-l] { @extend %pad-l; }
+[pad-tbr] { @extend %pad-top-s; @extend %pad-bot-s; @extend %pad-right-s; }
+
+section[gap] > grid { @extend %fluid-gap-medium; }

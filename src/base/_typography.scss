@@ -48,7 +48,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 b, strong, th {font-weight: bolder; }
-// p{margin-bottom: var(--spacing-s);}
 
 
 // Quote Elements
@@ -76,10 +75,10 @@ address {font-style: normal; }
 // Mark & Highlight
 // =============================================================================
 mark {
-  background-color: var(--highlight);
+  // color: var(--text-body);
+  // background-color: var(--primary);
   border-radius: var(--border-radius-small);
   padding: 0 2px 0 2px;
-  color: var(--text-theme);
 }
 
 // Links
@@ -98,7 +97,7 @@ pre > code {padding: 10px; display: block; overflow-x: auto; }
 // Variables
 // =============================================================================
 var {
-  color: var(--text-theme);
+  // color: var(--text-theme);
   font-style: normal;
   font-family: var(--font-family-mono);
 }
@@ -109,6 +108,6 @@ kbd {
   @include mixins.code-styles;
   @include mixins.border-accent;
   border-radius: var(--border-radius-small);
-  color: var(--text-body);
+  // color: var(--text-body);
   padding: 2px 4px 2px 4px;
 }

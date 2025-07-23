@@ -7,16 +7,6 @@
  * Licensed under MIT
  */
 
-// Make variables and functions available to other files
-
-
-@function from($name) { @return var(--#{$name}, #{$name}); }
-@function themeof($name) { @return var(--#{$name}, #{$name}); }
-
-
-// This map will be applied to EVERY color in the $theme-colors map.
-$tints: (100: 0.08, 200: 0.20, 300: 0.44);
-
 
 // Theme Mixins (Using Generic Variables)
 // =============================================================================
@@ -24,7 +14,6 @@ $tints: (100: 0.08, 200: 0.20, 300: 0.44);
 
   --font-family-base: #{$font-family-base};
   --font-family-mono: #{$font-family-mono};
-
 
   --primary:#{$primary};
   --primary-100:#{$primary-100};
@@ -61,15 +50,13 @@ $tints: (100: 0.08, 200: 0.20, 300: 0.44);
 
 
   // Our special dark background Color
-  --renova: hsl(203, 36%, 12%); // #132129;
-
-  --border-color:#{$border-color};
+  --renova: hsla(203, 36%, 12%, 1); // #132129;
 
   --text-theme: #{$text-theme};
   --bg-theme: #{$bg-theme};
-  --block-theme: #{$block-theme};
+  --block-theme: #{$block-theme}; // <-- card element bg
+  --default-colored:#{$default-colored};
 
-  --border-color:#{$border-color};
   --focus-color: #{$focus-color} ;
   --selection: #{$selection-color};
   --highlight: #{$highlight-color};
@@ -99,31 +86,30 @@ $tints: (100: 0.08, 200: 0.20, 300: 0.44);
 }
 
 
-$primary: #2e9578;
-$primary-100: #2e957814;
-$primary-200: #2e957833;
-$primary-300: #2e957870;
-$secondary: #f4ae81;
-$secondary-100: #f4ae8114;
-$secondary-200: #f4ae8133;
-$secondary-300: #f4ae8170;
-$info: #70c9db;
-$info-100: #70c9db14;
-$info-200: #70c9db33;
-$info-300: #70c9db70;
-$danger: #dd3c3c;
-$danger-100: #dd3c3c14;
-$danger-200: #dd3c3c33;
-$danger-300: #dd3c3c70;
-$success: #2eb82e;
-$success-100: #2eb82e14;
-$success-200: #2eb82e33;
-$success-300: #2eb82e70;
-$warning: #f2b90d;
-$warning-100: #f2b90d14;
-$warning-200: #f2b90d33;
-$warning-300: #f2b90d70;
-
+$primary: #2e9578; // hsl(163, 53%, 38%);
+$primary-100: hsla(163, 53%, 38%, 0.08);
+$primary-200: hsla(163, 53%, 38%, 0.2);
+$primary-300: hsla(163, 53%, 38%, 0.44);
+$secondary: #f4ae81; // hsl(23, 85%, 73%);
+$secondary-100: hsla(23, 85%, 73%, 0.08);
+$secondary-200: hsla(23, 85%, 73%, 0.2);
+$secondary-300: hsla(23, 85%, 73%, 0.44);
+$info: hsl(190, 60%, 65%); // #70c9db;
+$info-100: hsla(190, 60%, 65%, 0.08);
+$info-200: hsla(190, 60%, 65%, 0.2);
+$info-300: hsla(190, 60%, 65%, 0.44);
+$danger: hsl(0, 70%, 55%); // #dd3c3c;
+$danger-100: hsla(0, 70%, 55%, 0.08);
+$danger-200: hsla(0, 70%, 55%, 0.2);
+$danger-300: hsla(0, 70%, 55%, 0.44);
+$success: hsl(120, 60%, 45%); // #2eb82e;
+$success-100: hsla(120, 60%, 45%, 0.08);
+$success-200: hsla(120, 60%, 45%, 0.2);
+$success-300: hsla(120, 60%, 45%, 0.44);
+$warning: hsl(45, 90%, 50%); // #f2b90d;
+$warning-100: hsla(45, 90%, 50%, 0.08);
+$warning-200: hsla(45, 90%, 50%, 0.2);
+$warning-300: hsla(45, 90%, 50%, 0.44);
 
 
 // Build-time variables (keep as SASS variables)
@@ -190,29 +176,29 @@ $text-muted: #70777f;
 $default-colored: $primary; // <-- default colorable text|bg ect.. button-bg | a link color
 
 // this variable is for card inside element that can set different bg
-$text-theme: varof($text-body); // <-- flexible theming color
+$text-theme: var(--text-body); // <-- flexible theming color
 $bg-theme: $primary;    // <-- flexible theming bg
 $block-theme: white;    // <-- default card bg
+
+
+$default-colored: $primary;    // <-- default colored 
+$border-color: $default-colored;
 
 // Informative Color
 // =============================================================================
 
-// $info-color: #00b0f4;
-// $success-color: #11b76b;
-// $warning-color: #ffa100;
-// $danger-color: red;
+
 $error-color: $danger;
 
-// Default UI Colors
+// Default Highlight Colors
 // =============================================================================
 
 $focus-color: $primary-300;
 $selection-color: $primary-300;
 $highlight-color: $primary-300;
 
-$border-color: $primary;
 
-$text-theme: varof($text-body);
+$text-theme: $text-body;
 $bg-theme: unset;
 
 
@@ -220,8 +206,8 @@ $bg-theme: unset;
 // Default Form Colors
 // =============================================================================
 
-$form-text: #1d1d1d;
-$form-placeholder: #949494;
+$form-text: $text-body;
+$form-placeholder: $primary-300;
 
 
 // Default Button Colors

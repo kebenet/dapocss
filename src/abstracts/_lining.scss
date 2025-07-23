@@ -1,0 +1,21 @@
+
+/* Line Base Group ----------------------------------------- */
+// Group for Line properties: border, outline, box-shadow, any box element
+// 
+
+
+// saperate border width, style. color is define in _colors.scss
+
+%border-solid-s{
+	border: 1px solid;
+}
+
+%border-solid-m{
+	border: medium solid;
+}
+
+%border-radius-round{
+	border-radius: 50%;
+}
+
+%box-shadow{}

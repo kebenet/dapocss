@@ -36,7 +36,7 @@ Our goal is to create a robust and scalable component ecosystem. We are approach
 
 #### Full Version (Development)
 ```html
-<link rel="stylesheet" href="[https://cdn.jsdelivr.net/gh/kebenet/dapocss@main/dist/style.css](https://cdn.jsdelivr.net/gh/kebenet/dapocss@main/dist/style.css)">
+<link rel="stylesheet" href="[https://cdn.jsdelivr.net/gh/kebenet/dapocss@main/out/style.css](https://cdn.jsdelivr.net/gh/kebenet/dapocss@main/out/style.css)">
 
 ## 🚀 Quick Start
 
@@ -44,7 +44,7 @@ Our goal is to create a robust and scalable component ecosystem. We are approach
 
 #### Full Version (Development)
 ```html
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kebenet/dapocss@main/dist/style.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kebenet/dapocss@main/out/style.css">
 ```
 
 #### Minified Version (Production)

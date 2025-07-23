@@ -10,33 +10,36 @@ section[theme-heading] title{--text-theme:var(--primary); }
 
 /* Theme Dark-mode ----------------------------------------- */
 section[darkmode] {
-    --primary: var(--primary);
-    --secondary: var(--secondary);
-    --bg-body: hsl(203, 36%, 12%);
+    // --primary: var(--primary);
+    // --secondary: var(--secondary);
     --text-body: #ecf0f1;
-    --block-theme: hsl(203, 36%, 14%);
     --text-muted: #bdc3c7;
-    --border-color: #4a627a;
+    --bg-body: var(--renova);
+    --block-theme: hsl(203, 36%, 14%);
+    --default-colored: #4a627a;
+    // --default-colored: #4a627a;
 }
 // section[theme] toptitle{--text-theme :var(--secondary); }
 // section[theme] title{--text-theme:var(--primary); }
 // section[theme] time{--bg-theme:var(--primary); }
-// section[theme] hr{--border-color:var(--primary); }
+// section[theme] hr{--default-colored:var(--primary); }
 
 // section[theme-invert] toptitle{--text-theme :var(--primary); }
 // section[theme-invert] title{--text-theme:var(--secondary); }
 // section[theme-invert] time{--bg-theme:var(--secondary); }
-// section[theme-invert] hr{--border-color:var(--secondary); }
+// section[theme-invert] hr{--default-colored:var(--secondary); }
 
 
 section[theme] {
-	--border-color:var(--primary);
+	// --default-colored:var(--primary);
+	--default-colored:var(--primary);
 	--text-theme:var(--secondary);
 	--bg-theme:var(--primary);
 }
 
 section[theme-invert] {
-	--border-color:var(--secondary);
+	--default-colored:var(--secondary);
+	// --default-colored:var(--secondary);
 	--text-theme:var(--primary);
 	--bg-theme:var(--secondary);
 

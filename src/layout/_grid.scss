@@ -54,14 +54,8 @@ grid[auto-three]{ grid-template-columns: auto auto auto; }
 
 /* Grid Article Cards ----------------------------------------- */
 
-grid[border] > article{border: medium solid vars.$primary-200; }
+grid[border] > article{border: medium solid; } // <-- bordered
 grid[round] > article{ @include mixins.set-border-radius; }
-
-grid[primary] > article  {border-color: vars.$primary; }
-
-grid[primary]> article > header {background-color: vars.$primary; }
-grid[secondary] > article > header {background-color: vars.$secondary; }
-
 
 
 /* Selector Even|Odd ----------------------------------------- */

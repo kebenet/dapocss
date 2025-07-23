@@ -22,7 +22,8 @@ input, select {display: block; }
 
 // Input Elements
 // =============================================================================
-input {@include mixins.input-base;
+input {
+  @include mixins.input-base;
   
   &:focus {@include mixins.focus-ring; }
   
@@ -54,8 +55,8 @@ button {
   padding-left: 16px;
   justify-self: start;
   &:hover {
-    border: 1px var(--border-color) solid;
-    background-color: var(--button-hover);
+    border: 1px var(--default-colored) solid;
+    // background-color: var(--button-hover);
   }
   
   @include mixins.disabled-state;
@@ -63,11 +64,11 @@ button {
 
 // Secondary Button Styles
 // =============================================================================
-.btn-secondary {
+button[secondary] {
   @include mixins.button-base;
   padding-right: 16px;
   padding-left: 16px;
-  background-color: var(--secondary);
+  // background-color: var(--secondary);
   color: var(--text-body);
   
   &:hover {
@@ -84,17 +85,17 @@ button {
 
 // Secondary Button Outline Style
 // =============================================================================
-.btn-secondary-outline {
+button[secondary-outline] {
   @include mixins.button-base;
   padding-right: 16px;
   padding-left: 16px;
-  background-color: transparent;
-  border: 1px solid var(--border-color);
+  // background-color: transparent;
+  border: 1px solid var(--default-colored);
   
   &:hover {
-    background-color: var(--bg-theme);
-    color: var(--text-body);
-    border-color: var(--border-color);
+    // background-color: var(--bg-theme);
+    // color: var(--text-body);
+    // border-color: var(--default-colored);
   }
   
   &:focus {
@@ -146,8 +147,8 @@ textarea {
 // =============================================================================
 select {
   @include mixins.input-base;
-  background: var(--bg-body, vars.$bg-body) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
-  padding-right: 35px;
+  background: var(--bg-body) var(--select-arrow) calc(100% - 12px) 50% / 12px no-repeat;
+  padding-right: var(--spacing-l);
   
   &::-ms-expand {display: none; }
   
@@ -174,21 +175,21 @@ button:active {
 
 // Placeholder Styles
 // =============================================================================
-::-moz-placeholder {
-  color: var(--form-placeholder);
-}
+// ::-moz-placeholder {
+//   color: var(--form-placeholder);
+// }
 
-:-ms-input-placeholder {
-  color: var(--form-placeholder);
-}
+// :-ms-input-placeholder {
+//   color: var(--form-placeholder);
+// }
 
-::-ms-input-placeholder {
-  color: var(--form-placeholder);
-}
+// ::-ms-input-placeholder {
+//   color: var(--form-placeholder);
+// }
 
-::placeholder {
-  color: var(--form-placeholder);
-}
+// ::placeholder {
+//   color: var(--form-placeholder);
+// }
 
 // Fieldset & Legend
 // =============================================================================
@@ -226,7 +227,7 @@ input[type='range'] {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--border-color);
+    background: var(--default-colored);
     -webkit-appearance: none;
     margin-top: -7px;
   }
@@ -250,7 +251,7 @@ input[type='range'] {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--border-color);
+    background: var(--default-colored);
   }
   
   // Internet Explorer styles
@@ -283,7 +284,7 @@ input[type='range'] {
     height: 20px;
     width: 20px;
     border-radius: 50%;
-    background: var(--border-color);
+    background: var(--default-colored);
   }
   
   &:focus::-ms-fill-lower {

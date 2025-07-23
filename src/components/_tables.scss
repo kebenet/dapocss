@@ -31,12 +31,12 @@ td, th {
 // =============================================================================
 thead {
   @include mixins.border-accent;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--default-colored);
 }
 
 tfoot {
   @include mixins.border-accent;
-  border-top: 1px solid var(--border-color);
+  border-top: 1px solid var(--default-colored);
 }
 
 // Table Row Styling
