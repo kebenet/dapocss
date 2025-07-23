@@ -105,8 +105,9 @@
 
 @mixin button-base {
     @include form-element-base;
-    padding: 8px;
+    padding: var(--spacing-s);
     cursor: pointer;
+    transition: all 0.3s ease;
     // background-color: var(--primary);
 
     &:hover {
@@ -208,7 +209,7 @@
 }
 
 @mixin focus-border {
-    border-left: 4px solid var(--default-colored);
+    border-left: 4px solid var(--text-muted);
 }
 
 // Icon Mixins
@@ -221,10 +222,7 @@
 
 // Selection Styles
 // =============================================================================
-@mixin selection-styles {
-    // background-color: var(--selection);
-    // color: var(--text-body);
-}
+
 
 // Print Mixins
 // =============================================================================
@@ -242,9 +240,4 @@
 @mixin set-border-radius {
     overflow: hidden;
     border-radius: vars.$border-radius-base vars.$border-radius-base 0 0;
-}
-
-@mixin set-hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }

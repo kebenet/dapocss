@@ -40,11 +40,11 @@ a[button] {
     font-weight: var(--font-weight-bold);
     text-align: center;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    // border: 2px solid transparent;
     cursor: pointer;
 
     &:hover {
-        background-color: var(--secondary);
+        // background-color: var(--secondary);
         text-decoration: none;
         transform: translateY(-1px);
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -70,47 +70,13 @@ a[small] {
 
 // Button link style modifiers
 a[outline] {
-    background-color: transparent;
+    // background-color: transparent;
+    // color: var(--text-body);
     border-color: var(--default-colored);
-    color: var(--text-body);
 
     &:hover {
-        background-color: var(--secondary);
-        color: var(--text-body);
-    }
-}
-
-a[secondary] {
-    background-color: var(--secondary);
-    color: var(--text-body);
-
-    &:hover {
-        background-color: var(--secondary-hover);
-    }
-}
-
-a[success] {
-    background-color: var(--success, #28a745);
-
-    &:hover {
-        background-color: var(--bg-success, #218838);
-    }
-}
-
-a[warning] {
-    background-color: var(--warning, #ffc107);
-    color: var(--text-body);
-
-    &:hover {
-        background-color: var(--warning-hover, #e0a800);
-    }
-}
-
-a[danger] {
-    background-color: var(--danger, #dc3545);
-
-    &:hover {
-        background-color: var(--danger-hover, #c82333);
+        // background-color: var(--secondary);
+        // color: var(--text-body);
     }
 }
 

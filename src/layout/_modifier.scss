@@ -2,15 +2,17 @@
 
 @use '../abstracts/variables' as vars;
 
-@use '../abstracts/mixins' as mixins;
-
+@mixin set-hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
 
 grid[hover] > article,
 grid[hover] > stack-grid {transition: transform 0.3s ease, box-shadow 0.3s ease; }
 
 grid[hover] > article:hover,
-grid[hover] > stack-grid:hover {@include mixins.set-hover; }
+grid[hover] > stack-grid:hover {@include set-hover; }
 
 
 // justify-items: start;

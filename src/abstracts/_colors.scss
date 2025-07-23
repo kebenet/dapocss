@@ -35,13 +35,13 @@
 //========================================
 
 
-%color-primary {color: var(--primary); }
+%text-primary {color: var(--primary); }
 %bg-primary {background-color: var(--primary); }
 %bg-primary-100 {background-color: var(--primary-100); }
 %bg-primary-200 {background-color: var(--primary-200); }
 %bg-primary-300 {background-color: var(--primary-300); }
 
-%color-secondary {color: var(--secondary); }
+%text-secondary {color: var(--secondary); }
 %bg-secondary {background-color: var(--secondary); }
 %bg-secondary-100 {background-color: var(--secondary-100); }
 %bg-secondary-200 {background-color: var(--secondary-200); }
@@ -73,9 +73,13 @@
 %button-danger  { @extend %text-body; @extend %bg-danger; }
 %button-error   { @extend %text-body; @extend %bg-danger; }
 
-@mixin set-theme($color: $text-body, $bg: $bg-body) {
-  color: $color;
-  background-color: $bg;
+@mixin set-theme($color: 'text-body', $bg: 'bg-body') {
+  color: var(--#{$color});
+  background-color: var(--#{$bg});
+}
+@mixin selection-styles {
+    background-color: var(--primary-300);
+    color: white;
 }
 //========================================
 // Applying the Extensions
@@ -111,13 +115,13 @@ dialog{
 // In _link.scss
 //------------------------------------
 a { @extend %bg-theme; @extend %default-colored; }
-a { @include set-theme(vars.$primary, vars.$bg-theme); }
+a { @include set-theme("primary", 'bg-theme'); }
 
-a[button] {@include set-theme(vars.$text-body, vars.$primary); }
+a[button] {@include set-theme("text-body", 'primary'); }
 a[button]:hover{@extend %bg-secondary-300;}
 a[outline]{@extend %bg-transparent;}
 a[outline]:hover{@extend %bg-secondary;}
-a[secondary] {@include set-theme(vars.$text-body, vars.$primary); }
+a[secondary] {@include set-theme("text-body", 'primary'); }
 a[secondary]:hover {@extend %bg-secondary-300; }
 
 a[info]    {@extend %button-info; }
@@ -130,9 +134,9 @@ a[danger]  {@extend %button-danger;  }
 %form-element-color { @extend %bg-body; @extend %text-body; }
 
 button{ @extend %text-body; @extend %bg-primary;}
-button:hover{@extend %bg-primary-300;}
+button:hover{@extend %text-primary; @extend %bg-transparent;}
 button[secondary]{@extend %bg-secondary;}
-button[secondary]:hover{@extend %bg-secondary-300;}
+button[secondary]:hover{@extend %block-theme;}
 button[secondary-outline]{@extend %bg-transparent;}
 button[secondary-outline]:hover{@extend %bg-secondary; border-color: var(--default-colored)}
 
@@ -143,8 +147,6 @@ button[secondary-outline]:hover{@extend %bg-secondary; border-color: var(--defau
 
 // Selection Styles
 // =============================================================================
-%selection-style{@include set-theme(vars.$text-body,vars.$primary-300)}
-::-moz-selection, ::selection {@extend %selection-style; }
 
 /* Need more nesting works ----------------------------------------- */
 // input[type='range']{@extend %bg-transparent; }

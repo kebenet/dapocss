@@ -31,7 +31,7 @@ a {
   background-color: var(--bg-theme);
 }
 
-dialog {
+button[secondary]:hover, dialog {
   background-color: var(--block-theme);
 }
 
@@ -47,6 +47,10 @@ grid[primary] > article, dialog {
   border-color: var(--default-colored);
 }
 
+button:hover {
+  color: var(--primary);
+}
+
 [bg=primary], grid[primary] > article > header, article[primary] > header, button {
   background-color: var(--primary);
 }
@@ -55,7 +59,7 @@ grid[primary] > article, dialog {
   background-color: var(--primary-200);
 }
 
-[bg=primary-300], ::-moz-placeholder, :-ms-input-placeholder, ::-ms-input-placeholder, ::placeholder, button:hover {
+[bg=primary-300], ::-moz-placeholder, :-ms-input-placeholder, ::-ms-input-placeholder, ::placeholder {
   background-color: var(--primary-300);
 }
 
@@ -71,7 +75,7 @@ grid[secondary] > article > header, article[secondary] > header, button[secondar
   background-color: var(--secondary-200);
 }
 
-[bg=secondary-300], button[secondary]:hover, a[secondary]:hover, a[button]:hover {
+[bg=secondary-300], a[secondary]:hover, a[button]:hover {
   background-color: var(--secondary-300);
 }
 
@@ -95,7 +99,7 @@ a[danger] {
   background-color: var(--danger);
 }
 
-button[secondary-outline], a[outline] {
+button[secondary-outline], button:hover, a[outline] {
   background-color: transparent;
 }
 
@@ -108,27 +112,22 @@ body {
 }
 
 a {
-  color: #2e9578;
-  background-color: unset;
+  color: var(--primary);
+  background-color: var(--bg-theme);
 }
 
 a[button] {
-  color: #212121;
-  background-color: #2e9578;
+  color: var(--text-body);
+  background-color: var(--primary);
 }
 
 a[secondary] {
-  color: #212121;
-  background-color: #2e9578;
+  color: var(--text-body);
+  background-color: var(--primary);
 }
 
 button[secondary-outline]:hover {
   border-color: var(--default-colored);
-}
-
-::-moz-selection, ::selection {
-  color: #212121;
-  background-color: hsla(163, 53%, 38%, 0.44);
 }
 
 /* Need more nesting works ----------------------------------------- */
@@ -258,6 +257,16 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+::-moz-selection {
+  background-color: var(--primary-300);
+  color: white;
+}
+
+::selection {
+  background-color: var(--primary-300);
+  color: white;
+}
+
 /* Time -----------------Always Center------------------------ */
 title, toptitle {
   display: block;
@@ -326,7 +335,7 @@ q::before, q::after {
 }
 
 blockquote, q {
-  border-left: 4px solid var(--default-colored);
+  border-left: 4px solid var(--text-muted);
   margin: 1.5em 0;
   padding: 0.5em 1em;
   font-style: italic;
@@ -458,17 +467,19 @@ button {
   border-radius: 7px;
   outline: none;
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
-  padding: 8px;
+  padding: var(--spacing-s);
   cursor: pointer;
+  transition: all 0.3s ease;
   padding-right: 16px;
   padding-left: 16px;
   justify-self: start;
+  border: 1px solid transparent;
 }
 button:focus {
   box-shadow: 0 0 0 2px var(--focus-color);
 }
 button:hover {
-  border: 1px var(--default-colored) solid;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 button:disabled {
   cursor: not-allowed;
@@ -482,8 +493,9 @@ button[secondary] {
   border-radius: 7px;
   outline: none;
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
-  padding: 8px;
+  padding: var(--spacing-s);
   cursor: pointer;
+  transition: all 0.3s ease;
   padding-right: 16px;
   padding-left: 16px;
   color: var(--text-body);
@@ -510,8 +522,9 @@ button[secondary-outline] {
   border-radius: 7px;
   outline: none;
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
-  padding: 8px;
+  padding: var(--spacing-s);
   cursor: pointer;
+  transition: all 0.3s ease;
   padding-right: 16px;
   padding-left: 16px;
   border: 1px solid var(--default-colored);
@@ -536,8 +549,9 @@ input[type=button] {
   border-radius: 7px;
   outline: none;
   transition: background-color 0.1s linear, border-color 0.1s linear, color 0.1s linear, box-shadow 0.1s linear, transform 0.1s ease;
-  padding: 8px;
+  padding: var(--spacing-s);
   cursor: pointer;
+  transition: all 0.3s ease;
   padding-right: 30px;
   padding-left: 30px;
 }
@@ -627,7 +641,7 @@ input[type=reset]:active,
 input[type=button]:active,
 input[type=range]:active,
 button:active {
-  transform: translateY(2px);
+  transform: translateY(-1px);
 }
 
 fieldset {
@@ -905,11 +919,9 @@ a[button] {
   font-weight: var(--font-weight-bold);
   text-align: center;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
   cursor: pointer;
 }
 a[button]:hover {
-  background-color: var(--secondary);
   text-decoration: none;
   transform: translateY(-1px);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -919,7 +931,7 @@ a[button]:active {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
 }
 a[button]:focus {
-  border-left: 4px solid var(--default-colored);
+  border-left: 4px solid var(--text-muted);
   outline: none;
 }
 
@@ -929,45 +941,8 @@ a[small] {
 }
 
 a[outline] {
-  background-color: transparent;
   border-color: var(--default-colored);
-  color: var(--text-body);
 }
-a[outline]:hover {
-  background-color: var(--secondary);
-  color: var(--text-body);
-}
-
-a[secondary] {
-  background-color: var(--secondary);
-  color: var(--text-body);
-}
-a[secondary]:hover {
-  background-color: var(--secondary-hover);
-}
-
-a[success] {
-  background-color: var(--success, #28a745);
-}
-a[success]:hover {
-  background-color: var(--bg-success, #218838);
-}
-
-a[warning] {
-  background-color: var(--warning, #ffc107);
-  color: var(--text-body);
-}
-a[warning]:hover {
-  background-color: var(--warning-hover, #e0a800);
-}
-
-a[danger] {
-  background-color: var(--danger, #dc3545);
-}
-a[danger]:hover {
-  background-color: var(--danger-hover, #c82333);
-}
-
 a[disabled] {
   opacity: 0.6;
   cursor: not-allowed;

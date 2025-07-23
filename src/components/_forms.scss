@@ -54,9 +54,11 @@ button {
   padding-right: 16px;
   padding-left: 16px;
   justify-self: start;
+  border: 1px solid transparent;
   &:hover {
-    border: 1px var(--default-colored) solid;
     // background-color: var(--button-hover);
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
   
   @include mixins.disabled-state;
@@ -170,7 +172,7 @@ input[type='reset']:active,
 input[type='button']:active,
 input[type='range']:active,
 button:active {
-  transform: translateY(2px);
+  transform: translateY(-1px);
 }
 
 // Placeholder Styles
