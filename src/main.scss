@@ -3,6 +3,7 @@
 // BASE
 // =============================================================================
 @use 'base/reset';
+@use 'abstracts/colors' as colors;
 @use 'base/typography';
 // @use 'base/colors';
 
@@ -11,7 +12,6 @@
 // =============================================================================
 @use 'abstracts/variables' as vars;
 @use 'abstracts/mixins' as mixins;
-@use 'abstracts/colors' as colors;
 
 
 // =============================================================================
